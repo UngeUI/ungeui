@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "@vitejs/plugin-vue": "^1.9.4",
     "@vue/compiler-sfc": "^3.2.20",
+    "vite": "^2.6.13",
     "vue": "^3.2.20"
   },
   "peerDependencies": {
