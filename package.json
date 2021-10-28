@@ -7,5 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.2.20",
+    "vue": "^3.2.20"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  }
 }
