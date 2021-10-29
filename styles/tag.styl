@@ -1,18 +1,20 @@
 .u-tag 
-    color $color
+    color $main-color
     display inline-flex
     padding 3px 10px
-
+/*
+	props:size
+*/
 .u-tag-small 
-    font-size 15px
+    font-size 14px
     padding 2px 6px
 
 .u-tag-medium
-    font-size 16px
-    padding 3px 8px
+    font-size 15px
+    padding 3px 9px
 
 .u-tag-large
-    font-size 17px
+    font-size 16px
     padding 4px 12px
 
 /* type生成器
@@ -47,3 +49,24 @@ for val in 'default' 'success' 'info' 'danger' 'warning'
 	 border: 1px solid $warning-border;
 	 background-color: $warning-bg;
 }
+/*
+	props:isClose
+*/
+.u-tag-close 
+    align-self center
+    margin-left: 3px
+    &:hover
+        cursor pointer
+
+/*
+	props:round
+*/
+.u-tag-round
+	border-radius: 999em
+    
+/*
+	props:disabled
+*/
+.u-tag-disabled
+	cursor: not-allowed !important
+	opacity: 0.5

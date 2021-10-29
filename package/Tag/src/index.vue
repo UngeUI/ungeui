@@ -3,16 +3,23 @@
  * @Author: 林舒恒
  * @Date: 2021-10-28 14:09:20
  * @LastEditors: 林舒恒
- * @LastEditTime: 2021-10-29 18:41:05
+ * @LastEditTime: 2021-10-29 19:54:22
 -->
 <template>
-    <div :class="['u-tag',themeType,sizeType]">
-        <slot></slot>
+    <div 
+        v-if="visibility"
+        :class="['u-tag',themeType,size,isRound,isDisabled,]"
+        :style="customColor"
+    >
+        <div>
+            <slot></slot>
+        </div>
+        <span :class="isClose" @click="closeTag"></span>
     </div>
 </template>
 
 <script setup>
-import {useSlots, useAttrs,computed} from 'vue'
+import {ref,useSlots, useAttrs,computed} from 'vue'
 const slots = useSlots()
 const attrs = useAttrs()
 
@@ -30,8 +37,51 @@ const props = defineProps({
         validator(value) {
             return ['small','medium','large'].includes(value)
         }
+    },
+    closable: {
+        type: Boolean,
+        default: false,
+        validator(value) {
+            return typeof value === 'boolean'
+        }
+    },
+    round: {
+        type: Boolean,
+        default: false,
+        validator(value) {
+            return typeof value === 'boolean'
+        }
+    },
+    disabled: {
+        type: Boolean,
+        default: false,
+        validator(value) {
+            return typeof value === 'boolean'
+        }
+    },
+    color: {
+        type: String,
     }
 })
+
+const isClose = computed(() => props.closable && 'u-tag-close u-close iconfont')
+let visibility = ref(true)
+const closeTag = () => {
+    visibility.value = false
+}
+
 const themeType = computed(() => 'u-tag-'+ props.type)
-const sizeType = computed(() => 'u-tag-'+ props.size)
+const size = computed(() => 'u-tag-'+ props.size)
+const isRound = computed(() => props.round && 'u-tag-round')
+const isDisabled = computed(() => props.disabled && 'u-tag-disabled')
+
+const customColor = computed(() => {
+    if(props.color) {
+        return {
+            color: '#fff',
+            backgroundColor: props.color,
+            border: `1px solid ${props.color}`
+        }
+    }
+})
 </script>
