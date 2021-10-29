@@ -3,7 +3,7 @@
  * @Author: 林舒恒
  * @Date: 2021-10-29 11:56:02
  * @LastEditors: 林舒恒
- * @LastEditTime: 2021-10-29 12:55:47
+ * @LastEditTime: 2021-10-29 13:15:29
 -->
 <script setup>
 import { ref } from 'vue'
@@ -11,14 +11,16 @@ let str = ref('hallo')
 </script>
 
 <template>
-    <div>
-        <h3>Tag</h3>
-        <u-tag></u-tag>
+    <div class="main">
+        <section>
+            <h3>Tag</h3>
+            <u-tag></u-tag>
+        </section>
     </div>
 </template>
 
 <style lang="stylus" scoped>
-    .red {
-        font: 2px
-    }
+.main {
+    text-align center    
+}
 </style>
