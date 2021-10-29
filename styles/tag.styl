@@ -1,72 +1,67 @@
-.u-tag 
-    color $main-color
-    display inline-flex
-    padding 3px 10px
-/*
-	props:size
-*/
-.u-tag-small 
-    font-size 14px
-    padding 2px 6px
+.u-tag
+	display inline-flex
+	padding 3px 10px
+	border-radius 3px
+	margin 0 4px
 
-.u-tag-medium
-    font-size 15px
-    padding 3px 9px
+//props:size
+.u-tag-size__small
+	font-size 14px
+	padding 2px 6px
 
-.u-tag-large
-    font-size 16px
-    padding 4px 12px
+.u-tag-size__medium
+	font-size 15px
+	padding 3px 9px
 
-/* type生成器
-for val in 'default' 'success' 'info' 'danger' 'warning'
-    .u-tag-{val}
-        color $ + val + -color
-        border 1px solid $ + val + -border
-        background-color: $ + val + -bg
-*/
-.u-tag-default {
-	 color: $default-color;
-	 border: 1px solid $default-border;
-	 background-color: $default-bg;
-}
-.u-tag-success {
-	 color: $success-color;
-	 border: 1px solid $success-border;
-	 background-color: $success-bg;
-}
-.u-tag-info {
-	 color: $info-color;
-	 border: 1px solid $info-border;
-	 background-color: $info-bg;
-}
-.u-tag-danger {
-	 color: $danger-color;
-	 border: 1px solid $danger-border;
-	 background-color: $danger-bg;
-}
-.u-tag-warning {
-	 color: $warning-color;
-	 border: 1px solid $warning-border;
-	 background-color: $warning-bg;
-}
-/*
-	props:isClose
-*/
-.u-tag-close 
-    align-self center
-    margin-left: 3px
-    &:hover
-        cursor pointer
+.u-tag-size__large 
+	font-size 16px
+	padding 4px 12px
 
-/*
-	props:round
-*/
+// 主题生成器
+// for val in 'default' 'success' 'info' 'danger' 'warning'
+// 	.u-tag-{val}
+// 		color $ + val + -color
+// 		border 1px solid $ + val + -border
+// 		background-color: $ + val + -bg
+
+.u-tag-default
+	color: $default-color;
+	border: 1px solid $default-border;
+	background-color: $default-bg;
+
+
+.u-tag-success
+	color: $success-color;
+	border: 1px solid $success-border;
+	background-color: $success-bg;
+
+.u-tag-info
+	color: $info-color;
+	border: 1px solid $info-border;
+	background-color: $info-bg;
+
+.u-tag-danger
+	color: $danger-color;
+	border: 1px solid $danger-border;
+	background-color: $danger-bg;
+
+.u-tag-warning
+	color: $warning-color;
+	border: 1px solid $warning-border;
+	background-color: $warning-bg;
+
+//props:isClose
+.u-tag-close
+	align-self center
+	margin-left 3px
+	&:hover
+		cursor pointer
+
+//props:round
 .u-tag-round
 	border-radius: 999em
     
-/*
-	props:disabled
-*/
+//props:disabled
 .u-tag-disabled
 	cursor: not-allowed !important
 	opacity: 0.5

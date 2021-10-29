@@ -3,11 +3,15 @@
  * @Author: 林舒恒
  * @Date: 2021-10-29 11:56:02
  * @LastEditors: 林舒恒
- * @LastEditTime: 2021-10-29 20:02:32
+ * @LastEditTime: 2021-10-29 20:36:41
 -->
 <script setup>
 import { ref } from 'vue'
 let str = ref('hallo')
+
+const handleClose = () => {
+    alert(3)
+}
 </script>
 
 <template>
@@ -28,7 +32,7 @@ let str = ref('hallo')
             <u-tag type="danger" size="medium">危险</u-tag>
             <u-tag type="info" size="small">提示</u-tag>
             <h6>可关闭</h6>
-            <u-tag type="success" size="medium" closable>成功</u-tag>
+            <u-tag @close="handleClose" type="success" size="medium" closable>成功</u-tag>
             <h6>圆角</h6>
             <u-tag type="info" round>成功</u-tag>
             <h6>禁用</h6>

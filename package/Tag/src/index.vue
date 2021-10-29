@@ -3,7 +3,7 @@
  * @Author: 林舒恒
  * @Date: 2021-10-28 14:09:20
  * @LastEditors: 林舒恒
- * @LastEditTime: 2021-10-29 19:54:22
+ * @LastEditTime: 2021-10-29 20:35:17
 -->
 <template>
     <div 
@@ -63,15 +63,18 @@ const props = defineProps({
         type: String,
     }
 })
+const emit = defineEmits(['close'])
+
 
 const isClose = computed(() => props.closable && 'u-tag-close u-close iconfont')
 let visibility = ref(true)
-const closeTag = () => {
+const closeTag = (event) => {
     visibility.value = false
+    emit('close',event)
 }
 
 const themeType = computed(() => 'u-tag-'+ props.type)
-const size = computed(() => 'u-tag-'+ props.size)
+const size = computed(() => 'u-tag-size__'+ props.size)
 const isRound = computed(() => props.round && 'u-tag-round')
 const isDisabled = computed(() => props.disabled && 'u-tag-disabled')
 
