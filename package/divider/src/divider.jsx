@@ -16,7 +16,7 @@ const divider = defineComponent({
         } = this
         return (
             <div>
-                <div class={[]}></div>
+                <div class={['']}></div>
             </div>
         )
     }
