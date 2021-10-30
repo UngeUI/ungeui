@@ -3,14 +3,14 @@
  * @Author: 林舒恒
  * @Date: 2021-10-29 11:56:02
  * @LastEditors: 林舒恒
- * @LastEditTime: 2021-10-29 20:36:41
+ * @LastEditTime: 2021-10-30 11:01:36
 -->
 <script setup>
 import { ref } from 'vue'
 let str = ref('hallo')
 
 const handleClose = () => {
-    alert(3)
+    console.log('标签关闭')
 }
 </script>
 
