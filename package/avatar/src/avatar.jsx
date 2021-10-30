@@ -1,6 +1,5 @@
 import {computed,defineComponent,ref} from 'vue'
 import ResizeObserver from '../../util/resizeObserver.jsx'
-import classNames from 'classnames'
 
 const avatarProps = {
     size: {
@@ -53,7 +52,7 @@ const avatar = defineComponent({
             textRef,
             selfRef,
             setScaleParam,
-            avatarClass: classNames(['u-avatar',size,round]),
+            avatarClass: ['u-avatar',size,round],
         }
     },
     render() {
