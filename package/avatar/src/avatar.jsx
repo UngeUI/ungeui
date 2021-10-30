@@ -1,17 +1,23 @@
 import {computed,defineComponent,ref} from 'vue'
 import ResizeObserver from '../../util/resizeObserver.jsx'
 import classNames from 'classnames'
-const avatar = defineComponent({
-    name: 'Avatar',
-    props:{
-        size: {
-            type: String,
-            default: 'medium',
-            validator(value) {
-                return ['small','medium','large'].includes(value)
-            }
+
+const avatarProps = {
+    size: {
+        type: String,
+        default: 'medium',
+        validator(value) {
+            return ['small','medium','large','huge'].includes(value)
         }
     },
+    src: {
+        type: String
+    }
+}
+
+const avatar = defineComponent({
+    name: 'Avatar',
+    props:avatarProps,
     setup(props,{slots}) {
         const size =  'u-avatar-size__' + props.size
     
@@ -31,13 +37,13 @@ const avatar = defineComponent({
               (elHeight / textHeight) * radix,
               1
             )
+            //because of left:50%,top:50%
             textElement.style.transform = `translateX(-50%) translateY(-50%) scale(${ratio})`
         }
 
         return {
             textRef,
             selfRef,
-            text: slots.default?.(),
             setScaleParam,
             avatarClass: classNames(['u-avatar',size])
         }
@@ -48,19 +54,32 @@ const avatar = defineComponent({
             setScaleParam,
             textRef,
             selfRef,
-            text
+            src,
+            size,
+            $slots
         } =  this
+        // console.log($slots.default()[0],'slots')
         return (
             <div 
                 ref="selfRef"
                 class={avatarClass} 
             >
-                <ResizeObserver onResize={setScaleParam}> 
-                    <span 
-                        ref="textRef"
-                        class="u-avatar-text"
-                    >{text}</span>
-                </ResizeObserver>
+                {
+                    !$slots.default && src ? (
+                        <img
+                            class={'u-avatar-size__'+size}
+                            src={src}
+                        ></img>
+                    ) :(
+                        <ResizeObserver onResize={setScaleParam}> 
+                            <span
+                                ref="textRef"
+                                class="u-avatar-text"
+                            >{$slots.default?.()}</span>
+                        </ResizeObserver>
+                    )
+                }
+                
             </div>
         )
     }
