@@ -12,6 +12,13 @@ const avatarProps = {
     },
     src: {
         type: String
+    },
+    round: {
+        type: Boolean,
+        default: false,
+        validator(value) {
+            return typeof value == 'boolean'
+        }
     }
 }
 
@@ -19,8 +26,7 @@ const avatar = defineComponent({
     name: 'Avatar',
     props:avatarProps,
     setup(props,{slots}) {
-        const size =  'u-avatar-size__' + props.size
-    
+
         const textRef = ref(null)  //mount text node
         const selfRef = ref(null)  //mount father node
 
@@ -41,19 +47,22 @@ const avatar = defineComponent({
             textElement.style.transform = `translateX(-50%) translateY(-50%) scale(${ratio})`
         }
 
+        const size =  'u-avatar-size__' + props.size
+        const round = props.round ? 'u-avatar-round': ''
         return {
             textRef,
             selfRef,
             setScaleParam,
-            avatarClass: classNames(['u-avatar',size])
+            avatarClass: classNames(['u-avatar',size,round]),
         }
     },
     render() {
         const {
-            avatarClass,
-            setScaleParam,
             textRef,
             selfRef,
+            setScaleParam,
+            avatarClass,
+
             src,
             size,
             $slots
