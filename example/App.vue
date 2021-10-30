@@ -3,7 +3,7 @@
  * @Author: 林舒恒
  * @Date: 2021-10-29 11:56:02
  * @LastEditors: 林舒恒
- * @LastEditTime: 2021-10-30 11:01:36
+ * @LastEditTime: 2021-10-30 11:32:46
 -->
 <script setup>
 import { ref } from 'vue'
@@ -17,8 +17,8 @@ const handleClose = () => {
 <template>
     <div class="main">
         <section>
-            <h3>Tag</h3>
             <hr>
+            <h3>Tag</h3>
             <h6>主题类型</h6>
             <u-tag type="default">默认</u-tag>
             <u-tag type="success">成功</u-tag>
@@ -39,6 +39,12 @@ const handleClose = () => {
             <u-tag type="info" disabled>成功</u-tag>
             <h6>自定义颜色</h6>
             <u-tag type="info" color="#ff00ff">成功</u-tag>
+            <hr>
+            <h3>Avatar</h3>
+            <h6>大小</h6>
+            <u-avatar size="small"></u-avatar>
+            <u-avatar size="medium"></u-avatar>
+            <u-avatar size="large"></u-avatar>
         </section>
     </div>
 </template>
