@@ -1,4 +1,4 @@
-import avatar from './src/index.vue'
+import avatar from './src/avatar.jsx'
 
 avatar.name = 'Avatar'
 

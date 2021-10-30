@@ -3,7 +3,7 @@
  * @Author: 林舒恒
  * @Date: 2021-10-29 11:56:02
  * @LastEditors: 林舒恒
- * @LastEditTime: 2021-10-30 11:32:46
+ * @LastEditTime: 2021-10-30 17:45:46
 -->
 <script setup>
 import { ref } from 'vue'
@@ -41,10 +41,16 @@ const handleClose = () => {
             <u-tag type="info" color="#ff00ff">成功</u-tag>
             <hr>
             <h3>Avatar</h3>
-            <h6>大小</h6>
-            <u-avatar size="small"></u-avatar>
-            <u-avatar size="medium"></u-avatar>
-            <u-avatar size="large"></u-avatar>
+            <h6>不同大小</h6>
+            <u-avatar size="small">小</u-avatar>
+            <u-avatar size="medium">中</u-avatar>
+            <u-avatar size="large">大</u-avatar>
+            <u-avatar size="medium">中</u-avatar>
+            <u-avatar size="small">小</u-avatar>
+            <h6>字号自适应</h6>
+            <u-avatar>Hello</u-avatar>
+            <u-avatar>this is</u-avatar>
+            <u-avatar>Unge-UI</u-avatar>
         </section>
     </div>
 </template>
