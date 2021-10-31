@@ -5,12 +5,13 @@
 	display inline-flex
 	border-radius 3px
 	cursor pointer
-	transition all .3s 
+	transition all .3s
+	user-select none
 
 .u-button-dashed
 	border-style dashed
 
-//浅色主题、深色主题
+//浅色主题、深色主题、文字
 for val in 'default' 'success' 'danger' 'warning' 'info'
 	.u-button-{val}
 		border-color $ + val + -border
@@ -26,6 +27,25 @@ for val in 'default' 'success' 'danger' 'warning' 'info'
 	.u-button-text.u-button-{val}
 		background-color transparent
 		border none
+	.u-button-wave-{val}:not(.u-button-text)
+		animation buttonWave + val .3s 1
+	@keyframes buttonWave{val}
+		0%
+			box-shadow 0 0 0.5px 0 $ + val + -bg-easy
+		100%
+			box-shadow 0 0 0.5px 4.5px $ + val + -bg
+
+.u-button-wave-default
+	animation buttonWaveDefault .3s 1 !important
+
+@keyframes buttonWaveDefault
+	0%
+		box-shadow 0 0 0.5px 0 $main-color
+	100%
+		box-shadow 0 0 0.5px 4.5px #e6fffb
+
+.u-button-default.u-button-deep
+	background-color $main-color !important
 
 .u-button-default:not(.u-button-deep)
 	&:hover
@@ -47,5 +67,4 @@ for val in 'default' 'success' 'danger' 'warning' 'info'
 .u-button-size-huge
 	padding 10px 14px
 	font-size 20px
-
 	
