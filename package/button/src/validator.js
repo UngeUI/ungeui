@@ -39,6 +39,9 @@ const buttonProps = {
         validator(value) {
             return typeof value == 'boolean'
         }
+    },
+    onClick: {
+        type: Function
     }
 }
 

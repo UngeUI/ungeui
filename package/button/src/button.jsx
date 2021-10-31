@@ -1,6 +1,5 @@
 import { defineComponent, ref, onMounted, nextTick  } from 'vue'
 import buttonProps from './validator.js'
-
 const button = defineComponent({
     name: 'Button',
     props: buttonProps,
@@ -8,18 +7,12 @@ const button = defineComponent({
         let waveState = ref(false)
         const activeName = 'u-button-wave-' + props.type
         const timeout = ref(null)
-        const onClick = () => {
-            console.log(213)
-            // waveState.value = false
-            // await nextTick()
+        const onClick = async () => {  //todo, more effective way
+            props.onClick?.()
             waveState.value = true
-            if(timeout.value) {
-                clearTimeout(timeout)
-                timeout = setTimeout(() => {
-                    waveState.value = false
-                },300)
-                return
-            }
+            setTimeout(() => {
+                 waveState.value = false
+            },300)
         }
         return {
             waveState,
