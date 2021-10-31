@@ -3,7 +3,7 @@
  * @Author: 林舒恒
  * @Date: 2021-10-29 11:56:02
  * @LastEditors: 林舒恒
- * @LastEditTime: 2021-10-31 17:16:57
+ * @LastEditTime: 2021-10-31 17:27:05
 -->
 <script setup>
 import { ref } from 'vue'
@@ -103,6 +103,11 @@ const handleClose = () => {
             <u-button  type="success">Success</u-button>
             <u-button  size="large" type="success">Success</u-button>
             <u-button  size="huge" type="success">Success</u-button>
+            <h6>文本</h6>
+            <u-button text size="small" type="success">Success</u-button>
+            <u-button text type="success">Success</u-button>
+            <u-button text size="large" type="success">Success</u-button>
+            <u-button text size="huge" type="success">Success</u-button>
         </section>
     </div>
 </template>
