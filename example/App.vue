@@ -3,7 +3,7 @@
  * @Author: 林舒恒
  * @Date: 2021-10-29 11:56:02
  * @LastEditors: 林舒恒
- * @LastEditTime: 2021-10-31 13:13:12
+ * @LastEditTime: 2021-10-31 17:02:30
 -->
 <script setup>
 import { ref } from 'vue'
@@ -78,6 +78,26 @@ const handleClose = () => {
             <u-divider type="solid" color="rgb(255, 54, 255)"></u-divider>
             <h6>rgba彩色</h6>
             <u-divider type="solid" color="rgba(255, 54, 255,.5)"></u-divider>
+            <hr>
+            <h3>按钮</h3>
+            <h6>主题</h6>
+            <u-button>Default</u-button>
+            <u-button type="success">Success</u-button>
+            <u-button type="danger">danger</u-button>
+            <u-button type="warning">warning</u-button>
+            <u-button type="info">info</u-button>
+            <h6>深色</h6>
+            <u-button deep>Default</u-button>
+            <u-button deep type="success">Success</u-button>
+            <u-button deep type="danger">danger</u-button>
+            <u-button deep type="warning">warning</u-button>
+            <u-button deep type="info">info</u-button>
+            <h6>虚线</h6>
+            <u-button dashed >Default</u-button>
+            <u-button dashed type="success">Success</u-button>
+            <u-button dashed type="danger">danger</u-button>
+            <u-button dashed type="warning">warning</u-button>
+            <u-button dashed type="info">info</u-button>
         </section>
     </div>
 </template>

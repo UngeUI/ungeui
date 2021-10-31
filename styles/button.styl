@@ -1,0 +1,22 @@
+.u-button
+	margin 0 10px
+	border-width 1px
+	border-style solid
+	display inline-flex
+	border-radius 3px
+	padding 6px 10px
+	cursor pointer
+
+.u-button-dashed
+	border-style dashed
+
+for val in 'default' 'success' 'danger' 'warning' 'info'
+	.u-button-{val}
+		border-color $ + val + -border
+		background-color $ + val + -bg
+		color $ + val + -color
+
+for val in 'default' 'success' 'danger' 'warning' 'info'
+	.u-button-deep.u-button-{val}
+		background-color $ + val + -color
+		color #fff

@@ -1,4 +1,4 @@
-import divider from './src/divider.jsxsx'
+import divider from './src/divider.jsx'
 import {componentPrefix} from '../main.js'
 
 divider.name = 'Divider'

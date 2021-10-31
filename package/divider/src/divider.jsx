@@ -27,7 +27,6 @@ const divider = defineComponent({
     name: 'divider',
     props: dividerProps,
     setup(props) {
-        console.log(props.height,'props')
         return {
             type: 'u-divider-'+ props.type,
             bound: props.bold ? 'u-divider-bold' : '',
