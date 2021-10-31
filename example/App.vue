@@ -3,7 +3,7 @@
  * @Author: 林舒恒
  * @Date: 2021-10-29 11:56:02
  * @LastEditors: 林舒恒
- * @LastEditTime: 2021-10-31 12:50:09
+ * @LastEditTime: 2021-10-31 12:57:47
 -->
 <script setup>
 import { ref } from 'vue'
@@ -62,10 +62,14 @@ const handleClose = () => {
             <hr>
             <h3>分割线</h3>
             <u-divider></u-divider>
-            <h6>虚线</h6>
+            <h6>点线</h6>
             <u-divider type="dotted"></u-divider>
+            <h6>虚线</h6>
             <u-divider type="dashed"></u-divider>
+            <h6>实线</h6>
             <u-divider type="solid"></u-divider>
+            <h6>加粗</h6>
+            <u-divider type="solid" bold></u-divider>
         </section>
     </div>
 </template>

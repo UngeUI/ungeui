@@ -7,6 +7,13 @@ const dividerProps = {
         validator(value) {
             return ['solid','dashed','dotted'].includes(value)
         }
+    },
+    bold: {
+        type: Boolean,
+        default: false,
+        validator(value) {
+            return typeof value == 'boolean'
+        }
     }
 }
 
@@ -16,17 +23,20 @@ const divider = defineComponent({
     setup(props) {
         console.log(props.type,'props')
         return {
-            type: 'u-divider-'+ props.type
+            type: 'u-divider-'+ props.type,
+            bound: props.bold ? 'u-divider-bold' : ''
         }
     },
     render() {
         const {
-            $slots,
-            type
+            type,
+            bound,
+
+            $slots
         } = this
         return (
             <div 
-                class={['u-divider',type]}
+                class={['u-divider',type,bound]}
             >
                 
             </div>
