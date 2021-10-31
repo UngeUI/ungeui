@@ -5,6 +5,7 @@
 	display inline-flex
 	border-radius 3px
 	cursor pointer
+	transition all .3s 
 
 .u-button-dashed
 	border-style dashed
@@ -15,12 +16,21 @@ for val in 'default' 'success' 'danger' 'warning' 'info'
 		border-color $ + val + -border
 		background-color $ + val + -bg
 		color $ + val + -color
-	.u-button-deep.u-button-{val}
+		&:hover
+			color $ + val + -bg-easy
+	.u-button-deep.u-button-{val}:not(.u-button-text)
 		background-color $ + val + -color
 		color #fff
+		&:hover
+			background-color $ + val + -bg-easy
 	.u-button-text.u-button-{val}
 		background-color transparent
 		border none
+
+.u-button-default:not(.u-button-deep)
+	&:hover
+		color $main-color
+		border-color $main-color
 
 .u-button-size-small
 	padding 4px 8px
