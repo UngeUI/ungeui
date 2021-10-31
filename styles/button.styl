@@ -4,19 +4,35 @@
 	border-style solid
 	display inline-flex
 	border-radius 3px
-	padding 6px 10px
 	cursor pointer
 
 .u-button-dashed
 	border-style dashed
 
+//浅色主题、深色主题
 for val in 'default' 'success' 'danger' 'warning' 'info'
 	.u-button-{val}
 		border-color $ + val + -border
 		background-color $ + val + -bg
 		color $ + val + -color
-
-for val in 'default' 'success' 'danger' 'warning' 'info'
 	.u-button-deep.u-button-{val}
 		background-color $ + val + -color
 		color #fff
+
+.u-button-size-small
+	padding 4px 8px
+	font-size 14px
+
+.u-button-size-medium
+	padding 6px 10px
+	font-size 16px
+
+.u-button-size-large
+	padding 8px 12px
+	font-size 18px
+
+.u-button-size-huge
+	padding 10px 14px
+	font-size 20px
+
+	

@@ -28,6 +28,13 @@ const buttonProps = {
         validator(value) {
             return typeof value == 'boolean'
         }
+    },
+    size: {
+        type: String,
+        default: 'medium',
+        validator(value) {
+            return ['small','medium','large','huge'].includes(value)
+        }
     }
 }
 
@@ -39,17 +46,19 @@ const button = defineComponent({
             isDeep: props.deep ? 'u-button-deep' : '',
             isDashed: props.dashed ? 'u-button-dashed' : '',
             buttonType: 'u-button-' + props.type,
+            buttonSize: 'u-button-size-' + props.size
         }
     },
     render() {
         const {
             buttonType,
+            buttonSize,
             isDeep,
             isDashed,
             $slots
         } = this
         return (
-            <div class={['u-button',buttonType,isDeep,isDashed]}>
+            <div class={['u-button',buttonSize,buttonType,isDeep,isDashed]}>
                 {$slots.default?.()}
             </div>
         )
