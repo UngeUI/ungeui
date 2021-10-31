@@ -3,7 +3,7 @@
  * @Author: 林舒恒
  * @Date: 2021-10-29 11:56:02
  * @LastEditors: 林舒恒
- * @LastEditTime: 2021-10-31 13:06:50
+ * @LastEditTime: 2021-10-31 13:13:12
 -->
 <script setup>
 import { ref } from 'vue'
@@ -70,6 +70,8 @@ const handleClose = () => {
             <u-divider type="solid"></u-divider>
             <h6>加粗</h6>
             <u-divider type="solid" bold></u-divider>
+            <h6>自定义高度</h6>
+            <u-divider type="solid" :height="10"></u-divider>
             <h6>十六进制彩色</h6>
             <u-divider type="solid" color="#ff0000"></u-divider>
             <h6>rgb彩色</h6>
