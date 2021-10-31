@@ -1,5 +1,5 @@
 /*
- * @Descripttion: 
+ * @Descripttion:
  * @Author: 林舒恒
  * @Date: 2021-10-28 20:44:26
  * @LastEditors: 林舒恒
@@ -8,15 +8,14 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
-const path  = require('path')
-
+const path = require('path')
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(),vueJsx()],
+  plugins: [vue(), vueJsx()],
   root: path.resolve(__dirname, 'example'),
   build: {
-    rollupOptions:{
+    rollupOptions: {
       input: './src/main.js'
     }
   }

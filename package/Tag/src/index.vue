@@ -6,85 +6,84 @@
  * @LastEditTime: 2021-10-29 20:35:17
 -->
 <template>
-    <div 
-        v-if="visibility"
-        :class="['u-tag',themeType,size,isRound,isDisabled,]"
-        :style="customColor"
-    >
-        <div>
-            <slot></slot>
-        </div>
-        <span :class="isClose" @click="closeTag"></span>
+  <div
+    v-if="visibility"
+    :class="['u-tag', themeType, size, isRound, isDisabled]"
+    :style="customColor"
+  >
+    <div>
+      <slot></slot>
     </div>
+    <span :class="isClose" @click="closeTag"></span>
+  </div>
 </template>
 
 <script setup>
-import {ref,useSlots, useAttrs,computed} from 'vue'
+import { ref, useSlots, useAttrs, computed } from 'vue'
 const slots = useSlots()
 const attrs = useAttrs()
 
 const props = defineProps({
-    type: {
-        type: String,
-        default: 'default',
-        validator(value) {
-            return ['default','success','info','danger','warning'].includes(value)
-        }
-    },
-    size: {
-        type: String,
-        default: 'medium',
-        validator(value) {
-            return ['small','medium','large'].includes(value)
-        }
-    },
-    closable: {
-        type: Boolean,
-        default: false,
-        validator(value) {
-            return typeof value === 'boolean'
-        }
-    },
-    round: {
-        type: Boolean,
-        default: false,
-        validator(value) {
-            return typeof value === 'boolean'
-        }
-    },
-    disabled: {
-        type: Boolean,
-        default: false,
-        validator(value) {
-            return typeof value === 'boolean'
-        }
-    },
-    color: {
-        type: String,
+  type: {
+    type: String,
+    default: 'default',
+    validator(value) {
+      return ['default', 'success', 'info', 'danger', 'warning'].includes(value)
     }
+  },
+  size: {
+    type: String,
+    default: 'medium',
+    validator(value) {
+      return ['small', 'medium', 'large'].includes(value)
+    }
+  },
+  closable: {
+    type: Boolean,
+    default: false,
+    validator(value) {
+      return typeof value === 'boolean'
+    }
+  },
+  round: {
+    type: Boolean,
+    default: false,
+    validator(value) {
+      return typeof value === 'boolean'
+    }
+  },
+  disabled: {
+    type: Boolean,
+    default: false,
+    validator(value) {
+      return typeof value === 'boolean'
+    }
+  },
+  color: {
+    type: String
+  }
 })
 const emit = defineEmits(['close'])
-
 
 const isClose = computed(() => props.closable && 'u-tag-close u-close iconfont')
 let visibility = ref(true)
 const closeTag = (event) => {
-    visibility.value = false
-    emit('close',event)
+  visibility.value = false
+  emit('close', event)
 }
 
-const themeType = computed(() => 'u-tag-'+ props.type)
-const size = computed(() => 'u-tag-size__'+ props.size)
+const themeType = computed(() => 'u-tag-' + props.type)
+const size = computed(() => 'u-tag-size__' + props.size)
 const isRound = computed(() => props.round && 'u-tag-round')
 const isDisabled = computed(() => props.disabled && 'u-tag-disabled')
 
 const customColor = computed(() => {
-    if(props.color) {
-        return {
-            color: '#fff',
-            backgroundColor: props.color,
-            border: `1px solid ${props.color}`
-        }
+  if (props.color) {
+    return {
+      color: '#fff',
+      backgroundColor: props.color,
+      border: `1px solid ${props.color}`
     }
+  }
 })
 </script>
