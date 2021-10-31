@@ -14,6 +14,9 @@ const dividerProps = {
         validator(value) {
             return typeof value == 'boolean'
         }
+    },
+    color: {
+        type: String
     }
 }
 
@@ -24,19 +27,24 @@ const divider = defineComponent({
         console.log(props.type,'props')
         return {
             type: 'u-divider-'+ props.type,
-            bound: props.bold ? 'u-divider-bold' : ''
+            bound: props.bold ? 'u-divider-bold' : '',
+            dividerStyle: {
+                'border-top-color': props.color
+            }
         }
     },
     render() {
         const {
             type,
             bound,
+            dividerStyle,
 
             $slots
         } = this
         return (
             <div 
                 class={['u-divider',type,bound]}
+                style={dividerStyle}
             >
                 
             </div>
