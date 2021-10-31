@@ -1,9 +1,9 @@
 /*
  * @Descripttion:
- * @Author: 林舒恒
+ * @Author: peterroe
  * @Date: 2021-10-28 20:44:26
- * @LastEditors: 林舒恒
- * @LastEditTime: 2021-10-30 13:11:28
+ * @LastEditors: peterroe
+ * @LastEditTime: 2021-10-31 22:05:01
  */
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
