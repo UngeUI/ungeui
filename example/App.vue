@@ -3,7 +3,7 @@
  * @Author: 林舒恒
  * @Date: 2021-10-29 11:56:02
  * @LastEditors: 林舒恒
- * @LastEditTime: 2021-10-30 19:09:55
+ * @LastEditTime: 2021-10-31 12:50:09
 -->
 <script setup>
 import { ref } from 'vue'
@@ -59,6 +59,13 @@ const handleClose = () => {
             <u-avatar size="large" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWOL2vIwVjlgBA36lsvmnVG_orxlLKDbVUOQ&usqp=CAU"></u-avatar>
             <h6>圆形</h6>
             <u-avatar round size="huge" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl7Gzpyz5WwZIcv63XI89kdirJSEvHjHNBjA&usqp=CAU"></u-avatar>
+            <hr>
+            <h3>分割线</h3>
+            <u-divider></u-divider>
+            <h6>虚线</h6>
+            <u-divider type="dotted"></u-divider>
+            <u-divider type="dashed"></u-divider>
+            <u-divider type="solid"></u-divider>
         </section>
     </div>
 </template>
