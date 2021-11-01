@@ -19,16 +19,20 @@ for val in 'default' 'success' 'danger' 'warning' 'info'
 		color $ + val + -color
 		&:hover
 			color $ + val + -bg-easy
-	.u-button-deep.u-button-{val}:not(.u-button-text)
-		background-color $ + val + -color
-		color #fff
-		&:hover
-			background-color $ + val + -bg-easy
 	.u-button-text.u-button-{val}
 		background-color transparent
 		border none
 	.u-button-wave-{val}:not(.u-button-text)
 		animation buttonWave + val .3s 1
+
+for val in  'success' 'danger' 'warning' 'info'
+	.u-button-deep.u-button-{val}:not(.u-button-text)
+		background-color $ + val + -color
+		color #fff
+		&:hover
+			background-color $ + val + -bg-easy
+		&:active
+			background-color $ + val + -bg-deep
 	@keyframes buttonWave{val}  //for default
 		0%
 			box-shadow 0 0 0.5px 0 $ + val + -bg-easy
@@ -42,10 +46,13 @@ for val in 'default' 'success' 'danger' 'warning' 'info'
 	0%
 		box-shadow 0 0 0.5px 0 $main-color
 	100%
-		box-shadow 0 0 0.5px 4.5px #e6fffb
+		box-shadow 0 0 0.5px 4.5px $main-color-easy
 
 .u-button-default.u-button-deep
-	background-color $main-color !important
+	background-color $main-color
+	color #fff
+	&:active
+		background-color $main-color-deep 
 
 .u-button-default:not(.u-button-deep)
 	&:hover
