@@ -3,7 +3,7 @@
  * @Author: peterroe
  * @Date: 2021-10-29 11:56:02
  * @LastEditors: peterroe
- * @LastEditTime: 2021-10-31 22:04:22
+ * @LastEditTime: 2021-11-01 22:21:20
 -->
 <script setup>
 import { ref } from 'vue'
@@ -124,7 +124,12 @@ const handleClose = () => {
       >
       <u-button text type="success">Success</u-button>
       <u-button text size="large" type="success">Success</u-button>
-      <u-button text size="huge" type="success">Success</u-button>
+      <u-button text size="huge" type="success" >Success</u-button>
+      <h6>禁用</h6>
+      <u-button disabled type="success">Success</u-button>
+      <u-button disabled text type="success">Success</u-button>
+      <u-button disabled dashed type="success">Success</u-button>
+      <u-button disabled deep type="success">Success</u-button>
     </section>
   </div>
 </template>

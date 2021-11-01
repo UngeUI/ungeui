@@ -8,6 +8,9 @@ const button = defineComponent({
     const activeName = 'u-button-wave-' + props.type
     const timeout = ref(null)
     const onClick = async () => {
+      if(props.disabled) {
+        return 
+      }
       //todo, more effective way
       props.onClick?.()
       waveState.value = true
@@ -21,6 +24,7 @@ const button = defineComponent({
       onClick,
       isDeep: props.deep ? 'u-button-deep' : '',
       isDashed: props.dashed ? 'u-button-dashed' : '',
+      isDisabled: props.disabled ? 'u-button-disabled' : '',
       isText: props.text ? 'u-button-text' : '',
       buttonType: 'u-button-' + props.type,
       buttonSize: 'u-button-size-' + props.size
@@ -33,6 +37,7 @@ const button = defineComponent({
       isDeep,
       isDashed,
       isText,
+      isDisabled,
       waveState,
       activeName,
       onClick,
@@ -47,6 +52,7 @@ const button = defineComponent({
           buttonType,
           isDeep,
           isDashed,
+          isDisabled,
           { [activeName]: waveState }
         ]}
         onClick={onClick}

@@ -1,3 +1,10 @@
+/*
+ * @Descripttion: 
+ * @Author: peterroe
+ * @Date: 2021-10-31 17:22:18
+ * @LastEditors: peterroe
+ * @LastEditTime: 2021-11-01 22:19:57
+ */
 const buttonProps = {
   size: {
     type: String,
@@ -42,6 +49,13 @@ const buttonProps = {
   },
   onClick: {
     type: Function
+  },
+  disabled: {
+    type: Boolean,
+    default: false,
+    validator(value) {
+      return typeof value == 'boolean'
+    }
   }
 }
 
