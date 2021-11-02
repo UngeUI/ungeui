@@ -3,7 +3,7 @@
  * @Author: peterroe
  * @Date: 2021-10-29 11:56:02
  * @LastEditors: peterroe
- * @LastEditTime: 2021-11-02 13:37:31
+ * @LastEditTime: 2021-11-02 22:03:52
 -->
 <script setup>
 import { ref } from 'vue'
@@ -126,10 +126,17 @@ const handleClose = () => {
       <u-button text size="large" type="success">Success</u-button>
       <u-button text size="huge" type="success" >Success</u-button>
       <h6>禁用</h6>
-      <u-button disabled type="success">Success</u-button>
-      <u-button disabled text type="success">Success</u-button>
-      <u-button disabled dashed type="success">Success</u-button>
-      <u-button disabled deep type="success">Success</u-button>
+      <u-button disabled type="warning">warning</u-button>
+      <u-button disabled text type="warning">warning</u-button>
+      <u-button disabled dashed type="warning">warning</u-button>
+      <u-button disabled deep type="warning">warning</u-button>
+      <h6>图标按钮</h6>
+      <u-button icon="u-check2" size="small"  type="info"></u-button>
+      <u-button icon="u-check2" size="large"  type="danger"></u-button>
+      <u-button icon="u-check2" size="huge" type="success"></u-button>
+      <h6>圆形</h6>
+      <u-button round icon="u-check2" size="small"  type="info"></u-button>
+      <u-button round icon="u-check2" size="large"  type="danger"></u-button>
       <hr>
       <h3>图标</h3>
       <u-icon type="u-arrowforward" ></u-icon>

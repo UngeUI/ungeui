@@ -3,7 +3,7 @@
  * @Author: peterroe
  * @Date: 2021-10-31 17:22:18
  * @LastEditors: peterroe
- * @LastEditTime: 2021-11-01 22:19:57
+ * @LastEditTime: 2021-11-02 21:32:00
  */
 const buttonProps = {
   size: {
@@ -56,6 +56,9 @@ const buttonProps = {
     validator(value) {
       return typeof value == 'boolean'
     }
+  },
+  icon: {
+    type: String
   }
 }
 

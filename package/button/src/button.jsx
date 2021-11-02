@@ -26,6 +26,7 @@ const button = defineComponent({
       isDashed: props.dashed ? 'u-button-dashed' : '',
       isDisabled: props.disabled ? 'u-button-disabled' : '',
       isText: props.text ? 'u-button-text' : '',
+      iconType: props.icon ? `iconfont u-button-icon-${props.size}  ${props.icon}` : '',
       buttonType: 'u-button-' + props.type,
       buttonSize: 'u-button-size-' + props.size
     }
@@ -38,6 +39,7 @@ const button = defineComponent({
       isDashed,
       isText,
       isDisabled,
+      iconType,
       waveState,
       activeName,
       onClick,
@@ -53,6 +55,7 @@ const button = defineComponent({
           isDeep,
           isDashed,
           isDisabled,
+          iconType,
           { [activeName]: waveState }
         ]}
         onClick={onClick}
