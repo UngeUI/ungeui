@@ -7,9 +7,32 @@
 	cursor pointer
 	transition all .3s
 	user-select none
+	&-size
+		&-small
+			padding 4px 8px
+			font-size 14px
+		&-medium
+			padding 6px 10px
+			font-size 16px
+		&-large
+			padding 8px 12px
+			font-size 18px
+		&-huge
+			padding 10px 14px
+			font-size 20px
+	&-disabled
+		cursor not-allowed
+		opacity .5
+	&-dashed
+		border-style dashed
+	&-wave-default
+		animation buttonWaveDefault .3s 1 !important
 
-.u-button-dashed
-	border-style dashed
+@keyframes buttonWaveDefault
+	0%
+		box-shadow 0 0 0.5px 0 $main-color
+	100%
+		box-shadow 0 0 0.5px 4.5px $main-color-easy
 
 //浅色主题、深色主题、文字
 for val in 'default' 'success' 'danger' 'warning' 'info'
@@ -25,6 +48,7 @@ for val in 'default' 'success' 'danger' 'warning' 'info'
 	.u-button-wave-{val}:not(.u-button-text)
 		animation buttonWave + val .3s 1
 
+//动画以及
 for val in  'success' 'danger' 'warning' 'info'
 	.u-button-deep.u-button-{val}:not(.u-button-text)
 		background-color $ + val + -color
@@ -39,14 +63,6 @@ for val in  'success' 'danger' 'warning' 'info'
 		100%
 			box-shadow 0 0 0.5px 4.5px $ + val + -bg
 
-.u-button-wave-default
-	animation buttonWaveDefault .3s 1 !important
-
-@keyframes buttonWaveDefault
-	0%
-		box-shadow 0 0 0.5px 0 $main-color
-	100%
-		box-shadow 0 0 0.5px 4.5px $main-color-easy
 
 .u-button-default.u-button-deep
 	background-color $main-color
@@ -58,23 +74,3 @@ for val in  'success' 'danger' 'warning' 'info'
 	&:hover
 		color $main-color
 		border-color $main-color
-
-.u-button-size-small
-	padding 4px 8px
-	font-size 14px
-
-.u-button-size-medium
-	padding 6px 10px
-	font-size 16px
-
-.u-button-size-large
-	padding 8px 12px
-	font-size 18px
-
-.u-button-size-huge
-	padding 10px 14px
-	font-size 20px
-	
-.u-button-disabled
-	cursor not-allowed
-	opacity .5

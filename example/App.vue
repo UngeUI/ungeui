@@ -3,7 +3,7 @@
  * @Author: peterroe
  * @Date: 2021-10-29 11:56:02
  * @LastEditors: peterroe
- * @LastEditTime: 2021-11-01 23:04:46
+ * @LastEditTime: 2021-11-02 13:37:31
 -->
 <script setup>
 import { ref } from 'vue'
@@ -130,10 +130,15 @@ const handleClose = () => {
       <u-button disabled text type="success">Success</u-button>
       <u-button disabled dashed type="success">Success</u-button>
       <u-button disabled deep type="success">Success</u-button>
-      <h6>图标</h6>
-      <u-icon type="u-arrowforward" :size="45"></u-icon>
-      <u-icon type="u-check2" :size="25"></u-icon>
+      <hr>
+      <h3>图标</h3>
+      <u-icon type="u-arrowforward" ></u-icon>
+      <u-icon type="u-check2" ></u-icon>
+      <u-icon type="u-cup" ></u-icon>
+      <h6>自定义大小</h6>
       <u-icon type="u-cup" :size="15"></u-icon>
+      <u-icon type="u-cup" :size="25"></u-icon>
+      <u-icon type="u-cup" :size="35"></u-icon>
     </section>
   </div>
 </template>
