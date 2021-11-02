@@ -3,6 +3,7 @@
 	border-width 1px
 	border-style solid
 	display inline-flex
+	align-items center
 	border-radius 3px
 	cursor pointer
 	transition all .3s
@@ -25,8 +26,9 @@
 		opacity .5
 	&-dashed
 		border-style dashed
+	&-round
+		border-radius 999em
 	&-icon
-		border-radius 50%;
 		&-small
 			padding 4px
 		&-medium
@@ -35,7 +37,7 @@
 			padding 8px
 		&-huge
 			padding 10px
-	&-wave-default
+	&-wave-default:not(.u-button-round)
 		animation buttonWaveDefault .3s 1 !important
 
 @keyframes buttonWaveDefault
@@ -55,7 +57,7 @@ for val in 'default' 'success' 'danger' 'warning' 'info'
 	.u-button-text.u-button-{val}
 		background-color transparent
 		border none
-	.u-button-wave-{val}:not(.u-button-text)
+	.u-button-wave-{val}:not(.u-button-text):not(.u-button-round)
 		animation buttonWave + val .3s 1
 
 //动画以及

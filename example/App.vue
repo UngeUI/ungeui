@@ -3,7 +3,7 @@
  * @Author: peterroe
  * @Date: 2021-10-29 11:56:02
  * @LastEditors: peterroe
- * @LastEditTime: 2021-11-02 22:03:52
+ * @LastEditTime: 2021-11-02 22:29:16
 -->
 <script setup>
 import { ref } from 'vue'
@@ -132,11 +132,15 @@ const handleClose = () => {
       <u-button disabled deep type="warning">warning</u-button>
       <h6>图标按钮</h6>
       <u-button icon="u-check2" size="small"  type="info"></u-button>
-      <u-button icon="u-check2" size="large"  type="danger"></u-button>
+      <u-button icon="u-cup" size="large"  type="danger"></u-button>
       <u-button icon="u-check2" size="huge" type="success"></u-button>
       <h6>圆形</h6>
-      <u-button round icon="u-check2" size="small"  type="info"></u-button>
+      <u-button round icon="u-cup" size="small"  type="info"></u-button>
       <u-button round icon="u-check2" size="large"  type="danger"></u-button>
+      <u-button round icon="u-cup" size="large" ></u-button>
+      <h6>前后缀icon</h6>
+      <u-button round prefix="u-check2" size="small"  type="info">前缀</u-button>
+      <u-button round suffix="u-check2"  size="large"  type="success">后缀</u-button>
       <hr>
       <h3>图标</h3>
       <u-icon type="u-arrowforward" ></u-icon>

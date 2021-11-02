@@ -3,7 +3,7 @@
  * @Author: peterroe
  * @Date: 2021-10-31 17:22:18
  * @LastEditors: peterroe
- * @LastEditTime: 2021-11-02 21:32:00
+ * @LastEditTime: 2021-11-02 22:12:38
  */
 const buttonProps = {
   size: {
@@ -58,6 +58,19 @@ const buttonProps = {
     }
   },
   icon: {
+    type: String
+  },
+  round: {
+    type: Boolean,
+    default: false,
+    validator(value) {
+      return typeof value == 'boolean'
+    }
+  },
+  prefix:{
+    type: String
+  },
+  suffix: {
     type: String
   }
 }
