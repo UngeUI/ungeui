@@ -1,4 +1,4 @@
-import { defineComponent, ref } from 'vue'
+import { defineComponent, ref,computed } from 'vue'
 
 const input = defineComponent({
     name: 'Input',
@@ -17,13 +17,27 @@ const input = defineComponent({
                 return ['text', 'password', 'textarea'].includes(value)
             }
         },
+        disabled: {
+            type: Boolean,
+            default: false,
+            validator(value) {
+                return typeof value == 'boolean'
+            }
+        },
         value: String,
-        placeholder: String
+        placeholder: String,
+        rows: {
+            type: Number,
+            default: 4
+        },
+        cols: Number
     },
     emits: ['update:value'],
     setup(props, { emit, slots }) {
-        const inputSize = 'u-input-size-' + props.size
-
+        const inputSize = computed(() => {
+            return 'u-input-size-' + props.size
+        })
+        
         let isFocus = ref(false)
         const onFocus = () => {
             isFocus.value = true
@@ -32,7 +46,9 @@ const input = defineComponent({
             isFocus.value = false
         }
 
-        const inputType = props.type == 'password' ? 'password' : ''
+        const inputType = computed(() => {
+            return props.type == 'password' ? 'password' : ''
+        })
 
         const inputValue = ref(props.value)
         const onInput = (e) => {
@@ -41,9 +57,9 @@ const input = defineComponent({
         }
 
         return () => (
-            <div class={['u-input', { 'u-input-focus': isFocus.value }]}>
+            <div class={['u-input', { 'u-input-focus': isFocus.value },{'u-input-disabled':props.disabled}]}>
                 {props.type != 'textarea' ? (
-                    <div class={['u-input-wrapper', inputSize]}>
+                    <div class={['u-input-wrapper', inputSize.value]}>
                         {slots.prefix && (
                             <div class={['u-input-prefix']}>
                                 {slots.prefix?.()}
@@ -54,11 +70,12 @@ const input = defineComponent({
                             <input
                                 placeholder={props.placeholder}
                                 class="u-input__input-el"
-                                type={inputType}
+                                type={inputType.value}
                                 onFocus={onFocus}
                                 onBlur={onBlur}
                                 onInput={onInput}
                                 value={inputValue.value}
+                                disabled={props.disabled}
                             ></input>
                         </div>
 
@@ -76,7 +93,8 @@ const input = defineComponent({
                             class="u-input__textarea-el"
                             onFocus={onFocus}
                             onBlur={onBlur}
-                            rows={4}
+                            rows={props.rows}
+                            cols={props.cols}
                             onInput={onInput}
                             value={inputValue.value}
                         ></textarea>

@@ -3,11 +3,16 @@
  * @Author: peterroe
  * @Date: 2021-10-29 11:56:02
  * @LastEditors: peterroe
- * @LastEditTime: 2021-11-03 13:13:52
+ * @LastEditTime: 2021-11-03 21:18:41
 -->
 <script setup>
 import { ref } from 'vue'
 let str = ref('hallo')
+let inputSize = ref(false)
+setTimeout(() => {
+  inputSize.value = true
+  console.log(inputSize.value,'hh')
+},3000)
 let value = ref('Hello world')
 const handleClose = () => {
     console.log('标签关闭')
@@ -163,6 +168,7 @@ const handleClose = () => {
             <h3>输入框</h3>
             <section style="width: 30%; margin: 0 auto">
                 <u-input placeholder="小" size="small">小</u-input>
+                <u-input placeholder="小" :disabled="inputSize">小</u-input>
                 <u-input placeholder="中"></u-input>
                 <h6>响应式：{{ value }}</h6>
                 <u-input placeholder="大" size="large" v-model:value="value"
