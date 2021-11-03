@@ -9,7 +9,8 @@ const input = defineComponent({
             validator(value) {
                 return ['small','medium','large'].includes(value)
             }
-        }
+        },
+        placeholder: String
     },
     setup(props) {
         const inputSize = 'u-input-size-' + props.size
@@ -28,7 +29,7 @@ const input = defineComponent({
                 <div class={['u-input-wrapper']}>
                     <div class={['u-input-prefix']}></div>
                     <div class={['u-input-input']}>
-                        <input onFocus={onFocus} onBlur={onBlur} class="u-input__input-el"></input>
+                        <input placeholder={props.placeholder} onFocus={onFocus} onBlur={onBlur} class="u-input__input-el"></input>
                     </div>
                     <div class={['u-input-suffix']}></div>
                 </div>

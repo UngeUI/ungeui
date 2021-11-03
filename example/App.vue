@@ -3,7 +3,7 @@
  * @Author: peterroe
  * @Date: 2021-10-29 11:56:02
  * @LastEditors: peterroe
- * @LastEditTime: 2021-11-03 11:19:34
+ * @LastEditTime: 2021-11-03 11:26:00
 -->
 <script setup>
 import { ref } from 'vue'
@@ -153,12 +153,11 @@ const handleClose = () => {
       <hr>
       <h3>输入框</h3>
       <section style="width:30%;margin:0 auto">
-        <h6>小</h6>
-      <u-input size="small">小</u-input>
-      <h6>中</h6>
-      <u-input></u-input>
-      <h6>大</h6>
-      <u-input size="large">大</u-input>
+      <u-input placeholder="小" size="small">小</u-input>
+
+      <u-input placeholder="中"></u-input>
+
+      <u-input placeholder="大" size="large">大</u-input>
       </section>
     </section>
   </div>
