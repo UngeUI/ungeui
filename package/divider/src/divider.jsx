@@ -1,4 +1,4 @@
-import { defineComponent } from 'vue'
+import { defineComponent, computed } from 'vue'
 
 const dividerProps = {
     type: {
@@ -28,12 +28,12 @@ const divider = defineComponent({
     props: dividerProps,
     setup(props) {
         return {
-            type: 'u-divider-' + props.type,
-            bound: props.bold ? 'u-divider-bold' : '',
-            dividerStyle: {
+            type: computed(() => 'u-divider-' + props.type),
+            bound: computed(() => props.bold && 'u-divider-bold'),
+            dividerStyle: computed(() => ({
                 'border-top-color': props.color,
                 'border-top-width': props.height + 'px'
-            }
+            }))
         }
     },
     render() {

@@ -1,4 +1,4 @@
-import { defineComponent, ref, onMounted, nextTick } from 'vue'
+import { defineComponent, ref, onMounted, nextTick,computed } from 'vue'
 import buttonProps from './validator.js'
 import UIcon from '../../icon/index'
 const button = defineComponent({
@@ -6,7 +6,7 @@ const button = defineComponent({
     props: buttonProps,
     setup(props) {
         let waveState = ref(false)
-        const activeName = 'u-button-wave-' + props.type
+
         const timeout = ref(null)
         const onClick = async () => {
             if (props.disabled) {
@@ -21,18 +21,16 @@ const button = defineComponent({
         }
         return {
             waveState,
-            activeName,
             onClick,
-            isDeep: props.deep ? 'u-button-deep' : '',
-            isDashed: props.dashed ? 'u-button-dashed' : '',
-            isDisabled: props.disabled ? 'u-button-disabled' : '',
-            isText: props.text ? 'u-button-text' : '',
-            isRound: props.round ? 'u-button-round' : '',
-            iconType: props.icon
-                ? `iconfont u-button-icon-${props.size}  ${props.icon}`
-                : '',
-            buttonType: 'u-button-' + props.type,
-            buttonSize: 'u-button-size-' + props.size
+            activeName: computed(() => props.type && 'u-button-wave-' + props.type),
+            isDeep:  computed(() => props.deep && 'u-button-deep'),
+            isDashed:  computed(() => props.dashed && 'u-button-dashed'),
+            isDisabled:  computed(() => props.disabled && 'u-button-disabled' ),
+            isText:  computed(() => props.text && 'u-button-text'),
+            isRound:  computed(() => props.round && 'u-button-round'),
+            iconType:  computed(() => props.icon && `iconfont u-button-icon-${props.size}  ${props.icon}`),
+            buttonType:  computed(() => 'u-button-' + props.type),
+            buttonSize:  computed(() => 'u-button-size-' + props.size),
         }
     },
     render() {
@@ -69,7 +67,7 @@ const button = defineComponent({
                 onClick={onClick}
             >
                 {prefix && <UIcon type={prefix} style=""></UIcon>}
-                {$slots.default?.()}
+                  {$slots.default?.()}
                 {suffix && <UIcon type={suffix} style=""></UIcon>}
             </div>
         )

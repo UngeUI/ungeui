@@ -3,14 +3,14 @@
  * @Author: peterroe
  * @Date: 2021-10-29 11:56:02
  * @LastEditors: peterroe
- * @LastEditTime: 2021-11-03 21:18:41
+ * @LastEditTime: 2021-11-03 21:57:22
 -->
 <script setup>
 import { ref } from 'vue'
 let str = ref('hallo')
-let inputSize = ref(false)
+let inputSize = ref(true)
 setTimeout(() => {
-  inputSize.value = true
+  inputSize.value = false
   console.log(inputSize.value,'hh')
 },3000)
 let value = ref('Hello world')
@@ -57,7 +57,7 @@ const handleClose = () => {
             <u-avatar size="medium">中</u-avatar>
             <u-avatar size="small">小</u-avatar>
             <h6>字号自适应</h6>
-            <u-avatar>Hello</u-avatar>
+            <u-avatar >Hello</u-avatar>
             <u-avatar>this is</u-avatar>
             <u-avatar>Unge-UI</u-avatar>
             <h6>图片</h6>
@@ -109,7 +109,7 @@ const handleClose = () => {
             <h6>深色</h6>
             <u-button deep>Default</u-button>
             <u-button deep type="success">Success</u-button>
-            <u-button deep type="danger">danger</u-button>
+            <u-button :deep="inputSize" type="danger">danger</u-button>
             <u-button deep type="warning">warning</u-button>
             <u-button deep type="info">info</u-button>
             <h6>虚线</h6>
@@ -168,7 +168,7 @@ const handleClose = () => {
             <h3>输入框</h3>
             <section style="width: 30%; margin: 0 auto">
                 <u-input placeholder="小" size="small">小</u-input>
-                <u-input placeholder="小" :disabled="inputSize">小</u-input>
+                <u-input placeholder="小">小</u-input>
                 <u-input placeholder="中"></u-input>
                 <h6>响应式：{{ value }}</h6>
                 <u-input placeholder="大" size="large" v-model:value="value"

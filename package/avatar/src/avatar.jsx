@@ -43,17 +43,22 @@ const avatar = defineComponent({
                 (elHeight / textHeight) * radix,
                 1
             )
-            //because of left:50%,top:50%
+            //because of CSS:left:50%,top:50%, to keep center
             textElement.style.transform = `translateX(-50%) translateY(-50%) scale(${ratio})`
         }
 
-        const size = 'u-avatar-size__' + props.size
-        const round = props.round ? 'u-avatar-round' : ''
-        return {
+        const avatarSize = computed(() => {
+            return 'u-avatar-size__' + props.size
+        })
+        const round = computed(() => {
+            return props.round ? 'u-avatar-round' : ''
+        })
+        return {  //will be uppack automatically
             textRef,
             selfRef,
             setScaleParam,
-            avatarClass: ['u-avatar', size, round]
+            avatarSize,
+            round
         }
     },
     render() {
@@ -61,15 +66,16 @@ const avatar = defineComponent({
             textRef,
             selfRef,
             setScaleParam,
-            avatarClass,
+            avatarSize,
+            round,
 
             src,
             size,
             $slots
         } = this
-        // console.log($slots.default()[0],'slots')
+        
         return (
-            <div ref="selfRef" class={avatarClass}>
+            <div ref="selfRef" class={['u-avatar',avatarSize,round]}>
                 {!$slots.default && src ? (
                     <img class={'u-avatar-size__' + size} src={src}></img>
                 ) : (
