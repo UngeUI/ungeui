@@ -11,6 +11,6 @@ import Divider from './divider/index'
 import Button from './button/index'
 import Icon from './icon/index'
 import Input from './input/index'
-let components = [Tag, Avatar, Divider, Button,Icon,Input]
+let components = [Tag, Avatar, Divider, Button, Icon, Input]
 
 export default components

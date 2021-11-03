@@ -8,24 +8,36 @@
 	transition all .2s
 	&-size
 		&-small
-			height 28px
+			min-height 28px
 			padding 0 10px
 			font-size 14px
 		&-medium
-			height 34px
+			min-height 34px
 			padding 0 12px
 			font-size 14px
 		&-large
-			height 40px
+			min-height 40px
 			padding 0 14px
 			font-size 15px
 	&-wrapper
 		width 100%
 		display inline-flex
 		align-items center
+	&-disabled
+		opacity 0.5
+		cursor not-allowed
 	&-input
 		height  100%
 		width 100%
+	&-textarea
+		height 100%
+		width 100%
+	&__textarea-el
+		border none
+		outline none
+		resize none
+		width 100%
+		padding 10px
 	&-prefix
 		margin-right 4px
 	&__input-el

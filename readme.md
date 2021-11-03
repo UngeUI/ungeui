@@ -40,32 +40,33 @@ git commit -m ':arrow_down: demote: <words>'
 # 其他修改
 git commit -m ':speech_balloon: other: <words>'
 ```
+
 ## 预览
 
-* git commit -m ':art: better: <words>'
+-   git commit -m ':art: better: <words>'
 
-* git commit -m ':zap: fast: <words>'
+-   git commit -m ':zap: fast: <words>'
 
-* git commit -m ':bug: fix: <words>'
+-   git commit -m ':bug: fix: <words>'
 
-* git commit -m ':sparkles: feat: <words>'
+-   git commit -m ':sparkles: feat: <words>'
 
-* git commit -m ':pencil: docs: <words>'
+-   git commit -m ':pencil: docs: <words>'
 
-* git commit -m ':pencil2: amend: <words>'
+-   git commit -m ':pencil2: amend: <words>'
 
-* git commit -m ':lipstick: style: <words>'
+-   git commit -m ':lipstick: style: <words>'
 
-* git commit -m ':wrench: update: <words>'
+-   git commit -m ':wrench: update: <words>'
 
-* git commit -m ':recycle: refactor: <words>'
+-   git commit -m ':recycle: refactor: <words>'
 
-* git commit -m ':heavy_plus_sign: add: <words>'
+-   git commit -m ':heavy_plus_sign: add: <words>'
 
-* git commit -m ':heavy_minus_sign: remove <words>'
+-   git commit -m ':heavy_minus_sign: remove <words>'
 
-* git commit -m ':arrow_up: upgrade: <words>'
+-   git commit -m ':arrow_up: upgrade: <words>'
 
-* git commit -m ':arrow_down: demote: <words>'
+-   git commit -m ':arrow_down: demote: <words>'
 
-* git commit -m ':speech_balloon: other: <words>'
+-   git commit -m ':speech_balloon: other: <words>'

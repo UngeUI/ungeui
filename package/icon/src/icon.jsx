@@ -1,8 +1,8 @@
 import { defineComponent } from 'vue'
 
 const icon = defineComponent({
-    name:'Icon',
-    props:{
+    name: 'Icon',
+    props: {
         type: String,
         size: Number
     },
@@ -15,8 +15,8 @@ const icon = defineComponent({
         }
     },
     render() {
-        const { iconType,iconStyle } = this
-        return <span class={['iconfont',iconType]} style={iconStyle}></span>
+        const { iconType, iconStyle } = this
+        return <span class={['iconfont', iconType]} style={iconStyle}></span>
     }
 })
 

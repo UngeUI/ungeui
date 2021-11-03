@@ -12,11 +12,11 @@ const path = require('path')
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), vueJsx()],
-  root: path.resolve(__dirname, 'example'),
-  build: {
-    rollupOptions: {
-      input: './src/main.js'
+    plugins: [vue(), vueJsx()],
+    root: path.resolve(__dirname, 'example'),
+    build: {
+        rollupOptions: {
+            input: './src/main.js'
+        }
     }
-  }
 })

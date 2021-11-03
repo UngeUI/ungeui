@@ -4,7 +4,7 @@ import { componentPrefix } from '../main.js'
 Tag.name = 'Tag'
 
 Tag.install = (app) => {
-  app.component(componentPrefix + Tag.name, Tag)
+    app.component(componentPrefix + Tag.name, Tag)
 }
 
 export default Tag
