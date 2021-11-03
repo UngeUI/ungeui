@@ -192,7 +192,7 @@ const handleClose = () => {
                 <h6>自定义rows/cols</h6>
                 <u-input type="textarea" :rows="8"></u-input>
                 <h6>禁用</h6>
-                <u-input type="textarea" disabled></u-input>
+                <u-input type="textarea" value="被禁用啦！" disabled></u-input>
                 <u-input type="text" value="被禁用啦！" disabled></u-input>
             </section>
         </section>
