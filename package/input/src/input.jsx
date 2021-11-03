@@ -97,6 +97,7 @@ const input = defineComponent({
                             cols={props.cols}
                             onInput={onInput}
                             value={inputValue.value}
+                            disabled={props.disabled}
                         ></textarea>
                     </div>
                 ) : null}

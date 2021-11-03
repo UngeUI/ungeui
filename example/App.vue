@@ -3,7 +3,7 @@
  * @Author: peterroe
  * @Date: 2021-10-29 11:56:02
  * @LastEditors: peterroe
- * @LastEditTime: 2021-11-03 21:57:22
+ * @LastEditTime: 2021-11-03 22:13:35
 -->
 <script setup>
 import { ref } from 'vue'
@@ -109,7 +109,7 @@ const handleClose = () => {
             <h6>深色</h6>
             <u-button deep>Default</u-button>
             <u-button deep type="success">Success</u-button>
-            <u-button :deep="inputSize" type="danger">danger</u-button>
+            <u-button deep type="danger">danger</u-button>
             <u-button deep type="warning">warning</u-button>
             <u-button deep type="info">info</u-button>
             <h6>虚线</h6>
@@ -189,6 +189,11 @@ const handleClose = () => {
                 </u-input>
                 <h6>textaree</h6>
                 <u-input type="textarea"></u-input>
+                <h6>自定义rows/cols</h6>
+                <u-input type="textarea" :rows="8"></u-input>
+                <h6>禁用</h6>
+                <u-input type="textarea" disabled></u-input>
+                <u-input type="text" value="被禁用啦！" disabled></u-input>
             </section>
         </section>
     </div>
