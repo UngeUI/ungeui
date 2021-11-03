@@ -3,12 +3,12 @@
  * @Author: peterroe
  * @Date: 2021-10-29 11:56:02
  * @LastEditors: peterroe
- * @LastEditTime: 2021-11-03 11:26:00
+ * @LastEditTime: 2021-11-03 12:02:03
 -->
 <script setup>
 import { ref } from 'vue'
 let str = ref('hallo')
-
+let value = ref('hello world')
 const handleClose = () => {
   console.log('标签关闭')
 }
@@ -154,10 +154,19 @@ const handleClose = () => {
       <h3>输入框</h3>
       <section style="width:30%;margin:0 auto">
       <u-input placeholder="小" size="small">小</u-input>
-
       <u-input placeholder="中"></u-input>
-
-      <u-input placeholder="大" size="large">大</u-input>
+      <h6>响应式</h6>
+      <u-input placeholder="大" size="large" v-model:value="value">大</u-input>
+      {{value}}
+      <h6>ICO插槽</h6>
+      <u-input placeholder="大" size="large">
+        <template #prefix>
+          <u-icon type="u-cup" ></u-icon>
+        </template>
+        <template #suffix>
+          <u-icon type="u-arrowforward" ></u-icon>
+        </template>
+      </u-input>
       </section>
     </section>
   </div>
