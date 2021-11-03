@@ -3,7 +3,7 @@
  * @Author: peterroe
  * @Date: 2021-10-29 11:56:02
  * @LastEditors: peterroe
- * @LastEditTime: 2021-11-02 22:29:16
+ * @LastEditTime: 2021-11-03 11:19:34
 -->
 <script setup>
 import { ref } from 'vue'
@@ -150,6 +150,16 @@ const handleClose = () => {
       <u-icon type="u-cup" :size="15"></u-icon>
       <u-icon type="u-cup" :size="25"></u-icon>
       <u-icon type="u-cup" :size="35"></u-icon>
+      <hr>
+      <h3>输入框</h3>
+      <section style="width:30%;margin:0 auto">
+        <h6>小</h6>
+      <u-input size="small">小</u-input>
+      <h6>中</h6>
+      <u-input></u-input>
+      <h6>大</h6>
+      <u-input size="large">大</u-input>
+      </section>
     </section>
   </div>
 </template>
