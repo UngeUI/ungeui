@@ -91,7 +91,7 @@ import { UButton } from 'ungeui';
 ## Props
 
 | 参数  | 说明 |   类型 |         值 |
-| :-----: | ---: | -----: | :---------: |
+| :-----: | :---: | :-----: | :---------: |
 | type  | 按钮主题 | `'success' | 'danger' | 'warning' | 'info' | 'default'` | `'default'` |
 | deep | 深色按钮 | `boolean` |  `false` |
 | dashed | 虚线按钮 | `boolean` |  `false` |
