@@ -72,3 +72,4 @@ import { UTag } from 'ungeui';
 | round  | 胶囊圆角 | `boolean` | `false`
 | closable  | 可关闭   | `boolean` | `false`
 | disabled | 禁用   | `boolean` | `false`
+| on-Close | 点击关闭时的回调   | `(e:MouseEvent) => void` | `undefined`
