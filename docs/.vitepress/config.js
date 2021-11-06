@@ -35,6 +35,7 @@ module.exports = {
                     children: [
                         { text: 'Tag', link: '/components/tag/' },
                         { text: 'Avatar', link: '/components/avatar/' },
+                        { text: 'Divider', link: '/components/divider/' },
                         { text: 'Button', link: '/components/button/' },
                     ]
                 }, ],
