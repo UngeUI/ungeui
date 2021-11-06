@@ -49,7 +49,7 @@ import { UDivider } from 'ungeui';
 
 | 参数  | 说明 | 类型 | 默认值 |
 | :-----: | :---: | :-----: | :---------: |
-| type  | 分割线线类型   | `'solid' | 'dashed' | 'dotted' |  `'solid'` |
+| type  | 分割线线类型   | `'solid' | 'dashed' | 'dotted'` |  `'solid'` |
 | height | 自定义高度   | `number` | `1`
 | bold  | 加粗 | `boolean` | `false`
-| color | 自定义颜色   | `string` | `#cccccc`
+| color | 自定义颜色   | `string` | `'#cccccc'`
