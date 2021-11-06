@@ -21,7 +21,7 @@ map:
 ## API
 
 ```ts
-import { Button } from 'ungeui';
+import { UButton } from 'ungeui';
 ```
 
 ## Props
