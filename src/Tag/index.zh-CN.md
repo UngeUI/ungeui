@@ -1,3 +1,10 @@
+<!--
+ * @Descripttion: 
+ * @Author: peterroe
+ * @Date: 2021-11-04 23:25:49
+ * @LastEditors: peterroe
+ * @LastEditTime: 2021-11-06 13:35:42
+-->
 ---
 map:
   # 映射到docs的路径
@@ -29,7 +36,7 @@ map:
 ## API
 
 ```ts
-import { Button } from 'ungeui';
+import { UTag } from 'ungeui';
 ```
 
 ## Props
