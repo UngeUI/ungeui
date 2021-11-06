@@ -1,4 +1,3 @@
 module.exports = {
-    yarn: true,
-    contents: 'dist'
+    yarn: true
 };
