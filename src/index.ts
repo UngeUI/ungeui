@@ -7,10 +7,11 @@
  */
 import '../styles/index.styl'
 
-import UButton from './button/button.jsx';
 import UTag from './Tag/index'
+import UAvatar from './avatar/index'
+import UButton from './button/button.jsx';
 
-const components = [UTag]
+const components = [UTag,UButton,UAvatar]
 
 const install = (app) => {
     components.forEach((component) => {
@@ -22,5 +23,6 @@ const install = (app) => {
 export { 
     install,
     UButton,
-    UTag 
+    UTag,
+    UAvatar
 };

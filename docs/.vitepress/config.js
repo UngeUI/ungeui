@@ -34,6 +34,7 @@ module.exports = {
                     text: '介绍',
                     children: [
                         { text: 'Tag', link: '/components/tag/' },
+                        { text: 'Avatar', link: '/components/avatar/' },
                         { text: 'Button', link: '/components/button/' },
                     ]
                 }, ],

@@ -6,7 +6,7 @@ map:
 
 # Avatar
 
-头像
+头像可以是人或者物品的网上标识
 
 ```js
 import { UAvatar } from 'ungeui';
@@ -14,61 +14,41 @@ import { UAvatar } from 'ungeui';
 
 ## 代码演示
 
-### 不同主题
-
-<demo src="./demo/theme.vue"
-  language="vue"
-  title="基本用法"
-  desc="不同的type决定不同的主题类型">
-</demo>
-
 ### 不同大小
 
 <demo src="./demo/size.vue"
   language="vue"
   title="基本用法"
-  desc="添加不同的size值">
+  desc="size控制头像的大小，默认背景为灰色">
 </demo>
 
-### 可关闭
+### 字号自适应功能
 
-<demo src="./demo/close.vue"
+<demo src="./demo/fit.vue"
   language="vue"
   title="基本用法"
-  desc="closable属性控制是否显示关闭">
+  desc="保证文字不溢出头像框">
 </demo>
 
-### 胶囊标签
+### 图片
 
+<demo src="./demo/img.vue"
+  language="vue"
+  title="基本用法"
+  desc="可以插入图片，支持网络资源与本地资源">
+</demo>
+
+### 圆形
 <demo src="./demo/round.vue"
   language="vue"
   title="基本用法"
-  desc="胶囊圆角">
-</demo>
-
-### 禁用
-
-<demo src="./demo/disabled.vue"
-  language="vue"
-  title="基本用法"
-  desc="禁用后无法触发事件">
-</demo>
-
-### 自定义标签颜色
-
-<demo src="./demo/color.vue"
-  language="vue"
-  title="基本用法"
-  desc="自定义颜色支持十六进制和RGBA">
+  desc="圆形头像">
 </demo>
 
 ## Props
 
 | 参数  | 说明 | 类型 | 默认值 |
 | :-----: | :---: | :-----: | :---------: |
-| type  | 标签主题 | `'default' | 'success' | 'warning' | 'info' | 'danger'` |  `'default'` |
-| size  | 标签大小   | `'small' | 'medium' | 'large' | 'huge'` | `'medium'` |
-| color | 标签背景颜色   | `string` | `undefined`
-| round  | 胶囊圆角 | `boolean` | `false`
-| closable  | 可关闭   | `boolean` | `false`
-| disabled | 禁用   | `boolean` | `false`
+| size  | 图片大小   | `'small' | 'medium' | 'large' | 'huge'` | `'medium'` |
+| src | 图片链接   | `string` | `undefined`
+| round  | 圆角 | `boolean` | `false`

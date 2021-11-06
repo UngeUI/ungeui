@@ -1,5 +1,5 @@
 import { computed, defineComponent, ref } from 'vue'
-import ResizeObserver from '../../util/resizeObserver.jsx'
+import ResizeObserver from '../util/resizeObserver.jsx'
 
 const avatarProps = {
     size: {

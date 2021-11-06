@@ -1,4 +1,4 @@
-import Avatar from './src/avatar.jsx'
+import Avatar from './avatar.jsx'
 
 Avatar.name = 'UAvatar'
 
