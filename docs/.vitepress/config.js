@@ -38,6 +38,7 @@ module.exports = {
                         { text: 'Divider', link: '/components/divider/' },
                         { text: 'Icon', link: '/components/icon/' },
                         { text: 'Button', link: '/components/button/' },
+                        { text: 'Input', link: '/components/input/' },
                     ]
                 }, ],
             },

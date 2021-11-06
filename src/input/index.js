@@ -1,9 +1,8 @@
-import Avatar from './avatar.jsx'
+import Input from './input.jsx'
+Input.name = 'UInput'
 
-Avatar.name = 'UAvatar'
-
-Avatar.install = (app) => {
-    app.component(Avatar.name, Avatar)
+Input.install = (app) => {
+    app.component(Input.name, Input)
 }
 
-export default Avatar
+export default Input

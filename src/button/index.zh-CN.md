@@ -6,7 +6,11 @@ map:
 
 # Button
 
-这是一个简单的按钮。
+这是一个简单的按钮
+
+```js
+import { UButton } from 'ungeui';
+```
 
 ## 代码演示
 
@@ -55,7 +59,7 @@ map:
 <demo src="./demo/disabled.vue"
   language="vue"
   title="基本用法"
-  desc="深色具有更强烈的视觉冲击">
+  desc="禁用按钮">
 </demo>
 
 ### 图标按钮
@@ -81,12 +85,6 @@ map:
   title="基本用法"
   desc="文字加图片意思明朗">
 </demo>
-
-## API
-
-```ts
-import { UButton } from 'ungeui';
-```
 
 ## Props
 

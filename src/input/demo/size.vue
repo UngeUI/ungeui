@@ -1,15 +1,11 @@
 <template>
   <div>
-    <u-avatar size="small">小</u-avatar>
-    <u-avatar size="medium">中</u-avatar>
-    <u-avatar size="large">大</u-avatar>
-    <u-avatar size="huge">巨大</u-avatar>
-    <u-avatar size="large">大</u-avatar>
-    <u-avatar size="medium">中</u-avatar>
-    <u-avatar size="small">小</u-avatar>
+    <u-input placeholder="小" size="small">小</u-input>
+    <u-input placeholder="小">小</u-input>
+    <u-input placeholder="中"></u-input>
   </div>
 </template>
 
 <script setup>
-import { UAvatar } from 'ungeui'
+import { UInput } from 'ungeui';
 </script>
