@@ -13,7 +13,6 @@
     "types": "dist/src/index.d.ts",
     "author": "peterroe",
     "license": "MIT",
-    "homepage": "https://peterroe.github.io/ungeui",
     "scripts": {
         "dev": "vitepress-fc dev --root=docs --host",
         "build": "vite build && yarn type",
