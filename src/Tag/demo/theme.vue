@@ -8,12 +8,6 @@
   </div>
 </template>
 
-<script lang="ts">
-import { UTag } from 'ungeui';
-
-export default {
-  components: {
-    UTag,
-  }
-};
+<script setup>
+import { UTag } from 'ungeui'
 </script>

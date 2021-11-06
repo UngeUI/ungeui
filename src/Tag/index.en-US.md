@@ -1,6 +1,6 @@
 ---
 map:
-  path: /components/utag
+  path: /components/tag
 ---
 
 # Button
@@ -20,7 +20,7 @@ This is a button.
 ## API
 
 ```ts
-import { Button } from 'ungeui';
+import { UTag } from 'ungeui';
 ```
 
 ## Props
