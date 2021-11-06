@@ -1,9 +1,9 @@
-import Avatar from './avatar.jsx'
+import Icon from './icon.jsx'
 
-Avatar.name = 'UAvatar'
+Icon.name = 'UIcon'
 
-Avatar.install = (app) => {
-    app.component(Avatar.name, Avatar)
+Icon.install = (app) => {
+    app.component(Icon.name, Icon)
 }
 
-export default Avatar
+export default Icon

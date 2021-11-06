@@ -4,8 +4,9 @@ import UTag from './Tag/index'
 import UAvatar from './avatar/index'
 import UButton from './button/button.jsx';
 import UDivider from './divider/divider.jsx'
+import UIcon from './icon/icon.jsx'
 
-const components = [UTag,UButton,UAvatar,UDivider]
+const components = [UTag,UButton,UAvatar,UDivider,UIcon]
 
 const install = (app) => {
     components.forEach((component) => {
@@ -19,5 +20,6 @@ export {
     UButton,
     UTag,
     UAvatar,
-    UDivider
+    UDivider,
+    UIcon
 };

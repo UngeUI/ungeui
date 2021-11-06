@@ -1,13 +1,13 @@
 @font-face {
-    font-family: 'iconfont'; /* Project id 2902583 */
-    src: url('iconfont.woff2?t=1635505154441') format('woff2'),
-        url('iconfont.woff?t=1635505154441') format('woff'),
-        url('iconfont.ttf?t=1635505154441') format('truetype');
+    font-family: 'iconfont';
+    /* Project id 2902583 */
+    src: url('iconfont.woff2?t=1635505154441') format('woff2'), url('iconfont.woff?t=1635505154441') format('woff'), url('iconfont.ttf?t=1635505154441') format('truetype');
 }
 
 .iconfont {
     font-family: 'iconfont' !important;
     font-style: normal;
+    line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -27,6 +27,7 @@
 .u-arrowup:before {
     content: '\e695';
 }
+
 .u-check2:before {
     content: '\e6c6';
 }

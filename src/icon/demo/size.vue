@@ -1,15 +1,11 @@
 <template>
   <div>
-    <u-avatar size="small">小</u-avatar>
-    <u-avatar size="medium">中</u-avatar>
-    <u-avatar size="large">大</u-avatar>
-    <u-avatar size="huge">巨大</u-avatar>
-    <u-avatar size="large">大</u-avatar>
-    <u-avatar size="medium">中</u-avatar>
-    <u-avatar size="small">小</u-avatar>
+    <u-icon type="u-cup" :size="15"></u-icon>
+    <u-icon type="u-cup" :size="25"></u-icon>
+    <u-icon type="u-cup" :size="35"></u-icon>
   </div>
 </template>
 
 <script setup>
-import { UAvatar } from 'ungeui'
+import { UIcon } from 'ungeui'
 </script>

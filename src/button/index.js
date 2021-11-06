@@ -1,9 +1,8 @@
 import Button from './src/button.jsx'
-import { componentPrefix } from '../main.js'
-Button.name = 'Button'
+Button.name = 'UButton'
 
 Button.install = (app) => {
-    app.component(componentPrefix + Button.name, Button)
+    app.component(Button.name, Button)
 }
 
 export default Button

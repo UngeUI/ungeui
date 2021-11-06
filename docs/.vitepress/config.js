@@ -36,6 +36,7 @@ module.exports = {
                         { text: 'Tag', link: '/components/tag/' },
                         { text: 'Avatar', link: '/components/avatar/' },
                         { text: 'Divider', link: '/components/divider/' },
+                        { text: 'Icon', link: '/components/icon/' },
                         { text: 'Button', link: '/components/button/' },
                     ]
                 }, ],

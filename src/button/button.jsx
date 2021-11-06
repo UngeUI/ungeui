@@ -1,5 +1,6 @@
 import { defineComponent, ref, onMounted, nextTick,computed } from 'vue'
-import buttonProps from './src/validator.js'
+import UIcon from '../icon/icon.jsx'
+import buttonProps from './validator.js'
 
 const button = defineComponent({
     name: 'Button',
@@ -66,9 +67,9 @@ const button = defineComponent({
                 ]}
                 onClick={onClick}
             >
-                {/* {prefix && <UIcon type={prefix} style=""></UIcon>} */}
+                {prefix && <UIcon type={prefix} style=""></UIcon>}
                   {$slots.default?.()}
-                {/* {suffix && <UIcon type={suffix} style=""></UIcon>} */}
+                {suffix && <UIcon type={suffix} style=""></UIcon>}
             </div>
         )
     }
