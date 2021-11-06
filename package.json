@@ -21,7 +21,7 @@
         "docs-build": "rimraf docs/dist && cross-env NODE_ENV=production vitepress-fc build --root=docs",
         "docs-serve": "cross-env NODE_ENV=production vitepress-fc serve --root=docs",
         "docs-build-serve": "cross-env NODE_ENV=true yarn docs-build && yarn docs-serve",
-        "docs-deploy": "gh-pages -d docs/dist -t true -b master",
+        "docs-deploy": "gh-pages -d docs/dist -t true",
         "docs-build-deploy": "yarn docs-build && yarn docs-deploy",
         "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
         "lint": "eslint  src/**/*.{vue,js,ts,tsx}",
