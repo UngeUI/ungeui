@@ -8,7 +8,8 @@
         ".": {
             "import": "./dist/ungeui.es.js",
             "require": "./dist/ungeui.umd.js"
-        }
+        },
+        "./dist/style.css": "./dist/style.css"
     },
     "types": "dist/src/index.d.ts",
     "author": "peterroe",

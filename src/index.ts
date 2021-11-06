@@ -15,9 +15,9 @@ const install = (app) => {
     })
 }
 
+export default install
 
-export { 
-    install,
+export {
     UButton,
     UTag,
     UAvatar,
