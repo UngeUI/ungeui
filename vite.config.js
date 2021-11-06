@@ -1,22 +1,35 @@
-/*
- * @Descripttion:
- * @Author: peterroe
- * @Date: 2021-10-28 20:44:26
- * @LastEditors: peterroe
- * @LastEditTime: 2021-10-31 22:05:01
- */
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import vueJsx from '@vitejs/plugin-vue-jsx'
-const path = require('path')
+// yarn build 用到的vite配置
 
-// https://vitejs.dev/config/
-export default defineConfig({
-    plugins: [vue(), vueJsx()],
-    root: path.resolve(__dirname, 'example'),
-    build: {
-        rollupOptions: {
-            input: './src/main.js'
-        }
-    }
-})
+import vue from '@vitejs/plugin-vue';
+import vueJsx from '@vitejs/plugin-vue-jsx';
+import { resolve } from 'path';
+
+/**
+ * @type {import('vite').UserConfig}
+ */
+export default {
+  optimizeDeps: {
+    include: [],
+    exclude: [],
+  },
+  plugins: [vue(), vueJsx()],
+  build: {
+    minify: true,
+    lib: {
+      entry: resolve('./src/index.ts'),
+      name: 'ungeui',
+    },
+    rollupOptions: {
+      // make sure to externalize deps that shouldn't be bundled
+      // into your library
+      external: ['vue'],
+      output: {
+        // Provide global variables to use in the UMD build
+        // for externalized deps
+        globals: {
+          vue: 'Vue',
+        },
+      },
+    },
+  },
+};

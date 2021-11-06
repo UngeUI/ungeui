@@ -1,2 +1,5 @@
-node_modules/
+node_modules
+.temp
+yarn-error.log
 dist/
+yarn.lock
