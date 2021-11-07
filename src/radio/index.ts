@@ -1,10 +1,18 @@
-import Radio from './radio.jsx'
+import URadio from './radio.jsx'
+import URadioGroup from './radioGroup.jsx'
 import { App } from 'vue'
 
-Radio.name = 'URadio'
+URadio.name = 'URadio'
+URadioGroup.name = 'URadioGroup'
 
-Radio.install = (app: App): void => {
-    app.component(Radio.name, Radio)
+URadio.install = (app: App): void => {
+    app.component(URadio.name, URadio)
+}
+URadioGroup.install = (app: App): void => {
+    app.component(URadioGroup.name, URadioGroup)
 }
 
-export default Radio
+export {
+    URadio,
+    URadioGroup
+}

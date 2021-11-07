@@ -6,9 +6,9 @@ import UButton from './button/button.jsx';
 import UDivider from './divider/divider.jsx'
 import UIcon from './icon/icon.jsx'
 import UInput from './input/input.jsx'
-import URadio from './radio/index.ts'
+import { URadio, URadioGroup} from './radio/index.ts'
 
-const components: Array = [UTag,UButton,UAvatar,UDivider,UIcon,UInput,URadio]
+const components: Array = [UTag,UButton,UAvatar,UDivider,UIcon,UInput,URadio,URadioGroup]
 
 
 const install = (app: App): void => {
@@ -26,5 +26,6 @@ export {
     UDivider,
     UIcon,
     UInput,
-    URadio
+    URadio,
+    URadioGroup
 };

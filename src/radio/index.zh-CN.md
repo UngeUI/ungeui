@@ -30,7 +30,13 @@ import { Radio } from 'ungeui'
   desc="单选框失效">
 </demo>
 
+### 单选组
 
+<demo src="./demo/group.vue"
+  language="vue"
+  title="disabled"
+  desc="选项组用起来更方便">
+</demo>
 
 ## Props
 

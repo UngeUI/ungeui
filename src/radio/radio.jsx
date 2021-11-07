@@ -1,4 +1,4 @@
-import { defineComponent } from 'vue'
+import { defineComponent, inject, computed } from 'vue'
 
 const radio = defineComponent({
     name: 'Radio',
@@ -15,11 +15,23 @@ const radio = defineComponent({
     },
     emits:[],
     setup(props,{slots}) {
-
+        const radioGroupContext = inject('radioGroupContext',undefined)
+        let checkState = computed(() => {
+            return props.checked || props.value == radioGroupContext?.props?.value
+        })
         return () => (
-            <div class={['u-radio',{'u-radio-disabled':props.disabled}]}>
-                <input class={['u-radio-input']}></input>
-                <div class={['u-radio-dot',{'u-radio-dot-checked': props.checked}]}></div>
+            <div 
+                class={[
+                    'u-radio',
+                    {'u-radio-disabled':props.disabled}
+                ]}
+                onClick={() => radioGroupContext?.onRadioChange(props?.value)}
+            >
+                <input class={['u-radio-input']} value={props.value}></input>
+                <div class={[
+                    'u-radio-dot',
+                    {'u-radio-dot-checked': checkState.value}
+                ]}></div>
                 <div class={['u-radio-label']}>
                     {
                         slots.default?.()
