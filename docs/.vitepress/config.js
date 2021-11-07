@@ -9,7 +9,7 @@ const base = process.env.NODE_ENV === 'production' ? '/ungeui' : '';
 const { resolve } = require('path');
 
 module.exports = {
-    title: 'ungeui',
+    title: 'vitepress',
     description: 'docs',
     // 扫描srcIncludes里面的 *.md文件
     srcIncludes: ['src'],
