@@ -39,6 +39,7 @@ module.exports = {
                         { text: 'Icon', link: '/components/icon/' },
                         { text: 'Button', link: '/components/button/' },
                         { text: 'Input', link: '/components/input/' },
+                        { text: 'Radio', link: '/components/radio/' },
                     ]
                 }, ],
             },

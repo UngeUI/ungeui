@@ -1,0 +1,53 @@
+@import './global.styl'
+@import './var.styl'
+
+.u-radio
+	display inline-flex
+	align-items center
+	// cursor pointer
+	&-input
+		width 0
+		height 0
+		border 0
+		opacity 0
+		margin 0
+	&-disabled
+		cursor not-allowed
+		user-select none
+		& ^[0]-dot
+			border-color #ddd
+			background-color rgb(245,245,245)
+			&:hover
+				border-color $gray
+			&::before
+				background-color #bbb
+		& ^[0]-label
+			color $text-disabled
+	&-dot
+		width 16px
+		height 16px
+		border 1px solid #ddd
+		display inline-flex
+		transition all .3s
+		border-radius 50%
+		position relative
+		&::before
+			content: ''
+			position absolute
+			width calc(100% - 6px)
+			height calc(100% - 6px)
+			top 3px
+			left 3px
+			border-radius 50%
+			background-color $main-color
+			transition all .3s
+			opacity 0
+		&:hover
+			border-color $main-color
+		&-checked
+			border-color $main-color
+			&::before
+				opacity 1
+	&-label
+		display inline-flex
+		padding 0 8px
