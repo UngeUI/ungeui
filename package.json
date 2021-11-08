@@ -1,6 +1,6 @@
 {
     "name": "ungeui",
-    "version": "0.0.1",
+    "version": "0.0.7",
     "description": "A Vue 3 Component Library.",
     "main": "./dist/ungeui.umd.js",
     "module": "./dist/ungeui.es.js",
@@ -51,7 +51,7 @@
         "gh-pages": "^3.1.0",
         "husky": "^4.3.0",
         "jest": "^26.6.3",
-        "np": "^7.4.0",
+        "np": "^7.5.0",
         "prettier": "^2.1.2",
         "pretty-quick": "^3.1.0",
         "rimraf": "^3.0.2",
