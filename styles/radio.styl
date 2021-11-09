@@ -54,18 +54,35 @@
 	
 	&-button
 		display inline-flex
-		border 1px solid $gray
+		border 1px solid #ccc
 		border-width 1px 0 1px 1px
 		padding 6px 20px
-		transition all .2s
+		transition-duration .5s
+		transition-property color,border-color 
+		position relative
 		&:first-child
 			border-radius 4px 0 0 4px
 		&:last-child
 			border-right-width: 1px
 			border-radius 0 4px 4px 0
-		&:hover
+		&:hover:not(&-disabled)
 			cursor pointer
 			color $main-color
 			border-color $main-color
 			& +  ^[1]
 				border-left-color: $main-color
+		&-checked:not(&-disabled)
+			position static
+			border-color $main-color
+			box-shadow 0 0 0.5px 3px $main-color-easy
+			color $main-color
+			background-color #fff
+			// color #fff
+			& +  ^[1]
+				border-left-color: $main-color
+		&-disabled
+			color #777
+			background-color: #eee
+			cursor not-allowed !important
+		&-disabled&-checked
+			background-color: #ccc

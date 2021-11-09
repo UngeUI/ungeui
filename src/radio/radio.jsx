@@ -25,7 +25,12 @@ const radio = defineComponent({
                     'u-radio',
                     {'u-radio-disabled':props.disabled}
                 ]}
-                onClick={() => radioGroupContext?.onRadioChange(props?.value)}
+                onClick={() => {
+                    if(props.disabled){
+                        return
+                    } 
+                    radioGroupContext.onRadioChange(props?.value)
+                }}
             >
                 <input class={['u-radio-input']} value={props.value}></input>
                 <div class={[
