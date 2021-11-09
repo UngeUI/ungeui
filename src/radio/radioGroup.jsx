@@ -13,7 +13,7 @@ const radioGroup = defineComponent({
             props
         }))
         return () => (
-            <div>
+            <div class="u-radio-group">
                 {
                     slots.default?.()
                 }
