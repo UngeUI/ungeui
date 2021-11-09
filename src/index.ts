@@ -1,14 +1,14 @@
 import { App } from 'vue'
-import s from '../styles/index.styl'
+import '../styles/index.styl'
 import UTag from './Tag/index'
 import UAvatar from './avatar/index'
 import UButton from './button/button.jsx';
 import UDivider from './divider/divider.jsx'
 import UIcon from './icon/icon.jsx'
 import UInput from './input/input.jsx'
-import { URadio, URadioGroup} from './radio/index.js'
+import { URadio, URadioGroup, URadioButton} from './radio/index.js'
 
-const components = [UTag,UButton,UAvatar,UDivider,UIcon,UInput,URadio,URadioGroup]
+const components = [UTag,UButton,UAvatar,UDivider,UIcon,UInput,URadio,URadioGroup,URadioButton]
 
 
 const install = (app: App): void => {
@@ -27,5 +27,6 @@ export {
     UIcon,
     UInput,
     URadio,
-    URadioGroup
+    URadioGroup,
+    URadioButton
 };

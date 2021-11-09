@@ -51,3 +51,21 @@
 	&-label
 		display inline-flex
 		padding 0 8px
+	
+	&-button
+		display inline-flex
+		border 1px solid $gray
+		border-width 1px 0 1px 1px
+		padding 6px 20px
+		transition all .2s
+		&:first-child
+			border-radius 4px 0 0 4px
+		&:last-child
+			border-right-width: 1px
+			border-radius 0 4px 4px 0
+		&:hover
+			cursor pointer
+			color $main-color
+			border-color $main-color
+			& +  ^[1]
+				border-left-color: $main-color

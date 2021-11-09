@@ -38,6 +38,14 @@ import { Radio } from 'ungeui'
   desc="选项组用起来更方便">
 </demo>
 
+### 单选按钮
+
+<demo src="./demo/button.vue"
+  language="vue"
+  title="radioButton"
+  desc="有的时候用按钮显得更优雅一点">
+</demo>
+
 ## Props
 
 | 参数  | 说明 | 类型 | 默认值 |
