@@ -1,11 +1,18 @@
 <template>
   <div>
-    <u-icon type="u-cup" :size="15"></u-icon>
-    <u-icon type="u-cup" :size="25"></u-icon>
-    <u-icon type="u-cup" :size="35"></u-icon>
+    <u-icon :size="15">
+      <IconChevronLeft />
+    </u-icon>
+    <u-icon size="2em">
+      <IconChevronLeft/>
+    </u-icon>
+    <u-icon :size="45">
+      <IconChevronLeft/>
+    </u-icon>
   </div>
 </template>
 
 <script setup>
 import { UIcon } from 'ungeui'
+import { IconChevronLeft } from 'ungeicons'
 </script>

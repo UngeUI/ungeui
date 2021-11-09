@@ -3,22 +3,29 @@ import { defineComponent, computed } from 'vue'
 const icon = defineComponent({
     name: 'Icon',
     props: {
-        type: String,
-        size: Number
-    },
-    setup(props) {
-        return {
-            iconType: computed(() => props.type),
-            iconSize: computed(() => props.size + 'px')
+        color: String,
+        size: {
+            type: [Number,String],
+            default: 30
         }
     },
-    render() {
-        const { iconType, iconSize } = this
-        return <span 
-            class={['iconfont', iconType]} 
-            style={{'font-size': iconSize}}
-        ></span>
-    }
+    setup(props,{slots}) {
+        let style = computed(() => {
+            return {
+                "color": props.color,
+                "font-size": typeof props.size == 'string' ?
+                        props.size :
+                        props.size + 'px'
+            }
+        })
+        return () => (
+            <i style={style.value}>
+                {
+                    slots.default?.()
+                }
+            </i>
+        )
+    },
 })
 
 export default icon

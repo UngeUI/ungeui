@@ -14,14 +14,6 @@ import { UIcon } from 'ungeui';
 
 ## 代码演示
 
-### 图标类型
-
-<demo src="./demo/type.vue"
-  language="vue"
-  title="基本用法"
-  desc="type控制图标类型">
-</demo>
-
 ### 图标大小
 
 <demo src="./demo/size.vue"
@@ -30,9 +22,25 @@ import { UIcon } from 'ungeui';
   desc="不同图标大小">
 </demo>
 
+### 图标颜色
+
+<demo src="./demo/color.vue"
+  language="vue"
+  title="基本用法"
+  desc="方便切换不同颜色">
+</demo>
+
+### 图标
+
+<demo src="./demo/iconDemo.vue"
+  language="vue"
+  title=""
+  desc="">
+</demo>
 
 ## Props
 
 | 参数  | 说明 | 类型 | 默认值 |
 | :-----: | :---: | :-----: | :---------: |
-| size  | 自定义大小   | `number` | `undefined` |
+| size  | 自定义大小   | `number | string` | `30px` |
+| color  | 自定义颜色   | `string` | `undefind` |
