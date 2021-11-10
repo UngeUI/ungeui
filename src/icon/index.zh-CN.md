@@ -11,6 +11,19 @@ Icon以图形的形式表达含义
 ```js
 import { UIcon } from 'ungeui';
 ```
+:::tip
+关于**图标资源**，我们采取了与组件库分离的形式，[您可以在此处](https://www.xicons.org/#/)选取你想要的图标，并引入你的项目中
+:::
+
+当然，我们预置了一些常用的Icon，并提供您安装
+```shell
+yarn add -D ungeicons
+```
+导入其中一个Icon
+```js
+import { IconClock } from ungeicons
+```
+
 
 ## 代码演示
 

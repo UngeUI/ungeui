@@ -7,12 +7,18 @@
         <div>
             <slot></slot>
         </div>
-        <span :class="isClose" @click="closeTag"></span>
+        <i
+            v-if="closable"
+            class="u-tag-close" 
+            @click="closeTag">
+            <IconClose />
+        </i>
     </div>
 </template>
 
 <script setup>
 import { ref, useSlots, useAttrs, computed } from 'vue'
+import IconClose from './util/UClose.vue'
 const slots = useSlots()
 const attrs = useAttrs()
 
@@ -60,7 +66,7 @@ const props = defineProps({
 })
 const emit = defineEmits(['close'])
 
-const isClose = computed(() => props.closable && 'u-tag-close u-close iconfont')
+// const isClose = computed(() => props.closable ? 'u-tag-close')
 let visibility = ref(true)
 const closeTag = (event) => {
     visibility.value = false
