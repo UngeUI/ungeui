@@ -12,11 +12,9 @@
         size="large"
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWOL2vIwVjlgBA36lsvmnVG_orxlLKDbVUOQ&usqp=CAU"
     ></u-avatar>
-    <IconTelephone/>
   </div>
 </template>
 
 <script setup>
 import { UAvatar } from 'ungeui'
-import {IconTelephone} from 'ungeicons'
 </script>

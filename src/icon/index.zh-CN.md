@@ -17,11 +17,11 @@ import { UIcon } from 'ungeui';
 
 当然，我们预置了一些常用的Icon，并提供您安装
 ```shell
-yarn add -D ungeicons
+yarn add -D @ungeui/icons
 ```
-导入其中一个Icon
+导入Icon示例：
 ```js
-import { IconClock } from ungeicons
+import { IconClock } from @ungeui/icons
 ```
 
 
