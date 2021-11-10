@@ -36,6 +36,7 @@
         "@types/jest": "^26.0.15",
         "@typescript-eslint/eslint-plugin": "^4.8.1",
         "@typescript-eslint/parser": "^4.8.1",
+        "@ungeui/icons": "^1.1.0",
         "@vitejs/plugin-vue": "^1.1.4",
         "@vitejs/plugin-vue-jsx": "^1.1.7",
         "@vue/eslint-config-prettier": "^6.0.0",

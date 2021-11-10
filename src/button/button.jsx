@@ -67,9 +67,18 @@ const button = defineComponent({
                 ]}
                 onClick={onClick}
             >
-                {prefix && <UIcon type={prefix} style=""></UIcon>}
-                  {$slots.default?.()}
-                {suffix && <UIcon type={suffix} style=""></UIcon>}
+                {/* {prefix && <UIcon type={prefix} style=""></UIcon>} */}
+                {$slots.prefix?.()}
+                {$slots.default && (
+                    <span class={[{'u-button-prefix':$slots.prefix},{'u-button-suffix':$slots.suffix}]}>
+                        {
+                            $slots.default?.()
+                        }
+                    </span>
+                )}
+                {$slots.suffix?.()}
+                {/* {$slots.suffix && <span class="u-button-suffix">{$slots.suffix?.()}</span>} */}
+                {/* {suffix && <UIcon type={suffix} style=""></UIcon>} */}
             </div>
         )
     }

@@ -6,12 +6,13 @@ const icon = defineComponent({
         color: String,
         size: {
             type: [Number,String],
-            default: 30
+            // default: 18
         }
     },
     setup(props,{slots}) {
         let style = computed(() => {
             return {
+                "line-height": 1,
                 "color": props.color,
                 "font-size": typeof props.size == 'string' ?
                         props.size :

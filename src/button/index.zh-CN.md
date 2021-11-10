@@ -83,7 +83,7 @@ import { UButton } from 'ungeui';
 <demo src="./demo/fix.vue"
   language="vue"
   title="基本用法"
-  desc="文字加图片意思明朗">
+  desc="文字加图标意思明朗">
 </demo>
 
 ## Props
@@ -96,7 +96,12 @@ import { UButton } from 'ungeui';
 | size | 按钮大小 | `'small' | 'medium' | 'large' | 'huge'` |  `meduim` |
 | text | 文本按钮 | `boolean` |  `false` |
 | disabled | 禁用按钮 | `boolean` |  `false` |
-| icon | 图标类型 | `string` |  `undefined` |
-| prefix | 前缀图标 |  `string` |  `undefined` |
 | round | 圆形图标 |  `boolean` |  `false` |
+
+
+## slots
+
+| 参数  | 说明 |   类型 |         值 |
+| :-----: | :---: | :-----: | :---------: |
+| prefix | 前缀图标 |  `string` |  `undefined` |
 | suffix | 后缀图标 |  `string` |  `undefined` |

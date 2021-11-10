@@ -1,10 +1,25 @@
 <template>
   <div>
-    <u-button round prefix="u-check2" size="small" type="info">前缀</u-button>
-    <u-button round suffix="u-check2" size="large" type="success">后缀</u-button>
+    <u-button round type="info">
+      <template #prefix>
+        <u-icon :size="20">
+          <IconZoomIn />
+        </u-icon>
+      </template>
+      前缀
+    </u-button>
+    <u-button round size="large" type="info">
+      后缀
+      <template #suffix>
+        <u-icon :size="20">
+          <IconZoomIn />
+        </u-icon>
+      </template>
+    </u-button>
   </div>
 </template>
 
 <script setup>
-import { UButton } from 'ungeui';
+import { UButton, UIcon } from 'ungeui';
+import { IconZoomIn } from '@ungeui/icons'
 </script>

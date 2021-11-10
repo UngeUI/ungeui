@@ -1,11 +1,30 @@
 <template>
   <div>
-    <u-button round icon="u-cup" size="small" type="info"></u-button>
-    <u-button round icon="u-check2" size="large" type="danger"></u-button>
-    <u-button round icon="u-cup" size="large"></u-button>
+    <u-button round size="small" type="info">
+      <template #prefix>
+        <u-icon>
+          <IconSettings />
+        </u-icon>
+      </template>
+    </u-button>
+    <u-button round  type="danger">
+      <template #prefix>
+        <u-icon>
+          <IconSettings />
+        </u-icon>
+      </template>
+    </u-button>
+    <u-button round size="large">
+      <template #prefix>
+        <u-icon>
+          <IconSettings />
+        </u-icon>
+      </template>
+    </u-button>
   </div>
 </template>
 
 <script setup>
-import { UButton } from 'ungeui';
+import { UButton, UIcon } from 'ungeui';
+import { IconSettings } from '@ungeui/icons'
 </script>
