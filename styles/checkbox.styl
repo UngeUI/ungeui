@@ -33,4 +33,17 @@
 	&-group
 		display inline-flex
 		text-align center
-	
+	&-disabled
+		// opacity .5
+		cursor not-allowed
+		user-select none
+		& ^[0]-dot
+			border-color #ddd
+			background-color rgb(245,245,245)
+			color rgb(245,245,245)
+		& ^[0]-dot-checked
+			color #fff
+			box-shadow 0 0 0.5px 2px rgb(240,240,240)
+			background-color rgb(235,235,235)
+		& ^[0]-label
+			color $text-disabled

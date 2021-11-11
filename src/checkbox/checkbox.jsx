@@ -11,7 +11,10 @@ const checkbox = defineComponent({
                 return typeof value == 'boolean';
             },
         },
-        disabled: Boolean,
+        disabled: {
+            type: Boolean,
+            defalut: false
+        },
     },
     emits:['update:checked'],
     setup(props,{slots,emit}) {
