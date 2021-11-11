@@ -15,14 +15,16 @@ const checkbox = defineComponent({
     },
     emits:['update:checked'],
     setup(props,{slots,emit}) {
+        const checkboxGroupContent = inject('checkboxGroupContent',undefined)
+
         const checkState = computed(() => {
-            return props.checked
+            return props.checked || checkboxGroupContent?.props?.value.includes(props.value)
         })
         const onClick = () => {
             emit('update:checked', !props.checked)
+            checkboxGroupContent?.onCheckboxChange(props.value)
         }
-        const checkboxGroupContenxt = inject('checkboxGroupContenxt')
-        console.log(checkboxGroupContenxt,123)
+        console.log(checkboxGroupContent?.props?.value.includes(),123)
         return () => (
             <div
                 class={['u-checkbox', { 'u-checkbox-disabled': props.disabled }]}

@@ -1,16 +1,18 @@
 <template>
     <div>
-        <u-checkbox-group v-model:value="hobby">
-            <u-checkbox value="run">多选框</u-checkbox>
-            <u-checkbox value="sing">多选框</u-checkbox>
-            <u-checkbox value="football">多选框</u-checkbox>
+        <u-checkbox-group v-model:value="hobbies">
+            <u-checkbox value="Vue">VueJs</u-checkbox>
+            <u-checkbox value="React">ReactJs</u-checkbox>
+            <u-checkbox value="Node">NodeJs</u-checkbox>
         </u-checkbox-group>
+        <u-divider></u-divider>
+        <u-tag v-if="hobbies.length">值：{{hobbies.join(' ｜ ')}}</u-tag>
     </div>
 </template>
 
 <script setup>
-import { UCheckbox,UCheckboxGroup } from 'ungeui'
+import { UCheckbox,UCheckboxGroup,UTag,UDivider } from 'ungeui'
 import { ref } from 'vue'
 
-let hobby = ref(['run','football'])
+let hobbies = ref(['Vue','Node'])
 </script>
