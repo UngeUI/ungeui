@@ -12,6 +12,8 @@ const icon = defineComponent({
     setup(props,{slots}) {
         let style = computed(() => {
             return {
+                "display": "inline-flex",
+                "align-items": "center",
                 "line-height": 1,
                 "color": props.color,
                 "font-size": typeof props.size == 'string' ?
