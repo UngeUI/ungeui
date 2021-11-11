@@ -5,7 +5,7 @@ import buttonProps from './validator.js';
 const button = defineComponent({
     name: 'Button',
     props: buttonProps,
-    setup(props) {
+    setup(props,{slots}) {
         let waveState = ref(false);
 
         const timeout = ref(null);
@@ -32,12 +32,11 @@ const button = defineComponent({
             isText: computed(() => props.text && 'u-button-text'),
             isRound: computed(() => props.round && 'u-button-round'),
             iconType: computed(
-                () =>
-                    props.icon &&
-                    `iconfont u-button-icon-${props.size}  ${props.icon}`,
+                () => (slots.prefix || slots.suffix) && !slots.default &&
+                    `u-button-icon-${props.size}`,
             ),
             buttonType: computed(() => 'u-button-' + props.type),
-            buttonSize: computed(() => 'u-button-size-' + props.size),
+            buttonSize: computed(() => 'u-button-size-' + props.size)
         };
     },
     render() {
