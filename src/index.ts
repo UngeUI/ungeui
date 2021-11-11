@@ -7,6 +7,7 @@ import UDivider from './divider/divider.jsx';
 import UIcon from './icon/icon.jsx';
 import UInput from './input/input.jsx';
 import { URadio, URadioGroup, URadioButton } from './radio/index.js';
+import { UCheckbox, UCheckboxGroup } from './checkbox/index';
 
 const components = [
     UTag,
@@ -18,6 +19,8 @@ const components = [
     URadio,
     URadioGroup,
     URadioButton,
+    UCheckbox,
+    UCheckboxGroup
 ];
 
 const install = (app: App): void => {
@@ -38,4 +41,6 @@ export {
     URadio,
     URadioGroup,
     URadioButton,
+    UCheckbox,
+    UCheckboxGroup
 };

@@ -1,0 +1,36 @@
+@import './global.styl'
+@import './var.styl'
+
+.u-checkbox
+	display inline-flex
+	align-items center
+	cursor pointer
+	user-select none
+	&-input
+		width 0
+		height 0
+		border 0
+		opacity 0
+		margin 0
+	&-dot
+		width 16px
+		height 16px
+		border 1px solid rgb(224, 224, 230)
+		display inline-flex
+		transition all .3s
+		border-radius 2px
+		color #fff
+		overflow hidden
+		&:hover
+			border-color $main-color
+		&-checked
+			border-color $main-color
+			background-color $main-color
+			box-shadow 0 0 0.5px 2px #b5f5ec
+	&-label
+		display inline-flex
+		padding 0 8px
+	&-group
+		display inline-flex
+		text-align center
+	
