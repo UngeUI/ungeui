@@ -1,4 +1,4 @@
-import { defineComponent, ref,computed } from 'vue'
+import { defineComponent, ref, computed } from 'vue';
 
 const input = defineComponent({
     name: 'Input',
@@ -7,57 +7,63 @@ const input = defineComponent({
             type: String,
             default: 'medium',
             validator(value) {
-                return ['small', 'medium', 'large'].includes(value)
-            }
+                return ['small', 'medium', 'large'].includes(value);
+            },
         },
         type: {
             type: String,
             default: 'text',
             validator(value) {
-                return ['text', 'password', 'textarea'].includes(value)
-            }
+                return ['text', 'password', 'textarea'].includes(value);
+            },
         },
         disabled: {
             type: Boolean,
             default: false,
             validator(value) {
-                return typeof value == 'boolean'
-            }
+                return typeof value == 'boolean';
+            },
         },
         value: String,
         placeholder: String,
         rows: {
             type: Number,
-            default: 4
+            default: 4,
         },
-        cols: Number
+        cols: Number,
     },
     emits: ['update:value'],
     setup(props, { emit, slots }) {
         const inputSize = computed(() => {
-            return 'u-input-size-' + props.size
-        })
-        
-        let isFocus = ref(false)
+            return 'u-input-size-' + props.size;
+        });
+
+        let isFocus = ref(false);
         const onFocus = () => {
-            isFocus.value = true
-        }
+            isFocus.value = true;
+        };
         const onBlur = () => {
-            isFocus.value = false
-        }
+            isFocus.value = false;
+        };
 
         const inputType = computed(() => {
-            return props.type == 'password' ? 'password' : ''
-        })
+            return props.type == 'password' ? 'password' : '';
+        });
 
-        const inputValue = ref(props.value)
+        const inputValue = ref(props.value);
         const onInput = (e) => {
-            inputValue.value = e.target.value
-            emit('update:value', e.target.value)
-        }
+            inputValue.value = e.target.value;
+            emit('update:value', e.target.value);
+        };
 
         return () => (
-            <div class={['u-input', { 'u-input-focus': isFocus.value },{'u-input-disabled':props.disabled}]}>
+            <div
+                class={[
+                    'u-input',
+                    { 'u-input-focus': isFocus.value },
+                    { 'u-input-disabled': props.disabled },
+                ]}
+            >
                 {props.type != 'textarea' ? (
                     <div class={['u-input-wrapper', inputSize.value]}>
                         {slots.prefix && (
@@ -102,8 +108,8 @@ const input = defineComponent({
                     </div>
                 ) : null}
             </div>
-        )
-    }
-})
+        );
+    },
+});
 
-export default input
+export default input;

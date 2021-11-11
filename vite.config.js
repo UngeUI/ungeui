@@ -8,28 +8,28 @@ import { resolve } from 'path';
  * @type {import('vite').UserConfig}
  */
 export default {
-  optimizeDeps: {
-    include: [],
-    exclude: [],
-  },
-  plugins: [vue(), vueJsx()],
-  build: {
-    minify: true,
-    lib: {
-      entry: resolve('./src/index.ts'),
-      name: 'ungeui',
+    optimizeDeps: {
+        include: [],
+        exclude: [],
     },
-    rollupOptions: {
-      // make sure to externalize deps that shouldn't be bundled
-      // into your library
-      external: ['vue'],
-      output: {
-        // Provide global variables to use in the UMD build
-        // for externalized deps
-        globals: {
-          vue: 'Vue',
+    plugins: [vue(), vueJsx()],
+    build: {
+        minify: true,
+        lib: {
+            entry: resolve('./src/index.ts'),
+            name: 'ungeui',
         },
-      },
+        rollupOptions: {
+            // make sure to externalize deps that shouldn't be bundled
+            // into your library
+            external: ['vue'],
+            output: {
+                // Provide global variables to use in the UMD build
+                // for externalized deps
+                globals: {
+                    vue: 'Vue',
+                },
+            },
+        },
     },
-  },
 };

@@ -6,5 +6,5 @@
 </template>
 
 <script setup>
-import { URadio } from 'ungeui'
+import { URadio } from 'ungeui';
 </script>

@@ -24,10 +24,10 @@
 </template>
 
 <script setup>
-import { URadioButton,URadioGroup,UDivider } from 'ungeui'
-import { ref } from 'vue'
+import { URadioButton, URadioGroup, UDivider } from 'ungeui';
+import { ref } from 'vue';
 
-let fruit1 = ref('banana')
-let fruit2 = ref('watermelon')
-let fruit3 = ref('banana')
+let fruit1 = ref('banana');
+let fruit2 = ref('watermelon');
+let fruit3 = ref('banana');
 </script>

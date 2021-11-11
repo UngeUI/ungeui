@@ -1,6 +1,6 @@
 ---
 map:
-  path: /components/radio
+    path: /components/radio
 ---
 
 # Radio
@@ -8,7 +8,7 @@ map:
 单选框
 
 ```js
-import { Radio } from 'ungeui'
+import { Radio } from 'ungeui';
 ```
 
 ## 代码演示
@@ -20,7 +20,6 @@ import { Radio } from 'ungeui'
   title="基本用法"
   desc="最简单的用法">
 </demo>
-
 
 ### 禁用
 
@@ -48,7 +47,7 @@ import { Radio } from 'ungeui'
 
 ## Props
 
-| 参数  | 说明 | 类型 | 默认值 |
-| :-----: | :---: | :-----: | :---------: |
-| checked  | 是否选中 | `boolean` |  `false` |
-| disabled  | 是否禁用 | `boolean` |  `false` |
+|   参数   |   说明   |   类型    | 默认值  |
+| :------: | :------: | :-------: | :-----: |
+| checked  | 是否选中 | `boolean` | `false` |
+| disabled | 是否禁用 | `boolean` | `false` |

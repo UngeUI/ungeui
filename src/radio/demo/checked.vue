@@ -6,9 +6,9 @@
 </template>
 
 <script setup>
-import { URadio,UButton } from 'ungeui'
-import { ref } from 'vue'
+import { URadio, UButton } from 'ungeui';
+import { ref } from 'vue';
 
-const checked = ref(true)
-const toggle = () => checked.value = !checked.value
+const checked = ref(true);
+const toggle = () => (checked.value = !checked.value);
 </script>

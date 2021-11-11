@@ -1,5 +1,5 @@
 /*
- * @Descripttion: 
+ * @Descripttion:
  * @Author: peterroe
  * @Date: 2021-11-04 23:23:10
  * @LastEditors: peterroe
@@ -30,18 +30,20 @@ module.exports = {
                 label: '中文',
                 selectText: '语言',
                 nav: [{ text: '指南', link: '/' }],
-                sidebar: [{
-                    text: '介绍',
-                    children: [
-                        { text: 'Tag', link: '/components/tag/' },
-                        { text: 'Avatar', link: '/components/avatar/' },
-                        { text: 'Divider', link: '/components/divider/' },
-                        { text: 'Icon', link: '/components/icon/' },
-                        { text: 'Button', link: '/components/button/' },
-                        { text: 'Input', link: '/components/input/' },
-                        { text: 'Radio', link: '/components/radio/' },
-                    ]
-                }, ],
+                sidebar: [
+                    {
+                        text: '介绍',
+                        children: [
+                            { text: 'Tag', link: '/components/tag/' },
+                            { text: 'Avatar', link: '/components/avatar/' },
+                            { text: 'Divider', link: '/components/divider/' },
+                            { text: 'Icon', link: '/components/icon/' },
+                            { text: 'Button', link: '/components/button/' },
+                            { text: 'Input', link: '/components/input/' },
+                            { text: 'Radio', link: '/components/radio/' },
+                        ],
+                    },
+                ],
             },
             '/en/': {
                 lang: 'en-US',

@@ -1,7 +1,7 @@
 ---
 map:
-  # 映射到docs的路径
-  path: /components/divider
+    # 映射到docs的路径
+    path: /components/divider
 ---
 
 # Divider
@@ -39,6 +39,7 @@ import { UDivider } from 'ungeui';
 </demo>
 
 ### 自定义颜色
+
 <demo src="./demo/color.vue"
   language="vue"
   title="基本用法"
@@ -47,9 +48,9 @@ import { UDivider } from 'ungeui';
 
 ## Props
 
-| 参数  | 说明 | 类型 | 默认值 |
-| :-----: | :---: | :-----: | :---------: |
-| type  | 分割线线类型   | `'solid' | 'dashed' | 'dotted'` |  `'solid'` |
-| height | 自定义高度   | `number` | `1`
-| bold  | 加粗 | `boolean` | `false`
-| color | 自定义颜色   | `string` | `'#cccccc'`
+|  参数  |     说明     |   类型    |   默认值    |
+| :----: | :----------: | :-------: | :---------: | --------- | --------- |
+|  type  | 分割线线类型 | `'solid'  |  'dashed'   | 'dotted'` | `'solid'` |
+| height |  自定义高度  | `number`  |     `1`     |
+|  bold  |     加粗     | `boolean` |   `false`   |
+| color  |  自定义颜色  | `string`  | `'#cccccc'` |

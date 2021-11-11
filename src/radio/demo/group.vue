@@ -10,8 +10,8 @@
 </template>
 
 <script setup>
-import { URadio,URadioGroup } from 'ungeui'
-import { ref } from 'vue'
+import { URadio, URadioGroup } from 'ungeui';
+import { ref } from 'vue';
 
-let fruit = ref('banana')
+let fruit = ref('banana');
 </script>

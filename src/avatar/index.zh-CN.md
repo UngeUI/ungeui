@@ -1,7 +1,7 @@
 ---
 map:
-  # 映射到docs的路径
-  path: /components/avatar
+    # 映射到docs的路径
+    path: /components/avatar
 ---
 
 # Avatar
@@ -39,6 +39,7 @@ import { UAvatar } from 'ungeui';
 </demo>
 
 ### 圆形
+
 <demo src="./demo/round.vue"
   language="vue"
   title="基本用法"
@@ -47,8 +48,8 @@ import { UAvatar } from 'ungeui';
 
 ## Props
 
-| 参数  | 说明 | 类型 | 默认值 |
-| :-----: | :---: | :-----: | :---------: |
-| size  | 图片大小   | `'small' | 'medium' | 'large' | 'huge'` | `'medium'` |
-| src | 图片链接   | `string` | `undefined`
-| round  | 圆角 | `boolean` | `false`
+| 参数  |   说明   |   类型    |   默认值    |
+| :---: | :------: | :-------: | :---------: | ------- | ------- | ---------- |
+| size  | 图片大小 | `'small'  |  'medium'   | 'large' | 'huge'` | `'medium'` |
+|  src  | 图片链接 | `string`  | `undefined` |
+| round |   圆角   | `boolean` |   `false`   |

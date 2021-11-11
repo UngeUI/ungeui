@@ -1,7 +1,7 @@
 ---
 map:
-  # 映射到docs的路径
-  path: /components/button
+    # 映射到docs的路径
+    path: /components/button
 ---
 
 # Button
@@ -88,20 +88,19 @@ import { UButton } from 'ungeui';
 
 ## Props
 
-| 参数  | 说明 |   类型 |         值 |
-| :-----: | :---: | :-----: | :---------: |
-| type  | 按钮主题 | `'success' | 'danger' | 'warning' | 'info' | 'default'` | `'default'` |
-| deep | 深色按钮 | `boolean` |  `false` |
-| dashed | 虚线按钮 | `boolean` |  `false` |
-| size | 按钮大小 | `'small' | 'medium' | 'large' | 'huge'` |  `meduim` |
-| text | 文本按钮 | `boolean` |  `false` |
-| disabled | 禁用按钮 | `boolean` |  `false` |
-| round | 圆形图标 |  `boolean` |  `false` |
-
+|   参数   |   说明   |    类型    |    值    |
+| :------: | :------: | :--------: | :------: | --------- | ------- | ---------- | ----------- |
+|   type   | 按钮主题 | `'success' | 'danger' | 'warning' | 'info'  | 'default'` | `'default'` |
+|   deep   | 深色按钮 | `boolean`  | `false`  |
+|  dashed  | 虚线按钮 | `boolean`  | `false`  |
+|   size   | 按钮大小 |  `'small'  | 'medium' | 'large'   | 'huge'` | `meduim`   |
+|   text   | 文本按钮 | `boolean`  | `false`  |
+| disabled | 禁用按钮 | `boolean`  | `false`  |
+|  round   | 圆形图标 | `boolean`  | `false`  |
 
 ## slots
 
-| 参数  | 说明 |   类型 |         值 |
-| :-----: | :---: | :-----: | :---------: |
-| prefix | 前缀图标 |  `string` |  `undefined` |
-| suffix | 后缀图标 |  `string` |  `undefined` |
+|  参数  |   说明   |   类型   |     值      |
+| :----: | :------: | :------: | :---------: |
+| prefix | 前缀图标 | `string` | `undefined` |
+| suffix | 后缀图标 | `string` | `undefined` |

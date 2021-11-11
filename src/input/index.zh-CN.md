@@ -1,7 +1,7 @@
 ---
 map:
-  # 映射到docs的路径
-  path: /components/input
+    # 映射到docs的路径
+    path: /components/input
 ---
 
 # Input
@@ -38,7 +38,8 @@ import { UInput } from 'ungeui';
   desc="密码框用于隐藏输入的字符">
 </demo>
 
-### Icon插槽
+### Icon 插槽
+
 <demo src="./demo/icon.vue"
   language="vue"
   title="基本用法"
@@ -46,13 +47,15 @@ import { UInput } from 'ungeui';
 </demo>
 
 ### Textarea
+
 <demo src="./demo/textarea.vue"
   language="vue"
   title="基本用法"
   desc="支持文本域">
 </demo>
 
-### 自定义rows/cols
+### 自定义 rows/cols
+
 <demo src="./demo/rowscols.vue"
   language="vue"
   title="基本用法"
@@ -60,6 +63,7 @@ import { UInput } from 'ungeui';
 </demo>
 
 ### 禁用
+
 <demo src="./demo/disabled.vue"
   language="vue"
   title="基本用法"
@@ -68,17 +72,17 @@ import { UInput } from 'ungeui';
 
 ## Props
 
-| 参数  | 说明 | 类型 | 默认值 |
-| :-----: | :---: | :-----: | :---------: |
-| size  | 输入框大小   | `'small' | 'medium' | 'large'` | `'medium'` |
-| type | 输入框类型   | `'text' | 'textarea' | 'password' ` | `'text'`
-| rows  | 行数 | `number` | `4`
-| cols  | 列数 | `number` | `4`
-| disabled  | 是否禁用 | `boolean` | `false`
+|   参数   |    说明    |   类型    |   默认值   |
+| :------: | :--------: | :-------: | :--------: | ------------ | ---------- |
+|   size   | 输入框大小 | `'small'  |  'medium'  | 'large'`     | `'medium'` |
+|   type   | 输入框类型 |  `'text'  | 'textarea' | 'password' ` | `'text'`   |
+|   rows   |    行数    | `number`  |    `4`     |
+|   cols   |    列数    | `number`  |    `4`     |
+| disabled |  是否禁用  | `boolean` |  `false`   |
 
 ## Slots
 
-| 参数  | 说明 | 类型 | 默认值 |
-| :-----: | :---: | :-----: | :---------: |
-| prefix  | 输入框前缀   | `string` | `undefined` |
-| suffix  | 输入框后缀   | `string` | `undefined` |
+|  参数  |    说明    |   类型   |   默认值    |
+| :----: | :--------: | :------: | :---------: |
+| prefix | 输入框前缀 | `string` | `undefined` |
+| suffix | 输入框后缀 | `string` | `undefined` |

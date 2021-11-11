@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <u-input type="textarea"></u-input>
-  </div>
+    <div>
+        <u-input type="textarea"></u-input>
+    </div>
 </template>
 
 <script setup>

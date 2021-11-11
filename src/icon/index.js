@@ -1,9 +1,9 @@
-import Icon from './icon.jsx'
+import Icon from './icon.jsx';
 
-Icon.name = 'UIcon'
+Icon.name = 'UIcon';
 
 Icon.install = (app) => {
-    app.component(Icon.name, Icon)
-}
+    app.component(Icon.name, Icon);
+};
 
-export default Icon
+export default Icon;

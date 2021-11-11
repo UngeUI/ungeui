@@ -1,6 +1,6 @@
 ---
 map:
-  path: /components/button
+    path: /components/button
 ---
 
 # Button

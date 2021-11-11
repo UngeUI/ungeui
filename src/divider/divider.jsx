@@ -1,27 +1,27 @@
-import { defineComponent, computed } from 'vue'
+import { defineComponent, computed } from 'vue';
 
 const dividerProps = {
     type: {
         type: String,
         default: 'solid',
         validator(value) {
-            return ['solid', 'dashed', 'dotted'].includes(value)
-        }
+            return ['solid', 'dashed', 'dotted'].includes(value);
+        },
     },
     bold: {
         type: Boolean,
         default: false,
         validator(value) {
-            return typeof value == 'boolean'
-        }
+            return typeof value == 'boolean';
+        },
     },
     height: {
-        type: Number
+        type: Number,
     },
     color: {
-        type: String
-    }
-}
+        type: String,
+    },
+};
 
 const divider = defineComponent({
     name: 'divider',
@@ -32,9 +32,9 @@ const divider = defineComponent({
             bound: computed(() => props.bold && 'u-divider-bold'),
             dividerStyle: computed(() => ({
                 'border-top-color': props.color,
-                'border-top-width': props.height + 'px'
-            }))
-        }
+                'border-top-width': props.height + 'px',
+            })),
+        };
     },
     render() {
         const {
@@ -42,12 +42,12 @@ const divider = defineComponent({
             bound,
             dividerStyle,
 
-            $slots
-        } = this
+            $slots,
+        } = this;
         return (
             <div class={['u-divider', type, bound]} style={dividerStyle}></div>
-        )
-    }
-})
+        );
+    },
+});
 
-export default divider
+export default divider;

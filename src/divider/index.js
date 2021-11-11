@@ -1,9 +1,9 @@
-import divider from './divider.jsx'
+import divider from './divider.jsx';
 
-divider.name = 'UDivider'
+divider.name = 'UDivider';
 
 divider.install = (app) => {
-    app.component(divider.name, divider)
-}
+    app.component(divider.name, divider);
+};
 
-export default divider
+export default divider;

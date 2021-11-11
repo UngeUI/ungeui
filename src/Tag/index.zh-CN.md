@@ -1,7 +1,7 @@
 ---
 map:
-  # 映射到docs的路径
-  path: /components/tag
+    # 映射到docs的路径
+    path: /components/tag
 ---
 
 # Tag
@@ -64,12 +64,12 @@ import { UTag } from 'ungeui';
 
 ## Props
 
-| 参数  | 说明 | 类型 | 默认值 |
-| :-----: | :---: | :-----: | :---------: |
-| type  | 标签主题 | `'default' | 'success' | 'warning' | 'info' | 'danger'` |  `'default'` |
-| size  | 标签大小   | `'small' | 'medium' | 'large'` | `'medium'` |
-| color | 标签背景颜色   | `string` | `undefined`
-| round  | 胶囊圆角 | `boolean` | `false`
-| closable  | 可关闭   | `boolean` | `false`
-| disabled | 禁用   | `boolean` | `false`
-| on-Close | 点击关闭时的回调   | `(e:MouseEvent) => void` | `undefined`
+|   参数   |       说明       |           类型           |   默认值    |
+| :------: | :--------------: | :----------------------: | :---------: | --------- | ---------- | --------- | ----------- |
+|   type   |     标签主题     |        `'default'        |  'success'  | 'warning' | 'info'     | 'danger'` | `'default'` |
+|   size   |     标签大小     |         `'small'         |  'medium'   | 'large'`  | `'medium'` |
+|  color   |   标签背景颜色   |         `string`         | `undefined` |
+|  round   |     胶囊圆角     |        `boolean`         |   `false`   |
+| closable |      可关闭      |        `boolean`         |   `false`   |
+| disabled |       禁用       |        `boolean`         |   `false`   |
+| on-Close | 点击关闭时的回调 | `(e:MouseEvent) => void` | `undefined` |

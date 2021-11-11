@@ -1,13 +1,8 @@
 <template>
-  <div>
-    <u-tag
-        round
-    >胶囊标签</u-tag>
-    <u-tag
-        round
-        type="warning"
-    >胶囊标签</u-tag>
-  </div>
+    <div>
+        <u-tag round>胶囊标签</u-tag>
+        <u-tag round type="warning">胶囊标签</u-tag>
+    </div>
 </template>
 
 <script setup>

@@ -1,13 +1,13 @@
 <template>
-  <div>
-    <u-tag>默认</u-tag>
-    <u-tag type="success">成功</u-tag>
-    <u-tag type="warning">警告</u-tag>
-    <u-tag type="danger">危险</u-tag>
-    <u-tag type="info">提示</u-tag>
-  </div>
+    <div>
+        <u-tag>默认</u-tag>
+        <u-tag type="success">成功</u-tag>
+        <u-tag type="warning">警告</u-tag>
+        <u-tag type="danger">危险</u-tag>
+        <u-tag type="info">提示</u-tag>
+    </div>
 </template>
 
 <script setup>
-import { UTag } from 'ungeui'
+import { UTag } from 'ungeui';
 </script>

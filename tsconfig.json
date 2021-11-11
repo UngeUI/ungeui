@@ -1,33 +1,33 @@
 {
-  "compilerOptions": {
-    "baseUrl": ".",
-    "outDir": "dist",
-    "sourceMap": false,
-    "target": "es6",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "allowJs": false,
-    "noUnusedLocals": true,
-    "strictNullChecks": true,
-    "noImplicitAny": false,
-    "noImplicitThis": true,
-    "experimentalDecorators": true,
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "removeComments": false,
-    "declaration": true,
-    "isolatedModules": true,
-    "declarationDir": "dist",
-    "skipLibCheck": true,
-    "jsx": "preserve",
-    "lib": ["esnext", "dom"],
-    "types": ["jest", "node"],
-    "rootDir": ".",
-    "paths": {
-      "@/*": ["src/*"],
-      "ungeui": ["src/"]
-    }
-  },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+    "compilerOptions": {
+        "baseUrl": ".",
+        "outDir": "dist",
+        "sourceMap": false,
+        "target": "es6",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "allowJs": false,
+        "noUnusedLocals": true,
+        "strictNullChecks": true,
+        "noImplicitAny": false,
+        "noImplicitThis": true,
+        "experimentalDecorators": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "removeComments": false,
+        "declaration": true,
+        "isolatedModules": true,
+        "declarationDir": "dist",
+        "skipLibCheck": true,
+        "jsx": "preserve",
+        "lib": ["esnext", "dom"],
+        "types": ["jest", "node"],
+        "rootDir": ".",
+        "paths": {
+            "@/*": ["src/*"],
+            "ungeui": ["src/"]
+        }
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "dist"]
 }
