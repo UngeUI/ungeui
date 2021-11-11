@@ -59,7 +59,7 @@ import { UTag } from 'ungeui';
 <demo src="./demo/color.vue"
   language="vue"
   title="基本用法"
-  desc="自定义颜色支持十六进制和RGBA">
+  desc="自定义颜色支持十六进制和RGB">
 </demo>
 
 ## Props
