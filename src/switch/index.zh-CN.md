@@ -45,3 +45,4 @@ import { USwitch } from 'ungeui
 | size  | 开关大小 | `'small' | 'medium' | 'large'` | `'medium'` | 
 | checkedValue | 选中的值 |  `boolean | string | number` | `true` |
 | uncheckedValue | 选中的值 |  `boolean | string | number` | `false` |
+| on-Change | 切换按钮触发的事件 |  `(e:MouseEvent) => void` | `undefined` |
