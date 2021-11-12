@@ -1,0 +1,45 @@
+@import './global.styl'
+@import './var.styl'
+
+.u-switch
+	border-radius 999em
+	background-color: #dbdbdb
+	position relative
+	cursor pointer
+	transition all .3s
+	display inline-flex
+	margin 0 4px
+	vertical-align: middle
+	&-circle
+		position absolute
+		background-color #fff
+		border-radius 50%
+		left 2px
+		top 2px
+		right auto
+		box-shadow 1px 1px 3px #aaa
+		transition all .3s
+	&-size
+		&-small
+			width 30px
+			height: 16px
+			& ^[0]-circle
+				width 12px
+				height 12px
+		&-medium
+			width 38px
+			height: 20px
+			& ^[0]-circle
+				width 16px
+				height 16px
+		&-large
+			width 46px
+			height: 24px
+			& ^[0]-circle
+				width 20px
+				height 20px
+	&-checked
+		background-color $main-color
+		box-shadow: 0 0 1px 3px $main-color-easy
+		& ^[0]-circle
+			left 50%

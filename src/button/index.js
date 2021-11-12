@@ -1,4 +1,5 @@
-import Button from './src/button.jsx';
+import Button from './button.jsx';
+
 Button.name = 'UButton';
 
 Button.install = (app) => {

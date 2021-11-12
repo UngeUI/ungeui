@@ -2,12 +2,13 @@ import { App } from 'vue';
 import '../styles/index.styl';
 import UTag from './Tag/index';
 import UAvatar from './avatar/index';
-import UButton from './button/button.jsx';
-import UDivider from './divider/divider.jsx';
-import UIcon from './icon/icon.jsx';
-import UInput from './input/input.jsx';
-import { URadio, URadioGroup, URadioButton } from './radio/index.js';
+import UButton from './button/index';
+import UDivider from './divider/index';
+import UIcon from './icon/index';
+import UInput from './input/index';
+import { URadio, URadioGroup, URadioButton } from './radio/index';
 import { UCheckbox, UCheckboxGroup } from './checkbox/index';
+import USwitch from './switch/index';
 
 const components = [
     UTag,
@@ -20,7 +21,8 @@ const components = [
     URadioGroup,
     URadioButton,
     UCheckbox,
-    UCheckboxGroup
+    UCheckboxGroup,
+    USwitch
 ];
 
 const install = (app: App): void => {
@@ -42,5 +44,6 @@ export {
     URadioGroup,
     URadioButton,
     UCheckbox,
-    UCheckboxGroup
+    UCheckboxGroup,
+    USwitch
 };

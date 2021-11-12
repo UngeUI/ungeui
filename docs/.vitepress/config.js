@@ -41,6 +41,7 @@ module.exports = {
                         { text: 'Input', link: '/components/input/' },
                         { text: 'Radio', link: '/components/radio/' },
                         { text: 'Checkbox', link: '/components/checkbox/' },
+                        { text: 'Switch', link: '/components/switch/' },
                     ],
                 }, ],
             },
