@@ -9,6 +9,7 @@ import UInput from './input/index';
 import { URadio, URadioGroup, URadioButton } from './radio/index';
 import { UCheckbox, UCheckboxGroup } from './checkbox/index';
 import USwitch from './switch/index';
+import message from './message/main.js'
 
 const components = [
     UTag,
@@ -22,7 +23,8 @@ const components = [
     URadioButton,
     UCheckbox,
     UCheckboxGroup,
-    USwitch
+    USwitch,
+    message
 ];
 
 const install = (app: App): void => {
@@ -45,5 +47,6 @@ export {
     URadioButton,
     UCheckbox,
     UCheckboxGroup,
-    USwitch
+    USwitch,
+    message
 };
