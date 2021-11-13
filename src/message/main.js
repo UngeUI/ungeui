@@ -4,13 +4,15 @@ const messageTypes = ['success', 'danger', 'info', 'warning', 'warning']
 
 const instances = [] //messageQueue
 
-const message = (props) => {
+const message = ({ text, type }) => {
 
     const container = document.createElement('div')
     const vm = createVNode(
-        messageConstructor,
-        null,
-        props
+        messageConstructor, {
+            text,
+            type
+        },
+        null
     )
     render(vm, container)
         // instances.push({ vm })
@@ -21,10 +23,11 @@ const message = (props) => {
 }
 let api = []
 messageTypes.forEach(type => {
-    api[type] = (options) => {
-        message(
-            options
-        )
+    api[type] = (text) => {
+        message({
+            text,
+            type
+        })
     }
 })
 
