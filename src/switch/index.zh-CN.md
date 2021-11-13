@@ -8,12 +8,12 @@ map:
 开关
 
 ```js
-import { USwitch } from 'ungeui
+import { USwitch } from 'ungeui'
 ```
 
 ## 代码演示
 
-## 基本用法
+### 基本用法
 
 <demo src="./demo/base.vue"
     language="vue"
@@ -21,7 +21,7 @@ import { USwitch } from 'ungeui
     desc="最简单的用法">
 </demo>
 
-## 不同大小
+### 不同大小
 
 <demo src="./demo/size.vue"
     language="vue"
@@ -29,7 +29,7 @@ import { USwitch } from 'ungeui
     desc="不同大小">
 </demo>
 
-## 自定义值
+### 自定义值
 
 <demo src="./demo/value.vue"
     language="vue"

@@ -8,7 +8,7 @@ map:
 单选框
 
 ```js
-import { Radio } from 'ungeui';
+import { URadio } from 'ungeui';
 ```
 
 ## 代码演示
