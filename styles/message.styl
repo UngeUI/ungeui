@@ -2,15 +2,22 @@
 @import './var.styl'
 	
 .u-message
-	position relative
-	position fixed
-	display inline-flex
-	align-items center
-	left 50%
-	transition: top .5s
-	padding 10px 15px
-	background-color #fff
-	box-shadow: 0 0 8px #bbb
-	border-radius 2px
-	z-index 99
+	&-wrapper
+		position fixed
+		width 100vw
+		top: 0
+		z-index 99
+		display flex
+		align-items: center
+		justify-content: center
+		transition: top .5s
+	&-core
+		display inline-flex
+		align-items center
+		padding 10px 15px
+		background-color #fff
+		box-shadow: 0 0 8px #bbb
+		border-radius 2px
+		z-index 200
+		
 

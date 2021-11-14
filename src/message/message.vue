@@ -4,11 +4,13 @@
     leave-active-class="animate__animated animate__fadeOutUp"
     @before-leave="$emit('close')"
     @after-leave="$emit('destroy')">
-        <div v-show="visible" :style="customStyle" :class="['u-message',messageType]">
-            <u-icon :size="18" :style="{marginRight:'5px'}">
-                <component :is="iconComponent"></component>
-            </u-icon>
-            {{text}}
+        <div v-show="visible" :style="customStyle" class="u-message-wrapper">
+            <div :class="['u-message-core',messageType]">
+                <u-icon :size="18" :style="{marginRight:'5px'}">
+                    <component :is="iconComponent"></component>
+                </u-icon>
+                {{text}}
+            </div>
         </div>
     </transition>
 </template>
@@ -23,7 +25,7 @@ import Warning from './util/warning.vue'
 import Info from './util/info.vue'
 const props = defineProps({
     text: {
-        type: String,
+        type: [String,Boolean,Number],
         default: ""
     },
     offset: {
