@@ -13,7 +13,7 @@ import { UDialog } from 'ungeui'
 
 ## 代码演示
 
-### 分割线类型
+### 普通弹窗
 
 <demo src="./demo/base.vue"
   language="vue"

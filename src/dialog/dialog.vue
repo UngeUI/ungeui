@@ -8,7 +8,8 @@
             </transition>
             <transition 
             enter-active-class="animate__animated animate__fadeInDown"
-            leave-active-class="animate__animated animate__fadeOutUp">
+            leave-active-class="animate__animated animate__fadeOutUp"
+            @after-enter="clickLock = true">
                 <div 
                     :class="['u-dialog-core']"
                     v-show="visible"
@@ -45,11 +46,16 @@ const dialog = defineComponent({
         }
     },
     setup(props,{emit}) {
+        const clickLock = ref(false)  //Lock click event
         const closeMask = () => {
-            emit('update:visible', !props.visible)
+            if(clickLock.value) {
+                emit('update:visible', !props.visible)
+            }
+            clickLock.value = false
         }
         return {
             closeMask,
+            clickLock
         }
     }
 })
