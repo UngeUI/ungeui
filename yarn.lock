@@ -1695,6 +1695,21 @@
     vscode-languageserver-textdocument "^1.0.1"
     vscode-uri "^2.1.2"
 
+"@vueuse/core@^6.8.0":
+  version "6.8.0"
+  resolved "https://registry.npmmirror.com/@vueuse/core/download/@vueuse/core-6.8.0.tgz?cache=0&sync_timestamp=1636163337001&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40vueuse%2Fcore%2Fdownload%2F%40vueuse%2Fcore-6.8.0.tgz#dc004bc30031e053e9ef5011203c4a80f00986ed"
+  integrity sha1-3ABLwwAx4FPp71ARIDxKgPAJhu0=
+  dependencies:
+    "@vueuse/shared" "6.8.0"
+    vue-demi "*"
+
+"@vueuse/shared@6.8.0":
+  version "6.8.0"
+  resolved "https://registry.npmmirror.com/@vueuse/shared/download/@vueuse/shared-6.8.0.tgz?cache=0&sync_timestamp=1636163336465&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40vueuse%2Fshared%2Fdownload%2F%40vueuse%2Fshared-6.8.0.tgz#50713b770941293e557a4eae9424cad2aad44a85"
+  integrity sha1-UHE7dwlBKT5Vek6ulCTK0qrUSoU=
+  dependencies:
+    vue-demi "*"
+
 JSONStream@^1.0.4:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/JSONStream/-/JSONStream-1.3.5.tgz#3208c1f08d3a4d99261ab64f92302bc15e111ca0"
@@ -1803,6 +1818,11 @@ algoliasearch@^4.0.0:
     "@algolia/requester-common" "4.8.6"
     "@algolia/requester-node-http" "4.8.6"
     "@algolia/transporter" "4.8.6"
+
+animate.css@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.npm.taobao.org/animate.css/download/animate.css-4.1.1.tgz#614ec5a81131d7e4dc362a58143f7406abd68075"
+  integrity sha1-YU7FqBEx1+TcNipYFD90BqvWgHU=
 
 ansi-align@^3.0.0:
   version "3.0.0"
@@ -8388,6 +8408,11 @@ vscode-web-custom-data@^0.3.2:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/vscode-web-custom-data/-/vscode-web-custom-data-0.3.3.tgz#9e1f2388c718d6f190038a19d144834a436b876f"
   integrity sha512-orMjjj1r4efP5ocODYZm3orpANakRBsxPZPDoD5UIrFOPKDFtMJQLp6PIH1rb3AYVRD1iYXMhDQoC6tZ+DrigA==
+
+vue-demi@*:
+  version "0.12.1"
+  resolved "https://registry.npmmirror.com/vue-demi/download/vue-demi-0.12.1.tgz#f7e18efbecffd11ab069d1472d7a06e319b4174c"
+  integrity sha1-9+GO++z/0RqwadFHLXoG4xm0F0w=
 
 vue-eslint-parser@^7.0.0, vue-eslint-parser@^7.6.0:
   version "7.6.0"

@@ -10,7 +10,7 @@ import { URadio, URadioGroup, URadioButton } from './radio/index';
 import { UCheckbox, UCheckboxGroup } from './checkbox/index';
 import USwitch from './switch/index';
 import message from './message/main.js'
-
+import 'animate.css/animate.min.css'
 const components = [
     UTag,
     UButton,
