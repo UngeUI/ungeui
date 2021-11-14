@@ -1,5 +1,7 @@
 import { App } from 'vue';
 import '../styles/index.styl';
+import 'animate.css/animate.min.css'
+
 import UTag from './Tag/index';
 import UAvatar from './avatar/index';
 import UButton from './button/index';
@@ -9,8 +11,8 @@ import UInput from './input/index';
 import { URadio, URadioGroup, URadioButton } from './radio/index';
 import { UCheckbox, UCheckboxGroup } from './checkbox/index';
 import USwitch from './switch/index';
+import UDialog from './dialog/index.js'
 import message from './message/main.js'
-import 'animate.css/animate.min.css'
 const components = [
     UTag,
     UButton,
@@ -24,7 +26,7 @@ const components = [
     UCheckbox,
     UCheckboxGroup,
     USwitch,
-    message
+    UDialog
 ];
 
 const install = (app: App): void => {
@@ -48,5 +50,6 @@ export {
     UCheckbox,
     UCheckboxGroup,
     USwitch,
+    UDialog,
     message
 };

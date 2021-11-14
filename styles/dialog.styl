@@ -1,0 +1,42 @@
+@import './global.styl'
+@import './var.styl'
+
+.u-dialog
+	position fixed
+	display flex
+	justify-content center
+	align-items center
+	top 0
+	z-index 200
+	&-mask
+		background-color rgba(0,0,0,.3)
+		width 100vw
+		height 100vh
+		z-index 200
+	&-core
+		position fixed
+		// transform: translate(-50%,-50%)
+		// left: 50%
+		// top: 50%
+		z-index 300
+		background-color: #fff
+		border-radius 3px
+		&-header
+			height 60px
+			width 520px
+			display flex
+			justify-content space-between
+			align-items center
+			border-bottom 1px solid #ddd
+			padding 0 30px
+		&-body
+			padding 30px
+		&-footer
+			height 60px
+			width 520px
+			border-top 1px solid #ddd
+			display flex
+			justify-content end
+			align-items center
+			padding 0 15px
+

@@ -43,6 +43,7 @@ module.exports = {
                         { text: 'Checkbox', link: '/components/checkbox/' },
                         { text: 'Switch', link: '/components/switch/' },
                         { text: 'Message', link: '/components/message/' },
+                        { text: 'Dialog', link: '/components/dialog/' },
                     ],
                 }, ],
             },
