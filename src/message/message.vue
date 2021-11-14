@@ -5,7 +5,12 @@
     @before-leave="$emit('close')"
     @after-leave="$emit('destroy')">
         <div v-show="visible" :style="customStyle" :class="['u-message',messageType]">
-            hello message 
+            <u-icon :size="18" :style="{marginRight:'5px'}">
+                <Success v-if="type == 'success'"/>
+                <Danger v-if="type == 'danger'" />
+                <Warning v-if="type == 'warning'" />
+                <Info v-if="type == 'info'" />
+            </u-icon>
             {{text}}
         </div>
     </transition>
@@ -13,7 +18,12 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
+import  UIcon from '../icon/index.js'
 import { useTimeoutFn } from '@vueuse/core'
+import Success from './util/success.vue'
+import Danger from './util/danger.vue'
+import Warning from './util/warning.vue'
+import Info from './util/info.vue'
 const props = defineProps({
     text: {
         type: String,
@@ -27,7 +37,10 @@ const props = defineProps({
     },
     type: {
         type: String,
-        default: 'info'
+        default: 'info',
+        validator(value) {
+            return ['success','info','warning','danger'].includes(value)
+        }
     }
 })
 const visible = ref(false)
