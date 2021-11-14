@@ -6,10 +6,7 @@
     @after-leave="$emit('destroy')">
         <div v-show="visible" :style="customStyle" :class="['u-message',messageType]">
             <u-icon :size="18" :style="{marginRight:'5px'}">
-                <Success v-if="type == 'success'"/>
-                <Danger v-if="type == 'danger'" />
-                <Warning v-if="type == 'warning'" />
-                <Info v-if="type == 'info'" />
+                <component :is="iconComponent"></component>
             </u-icon>
             {{text}}
         </div>
@@ -35,12 +32,13 @@ const props = defineProps({
     id: {
         type: String,
     },
-    type: {
-        type: String,
+    icon: {
+        type: [String, Object],
         default: 'info',
-        validator(value) {
-            return ['success','info','warning','danger'].includes(value)
-        }
+    },
+    duration:{
+        type: Number,
+        default: 3000
     }
 })
 const visible = ref(false)
@@ -49,13 +47,27 @@ onMounted(() => {
 })
 const {stop} = useTimeoutFn(() => {
     visible.value = false
-},3000)
+},props.duration)
 
 const messageType = computed(() => {
-    return 'u-message-' + props.type
+    return 'u-message-' + props.icon
 })
-console.log(props.offset,'ff')
+
 const customStyle = computed(() => ({
     top: props.offset + 'px'
 }))
+const iconMap = {
+    'success': Success,
+    'danger': Danger,
+    'info': Info,
+    'warning': Warning,
+}
+const iconComponent = computed(() => {
+    console.log(props.icon,'props.icon')
+    if(typeof props.icon == 'string') {
+        return iconMap[props.icon] || ''
+    } else {
+        return props.icon
+    }
+})
 </script>

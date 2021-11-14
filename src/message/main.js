@@ -4,8 +4,10 @@ const messageTypes = ['success', 'danger', 'info', 'warning', 'warning']
 
 const instances = [] //messageQueue
 let seed = 1
-const message = ({ message, type }) => {
-
+const message = ({ text, duration, maxCount = Infinity, icon = 'info' }) => {
+    if (instances.length + 1 > maxCount) { //limit the max count of message dialog
+        return
+    }
     let varticalOffset = 0
     const id = `message_${seed++}`
     instances.forEach(({ vm }) => {
@@ -13,21 +15,25 @@ const message = ({ message, type }) => {
     })
     varticalOffset += 16
     const container = document.createElement('div')
-    const vm = createVNode(
-        messageConstructor, {
-            text: message,
-            type: type,
-            offset: varticalOffset,
-            id: id,
-            onClose: () => {
-                close(id)
-            },
-            onDestroy: () => {
-                destroy()
-            }
+    const props = {
+        offset: varticalOffset,
+        text,
+        id,
+        icon,
+        duration,
+        onClose: () => {
+            close(id)
         },
+        onDestroy: () => {
+            destroy()
+        }
+    }
+    const vm = createVNode(
+        messageConstructor,
+        props,
         null
     )
+
     render(vm, container)
     instances.push({ vm })
     const close = (id) => {
@@ -54,17 +60,17 @@ const message = ({ message, type }) => {
 }
 let api = []
 messageTypes.forEach(type => {
-    api[type] = (options = {}) => {
+    message[type] = (options) => {
         if (typeof options == 'string') {
             options = {
-                message: options
+                text: options
             }
         }
         message({
             ...options,
-            type
+            icon: type
         })
     }
 })
 
-export default api
+export default message
