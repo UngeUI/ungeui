@@ -7,8 +7,8 @@
                 <div v-show="visible" :class="['u-dialog-mask']" @click="closeMask"></div>
             </transition>
             <transition 
-            enter-active-class="animate__animated animate__fadeInDown"
-            leave-active-class="animate__animated animate__fadeOutUp"
+            enter-active-class="animate__animated animate__bounceIn"
+            leave-active-class="animate__animated animate__bounceOut"
             @after-enter="clickLock = true">
                 <div 
                     :class="['u-dialog-core']"
@@ -20,15 +20,19 @@
                             class="u-dialog-core-header-icon"
                             @click="$emit('close',$event), closeMask($event)"
                         >
-                            <IconClose />
+                            <slot name="icon">
+                                <IconClose />
+                            </slot>
                         </div>
                     </div>
                     <div :class="['u-dialog-core-body']">
                         <slot></slot>
                     </div>
                     <div :class="['u-dialog-core-footer']">
-                        <u-button @click="$emit('cancel',$event), closeMask($event)">取消</u-button>
-                        <u-button deep @click="$emit('confirm',$event),closeMask($event)">确定</u-button>
+                        <slot name="footer">
+                            <u-button @click="$emit('cancel',$event), closeMask($event)">取消</u-button>
+                            <u-button deep @click="$emit('confirm',$event),closeMask($event)">确定</u-button>
+                        </slot>
                     </div>
                 </div>
             </transition>

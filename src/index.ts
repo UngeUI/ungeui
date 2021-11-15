@@ -1,6 +1,6 @@
 import { App } from 'vue';
 import '../styles/index.styl';
-import 'animate.css/animate.min.css'
+// import 'animate.css/animate.min.css'
 
 import UTag from './Tag/index';
 import UAvatar from './avatar/index';
