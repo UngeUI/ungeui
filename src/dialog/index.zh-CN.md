@@ -28,3 +28,12 @@ import { UDialog } from 'ungeui'
   title="基本用法"
   desc="触发某些钩子">
 </demo>
+
+## Props
+
+|  参数  |     说明     |   类型    |   默认值    |
+| :----: | :----------: | :-------: | :---------: | 
+| `visible` | 控制弹窗的显示 | `boolean` | `false` |
+| `on-Confirm` | 点击弹窗确定 | `(e:MouseEvent) => void` | `false` |
+| `on-Cancel` | 点击弹窗取消 | `(e:MouseEvent) => void` | `undefined` |
+| `on-Close` | 点击弹窗关闭 | `(e:MouseEvent) => void` | `undefined` |
