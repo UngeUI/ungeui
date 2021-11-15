@@ -1,7 +1,7 @@
 <template>
     <div>
         <u-button @click="open">打开弹窗</u-button>
-        <u-dialog v-model:visible="visible">
+        <u-dialog v-model:visible="visible" title="基础弹窗">
             this is dialog
         </u-dialog>
     </div>

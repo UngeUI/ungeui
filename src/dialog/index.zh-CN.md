@@ -20,3 +20,11 @@ import { UDialog } from 'ungeui'
   title="基本用法"
   desc="弹窗基本用法">
 </demo>
+
+### 预置事件交互
+
+<demo src="./demo/event.vue"
+  language="vue"
+  title="基本用法"
+  desc="触发某些钩子">
+</demo>

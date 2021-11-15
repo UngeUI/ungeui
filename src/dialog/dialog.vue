@@ -1,5 +1,5 @@
 <template>
-    <teleport to="body">
+    <teleport to="body" v-show="visible">
         <div :class="['u-dialog']">
             <transition
             enter-active-class="animate__animated animate__fadeIn"
@@ -15,15 +15,20 @@
                     v-show="visible"
                 >
                     <div :class="['u-dialog-core-header']">
-                        <div>Base MOdel</div>
-                        <div>x</div>
+                        <div>{{title}}</div>
+                        <div 
+                            class="u-dialog-core-header-icon"
+                            @click="$emit('close',$event), closeMask($event)"
+                        >
+                            <IconClose />
+                        </div>
                     </div>
                     <div :class="['u-dialog-core-body']">
                         <slot></slot>
                     </div>
                     <div :class="['u-dialog-core-footer']">
-                        <u-button>取消</u-button>
-                        <u-button deep>确定</u-button>
+                        <u-button @click="$emit('cancel',$event), closeMask($event)">取消</u-button>
+                        <u-button deep @click="$emit('confirm',$event),closeMask($event)">确定</u-button>
                     </div>
                 </div>
             </transition>
@@ -34,17 +39,24 @@
 <script>
 import { defineComponent, ref, onMounted } from 'vue'
 import UButton from '../button/index.js'
+import IconClose from './util/iconClose.vue'
 const dialog = defineComponent({
     name: 'dialog',
     components:{
-        UButton
+        UButton,
+        IconClose
     },
     props:{
         visible: {
             type: Boolean,
             default: false
+        },
+        title: {
+            type: String,
+            default: '基础弹窗'
         }
     },
+    emits:['update:visible','cancel','confirm','close'],
     setup(props,{emit}) {
         const clickLock = ref(false)  //Lock click event
         const closeMask = () => {
