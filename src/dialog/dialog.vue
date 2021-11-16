@@ -7,11 +7,12 @@
                 <div v-show="visible" :class="['u-dialog-mask']" @click="closeMask"></div>
             </transition>
             <transition 
-            enter-active-class="animate__animated animate__bounceIn"
-            leave-active-class="animate__animated animate__bounceOut"
+            :enter-active-class="fullEnterClass"
+            :leave-active-class="fullLeaveClass"
             @after-enter="clickLock = true">
                 <div 
                     :class="['u-dialog-core']"
+                    :style="dialogCoreWidth"
                     v-show="visible"
                 >
                     <div :class="['u-dialog-core-header']">
@@ -41,7 +42,7 @@
 </template>
 
 <script>
-import { defineComponent, ref, onMounted } from 'vue'
+import { defineComponent, ref,computed, onMounted } from 'vue'
 import UButton from '../button/index.js'
 import IconClose from './util/iconClose.vue'
 const dialog = defineComponent({
@@ -58,10 +59,36 @@ const dialog = defineComponent({
         title: {
             type: String,
             default: '基础弹窗'
+        },
+        enterClass: {
+            type: String,
+            default: 'bounceIn'
+        },
+        leaveClass: {
+            type: String,
+            default: 'bounceOut'
+        },
+        width:{
+            type: [Number, String],
+            default: '512px'
         }
     },
     emits:['update:visible','cancel','confirm','close'],
     setup(props,{emit}) {
+
+        const fullEnterClass = computed(() => {
+            return `animate__animated animate__${props.enterClass}`
+        })
+        const fullLeaveClass = computed(() => {
+            return `animate__animated animate__${props.leaveClass}`
+        })
+
+        const dialogCoreWidth = computed(() => {
+            return {
+                width:  typeof props.width == 'string' ? props.width : props.width + 'px'
+            }
+        })
+
         const clickLock = ref(false)  //Lock click event
         const closeMask = () => {
             if(clickLock.value) {
@@ -71,7 +98,10 @@ const dialog = defineComponent({
         }
         return {
             closeMask,
-            clickLock
+            clickLock,
+            fullEnterClass,
+            fullLeaveClass,
+            dialogCoreWidth
         }
     }
 })

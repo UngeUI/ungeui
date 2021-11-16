@@ -45,6 +45,20 @@ import { UDialog } from 'ungeui'
   desc="自定义关闭的Icon">
 </demo>
 
+### 过渡动画类别
+
+除此之外，在过渡动画上我们希望给于用户更多的灵活性，这得益于[animate.css](https://www.dowebok.com/demo/2014/98/)
+
+<demo src="./demo/animate.vue"
+  language="vue"
+  title="基本用法"
+  desc="可以传入所有持续的类名作为配置">
+</demo>
+
+
+
+
+
 ## Props
 
 |  参数  |     说明     |   类型    |   默认值    |
@@ -53,6 +67,9 @@ import { UDialog } from 'ungeui'
 | `on-Confirm` | 点击弹窗确定 | `(e:MouseEvent) => void` | `false` |
 | `on-Cancel` | 点击弹窗取消 | `(e:MouseEvent) => void` | `undefined` |
 | `on-Close` | 点击弹窗关闭 | `(e:MouseEvent) => void` | `undefined` |
+| `enter-name` | 弹窗进入的动画 | `来自animate.css` | `bounceIn` |
+| `leave-name` | 弹窗离开时的动画 | `来自animate.css` | `bounceOut` |
+| `width` | 为number时，单位为px | `string | number` | `512px` |
 
 ## slots
 
