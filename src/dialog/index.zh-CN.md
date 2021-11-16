@@ -47,7 +47,7 @@ import { UDialog } from 'ungeui'
 
 ### 过渡动画类别
 
-除此之外，在过渡动画上我们希望给于用户更多的灵活性，这得益于[animate.css](https://www.dowebok.com/demo/2014/98/)
+除此之外，在过渡动画上我们希望给于用户更多的灵活性，这得益于[animate.css](https://www.dowebok.com/demo/2014/98/)，可以传入其中合法的动画类
 
 <demo src="./demo/animate.vue"
   language="vue"
@@ -69,7 +69,8 @@ import { UDialog } from 'ungeui'
 | `on-Close` | 点击弹窗关闭 | `(e:MouseEvent) => void` | `undefined` |
 | `enter-name` | 弹窗进入的动画 | `来自animate.css` | `bounceIn` |
 | `leave-name` | 弹窗离开时的动画 | `来自animate.css` | `bounceOut` |
-| `width` | 为number时，单位为px | `string | number` | `512px` |
+| `width` | 最大宽度，为number时，单位为px | `string | number` | `512px` |
+| `bodyMaxHeight` | body最大高度，为number时，单位为px | `string | number` | `512px` |
 
 ## slots
 

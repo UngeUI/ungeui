@@ -1,6 +1,5 @@
 <template>
     <div>
-        
         <u-radio-group v-model:value="enterName">
             <u-radio-button value="bounceInDown">bounceInDown</u-radio-button>
             <u-radio-button value="rotateInDownLeft">rotateInDownLeft</u-radio-button>

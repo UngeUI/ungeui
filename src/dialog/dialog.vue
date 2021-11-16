@@ -26,7 +26,10 @@
                             </slot>
                         </div>
                     </div>
-                    <div :class="['u-dialog-core-body']">
+                    <div 
+                        :class="['u-dialog-core-body']"
+                        :style="dialogBodyMaxHeight"
+                    >
                         <slot></slot>
                     </div>
                     <div :class="['u-dialog-core-footer']">
@@ -71,6 +74,10 @@ const dialog = defineComponent({
         width:{
             type: [Number, String],
             default: '512px'
+        },
+        bodyMaxHeight:{
+            typeof: [Number, String],
+            default: '400px'
         }
     },
     emits:['update:visible','cancel','confirm','close'],
@@ -85,7 +92,14 @@ const dialog = defineComponent({
 
         const dialogCoreWidth = computed(() => {
             return {
-                width:  typeof props.width == 'string' ? props.width : props.width + 'px'
+                width:  typeof props.width == 'string' ? 
+                props.width : props.width + 'px'
+            }
+        })
+        const dialogBodyMaxHeight = computed(() => {
+            return {
+                maxHeight:  typeof props.bodyMaxHeight == 'string' ? 
+                    props.bodyMaxHeight : props.bodyMaxHeight + 'px'
             }
         })
 
@@ -101,7 +115,8 @@ const dialog = defineComponent({
             clickLock,
             fullEnterClass,
             fullLeaveClass,
-            dialogCoreWidth
+            dialogCoreWidth,
+            dialogBodyMaxHeight
         }
     }
 })
