@@ -1,5 +1,5 @@
 <template>
-    <teleport to="body" v-show="visible">
+    <teleport to="body">
         <div :class="['u-dialog']">
             <transition
             enter-active-class="animate__animated animate__fadeIn"
@@ -93,7 +93,7 @@ const dialog = defineComponent({
         const dialogCoreWidth = computed(() => {
             return {
                 width:  typeof props.width == 'string' ? 
-                props.width : props.width + 'px'
+                    props.width : props.width + 'px'
             }
         })
         const dialogBodyMaxHeight = computed(() => {
