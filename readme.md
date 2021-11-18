@@ -5,10 +5,10 @@
 </div>
 
 <p align="center">
-    <a href="https://www.npmjs.org/package/element-plus">
+    <a href="https://www.npmjs.org/package/ungeui">
         <img src="https://img.shields.io/npm/v/ungeui.svg">
     </a>
-  <a href="https://www.npmjs.org/package/ungeui">
+  <a href="https://npmcharts.com/compare/ungeui?minimal=true">
     <img src="http://img.shields.io/npm/dm/ungeui.svg">
   </a>
   <br>
