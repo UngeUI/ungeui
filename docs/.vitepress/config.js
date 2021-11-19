@@ -44,6 +44,7 @@ module.exports = {
                         { text: 'Switch', link: '/components/switch/' },
                         { text: 'Message', link: '/components/message/' },
                         { text: 'Dialog', link: '/components/dialog/' },
+                        { text: 'Select', link: '/components/select/' },
                     ],
                 }, ],
             },
