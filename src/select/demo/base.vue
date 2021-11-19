@@ -1,10 +1,10 @@
 <template>
     <div>
         <u-select v-model:value="value" placeholder="选择字母" :style="{width:'300px'}">
-            <u-select-option value="Apple">苹果</u-select-option>
-            <u-select-option value="Banana">香蕉</u-select-option>
-            <u-select-option value="Pear">梨</u-select-option>
-            <u-select-option value="Watermelon">西瓜</u-select-option>
+            <u-select-option label="苹果" value="Apple" />
+            <u-select-option label="香蕉" value="Banana" />
+            <u-select-option label="梨" value="Pear" />
+            <u-select-option label="西瓜" value="Watermelon" />
         </u-select>
         {{value}}
     </div>

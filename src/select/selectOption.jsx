@@ -5,7 +5,10 @@ const selectOption = defineComponent({
     props: {
         value: {
             type: [String, Number, Boolean, Object]
-        }
+        },
+        label: {
+            type: [String, Number, Boolean, Object]
+        },
     },
     setup(props,{slots}) {
 
@@ -15,16 +18,16 @@ const selectOption = defineComponent({
 
         const selectContext = inject('selectContext')
         if(selectContext.props.value == props.value) {
-            selectContext.onSelectChange(props.value,slots.default?.()[0].children)    
+            selectContext.onSelectChange(props.value,props.label)    
         }
 
         const onClickOption = (e) => {
-            selectContext.onSelectChange(props.value,slots.default?.()[0].children)
+            selectContext.onSelectChange(props.value,props.label)
         }
         return () => (
             <div onClick={onClickOption} class={['u-select-option',selectOptionSize.value]}>
                 {
-                    slots.default?.()
+                    props.label
                 }
             </div>
         )
