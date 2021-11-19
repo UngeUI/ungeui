@@ -4,8 +4,8 @@
         @click="toggleState" 
         :class="['u-select', {'u-select-checked':showState},selectSize]" 
     >
-        <div class="u-select-text">{{selectLabel}}</div>
-        <div class="u-select-icon">
+        <div :class="['u-select-text',{'u-select-text-checked': isChecked}]">{{selectLabel}}</div>
+        <div :class="['u-select-icon',{'u-select-icon-checked':showState}]">
             <u-icon :size="25" color="#bbb">
                 <CDown />
             </u-icon>
@@ -56,6 +56,7 @@ const select = defineComponent({
         },
         placeholder:{
             type: [String,Number,Boolean],
+            default: '请选择'
         },
         value:{
             type: [String,Number,Boolean,Object]
@@ -93,21 +94,14 @@ const select = defineComponent({
             selectWraperStyle.width = selectRef.value.offsetWidth + 'px';
         });
 
-        const selectLabel = ref(undefined)
-        const onSelectChange = (a,b) => {
-            emit('update:value',a)
-            selectLabel.value = b
-            console.log('选择改变',a,b);
+        const selectLabel = ref(props.placeholder)
+        const onSelectChange = (value,label) => {
+            emit('update:value',value)
+            selectLabel.value = label
         };
         
-        const selectValue = computed(() => {
-            if(props.value) {
-                return props.value
-            } else if(props.placeholder) {
-                return props.placeholder
-            } else {
-                return '请选择'
-            }
+        const isChecked = computed(() => {
+            return selectLabel.value ==  props.placeholder
         })
 
         provide(
@@ -129,7 +123,8 @@ const select = defineComponent({
             toggleState,
             showState,
             close,
-            selectLabel
+            selectLabel,
+            isChecked
         };
     },
 });

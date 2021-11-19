@@ -3,7 +3,7 @@ map:
     path: /components/select
 ---
 
-# Switch
+# Select
 
 开关
 
@@ -29,8 +29,19 @@ import { USelect } from 'ungeui'
     desc="默认为medium">
 </demo>
 
+### option中同时显示Value值
+
+<demo src="./demo/displayValue.vue"
+    language="vue"
+    title=""
+    desc="同时显示Value值">
+</demo>
+
 ## Props
 
 |   参数   |   说明   |   类型    | 默认值  |
 | :------: | :------: | :-------: | :-----: |
 | placeholder | 默认内容  | `number | boolean | string` | "请选择" |
+| value | 选择的值  | `number | boolean | string | object` | "请选择" |
+| on-update:value | 值更新时执行的回调  | `(e: Event) => value` |  `undefined` |
+| display | 在option中显示value  | `boolean` | `false` |

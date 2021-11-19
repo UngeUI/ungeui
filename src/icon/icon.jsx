@@ -22,7 +22,7 @@ const icon = defineComponent({
                         : props.size + 'px',
             };
         });
-        return () => <i style={style.value}>{slots.default?.()}</i>;
+        return () => <i class="u-icon" style={style.value}>{slots.default?.()}</i>;
     },
 });
 

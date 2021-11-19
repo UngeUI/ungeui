@@ -9,6 +9,10 @@ const selectOption = defineComponent({
         label: {
             type: [String, Number, Boolean, Object]
         },
+        display:{
+            type: Boolean,
+            default: false
+        }
     },
     setup(props,{slots}) {
 
@@ -26,9 +30,16 @@ const selectOption = defineComponent({
         }
         return () => (
             <div onClick={onClickOption} class={['u-select-option',selectOptionSize.value]}>
-                {
-                    props.label
-                }
+                <div>
+                    {
+                        props.label
+                    }
+                </div>
+                <div>
+                    {
+                        props.display && props.value
+                    }
+                </div>
             </div>
         )
     }

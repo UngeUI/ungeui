@@ -5,7 +5,6 @@
 	border 1px solid #ddd
 	display inline-flex
 	width 100%
-	margin 10px 0
 	border-radius 4px
 	overflow hidden
 	transition all .2s
@@ -30,7 +29,14 @@
 			font-size 15px
 	&-text
 		width 100%
-		// color #bbb
+		&-checked
+			color #bbb
+	&-icon
+		display inline-flex
+		align-items center
+		transition all .3s
+		&-checked
+			transform rotate(180deg)
 	&:hover 
 		border 1px solid $main-color
 	&-wrapper
@@ -49,7 +55,8 @@
 	&-option
 		width 100%
 		padding 6px 10px
-		transition all .2s
+		display inline-flex
+		justify-content space-between
 		&:hover
 			background-color $main-color-easy
 			color $main-color
