@@ -4,7 +4,7 @@
         @click="toggleState" 
         :class="['u-select', {'u-select-checked':showState},selectSize]" 
     >
-        <div class="u-select-text">{{placeholder ? placeholder : '请选择'}}</div>
+        <div class="u-select-text">{{selectLabel}}</div>
         <div class="u-select-icon">
             <u-icon :size="25" color="#bbb">
                 <CDown />
@@ -12,11 +12,10 @@
         </div>
         <teleport to="body">
             <transition
-                enter-active-class="animate__animated animate__fadeInUp"
+                enter-active-class="animate__animated animate__fadeIn"
                 leave-active-class="animate__animated animate__fadeOut"
             >
-                <div
-                    @click.stop="close" 
+                <div 
                     v-show="showState" 
                     :class="['u-select-wrapper']" 
                     :style="selectWraperStyle"
@@ -40,7 +39,8 @@ import {
 import { onClickOutside } from '@vueuse/core';
 import UIcon from '../icon/index';
 import CDown from './util/ChevronDown.vue';
-export default defineComponent({
+
+const select = defineComponent({
     name: 'select',
     components: {
         UIcon,
@@ -56,26 +56,33 @@ export default defineComponent({
         },
         placeholder:{
             type: [String,Number,Boolean],
+        },
+        value:{
+            type: [String,Number,Boolean,Object]
         }
     },
-    setup(props, { slots }) {
+    emits:['update:value'],
+    setup(props, { emit }) {
         const selectRef = ref(null);
 
         const showState = ref(false)
-        const toggleState = () => {
+        const toggleState = (e) => {
+            console.log(e)
             showState.value = !showState.value
         }
+
         const close = () => {
             showState.value = false
         }
-        onClickOutside(selectRef, (event) => close())
+        onClickOutside(selectRef, (event) => {
+            close()
+        })
 
         const selectWraperStyle = reactive({
             left: '50%',
             top: '50%',
             width: '100px',
         });
-
         onMounted(() => {
             selectWraperStyle.left = selectRef.value.offsetLeft + 'px';
             selectWraperStyle.top =
@@ -85,9 +92,23 @@ export default defineComponent({
                 'px';
             selectWraperStyle.width = selectRef.value.offsetWidth + 'px';
         });
-        const onSelectChange = () => {
-            console.log('选择改变');
+
+        const selectLabel = ref(undefined)
+        const onSelectChange = (a,b) => {
+            emit('update:value',a)
+            selectLabel.value = b
+            console.log('选择改变',a,b);
         };
+        
+        const selectValue = computed(() => {
+            if(props.value) {
+                return props.value
+            } else if(props.placeholder) {
+                return props.placeholder
+            } else {
+                return '请选择'
+            }
+        })
 
         provide(
             'selectContext',
@@ -107,8 +128,11 @@ export default defineComponent({
             selectWraperStyle,
             toggleState,
             showState,
-            close
+            close,
+            selectLabel
         };
     },
 });
+
+export default select
 </script>
