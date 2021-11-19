@@ -1,13 +1,34 @@
-import { defineComponent } from 'vue'
-
+import { defineComponent,computed } from 'vue'
+import UIcon from '../icon/index'
+import CDown from './util/ChevronDown.vue'
 const select = defineComponent({
     name: 'select',
-    props: {
-
+    components:{
+        UIcon
     },
-    setup() {
+    props: {
+        size: {
+            type: String,
+            default: 'medium',
+            validator(value) {
+                return ['small','meduim','large'].includes(value)
+            }
+        }
+    },
+    setup(props) {
+        const selectSize = computed(() => {
+            return 'u-select-size-' + props.size
+        })
+
         return () => (
-            <div>select</div>
+            <div class={['u-select',selectSize.value]}>
+                <div class={['u-select-text']}>请选择</div>
+                <div class={['u-select-icon']}>
+                    <u-icon size={25} color="#bbb">
+                        <CDown/>
+                    </u-icon>
+                </div>
+            </div>
         )
     }
 })

@@ -1,0 +1,31 @@
+@import './global.styl'
+@import './var.styl'
+
+.u-select
+	border 1px solid #ddd
+	display inline-flex
+	width 100%
+	margin 10px 0
+	border-radius 4px
+	overflow hidden
+	transition all .2s
+	align-items center
+	cursor pointer
+	&-size
+		&-small
+			min-height 28px
+			padding 0 4px 0 10px
+			font-size 14px
+		&-medium
+			min-height 34px
+			padding 0 5px 0 12px
+			font-size 14px
+		&-large
+			min-height 40px
+			padding 0 6px 0 14px
+			font-size 15px
+	&-text
+		width 100%
+		color #bbb
+	&:hover 
+		border 1px solid $main-color
