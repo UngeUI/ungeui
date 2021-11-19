@@ -1,6 +1,6 @@
 <template>
     <div>
-        <u-select :style="{width:'150px'}">
+        <u-select placeholder="选择字母" :style="{width:'150px'}">
             <u-select-option>A</u-select-option>
             <u-select-option>B</u-select-option>
             <u-select-option>C</u-select-option>

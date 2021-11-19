@@ -21,7 +21,16 @@ import { USelect } from 'ungeui'
     desc="最简单的用法">
 </demo>
 
+### 不同大小
+
+<demo src="./demo/size.vue"
+    language="vue"
+    title="不同大小"
+    desc="默认为medium">
+</demo>
+
 ## Props
 
 |   参数   |   说明   |   类型    | 默认值  |
 | :------: | :------: | :-------: | :-----: |
+| placeholder | 默认内容  | `number | boolean | string` | "请选择" |

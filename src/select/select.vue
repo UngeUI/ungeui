@@ -2,23 +2,28 @@
     <div 
         ref="selectRef"
         @click="toggleState" 
-        :class="['u-select', selectSize]" 
+        :class="['u-select', {'u-select-checked':showState},selectSize]" 
     >
-        <div class="u-select-text">请选择</div>
+        <div class="u-select-text">{{placeholder ? placeholder : '请选择'}}</div>
         <div class="u-select-icon">
             <u-icon :size="25" color="#bbb">
                 <CDown />
             </u-icon>
         </div>
         <teleport to="body">
-            <div
-                @click="toggleState" 
-                v-show="showState" 
-                :class="['u-select-wrapper']" 
-                :style="selectWraperStyle"
+            <transition
+                enter-active-class="animate__animated animate__fadeInUp"
+                leave-active-class="animate__animated animate__fadeOut"
             >
-                <slot></slot>
-            </div>
+                <div
+                    @click.stop="close" 
+                    v-show="showState" 
+                    :class="['u-select-wrapper']" 
+                    :style="selectWraperStyle"
+                >
+                    <slot></slot>
+                </div>
+            </transition>
         </teleport>
     </div>
 </template>
@@ -32,7 +37,7 @@ import {
     reactive,
     onMounted,
 } from 'vue';
-import { useScroll } from '@vueuse/core';
+import { onClickOutside } from '@vueuse/core';
 import UIcon from '../icon/index';
 import CDown from './util/ChevronDown.vue';
 export default defineComponent({
@@ -46,9 +51,12 @@ export default defineComponent({
             type: String,
             default: 'medium',
             validator(value) {
-                return ['small', 'meduim', 'large'].includes(value);
+                return ['small', 'medium', 'large'].includes(value);
             },
         },
+        placeholder:{
+            type: [String,Number,Boolean],
+        }
     },
     setup(props, { slots }) {
         const selectRef = ref(null);
@@ -57,6 +65,10 @@ export default defineComponent({
         const toggleState = () => {
             showState.value = !showState.value
         }
+        const close = () => {
+            showState.value = false
+        }
+        onClickOutside(selectRef, (event) => close())
 
         const selectWraperStyle = reactive({
             left: '50%',
@@ -94,7 +106,8 @@ export default defineComponent({
             selectRef,
             selectWraperStyle,
             toggleState,
-            showState
+            showState,
+            close
         };
     },
 });
