@@ -84,7 +84,7 @@
         }
     },
     "dependencies": {
-        "@vueuse/core": "^6.8.0",
+        "@vueuse/core": "^6.9.1",
         "animate.css": "^4.1.1",
         "resize-observer-polyfill": "^1.5.1"
     }

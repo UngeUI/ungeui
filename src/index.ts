@@ -13,7 +13,7 @@ import { UCheckbox, UCheckboxGroup } from './checkbox/index';
 import USwitch from './switch/index';
 import UDialog from './dialog/index.js'
 import message from './message/main.js'
-import USelect from './select/index';
+import { USelect, USelectOption } from './select/index';
 const components = [
     UTag,
     UButton,
@@ -28,7 +28,8 @@ const components = [
     UCheckboxGroup,
     USwitch,
     UDialog,
-    USelect
+    USelect,
+    USelectOption
 ];
 
 const install = (app: App): void => {
@@ -54,5 +55,6 @@ export {
     USwitch,
     UDialog,
     USelect,
+    USelectOption,
     message
 };

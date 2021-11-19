@@ -29,3 +29,23 @@
 		color #bbb
 	&:hover 
 		border 1px solid $main-color
+	&-wrapper
+		width 100%
+		display flex
+		max-height 260px
+		overflow: auto
+		background-color #fff
+		box-shadow 0 5px 15px #ddd
+		flex-wrap wrap
+		position absolute
+		z-index 99
+		cursor pointer
+		border-radius 3px
+
+	&-option
+		width 100%
+		padding 6px 10px
+		transition all .2s
+		&:hover
+			background-color #eee
+			color $main-color

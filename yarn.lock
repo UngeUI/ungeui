@@ -1695,18 +1695,18 @@
     vscode-languageserver-textdocument "^1.0.1"
     vscode-uri "^2.1.2"
 
-"@vueuse/core@^6.8.0":
-  version "6.8.0"
-  resolved "https://registry.npmmirror.com/@vueuse/core/download/@vueuse/core-6.8.0.tgz?cache=0&sync_timestamp=1636163337001&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40vueuse%2Fcore%2Fdownload%2F%40vueuse%2Fcore-6.8.0.tgz#dc004bc30031e053e9ef5011203c4a80f00986ed"
-  integrity sha1-3ABLwwAx4FPp71ARIDxKgPAJhu0=
+"@vueuse/core@^6.9.1":
+  version "6.9.1"
+  resolved "https://registry.yarnpkg.com/@vueuse/core/-/core-6.9.1.tgz#b28ae875b618d3865c5a5ceefd9184b3155e8777"
+  integrity sha512-msa36DxnnbIu41bUTvfSudF6TL4wo0+Yrpw6yr1bFtwtYTOo8GZXYWPKyvXUVGhBBqrTVNTqsTtD0eXXHJ3roA==
   dependencies:
-    "@vueuse/shared" "6.8.0"
+    "@vueuse/shared" "6.9.1"
     vue-demi "*"
 
-"@vueuse/shared@6.8.0":
-  version "6.8.0"
-  resolved "https://registry.npmmirror.com/@vueuse/shared/download/@vueuse/shared-6.8.0.tgz?cache=0&sync_timestamp=1636163336465&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40vueuse%2Fshared%2Fdownload%2F%40vueuse%2Fshared-6.8.0.tgz#50713b770941293e557a4eae9424cad2aad44a85"
-  integrity sha1-UHE7dwlBKT5Vek6ulCTK0qrUSoU=
+"@vueuse/shared@6.9.1":
+  version "6.9.1"
+  resolved "https://registry.yarnpkg.com/@vueuse/shared/-/shared-6.9.1.tgz#b5ac81da7cc5846a35dbc71ce7dfd4a78506a0d7"
+  integrity sha512-nQh+ayxkeCKUU9MZjyQpE7KfOb18e/QOHolOE2ZK5dpoHzCZK7MSXzgDtvb9omGkgK0mjXlLSJsVdGhG+QW7Aw==
   dependencies:
     vue-demi "*"
 
