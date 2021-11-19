@@ -19,7 +19,7 @@
 ## Introduce
 
 * 🥉 A component library based on Vue3
-* 🚀 Writen in .jsx | .vue && stylus
+* 🚀 Writen in `.jsx` | `.vue` && `stylus`
 
 ## Document
 
@@ -27,7 +27,7 @@
 
 ## Local development
 
-1. start project in local enviroment
+1. ⚡Start project in local enviroment
 
 ```
 $ git clone https://github.com/peterroe/ungeui.git
@@ -35,9 +35,9 @@ $ yarn
 $ yarn dev
 ```
 
-2. Develop your components in `src/xxx `
+2. 🖥️Develop your components in `src/xxx `
 
-3. Add your components info `src/index.ts`
+3. ➕Add your components into `src/index.ts`
 
-4. write demos in `src/demo/xxx.vue`
+4. 🔧Configure document path in `docs/.vitepress/config.js`
 
