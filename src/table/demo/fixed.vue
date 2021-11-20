@@ -24,16 +24,20 @@ let data = [{
 let column = [
     {
         title: 'Name',
-        key: 'name'
+        key: 'name',
+        width: '200px',
+        fixed: 'left'
     },
     {
         title: 'Age',
         key: 'age',
-        align: 'center'
+        align: 'center',
+        width: '800px'
     },
     {
         title: 'Sex',
         key: 'sex',
+        fixed: 'right',
         width: '500px'
     }
 ]
