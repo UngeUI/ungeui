@@ -1,0 +1,1 @@
+import{o as e,c as t,b as a}from"./app.98aaf24a.js";const r={components:{}},n='{"title":"","description":"","frontmatter":{},"relativePath":"en/index.md","lastUpdated":1636607455263}',o=[a("p",null,"Write home page here.",-1)];r.render=function(a,r,n,p,i,d){return e(),t("div",null,o)};export default r;export{n as __pageData};
