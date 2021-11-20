@@ -5,7 +5,7 @@ map:
 
 # Table
 
-开关
+表格
 
 ```js
 import { UTable } from 'ungeui'
@@ -51,3 +51,4 @@ import { UTable } from 'ungeui'
 | title   | 列的 title 信息 | `String` | `undefined`|
 | key   | 这一列的 key，不可重复 | `String | number` | `undefined`|
 | width   | 这一列的 宽度 | `String ` | `undefined`|
+| fixed   | 左右固定 | `left | right ` | `''`|

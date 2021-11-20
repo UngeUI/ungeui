@@ -10,14 +10,6 @@
             </colgroup>
             <thead class="u-table-head">
                 <tr class="u-table-head-tr">
-                    <!-- <td 
-                        class="u-table-head-td" 
-                        v-for="(it,i) in column" 
-                        :key="i"
-                        :style="{textAlign: it.align}"
-                    >
-                        {{it.title}}
-                    </td> -->
                     <table-head-td
                         v-for="(it,i) in column"
                         :key="i"

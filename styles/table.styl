@@ -3,42 +3,42 @@
 
 .u-table
 	overflow: scroll
+	&-td-fixed
+		position sticky
+		&::after
+			position absolute
+			content: ''
+			top 0
+			width 100px
+			height 100%
+		&-left
+			left 0
+			// background-color: #fff
+			&::after
+				position absolute
+				content: ''
+				top 0
+				right 0
+				transform: translateX(100%)
+				box-shadow: inset 10px 0 8px -8px #00000026
+		&-right
+			right 0
+			&::after
+				left 0
+				transform: translateX(-100%)
+				box-shadow: inset  -10px 0px 8px -8px #00000026
+
 	&-head
 		width 100%
 		&-tr
 			background-color #fafafc
 			border-top none
 			font-weight 600
-			
+		&-td
+			background-color #fafafc
 	&-body
 		width 100%
 		&-td
+			background-color: #fff
 			&:first-child
 				font-weight normal
-			&-fixed
-				&-left
-					position sticky
-					left 0
-					// background-color: #fff
-					&::after
-						position absolute
-						content: ''
-						top 0
-						right 0
-						transform: translateX(100%)
-						box-shadow: inset 10px 0 8px -8px #00000026
-						width 100px
-						height 100%
-				&-right
-					position sticky
-					right 0
-					// background-color: #fff
-					&::after
-						position absolute
-						content: ''
-						top 0
-						left 0
-						transform: translateX(-100%)
-						box-shadow: inset  -10px 0px 8px -8px #00000026
-						width 100px
-						height 100%
