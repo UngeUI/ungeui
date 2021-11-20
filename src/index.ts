@@ -14,6 +14,8 @@ import USwitch from './switch/index';
 import UDialog from './dialog/index.js'
 import message from './message/main.js'
 import { USelect, USelectOption } from './select/index';
+import UTable from './table/index.js'
+
 const components = [
     UTag,
     UButton,
@@ -29,7 +31,8 @@ const components = [
     USwitch,
     UDialog,
     USelect,
-    USelectOption
+    USelectOption,
+    UTable
 ];
 
 const install = (app: App): void => {
@@ -56,5 +59,6 @@ export {
     UDialog,
     USelect,
     USelectOption,
+    UTable,
     message
 };
