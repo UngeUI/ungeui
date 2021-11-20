@@ -13,7 +13,7 @@ yarn add ungeui
 ```js
 import { createApp } from 'vue';
 import UngeUI from 'ungeui';
-import 'ungeui/style/index.css';
+import 'ungeui/dist/style.css';
 
 const app = createApp(App);
 app.use(UngeUI);
