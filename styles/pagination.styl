@@ -4,6 +4,7 @@
 .u-pagination
 	display flex
 	align-items center
+	user-select none
 	&-box
 		border 1px solid #ddd
 		border-radius 2px
@@ -18,7 +19,12 @@
 		&-checked
 			color $main-color
 			border-color $main-color
-
+		&-disabled
+			cursor not-allowed
+			background-color #eee
+			&:hover
+				color rgb(69, 77, 100)
+				border-color #ddd
 	&-size
 		&-small
 			width 25px

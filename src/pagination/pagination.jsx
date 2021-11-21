@@ -1,6 +1,6 @@
-import { defineComponent,computed } from 'vue'
+import { defineComponent,computed,provide,reactive } from 'vue'
 import UIcon from '../icon/index'
-import PageBox from './pageBox.vue'
+import PageBox from './pageBox.jsx'
 import Left from './util/DoubleLeft.vue'
 import Right from './util/DoubleRight.vue'
 import Ellipsis from './util/EllipsisHorizontal.vue'
@@ -17,13 +17,24 @@ const pagination = defineComponent({
             default: 0
         }
     },
-    setup(props) {
+    emits:['update:current','change'],
+    setup(props,{emit}) {
         const pageNum = computed(() => {
             return Math.ceil(props.total / 10)
         })
+        const changeCurrent = (newNum) => {
+            emit('update:current', newNum)
+            emit('change', newNum)
+            console.log(props.current)
+        }
+        provide('current', reactive({
+            paginationProps:props,
+            pageNum: pageNum.value,
+            changeCurrent
+        }))
         return () => (
             <div class="u-pagination">
-                <PageBox>
+                <PageBox boxType="left">
                     <UIcon>
                         <Left></Left>
                     </UIcon>
@@ -31,13 +42,17 @@ const pagination = defineComponent({
                 {
                     new Array(pageNum.value).fill().map((_,index) => {
                         return (
-                            <PageBox isChecked={props.current == index + 1}>
-                                {index + 1}
+                            <PageBox
+                                boxType="num"
+                                isChecked={props.current == index + 1}
+                                no={index + 1}
+                            >
+                                
                             </PageBox>
                         )
                     })
                 }
-                <PageBox>
+                <PageBox boxType="right">
                     <UIcon>
                         <Right></Right>
                     </UIcon>
