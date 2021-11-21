@@ -15,6 +15,7 @@ import UDialog from './dialog/index.js'
 import message from './message/main.js'
 import { USelect, USelectOption } from './select/index';
 import UTable from './table/index.js'
+import UPagination from './pagination/index';
 
 const components = [
     UTag,
@@ -32,7 +33,8 @@ const components = [
     UDialog,
     USelect,
     USelectOption,
-    UTable
+    UTable,
+    UPagination
 ];
 
 const install = (app: App): void => {
@@ -60,5 +62,6 @@ export {
     USelect,
     USelectOption,
     UTable,
-    message
+    UPagination,
+    message,
 };

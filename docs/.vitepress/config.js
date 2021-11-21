@@ -46,6 +46,7 @@ module.exports = {
                         { text: 'Dialog', link: '/components/dialog/' },
                         { text: 'Select', link: '/components/select/' },
                         { text: 'Table', link: '/components/table/' },
+                        { text: 'Pagination', link: '/components/pagination/' },
                     ],
                 }, ],
             },
