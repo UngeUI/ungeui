@@ -1,7 +1,7 @@
 <template>
     <td 
         :style="tdStyle"
-        :class="['u-table-head-td',fixDirection,{'u-table-td-fixed':fixed}]"
+        :class="['u-table-td',fixDirection,{'u-table-td-fixed':fixed}]"
     >
         <slot>
             {{content}}
@@ -12,8 +12,8 @@
 <script>
 import { defineComponent,computed } from 'vue'
 
-const tableBodyTd = defineComponent({
-    name: 'tableBodyTd',
+const tableTd = defineComponent({
+    name: 'tableTd',
     props:{
         content: {
             type: [String, Number,Boolean,Object]
@@ -23,7 +23,8 @@ const tableBodyTd = defineComponent({
             default: 'left'
         },
         fixed: {
-            type: [String]
+            type: [String],
+            default: ''
         }
     },
     setup(props,{slots}) {
@@ -43,6 +44,6 @@ const tableBodyTd = defineComponent({
     }
 })
 
-export default tableBodyTd
+export default tableTd
 </script>
 
