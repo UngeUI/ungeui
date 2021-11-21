@@ -5,24 +5,32 @@
 	overflow: scroll
 	&-td
 		&:first-child
+			border-left-width:  0px
 			font-weight normal
+		&:last-child
+			border-right-width:  0px
 	&-td-fixed
-		position sticky
-		&::after
-			position absolute
-			content: ''
-			top 0
-			width 100px
-			height 100%
 		&-left
 			left 0
+			position sticky
 			&::after
+				position absolute
+				content: ''
+				top 0
+				width 100px
+				height 100%
 				right 0
 				transform: translateX(100%)
 				box-shadow: inset 10px 0 8px -8px #00000026
 		&-right
 			right 0
+			position sticky
 			&::after
+				position absolute
+				content: ''
+				top 0
+				width 100px
+				height 100%
 				left 0
 				transform: translateX(-100%)
 				box-shadow: inset  -10px 0px 8px -8px #00000026

@@ -1,7 +1,11 @@
 <template>
     <td 
         :style="tdStyle"
-        :class="['u-table-td',fixDirection,{'u-table-td-fixed':fixed}]"
+        :class="[
+            'u-table-td',
+            fixDirection,
+            {'u-table-td-fixed':fixed}
+        ]"
     >
         <slot>
             {{content}}
@@ -25,12 +29,19 @@ const tableTd = defineComponent({
         fixed: {
             type: [String],
             default: ''
+        },
+        arrivedState: {
+            type: Object
         }
     },
     setup(props,{slots}) {
         console.log(props.align,'flexed')
         const fixDirection = computed(() => {
-            return props.fixed ? 'u-table-td-fixed-' + props.fixed : ''
+            if(props.fixed == 'left') {
+                return props.arrivedState.left ? '' : 'u-table-td-fixed-left'
+            } else if(props.fixed == 'right') {
+                return props.arrivedState.right ? '' : 'u-table-td-fixed-right'
+            }
         })
         const tdStyle = computed(() => {
             return {

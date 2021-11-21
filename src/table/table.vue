@@ -15,6 +15,7 @@
                         :key="i"
                         :align="it.align"
                         :fixed="it.fixed"
+                        :arrivedState="arrivedState"
                     >
                         {{it.title}}
                     </table-td>
@@ -32,6 +33,7 @@
                         :align="it.align"
                         :fixed="it.fixed"
                         :content="item[it.key]"
+                        :arrivedState="arrivedState"
                     >
                         <slot 
                             :text="item[it.key]" 
@@ -46,14 +48,10 @@
 <script>
 import { defineComponent,onMounted,ref } from 'vue'
 import { useScroll } from '@vueuse/core'
-import TableBodyTd from './tableBodyTd.vue'
-import TableHeadTd from './tableHeadTd.vue'
 import TableTd from './tableTd.vue'
 const table = defineComponent({
     name: 'table',
     components:{
-        TableBodyTd,
-        TableHeadTd,
         TableTd
     },
     props: {
@@ -68,11 +66,12 @@ const table = defineComponent({
     },
     setup(props,{slots}) {
         let tableRef = ref(null)
-        onMounted(() => {
-            const {arrivedState } = useScroll(tableRef)
-        })
+        
+        const { arrivedState } = useScroll(tableRef)
+        
         return {
-            tableRef
+            tableRef,
+            arrivedState
         }
     }
 })
