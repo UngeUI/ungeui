@@ -23,6 +23,9 @@ const pagination = defineComponent({
             return Math.ceil(props.total / 10)
         })
         const changeCurrent = (newNum) => {
+            if(newNum == props.current) {
+                return 
+            }
             emit('update:current', newNum)
             emit('change', newNum)
             console.log(props.current)
