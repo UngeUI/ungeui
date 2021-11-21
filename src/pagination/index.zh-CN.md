@@ -6,6 +6,10 @@ map:
 
 ## 分页
 
+```js
+import { UPagination } from 'ungeui'
+```
+
 ### 基本用法
 
 <demo 

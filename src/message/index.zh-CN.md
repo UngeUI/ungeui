@@ -6,6 +6,10 @@ map:
 
 ## 消息提示
 
+```js
+import { message } from 'ungeui'
+```
+
 ### 基本用法
 
 <demo 
