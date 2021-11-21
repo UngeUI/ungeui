@@ -1,0 +1,31 @@
+@import './global.styl'
+@import './var.styl'
+
+.u-pagination
+	display flex
+	align-items center
+	&-box
+		border 1px solid #ddd
+		border-radius 2px
+		display inline-flex
+		justify-content center
+		margin 0 4px
+		cursor pointer
+		transition all .2s
+		&:hover
+			color $main-color
+			border-color $main-color
+		&-checked
+			color $main-color
+			border-color $main-color
+
+	&-size
+		&-small
+			width 25px
+			height 25px
+		&-medium
+			width 30px
+			height 30px
+		&-large
+			width 35px
+			height 35px
