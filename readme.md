@@ -41,3 +41,4 @@ $ yarn dev
 
 4. 🔧Configure document path in `docs/.vitepress/config.js`
 
+😀welcome pr
