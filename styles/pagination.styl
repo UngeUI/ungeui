@@ -12,7 +12,7 @@
 		justify-content center
 		margin 0 4px
 		cursor pointer
-		transition all .2s
+		transition color .2s
 		&:hover
 			color $main-color
 			border-color $main-color
@@ -21,9 +21,10 @@
 			border-color $main-color
 		&-disabled
 			cursor not-allowed
-			background-color #eee
+			color #00000040
+			border 1px solid #d9d9d9
 			&:hover
-				color rgb(69, 77, 100)
+				color #00000040
 				border-color #ddd
 	&-size
 		&-small

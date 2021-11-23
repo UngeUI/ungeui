@@ -38,9 +38,9 @@ const pageBox = defineComponent({
         const { paginationProps, changeCurrent,pageNum } = inject('current',{})
         
         const isDisabled = computed(() => {
-            if(props.boxType == 'left') {
+            if(props.boxType == 'leftStep') {
                 return paginationProps.current == 1  ? 'u-pagination-box-disabled' :''
-            } else if(props.boxType == 'right') {
+            } else if(props.boxType == 'rightStep') {
                 return paginationProps.current == pageNum  ? 'u-pagination-box-disabled' :''
             }
             
@@ -52,13 +52,13 @@ const pageBox = defineComponent({
                 console.log(isDisabled.value)
                 changeCurrent(props.no)
 
-            } else if(props.boxType == 'left') {
+            } else if(props.boxType == 'leftStep') {
                 if(paginationProps.current == 1) {
                     return 
                 }
                 changeCurrent(paginationProps.current - 1)
 
-            } else if(props.boxType == 'right') {
+            } else if(props.boxType == 'rightStep') {
                 if(paginationProps.current == pageNum) {
                     isDisabled.value = true
                     return 

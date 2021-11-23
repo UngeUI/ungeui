@@ -19,6 +19,15 @@ import { UPagination } from 'ungeui'
     desc="最简单的用法">
 </demo>
 
+### 限制数量
+
+<demo 
+    src="./demo/limit.vue"
+    language="vue"
+    title="基本用法"
+    desc="限制数量">
+</demo>
+
 
 ## Props
 

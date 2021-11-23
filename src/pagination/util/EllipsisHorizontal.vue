@@ -1,10 +1,10 @@
 
 <template>
-  <svg width="1em" height="1em" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"><circle cx="7" cy="16" r="2"></circle><circle cx="16" cy="16" r="2"></circle><circle cx="25" cy="16" r="2"></circle></g></svg>
+  <svg width="1em" height="1em" viewBox="0 0 24 24"><path d="M16 12a2 2 0 1 1 4 0a2 2 0 0 1-4 0zm-6 0a2 2 0 1 1 4 0a2 2 0 0 1-4 0zm-6 0a2 2 0 1 1 4 0a2 2 0 0 1-4 0zm2-1a1 1 0 1 0 0 2a1 1 0 0 0 0-2zm6 0a1 1 0 1 0 0 2a1 1 0 0 0 0-2zm6 0a1 1 0 1 0 0 2a1 1 0 0 0 0-2z" fill="currentColor"></path></svg>
 </template>
 
 <script>
 export default {
-  name: 'BytesizeEllipsisHorizontal'
+  name: 'MdiLightDotsHorizontal'
 }
 </script>
