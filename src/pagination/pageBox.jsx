@@ -1,4 +1,4 @@
-import { defineComponent,computed,inject } from 'vue'
+import { defineComponent,computed,inject,ref } from 'vue'
 
 const pageBox = defineComponent({
     name: 'pageBox',
@@ -21,21 +21,35 @@ const pageBox = defineComponent({
         },
         no: {
             type: Number
-        }
+        },
     },
     setup(props,{slots}) {
+        
+        
+        
         const boxSize = computed(() => {
             return 'u-pagination-size-' + props.size
         })
-
+        
         const isChecked = computed(() => {
             return props.isChecked ? 'u-pagination-box-checked' : ''
         })
-
+        
         const { paginationProps, changeCurrent,pageNum } = inject('current',{})
+        
+        const isDisabled = computed(() => {
+            if(props.boxType == 'left') {
+                return paginationProps.current == 1  ? 'u-pagination-box-disabled' :''
+            } else if(props.boxType == 'right') {
+                return paginationProps.current == pageNum  ? 'u-pagination-box-disabled' :''
+            }
+            
+        })
 
         const boxClick = () => {
             if(props.boxType == 'num') {
+                isDisabled.value = false
+                console.log(isDisabled.value)
                 changeCurrent(props.no)
 
             } else if(props.boxType == 'left') {
@@ -46,6 +60,7 @@ const pageBox = defineComponent({
 
             } else if(props.boxType == 'right') {
                 if(paginationProps.current == pageNum) {
+                    isDisabled.value = true
                     return 
                 }
                 changeCurrent(paginationProps.current + 1)
@@ -54,7 +69,12 @@ const pageBox = defineComponent({
         }
         return () => (
             <div 
-                class={['u-pagination-box',boxSize.value,isChecked.value]}
+                class={[
+                    'u-pagination-box',
+                    boxSize.value,
+                    isChecked.value,
+                    isDisabled.value
+                ]}
                 onClick={boxClick}
             >
                 {
