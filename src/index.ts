@@ -1,6 +1,5 @@
 import { App } from 'vue';
 import '../styles/index.styl';
-// import 'animate.css/animate.min.css'
 
 import UTag from './Tag/index';
 import UAvatar from './avatar/index';
@@ -16,6 +15,7 @@ import message from './message/main.js'
 import { USelect, USelectOption } from './select/index';
 import UTable from './table/index.js'
 import UPagination from './pagination/index';
+//ImportFlag
 
 const components = [
     UTag,
@@ -34,7 +34,8 @@ const components = [
     USelect,
     USelectOption,
     UTable,
-    UPagination
+    UPagination,
+    //ArrayFlag
 ];
 
 const install = (app: App): void => {
@@ -64,4 +65,5 @@ export {
     UTable,
     UPagination,
     message,
+    //ExportFlag
 };
