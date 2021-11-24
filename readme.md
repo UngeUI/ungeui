@@ -44,7 +44,7 @@ $ yarn
 $ yarn dev
 ```
 
-**You can Add components manually:**
+**You can add components manually:**
 
 1. 🖥️Develop your components in `src/xxx `, Don't forget to write the demo and markdown
 
