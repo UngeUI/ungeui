@@ -47,8 +47,9 @@ module.exports = {
                         { text: 'Select', link: '/components/select/' },
                         { text: 'Table', link: '/components/table/' },
                         { text: 'Pagination', link: '/components/pagination/' },
+                        //Flag
                     ],
-                }, ],
+                }],
             },
             '/en/': {
                 lang: 'en-US',
@@ -57,10 +58,14 @@ module.exports = {
                 label: 'English',
                 selectText: 'Languages',
                 nav: [{ text: 'Guide', link: '/' }],
-                sidebar: [
-                    { text: 'Getting Started', link: '/en/' },
-                    { text: 'Tag', link: '/en/components/tag/' },
-                ],
+                sidebar: [{
+                    text: '介绍',
+                    [
+                        { text: 'Getting Started', link: '/en/' },
+                        { text: 'Tag', link: '/en/components/tag/' },
+                        //Flag2
+                    ]
+                }],
             },
         },
         search: {

@@ -7,7 +7,8 @@ const componentName = process.argv[2] || 'component'
 const UpperComponentName = componentName.slice(0, 1).toUpperCase() + componentName.slice(1)
 const componentPath = `./src/${componentName}`
 
-
+importDocsConfig()
+return
 createComponentDir()
 createMdDocs()
 createIndex()
@@ -16,6 +17,7 @@ createDemoBaseVue()
 importIndex()
 creatStyle()
 importStyle()
+importDocsConfig()
 
 function createComponentDir() {
     fs.mkdir(componentPath, (err) => {
@@ -120,6 +122,31 @@ function creatStyle() {
 function importStyle() {
     let str = `@import './${componentName}.styl'\n`
     fs.appendFile('./styles/index.styl', str, (err) => {
+        if (err) {
+            console.log(err)
+        }
+    })
+}
+
+function importDocsConfig() {
+    let str = `{ text: '${UpperComponentName}', link: '/components/${componentName}/'},\n\t\t\t\t\t\t`
+    let str2 = `{ text: '${UpperComponentName}', link: '/en/components/${componentName}/'},\n\t\t\t\t\t\t`
+
+    let result = fs.readFileSync('./docs/.vitepress/config.js', 'utf8')
+    let id = result.match(/\/\/Flag/)
+
+    let res = result.split('')
+    res.splice(id.index, 0, str)
+
+    result = res.join('')
+    let id2 = result.match(/\/\/Flag2/)
+
+    res = result.split('')
+    res.splice(id2.index, 0, str2)
+
+    result = res.join('')
+
+    fs.writeFile('./docs/.vitepress/config.js', result, err => {
         if (err) {
             console.log(err)
         }
