@@ -8,7 +8,6 @@ const UpperComponentName = componentName.slice(0, 1).toUpperCase() + componentNa
 const componentPath = `./src/${componentName}`
 
 importDocsConfig()
-return
 createComponentDir()
 createMdDocs()
 createIndex()

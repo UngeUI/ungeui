@@ -60,7 +60,7 @@ module.exports = {
                 nav: [{ text: 'Guide', link: '/' }],
                 sidebar: [{
                     text: 'Intruduce',
-                    [
+                    children: [
                         { text: 'Tag', link: '/en/components/tag/' },
                         //Flag2
                     ]
