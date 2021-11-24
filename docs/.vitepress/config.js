@@ -59,9 +59,8 @@ module.exports = {
                 selectText: 'Languages',
                 nav: [{ text: 'Guide', link: '/' }],
                 sidebar: [{
-                    text: '介绍',
+                    text: 'Intruduce',
                     [
-                        { text: 'Getting Started', link: '/en/' },
                         { text: 'Tag', link: '/en/components/tag/' },
                         //Flag2
                     ]
