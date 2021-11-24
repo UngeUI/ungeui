@@ -3,29 +3,52 @@ map:
     path: /components/tag
 ---
 
-# Button
+# Avatar
 
-This is a button.
+The avatar can be an online logo of a person or object
 
-## Example
+```js
+import { UAvatar } from 'ungeui';
+```
 
-### Basic Usage
+## Code demonstration
+
+### Different sizes
 
 <demo src="./demo/demo.vue"
   language="vue"
   title="Basic useage"
-  desc="This is a button.">
+  desc="Size controls the size of the avatar. The default background is gray">
 </demo>
 
-## API
+### Font size adaptive
 
-```ts
-import { UTag } from 'ungeui';
-```
+<demo src="./demo/fit.vue"
+  language="vue"
+  title="Basic useage"
+  desc="Ensure that the text does not overflow the avatar frame">
+</demo>
+
+### picture
+
+<demo src="./demo/img.vue"
+  language="vue"
+  title="Basic useage"
+  desc="Pictures can be inserted to support network resources and local resources">
+</demo>
+
+### circular
+
+<demo src="./demo/round.vue"
+  language="vue"
+  title="Basic useage"
+  desc="circular">
+</demo>
 
 ## Props
 
 | Property | Description |   Type |   Default |
-| -------- | ----------: | -----: | --------: |
-| size     |        size | string |    '64px' |
-| color    |       color | string | '#fff000' |
+| :--------: | :----------: | :-----: | :--------: |
+| size  | Picture size | `'small'  |  'medium'   | 'large' | 'huge'` | `'medium'` |
+|  src  | Picture linking | `string`  | `undefined` |
+| round |  Picture fillet   | `boolean` |   `false`   |
