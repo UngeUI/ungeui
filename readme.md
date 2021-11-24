@@ -36,7 +36,7 @@
 
 ## Local development
 
-1. ⚡Start project in local enviroment
+⚡Start project in local enviroment
 
 ```
 $ git clone https://github.com/peterroe/ungeui.git
@@ -44,12 +44,23 @@ $ yarn
 $ yarn dev
 ```
 
-2. 🖥️Develop your components in `src/xxx `, Don't forget to write the demo and markdown
+**You can Add components manually:**
 
-3. 💄build stylus in `styles/xxx.stylus`, and reference it in the `styles/index.stylus`
+1. 🖥️Develop your components in `src/xxx `, Don't forget to write the demo and markdown
 
-4. ➕Import components to `src/index.ts`
+2. 💄build stylus in `styles/xxx.stylus`, and reference it in the `styles/index.stylus`
 
-5. 🔧Configure document path in `docs/.vitepress/config.js`
+3. ➕Import components to `src/index.ts`
+
+4. 🔧Configure document path in `docs/.vitepress/config.js`
+
+**Or Automatically:**
+
+```
+npm link
+yarn cc [component-name]
+```
+
+## Next
 
 😀Welcome pull request
