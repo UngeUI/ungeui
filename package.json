@@ -11,6 +11,9 @@
         },
         "./dist/style.css": "./dist/style.css"
     },
+    "bin": {
+        "create-component": "./bin/index.js"
+    },
     "types": "dist/src/index.d.ts",
     "author": "peterroe",
     "license": "MIT",
@@ -19,6 +22,7 @@
         "build": "vite build && yarn type",
         "type": "tsc -d",
         "test": "jest",
+        "cc": "create-component",
         "docs-build": "rimraf docs/dist && cross-env NODE_ENV=production vitepress-fc build --root=docs",
         "docs-serve": "cross-env NODE_ENV=production vitepress-fc serve --root=docs",
         "docs-build-serve": "cross-env NODE_ENV=true yarn docs-build && yarn docs-serve",
@@ -86,6 +90,7 @@
     "dependencies": {
         "@vueuse/core": "^6.9.1",
         "animate.css": "^4.1.1",
+        "pug": "^3.0.2",
         "resize-observer-polyfill": "^1.5.1"
     }
 }
