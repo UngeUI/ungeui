@@ -15,6 +15,7 @@ import message from './message/main.js'
 import { USelect, USelectOption } from './select/index';
 import UTable from './table/index.js'
 import UPagination from './pagination/index';
+import USlider from './slider/index.js'
 //ImportFlag
 
 const components = [
@@ -35,7 +36,8 @@ const components = [
     USelectOption,
     UTable,
     UPagination,
-    //ArrayFlag
+    USlider,
+	//ArrayFlag
 ];
 
 const install = (app: App): void => {
@@ -65,5 +67,6 @@ export {
     UTable,
     UPagination,
     message,
-    //ExportFlag
+    USlider,
+	//ExportFlag
 };

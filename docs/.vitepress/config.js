@@ -47,7 +47,8 @@ module.exports = {
                         { text: 'Select', link: '/components/select/' },
                         { text: 'Table', link: '/components/table/' },
                         { text: 'Pagination', link: '/components/pagination/' },
-                        //Flag
+                        { text: 'Slider', link: '/components/slider/'},
+						//Flag
                     ],
                 }],
             },
@@ -62,7 +63,8 @@ module.exports = {
                     text: 'Intruduce',
                     children: [
                         { text: 'Tag', link: '/en/components/tag/' },
-                        //Flag2
+                        { text: 'Slider', link: '/en/components/slider/'},
+						//Flag2
                     ]
                 }],
             },
