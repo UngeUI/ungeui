@@ -16,6 +16,7 @@ import { USelect, USelectOption } from './select/index';
 import UTable from './table/index.js'
 import UPagination from './pagination/index';
 import USlider from './slider/index.js'
+import UInputNumber from './inputNumber/index.js'
 //ImportFlag
 
 const components = [
@@ -37,6 +38,7 @@ const components = [
     UTable,
     UPagination,
     USlider,
+	UInputNumber,
 	//ArrayFlag
 ];
 
@@ -68,5 +70,6 @@ export {
     UPagination,
     message,
     USlider,
+	UInputNumber,
 	//ExportFlag
 };

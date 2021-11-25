@@ -1,4 +1,4 @@
-import { defineComponent, ref, computed } from 'vue';
+import { defineComponent, ref, watch,computed } from 'vue';
 
 const input = defineComponent({
     name: 'Input',
@@ -24,7 +24,7 @@ const input = defineComponent({
                 return typeof value == 'boolean';
             },
         },
-        value: String,
+        value: [String, Number],
         placeholder: String,
         rows: {
             type: Number,
@@ -34,6 +34,7 @@ const input = defineComponent({
     },
     emits: ['update:value'],
     setup(props, { emit, slots }) {
+        
         const inputSize = computed(() => {
             return 'u-input-size-' + props.size;
         });
@@ -50,9 +51,7 @@ const input = defineComponent({
             return props.type == 'password' ? 'password' : '';
         });
 
-        const inputValue = ref(props.value);
         const onInput = (e) => {
-            inputValue.value = e.target.value;
             emit('update:value', e.target.value);
         };
 
@@ -80,7 +79,7 @@ const input = defineComponent({
                                 onFocus={onFocus}
                                 onBlur={onBlur}
                                 onInput={onInput}
-                                value={inputValue.value}
+                                value={props.value}
                                 disabled={props.disabled}
                             ></input>
                         </div>
@@ -102,7 +101,7 @@ const input = defineComponent({
                             onInput={onInput}
                             rows={props.rows}
                             cols={props.cols}
-                            value={inputValue.value}
+                            value={props.value}
                             disabled={props.disabled}
                         ></textarea>
                     </div>

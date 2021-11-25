@@ -1,0 +1,34 @@
+@import './global.styl'
+@import './var.styl'
+
+.u-input-number
+	position relative
+	overflow hidden
+	display inline-flex
+	user-select none
+	&-size
+		&-small
+			& .u-input-number-box
+				padding 7.5px
+		&-medium
+			& .u-input-number-box
+				padding 9px
+		&-large
+			& .u-input-number-box
+				padding 12px
+	& input
+		text-align center
+	&-box
+		top 1px
+		cursor pointer
+		background-color #f5f7fa
+		position absolute
+		display inline-flex
+	&-decrease
+		left 1px
+		border-radius 4px 0  0 4px
+		border-right 1px solid #ddd
+	&-increase
+		right 1px
+		border-left 1px solid #ddd
+		border-radius 0 4px 4px 0
