@@ -7,7 +7,7 @@ const componentName = process.argv[2] || 'component'
 const UpperComponentName = componentName.slice(0, 1).toUpperCase() + componentName.slice(1)
 const componentPath = `./src/${componentName}`
 
-importDocsConfig()
+
 createComponentDir()
 createMdDocs()
 createIndex()
@@ -111,7 +111,7 @@ function importIndex() {
 function creatStyle() {
     let str = "@import './global.styl'\n@import './var.styl'\n"
 
-    fs.writeFile(`./styles/${componentName}.stylus`, str, (err) => {
+    fs.writeFile(`./styles/${componentName}.styl`, str, (err) => {
         if (err) {
             console.log(err)
         }
