@@ -27,7 +27,7 @@ const checkbox = defineComponent({
             emit('update:checked', !props.checked)
             checkboxGroupContent?.onCheckboxChange(props.value)
         }
-        console.log(checkboxGroupContent?.props?.value.includes(),123)
+        
         return () => (
             <div
                 class={['u-checkbox', { 'u-checkbox-disabled': props.disabled }]}
