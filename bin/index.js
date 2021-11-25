@@ -2,25 +2,53 @@
 
 const pug = require('pug')
 const fs = require('fs')
+const inquirer = require('inquirer')
+const ora = require('ora')
+const chalk = require('chalk')
+const spawn = require('cross-spawn');
 
 const componentName = process.argv[2] || 'component'
 const UpperComponentName = componentName.slice(0, 1).toUpperCase() + componentName.slice(1)
 const componentPath = `./src/${componentName}`
 
+inquirer.prompt([{
+    type: 'confirm',
+    name: 'isSure',
+    message: 'Are you sure create component: ' + componentName
+}]).then(value => {
+    if (value.isSure) {
+        const spinner = ora('create ComponentDir...').start()
+        createComponentDir()
 
-createComponentDir()
-createMdDocs()
-createIndex()
-createJsx()
-createDemoDir()
-createDemoBaseVue()
-importIndex()
-creatStyle()
-importStyle()
-importDocsConfig()
+        spinner.text = 'create markdown docs...'
+        createMdDocs()
+
+        spinner.text = 'create jsx...'
+        createIndex()
+        createJsx()
+
+        spinner.text = 'create demo...'
+        createDemoDir()
+        createDemoBaseVue()
+        importIndex()
+
+        spinner.text = 'create stylus...'
+        creatStyle()
+        importStyle()
+        importDocsConfig()
+
+        spinner.stop()
+        spawn('git diff --stat', { stdio: 'inherit' });
+        console.log(chalk.hex('#13c2c2').bold('You has create component success!'))
+    } else {
+        console.log(chalk.hex('#13c2c2').bold('You canceled!'))
+    }
+
+})
+
 
 function createComponentDir() {
-    fs.mkdir(componentPath, (err) => {
+    fs.mkdirSync(componentPath, (err) => {
         if (err) throw err;
     })
 }
@@ -30,7 +58,7 @@ function createMdDocs() {
         component: componentName,
         UpperComponent: UpperComponentName
     })
-    fs.writeFile(`${componentPath}/index.zh-CN.md`, str, (res, err) => {
+    fs.writeFileSync(`${componentPath}/index.zh-CN.md`, str, (res, err) => {
         if (err) {
             console.log(err)
         }
@@ -39,7 +67,7 @@ function createMdDocs() {
         component: componentName,
         UpperComponent: UpperComponentName
     })
-    fs.writeFile(`${componentPath}/index.en-US.md`, str2, (res, err) => {
+    fs.writeFileSync(`${componentPath}/index.en-US.md`, str2, (res, err) => {
         if (err) {
             console.log(err)
         }
@@ -51,7 +79,7 @@ function createIndex() {
         component: componentName,
         UpperComponent: UpperComponentName
     })
-    fs.writeFile(`${componentPath}/index.js`, str, (res, err) => {
+    fs.writeFileSync(`${componentPath}/index.js`, str, (res, err) => {
         if (err) {
             console.log(err)
         }
@@ -63,7 +91,7 @@ function createJsx() {
         component: componentName,
         UpperComponent: UpperComponentName
     })
-    fs.writeFile(`${componentPath}/${componentName}.jsx`, str, (res, err) => {
+    fs.writeFileSync(`${componentPath}/${componentName}.jsx`, str, (res, err) => {
         if (err) {
             console.log(err)
         }
@@ -71,7 +99,7 @@ function createJsx() {
 }
 
 function createDemoDir() {
-    fs.mkdir(`${componentPath}/demo`, err => {
+    fs.mkdirSync(`${componentPath}/demo`, err => {
         if (err) {
             console.log(err)
         }
@@ -83,7 +111,7 @@ function createDemoBaseVue() {
         component: componentName,
         UpperComponent: UpperComponentName
     })
-    fs.writeFile(`${componentPath}/demo/base.vue`, str, (res, err) => {
+    fs.writeFileSync(`${componentPath}/demo/base.vue`, str, (res, err) => {
         if (err) {
             console.log(err)
         }
@@ -113,7 +141,7 @@ function importIndex() {
     res.splice(id3.index, 0, `U${UpperComponentName},\n\t`)
 
     result = res.join('')
-    fs.writeFile('./src/index.ts', result, (err, result) => {
+    fs.writeFileSync('./src/index.ts', result, (err, result) => {
         if (err) {
             console.log(result)
         }
@@ -124,7 +152,7 @@ function importIndex() {
 function creatStyle() {
     let str = "@import './global.styl'\n@import './var.styl'\n"
 
-    fs.writeFile(`./styles/${componentName}.styl`, str, (err) => {
+    fs.writeFileSync(`./styles/${componentName}.styl`, str, (err) => {
         if (err) {
             console.log(err)
         }
@@ -133,7 +161,7 @@ function creatStyle() {
 
 function importStyle() {
     let str = `@import './${componentName}.styl'\n`
-    fs.appendFile('./styles/index.styl', str, (err) => {
+    fs.appendFileSync('./styles/index.styl', str, (err) => {
         if (err) {
             console.log(err)
         }
@@ -158,7 +186,7 @@ function importDocsConfig() {
 
     result = res.join('')
 
-    fs.writeFile('./docs/.vitepress/config.js', result, err => {
+    fs.writeFileSync('./docs/.vitepress/config.js', result, err => {
         if (err) {
             console.log(err)
         }
