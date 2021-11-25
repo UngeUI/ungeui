@@ -1,6 +1,6 @@
 <template>
    <div>
-        <u-slider v-model:value="value">
+        <u-slider v-model:value="value" :max="20" :min="5">
              this is slider
         </u-slider>
         {{value}}
@@ -11,5 +11,5 @@
 import { USlider } from 'ungeui'
 import { ref } from 'vue'
 
-let value = ref(20)
+let value = ref(10)
 </script>

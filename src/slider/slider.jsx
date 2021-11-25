@@ -58,7 +58,7 @@ const slider = defineComponent({
         onMounted(() => {
             const { width } = sliderRef.value.getBoundingClientRect()
             const rateTransform = (value) => {
-                return 0.01 * value * width
+                return 1 / (props.max - props.min) * value * width
             }
             if(props.range) {
                 leftRecord.one = rateTransform(props.value[0])
@@ -72,21 +72,31 @@ const slider = defineComponent({
         })
         
         const ceilTransform = (value) => {
-            return Math.ceil(value / sliderWidth.value * 100)
+            return Math.ceil(value / sliderWidth.value * (props.max - props.min)) + props.min
         }
         const floorTransform = (value) => {
-            return Math.floor(value / sliderWidth.value * 100)
+            return Math.floor(value / sliderWidth.value * (props.max - props.min)) + props.min
         }
         watch([one,two,sliderX],([oneIsPress,twoIsPress]) => {
             
             if(oneIsPress && sliderX.value >=0 && sliderX.value <= sliderWidth.value) {
                 if(props.range) {
-                    const value = leftRecord.one > leftRecord.two ?
-                                    [floorTransform(leftRecord.two),ceilTransform(leftRecord.one)]:
-                                    [floorTransform(leftRecord.one),ceilTransform(leftRecord.two)]
+                    const val1 = leftRecord.one < sliderWidth.value / 2 ? 
+                                floorTransform(leftRecord.one) :
+                                ceilTransform(leftRecord.one)
+                    const val2 = leftRecord.two < sliderWidth.value / 2 ? 
+                                floorTransform(leftRecord.two) :
+                                ceilTransform(leftRecord.two)
+                    
+                    const value = val1 > val2 ? [val2,val1]: [val1,val2]
                     emit('update:value', value)
                 } else {
-                    emit('update:value',floorTransform(sliderX.value))
+                    if(leftRecord.one < sliderWidth.value / 2) {
+                        emit('update:value',floorTransform(leftRecord.one))
+                    } else {
+                        emit('update:value',ceilTransform(leftRecord.one))
+                    }
+                    
                 }
                 
                 leftRecord.one = sliderX.value
@@ -96,12 +106,22 @@ const slider = defineComponent({
                 leftRecord.two = sliderX.value
                 pointTwoStyle.left = sliderX.value - 7 + 'px'
                 if(props.range) {
-                    const value = leftRecord.one > leftRecord.two ?
-                                    [Math.ceil(leftRecord.two / sliderWidth.value * 100),Math.ceil(leftRecord.one / sliderWidth.value * 100) ]:
-                                    [Math.ceil(leftRecord.one/ sliderWidth.value * 100),Math.ceil(leftRecord.two / sliderWidth.value * 100)]
+                    const val1 = leftRecord.one < sliderWidth.value / 2 ? 
+                                floorTransform(leftRecord.one) :
+                                ceilTransform(leftRecord.one)
+                    const val2 = leftRecord.two < sliderWidth.value / 2 ? 
+                                floorTransform(leftRecord.two) :
+                                ceilTransform(leftRecord.two)
+                    
+                    const value = val1 > val2 ? [val2,val1]: [val1,val2]
                     emit('update:value', value)
                 } else {
-                    emit('update:value',(Math.ceil(sliderX.value / sliderWidth.value * 100)))
+                    if(leftRecord.one < sliderWidth.value / 2) {
+                        emit('update:value',floorTransform(leftRecord.one))
+                    } else {
+                        emit('update:value',ceilTransform(leftRecord.one))
+                    }
+                    
                 }
             }
             if(leftRecord.one > leftRecord.two) {
