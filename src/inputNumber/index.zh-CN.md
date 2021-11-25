@@ -33,3 +33,7 @@ import { UInputNumber } from 'ungeui';
 
 | 参数  |   说明   |   类型    |   默认值    |
 | :---: | :------: | :-------: | :---------: |
+| value(v-model) | 数字值 | `number` | `0` |
+| on-change | 用户输入 | `(value) => void ` | `0` |
+| on-increase | 用户点击增加 | `(value) => void ` | `undefined` |
+| on-decrease | 用户点击减少 | `(value) => void ` | `undefined` |

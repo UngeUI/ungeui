@@ -15,33 +15,41 @@ const inputNumber = defineComponent({
             default: 0
         }
     },
-    emits:['update:value'],
+    emits:['update:value', 'input','increase','decrease'],
     setup(props, { slots,emit }) {
         const inputNumberSize = computed(() => {
             return 'u-input-number-size-' + props.size
         })
         const onValueChange = (value) => {
+            emit('change',value)
             emit('update:value',value)
         }
         const decreaseValue = () => {
+            emit('decrease',props.value - 1)
             emit('update:value', props.value - 1)
         }
         const increaseValue = () => {
-            console.log(23,props.value)
+            emit('increase',props.value + 1)
             emit('update:value', props.value + 1)
         }
         return () =>  (
             <div class={["u-input-number",inputNumberSize.value]}>
-                <span class="u-input-number-box u-input-number-decrease">
-                    <Minus onClick={decreaseValue}/>
+                <span 
+                    onClick={decreaseValue}
+                    class="u-input-number-box u-input-number-decrease"
+                >
+                    <Minus />
                 </span>
                 <UInput 
                     size={props.size}
                     value={props.value}
                     onUpdate:value={onValueChange}
                 />
-                <span class="u-input-number-box u-input-number-increase">
-                    <Plus onClick={increaseValue}/>
+                <span 
+                    onClick={increaseValue}
+                    class="u-input-number-box u-input-number-increase"
+                >
+                    <Plus/>
                 </span>
             </div>
         )
