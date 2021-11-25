@@ -57,7 +57,6 @@ $ yarn dev
 **Or Automatically:**
 
 ```
-yarn link
 yarn create-component [component-name]
 ```
 
