@@ -65,7 +65,22 @@ const pageBox = defineComponent({
                 }
                 changeCurrent(paginationProps.current + 1)
                 
-            } 
+            } else if(props.boxType == 'leftMore') {
+                
+                if(paginationProps.current == 1) {
+                    isDisabled.value = true
+                    return 
+                }
+                changeCurrent(paginationProps.current - 5)
+                
+            } else if(props.boxType == 'rightMore') {
+                if(paginationProps.current == pageNum) {
+                    isDisabled.value = true
+                    return 
+                }
+                changeCurrent(paginationProps.current + 5)
+                
+            }
         }
         return () => (
             <div 

@@ -6,7 +6,7 @@ import Left from './util/Left.vue'
 import DoubleRight from './util/DoubleRight.vue'
 import Right from './util/Right.vue'
 import Ellipsis from './util/EllipsisHorizontal.vue'
-
+import { useElementHover } from '@vueuse/core'
 const pagination = defineComponent({
     name:'pagination',
     props:{
@@ -52,7 +52,6 @@ const pagination = defineComponent({
             }
             emit('update:current', newNum)
             emit('change', newNum)
-            console.log(props.current)
         }
 
         provide('current', reactive({
@@ -61,26 +60,38 @@ const pagination = defineComponent({
             changeCurrent
         }))
         const LeftStep = (
-            <PageBox boxType="leftStep">
+            <PageBox boxType="leftStep" >
                 <UIcon>
                     <Left></Left>
                 </UIcon>
             </PageBox>
         )
-        const LeftMore = (
-            <PageBox boxType="leftMore">
-                <UIcon>
-                    <Ellipsis></Ellipsis>
-                </UIcon>
-            </PageBox>
-        )
-        const RightMore = (
-            <PageBox boxType="rightMore">
-                <UIcon>
-                    <Ellipsis></Ellipsis>
-                </UIcon>
-            </PageBox>
-        )
+        const LeftMore = (state) => {
+            return (
+                <PageBox boxType="leftMore">
+                    <UIcon>
+                        {
+                            state ? 
+                            <DoubleLeft/>:
+                            <Ellipsis/>
+                        }
+                    </UIcon>
+                </PageBox>
+            )
+        }
+        const RightMore = (state) => {
+            return (
+                <PageBox boxType="rightMore">
+                    <UIcon>
+                        {
+                            state ? 
+                            <DoubleRight/>:
+                            <Ellipsis/>
+                        }
+                    </UIcon>
+                </PageBox>
+            )
+        }
         const RightStep = (
             <PageBox boxType="rightStep">
                 <UIcon>
@@ -88,12 +99,29 @@ const pagination = defineComponent({
                 </UIcon>
             </PageBox>
         )
+        const left = ref(null)
+        const right = ref(null)
+        const isLeftChecked = useElementHover(left)
+        const isRightChecked = useElementHover(right)
+        // onMounted(() => {
+        //     left.value?.addEventListener('mouseenter',() => {
+        //         console.log(isChecked.value,123)
+        //         isChecked.value = true
+        //     })
+        //     left.value?.addEventListener('mouseleave',() => {
+        //         console.log(isChecked.value,123)
+        //         isChecked.value = false
+        //     })
+        // })
         return () => (
-            <div class="u-pagination" >
-                
+            <div class="u-pagination">
                 <LeftStep />
                 { props.current - props.count >=2 && <PageBox boxType="num" no={1} /> }
-                { props.current - props.count >=3 && <LeftMore/>}
+                { props.current - props.count >=3 && 
+                    <div ref={left}>
+                       {LeftMore(isLeftChecked.value)}
+                    </div>
+                }
                 
                 {
                     displayNums.value.map((item,index) => {
@@ -108,7 +136,11 @@ const pagination = defineComponent({
                         )
                     })
                 }
-                { props.current + props.count < pageNum.value - 1 && <LeftMore />}
+                { props.current + props.count < pageNum.value - 1 &&
+                    <div ref={right}>
+                        {RightMore(isRightChecked.value)}
+                    </div>
+                }
                 { props.current + props.count < pageNum.value && <PageBox boxType="num" no={pageNum.value} /> }
                 
 
