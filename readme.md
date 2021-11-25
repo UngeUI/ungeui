@@ -57,8 +57,8 @@ $ yarn dev
 **Or Automatically:**
 
 ```
-npm link
-yarn cc [component-name]
+yarn link
+yarn create-component [component-name]
 ```
 
 ## Next

@@ -22,7 +22,7 @@
         "build": "vite build && yarn type",
         "type": "tsc -d",
         "test": "jest",
-        "cc": "create-component",
+        "create-component": "create-component",
         "docs-build": "rimraf docs/dist && cross-env NODE_ENV=production vitepress-fc build --root=docs",
         "docs-serve": "cross-env NODE_ENV=production vitepress-fc serve --root=docs",
         "docs-build-serve": "cross-env NODE_ENV=true yarn docs-build && yarn docs-serve",
