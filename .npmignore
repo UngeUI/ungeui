@@ -21,7 +21,8 @@ styles
 .ls-lint.yml
 .np-config.js
 .prettierrc
-*.md
+CHANGELOG.md
+readme.md
 jest.config.js
 tsconfig.json
 vite.config.js
