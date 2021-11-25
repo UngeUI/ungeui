@@ -11,6 +11,7 @@ const componentPath = `./src/${componentName}`
 createComponentDir()
 createMdDocs()
 createIndex()
+createJsx()
 createDemoDir()
 createDemoBaseVue()
 importIndex()
@@ -51,6 +52,18 @@ function createIndex() {
         UpperComponent: UpperComponentName
     })
     fs.writeFile(`${componentPath}/index.js`, str, (res, err) => {
+        if (err) {
+            console.log(err)
+        }
+    })
+}
+
+function createJsx() {
+    const str = pug.compileFile('./templates/jsx.pug')({
+        component: componentName,
+        UpperComponent: UpperComponentName
+    })
+    fs.writeFile(`${componentPath}/${componentName}.jsx`, str, (res, err) => {
         if (err) {
             console.log(err)
         }
