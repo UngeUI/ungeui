@@ -11,7 +11,7 @@ const Switch = defineComponent({
             }
         },
         checked: {
-            type: Boolean,
+            type: [Boolean, String, Number],
             default: false
         },
         checkedValue: {
