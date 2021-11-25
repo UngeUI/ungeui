@@ -33,3 +33,5 @@ import { USlider } from 'ungeui';
 
 | 参数  |   说明   |   类型    |   默认值    |
 | :---: | :------: | :-------: | :---------: |
+| value | 滑块的值 | `number | array ` | `0` |
+| range | 双滑块 | `boolean` | `false` |

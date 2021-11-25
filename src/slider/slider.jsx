@@ -10,6 +10,14 @@ const slider = defineComponent({
         range: {
             type: Boolean,
             default: false
+        },
+        max: {
+            type: Number,
+            default: 100
+        },
+        min: {
+            type: Number,
+            default: 0
         }
     },
     emits:['update:value'],
@@ -35,7 +43,7 @@ const slider = defineComponent({
         })
         
         const pointTwoStyle = reactive({
-            left: '',
+            left: 0,
             display: props.range ? 'block' : 'none'
         })
         const trackStyle = reactive({
@@ -49,20 +57,52 @@ const slider = defineComponent({
         })
         onMounted(() => {
             const { width } = sliderRef.value.getBoundingClientRect()
-            leftRecord.one = 0.01 * props.value * width
-            pointOneStyle.left = 0.01 * props.value * width + 'px'
+            const rateTransform = (value) => {
+                return 0.01 * value * width
+            }
+            if(props.range) {
+                leftRecord.one = rateTransform(props.value[0])
+                leftRecord.two = rateTransform(props.value[1])
+                pointOneStyle.left = rateTransform(props.value[0]) + 'px'    
+                pointTwoStyle.left = rateTransform(props.value[1]) + 'px'    
+            } else {
+                leftRecord.one = rateTransform(props.value)
+                pointOneStyle.left = rateTransform(props.value) + 'px'    
+            }
         })
+        
+        const ceilTransform = (value) => {
+            return Math.ceil(value / sliderWidth.value * 100)
+        }
+        const floorTransform = (value) => {
+            return Math.floor(value / sliderWidth.value * 100)
+        }
         watch([one,two,sliderX],([oneIsPress,twoIsPress]) => {
             
             if(oneIsPress && sliderX.value >=0 && sliderX.value <= sliderWidth.value) {
-                emit('update:value',(Math.ceil(sliderX.value / sliderWidth.value * 100)))
-                console.log(Math.ceil(sliderX.value / sliderWidth.value * 100))
+                if(props.range) {
+                    const value = leftRecord.one > leftRecord.two ?
+                                    [floorTransform(leftRecord.two),ceilTransform(leftRecord.one)]:
+                                    [floorTransform(leftRecord.one),ceilTransform(leftRecord.two)]
+                    emit('update:value', value)
+                } else {
+                    emit('update:value',floorTransform(sliderX.value))
+                }
+                
                 leftRecord.one = sliderX.value
                 pointOneStyle.left = sliderX.value - 7 + 'px'
             }
             if(twoIsPress && sliderX.value >=0 && sliderX.value <= sliderWidth.value) {
                 leftRecord.two = sliderX.value
                 pointTwoStyle.left = sliderX.value - 7 + 'px'
+                if(props.range) {
+                    const value = leftRecord.one > leftRecord.two ?
+                                    [Math.ceil(leftRecord.two / sliderWidth.value * 100),Math.ceil(leftRecord.one / sliderWidth.value * 100) ]:
+                                    [Math.ceil(leftRecord.one/ sliderWidth.value * 100),Math.ceil(leftRecord.two / sliderWidth.value * 100)]
+                    emit('update:value', value)
+                } else {
+                    emit('update:value',(Math.ceil(sliderX.value / sliderWidth.value * 100)))
+                }
             }
             if(leftRecord.one > leftRecord.two) {
                 
