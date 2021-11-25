@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+//此脚本根据//Flag找到填充的位置，不要删掉其他文件注释的Flag
 const pug = require('pug')
 const fs = require('fs')
 const inquirer = require('inquirer')
