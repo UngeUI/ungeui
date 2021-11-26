@@ -1,4 +1,4 @@
-import Tooltip from './tooltip.vue';
+import Tooltip from './tooltip.jsx';
 
 Tooltip.name = 'UTooltip';
 

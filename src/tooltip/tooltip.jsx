@@ -1,20 +1,6 @@
-<template>
-    <slot></slot>
-    <Teleport to="body">
-        <transition
-        :enter-active-class="animateIn"
-        leave-active-class="animate__animated animate__fadeOut">
-        <div v-show="targetIsHoverd" ref="tooltipRef" :class="['u-tooltip',arrayPosition]" :style="tooltipStyle">
-            <slot name="title"></slot>
-        </div>
-        </transition>
-    </Teleport>
-</template>
+import { defineComponent,Teleport,Transition,onMounted,watch,ref,computed } from 'vue';
 
-<script>
-import { defineComponent,onMounted,watch,ref,computed } from 'vue';
-import usePosition from './use/usePosition.js'
-import useTargetHover from './use/useTargetHover.js'
+import { useTargetHover, usePosition } from './use'
 import { useElementSize } from '@vueuse/core'
 const tooltip = defineComponent({
     name: 'tooltip',
@@ -45,7 +31,7 @@ const tooltip = defineComponent({
             width: tooltipWidth,
             height: tooltipHeight
         } = useElementSize(tooltipRef)
-        
+
         const arrayPosition = computed(() => {
             return 'u-tooltip-arrow-' + props.placement
         })
@@ -86,17 +72,34 @@ const tooltip = defineComponent({
                 return 'animate__animated animate__fadeInLeft'
             }
         })
-        
-        return {
-            tooltipRef,
-            tooltipStyle,
-            arrayPosition,
-            targetIsHoverd,
-            animateIn
+        const getElementNode = (children) => { //wrapper Text Node in span
+            return children[0].children == 'string' ? children : <span>{children}</span>
         }
+        return () => (
+            <>
+                {
+                    getElementNode(slots.default?.()) 
+                }
+                <Teleport to="body">
+                    <Transition
+                    enter-active-class={animateIn.value}
+                    leave-active-class="animate__animated animate__fadeOut">
+                        {
+                            targetIsHoverd.value && (
+                                <div ref={tooltipRef} class={['u-tooltip',arrayPosition.value]} style={tooltipStyle.value}>
+                                {
+                                    slots.title?.()
+                                }
+                                </div>
+                            )
+                        }
+                    </Transition>
+                </Teleport>
+            </>
+        )
     }
        
 });
 
 export default tooltip;
-</script>
+
