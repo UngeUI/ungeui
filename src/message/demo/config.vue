@@ -1,13 +1,15 @@
 <template>
     <div>
-        <u-button @click="onIcon">自定义Icon</u-button>
-        <u-button @click="onDuration">自定义持续时间</u-button>
-        <u-button @click="onMaxCount">限制最大数量</u-button>
+        <u-space>
+            <u-button @click="onIcon">自定义Icon</u-button>
+            <u-button @click="onDuration">自定义持续时间</u-button>
+            <u-button @click="onMaxCount">限制最大数量</u-button>
+        </u-space>
     </div>
 </template>
 
 <script setup>
-import { message,UButton } from 'ungeui'
+import { message,UButton,USpace } from 'ungeui'
 import { IconGithub } from '@ungeui/icons'
 const onIcon = () => {
     message({

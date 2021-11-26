@@ -6,6 +6,10 @@ const space = defineComponent({
         justify: {
             type: String
         },
+        align: {
+            type: String,
+            default: 'center'
+        },
         vertical: {
             type: Boolean
         },
@@ -17,6 +21,7 @@ const space = defineComponent({
     setup(props, { slots }) {
         const spaceStyle = computed(() => {
             return {
+                'align-items': props.vertical ? '' : props.align,
                 'justify-content' : props.justify,
                 'flex-flow': props.vertical ? 'column nowrap': 'auto'
             }

@@ -38,7 +38,7 @@ import { USpace } from 'ungeui';
  desc="使子元素垂直显示">
 </demo>
 
-### 对齐
+### JustifyContent
 
 <demo src="./demo/justify.vue"
  language="vue"
@@ -46,9 +46,20 @@ import { USpace } from 'ungeui';
  desc="使子元素对齐">
 </demo>
 
+### AlignContent
+
+在水平情况下，会自动使元素在垂直方向居中，这可能不是你想要的结果，那么你可以通过align属性改变它
+
+<demo src="./demo/align.vue"
+ language="vue"
+ title="基本用法"
+ desc="">
+</demo>
+
 ## Props
 
 | 参数  |   说明   |   类型    |   默认值    |
 | :---: | :------: | :-------: | :---------: |
 | vertical | 是否垂直显示 | `boolean` | `false` |
-| justify | 对其方式 | `同css的justif-content属性值` | `start` |
+| justify | 对齐方式 | `同css的justif-content属性值` | `start` |
+| align | 垂直对齐方式（vertical不为ture时生效） | `同css的align-items属性值` | `center` |
