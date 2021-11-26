@@ -49,6 +49,7 @@ module.exports = {
                         { text: 'Pagination', link: '/components/pagination/' },
                         { text: 'Slider', link: '/components/slider/'},
 						{ text: 'InputNumber', link: '/components/inputNumber/'},
+						{ text: 'Space', link: '/components/space/'},
 						//Flag
                     ],
                 }],
@@ -66,6 +67,7 @@ module.exports = {
                         { text: 'Tag', link: '/en/components/tag/' },
                         { text: 'Slider', link: '/en/components/slider/'},
 						{ text: 'InputNumber', link: '/en/components/inputNumber/'},
+						{ text: 'Space', link: '/en/components/space/'},
 						//Flag2
                     ]
                 }],
