@@ -18,6 +18,7 @@ import UPagination from './pagination/index';
 import USlider from './slider/index.js'
 import UInputNumber from './inputNumber/index.js'
 import USpace from './space/index.js'
+import UTooltip from './tooltip/index.js'
 //ImportFlag
 
 const components = [
@@ -41,6 +42,7 @@ const components = [
     USlider,
 	UInputNumber,
 	USpace,
+	UTooltip,
 	//ArrayFlag
 ];
 
@@ -74,5 +76,6 @@ export {
     USlider,
 	UInputNumber,
 	USpace,
+	UTooltip,
 	//ExportFlag
 };

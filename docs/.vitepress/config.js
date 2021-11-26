@@ -50,6 +50,7 @@ module.exports = {
                         { text: 'Slider', link: '/components/slider/'},
 						{ text: 'InputNumber', link: '/components/inputNumber/'},
 						{ text: 'Space', link: '/components/space/'},
+						{ text: 'Tooltip', link: '/components/tooltip/'},
 						//Flag
                     ],
                 }],
@@ -68,6 +69,7 @@ module.exports = {
                         { text: 'Slider', link: '/en/components/slider/'},
 						{ text: 'InputNumber', link: '/en/components/inputNumber/'},
 						{ text: 'Space', link: '/en/components/space/'},
+						{ text: 'Tooltip', link: '/en/components/tooltip/'},
 						//Flag2
                     ]
                 }],
