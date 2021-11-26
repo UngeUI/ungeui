@@ -1,10 +1,12 @@
 import { ref, onMounted, getCurrentInstance } from 'vue'
 
 const findElementNode = () => {
-    let target = getCurrentInstance().ctx.$el.nextSibling
+    let target = getCurrentInstance().ctx.$el
+        // console.log(target)
     while (target.nodeType != 1) { //find element node
         target = target.nextSibling
     }
+    // console.log(target)
     return target
 }
 
@@ -15,7 +17,7 @@ function usePosition(el) {
     const height = ref()
     onMounted(() => {
         const target = findElementNode()
-        console.log(target, 'target')
+            // console.log(target, 'target')
         top.value = target.offsetTop
         left.value = target.offsetLeft
         width.value = target.offsetWidth

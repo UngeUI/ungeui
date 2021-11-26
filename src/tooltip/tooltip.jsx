@@ -1,5 +1,4 @@
 import { defineComponent,Teleport,Transition,onMounted,watch,ref,computed } from 'vue';
-
 import { useTargetHover, usePosition } from './use'
 import { useElementSize } from '@vueuse/core'
 const tooltip = defineComponent({
@@ -73,7 +72,7 @@ const tooltip = defineComponent({
             }
         })
         const getElementNode = (children) => { //wrapper Text Node in span
-            return children[0].children == 'string' ? children : <span>{children}</span>
+            return typeof children[0].children == 'string' ? <span>{children}</span> : children
         }
         return () => (
             <>
