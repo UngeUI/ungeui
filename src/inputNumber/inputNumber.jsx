@@ -13,6 +13,10 @@ const inputNumber = defineComponent({
         value: {
             type: Number,
             default: 0
+        },
+        step: {
+            type: Number,
+            default: 1
         }
     },
     emits:['update:value', 'input','increase','decrease'],
@@ -25,12 +29,12 @@ const inputNumber = defineComponent({
             emit('update:value',value)
         }
         const decreaseValue = () => {
-            emit('decrease',props.value - 1)
-            emit('update:value', props.value - 1)
+            emit('decrease',props.value - props.step)
+            emit('update:value', props.value - props.step)
         }
         const increaseValue = () => {
-            emit('increase',props.value + 1)
-            emit('update:value', props.value + 1)
+            emit('increase',props.value + props.step)
+            emit('update:value', props.value + props.step)
         }
         return () =>  (
             <div class={["u-input-number",inputNumberSize.value]}>
