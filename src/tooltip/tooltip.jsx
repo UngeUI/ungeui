@@ -10,6 +10,9 @@ const tooltip = defineComponent({
             validator(value) {
                 return ['top','left','bottom','right'].includes(value)
             }
+        },
+        color: {
+            type: String
         }
     },
     setup(props, { slots }) {
@@ -57,7 +60,8 @@ const tooltip = defineComponent({
             }
             return {
                 top: computedTop.value - 4 + 'px',
-                left: computedLeft.value - 4 + 'px'
+                left: computedLeft.value - 4 + 'px',
+                '--bgColor': props.color
             }
         })
         const animateIn = computed(() => {

@@ -4,9 +4,10 @@
 $bgColor = rgba(0,0,0,.8)
 
 .u-tooltip
+	--bgColor rgba(0,0,0,.8)
 	position absolute
-	background-color $bgColor
-	color #ddd
+	background-color var(--bgColor)
+	color #fff
 	border-radius 3px
 	padding 4px
 	z-index 99
@@ -21,7 +22,7 @@ $bgColor = rgba(0,0,0,.8)
 			&::after
 				right 0
 				top 50%
-				border-left solid $bgColor
+				border-left solid var(--bgColor)
 				border-top transparent solid
 				border-bottom transparent solid
 				border-width 5px
@@ -31,7 +32,7 @@ $bgColor = rgba(0,0,0,.8)
 			&::after
 				left 0
 				top 50%
-				border-right solid $bgColor
+				border-right solid var(--bgColor)
 				border-top transparent solid
 				border-bottom transparent solid
 				border-width 5px
@@ -41,7 +42,7 @@ $bgColor = rgba(0,0,0,.8)
 			&::after
 				bottom 0
 				left 50%
-				border-top solid $bgColor
+				border-top solid var(--bgColor)
 				border-left transparent solid
 				border-right transparent solid
 				border-width 5px
@@ -51,7 +52,7 @@ $bgColor = rgba(0,0,0,.8)
 			&::after
 				top 0
 				left 50%
-				border-bottom solid $bgColor
+				border-bottom solid var(--bgColor)
 				border-left transparent solid
 				border-right transparent solid
 				border-width 5px

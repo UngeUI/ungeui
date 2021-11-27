@@ -21,6 +21,13 @@ import { UTooltip } from 'ungeui';
  desc="基本用法">
 </demo>
 
+### 自定义颜色
+
+<demo src="./demo/color.vue"
+ language="vue"
+ title="基本用法"
+ desc="自定义颜色">
+</demo>
 ## Props
 
 | 参数  |   说明   |   类型    |   默认值    |
