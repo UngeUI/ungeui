@@ -31,27 +31,39 @@ module.exports = {
                 selectText: '语言',
                 nav: [{ text: '指南', link: '/' }],
                 sidebar: [{
-                    text: '介绍',
+                    text: '通用组件',
                     children: [
                         { text: 'Tag', link: '/components/tag/' },
                         { text: 'Avatar', link: '/components/avatar/' },
                         { text: 'Divider', link: '/components/divider/' },
                         { text: 'Icon', link: '/components/icon/' },
                         { text: 'Button', link: '/components/button/' },
+                        //Flag
+                    ],
+                }, {
+                    text: '数据组件',
+                    children: [
                         { text: 'Input', link: '/components/input/' },
                         { text: 'Radio', link: '/components/radio/' },
                         { text: 'Checkbox', link: '/components/checkbox/' },
                         { text: 'Switch', link: '/components/switch/' },
-                        { text: 'Message', link: '/components/message/' },
-                        { text: 'Dialog', link: '/components/dialog/' },
                         { text: 'Select', link: '/components/select/' },
                         { text: 'Table', link: '/components/table/' },
                         { text: 'Pagination', link: '/components/pagination/' },
                         { text: 'Slider', link: '/components/slider/' },
                         { text: 'InputNumber', link: '/components/inputNumber/' },
-                        { text: 'Space', link: '/components/space/' },
+                    ],
+                }, {
+                    text: '反馈组件',
+                    children: [
+                        { text: 'Message', link: '/components/message/' },
+                        { text: 'Dialog', link: '/components/dialog/' },
                         { text: 'Tooltip', link: '/components/tooltip/' },
-                        //Flag
+                    ],
+                }, {
+                    text: '布局组件',
+                    children: [
+                        { text: 'Space', link: '/components/space/' },
                     ],
                 }],
             },
