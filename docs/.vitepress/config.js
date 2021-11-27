@@ -9,7 +9,7 @@ const base = process.env.NODE_ENV === 'production' ? '/ungeui' : '';
 const { resolve } = require('path');
 
 module.exports = {
-    title: 'vitepress',
+    title: 'Unge UI',
     description: 'docs',
     // 扫描srcIncludes里面的 *.md文件
     srcIncludes: ['src'],
@@ -47,11 +47,11 @@ module.exports = {
                         { text: 'Select', link: '/components/select/' },
                         { text: 'Table', link: '/components/table/' },
                         { text: 'Pagination', link: '/components/pagination/' },
-                        { text: 'Slider', link: '/components/slider/'},
-						{ text: 'InputNumber', link: '/components/inputNumber/'},
-						{ text: 'Space', link: '/components/space/'},
-						{ text: 'Tooltip', link: '/components/tooltip/'},
-						//Flag
+                        { text: 'Slider', link: '/components/slider/' },
+                        { text: 'InputNumber', link: '/components/inputNumber/' },
+                        { text: 'Space', link: '/components/space/' },
+                        { text: 'Tooltip', link: '/components/tooltip/' },
+                        //Flag
                     ],
                 }],
             },
@@ -66,11 +66,11 @@ module.exports = {
                     text: 'Intruduce',
                     children: [
                         { text: 'Tag', link: '/en/components/tag/' },
-                        { text: 'Slider', link: '/en/components/slider/'},
-						{ text: 'InputNumber', link: '/en/components/inputNumber/'},
-						{ text: 'Space', link: '/en/components/space/'},
-						{ text: 'Tooltip', link: '/en/components/tooltip/'},
-						//Flag2
+                        { text: 'Slider', link: '/en/components/slider/' },
+                        { text: 'InputNumber', link: '/en/components/inputNumber/' },
+                        { text: 'Space', link: '/en/components/space/' },
+                        { text: 'Tooltip', link: '/en/components/tooltip/' },
+                        //Flag2
                     ]
                 }],
             },
