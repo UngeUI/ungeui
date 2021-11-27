@@ -12,7 +12,8 @@ const tooltip = defineComponent({
             }
         },
         color: {
-            type: String
+            type: String,
+            default: 'rgba(0,0,0,.8)'
         }
     },
     setup(props, { slots }) {
