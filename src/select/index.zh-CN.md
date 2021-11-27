@@ -5,7 +5,7 @@ map:
 
 # Select
 
-开关
+下拉框
 
 ```js
 import { USelect } from 'ungeui'

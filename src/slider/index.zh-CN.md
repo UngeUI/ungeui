@@ -34,6 +34,6 @@ import { USlider } from 'ungeui';
 | 参数  |   说明   |   类型    |   默认值    |
 | :---: | :------: | :-------: | :---------: |
 | value | 滑块的值 | `number | array ` | `0` |
-| range | 是否是 | `boolean` | `false` |
+| range | 是否是范围 | `boolean` | `false` |
 | max | 范围最大值 | `number` | `100` |
 | min | 范围最小值 | `number` | `0` |

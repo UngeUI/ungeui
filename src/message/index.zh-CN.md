@@ -3,6 +3,7 @@ map:
     path: /components/message
 ---
 
+更好的提示用户
 
 ## 消息提示
 

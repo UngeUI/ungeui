@@ -103,16 +103,7 @@ const pagination = defineComponent({
         const right = ref(null)
         const isLeftChecked = useElementHover(left)
         const isRightChecked = useElementHover(right)
-        // onMounted(() => {
-        //     left.value?.addEventListener('mouseenter',() => {
-        //         console.log(isChecked.value,123)
-        //         isChecked.value = true
-        //     })
-        //     left.value?.addEventListener('mouseleave',() => {
-        //         console.log(isChecked.value,123)
-        //         isChecked.value = false
-        //     })
-        // })
+        
         return () => (
             <div class="u-pagination">
                 <LeftStep />

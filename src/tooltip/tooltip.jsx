@@ -17,17 +17,17 @@ const tooltip = defineComponent({
         }
     },
     setup(props, { slots }) {
-        
+        const setfRef = ref(null)
         const { 
             top: targetTop,
             left: targetLeft,
             width: targetWidth,
             height: targetHeight
-        } = usePosition()
+        } = usePosition(setfRef)
 
         const {
             isHovered: targetIsHoverd
-        } = useTargetHover()
+        } = useTargetHover(setfRef)
 
         let tooltipRef = ref()
         const { 
@@ -80,9 +80,9 @@ const tooltip = defineComponent({
             return typeof children[0].children == 'string' ? <span>{children}</span> : children
         }
         return () => (
-            <>
+            <div ref={setfRef}>
                 {
-                    getElementNode(slots.default?.()) 
+                    getElementNode(slots.default?.())
                 }
                 <Teleport to="body">
                     <Transition
@@ -99,7 +99,7 @@ const tooltip = defineComponent({
                         }
                     </Transition>
                 </Teleport>
-            </>
+            </div>
         )
     }
        
