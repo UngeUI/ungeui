@@ -31,6 +31,11 @@ module.exports = {
                 selectText: '语言',
                 nav: [{ text: '指南', link: '/' }],
                 sidebar: [{
+                    text: '安装',
+                    children: [
+                        { text: '全局引入', link: '/' }
+                    ]
+                }, {
                     text: '通用组件',
                     children: [
                         { text: 'Tag', link: '/components/tag/' },
@@ -73,8 +78,13 @@ module.exports = {
                 description: 'docs',
                 label: 'English',
                 selectText: 'Languages',
-                nav: [{ text: 'Guide', link: '/' }],
+                nav: [{ text: 'Guide', link: '/en/' }],
                 sidebar: [{
+                    text: 'Install',
+                    children: [
+                        { text: 'Global import', link: '/en/' }
+                    ]
+                }, {
                     text: 'General',
                     children: [
                         { text: 'Tag', link: '/en/components/tag/' },
