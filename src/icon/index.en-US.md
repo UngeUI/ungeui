@@ -1,31 +1,61 @@
 ---
 map:
-    path: /components/tag
+    path: /components/icon
 ---
 
-# Button
+# Icon
 
-This is a button.
+Icon expresses its meaning in graphic form
 
-## Example
+```js
+import { UIcon } from 'ungeui';
+```
 
-### Basic Usage
+:::tip
+For **icon resources**, we have adopted the form of separation from the component library，[you can here](https://www.xicons.org/#/)select the icon you want and introduce it into your project
+:::
 
-<demo src="./demo/demo.vue"
+Of course, we preset some commonly used icons and provide you with installation
+
+```shell
+yarn add -D @ungeui/icons
+```
+
+Import icon example：
+
+```js
+import { IconClock } from @ungeui/icons
+```
+
+## Code demonstration
+
+### Icon size
+
+<demo src="./demo/size.vue"
   language="vue"
-  title="Basic useage"
-  desc="This is a button.">
+  title="basic usage"
+  desc="different icon sizes">
 </demo>
 
-## API
+### Icon color
 
-```ts
-import { UTag } from 'ungeui';
-```
+<demo src="./demo/color.vue"
+  language="vue"
+  title="basic usage"
+  desc="方便切换不同颜色">
+</demo>
+
+### Icon
+
+<demo src="./demo/iconDemo.vue"
+  language="vue"
+  title=""
+  desc="">
+</demo>
 
 ## Props
 
-| Property | Description |   Type |   Default |
-| -------- | ----------: | -----: | --------: |
-| size     |        size | string |    '64px' |
-| color    |       color | string | '#fff000' |
+| Parameter | description | type | default value|
+| :---: | :--------: | :------: | :--------: | ------ |
+| size  | custom size | `number  |  string`   | `30px` |
+| color | custom color | `string` | `undefind` |

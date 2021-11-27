@@ -75,15 +75,40 @@ module.exports = {
                 selectText: 'Languages',
                 nav: [{ text: 'Guide', link: '/' }],
                 sidebar: [{
-                    text: 'Intruduce',
+                    text: 'General',
                     children: [
                         { text: 'Tag', link: '/en/components/tag/' },
+                        { text: 'Avatar', link: '/en/components/avatar/' },
+                        { text: 'Divider', link: '/en/components/divider/' },
+                        { text: 'Icon', link: '/en/components/icon/' },
+                        { text: 'Button', link: '/en/components/button/' },
+                        //Flag2
+                    ],
+                }, {
+                    text: 'Data',
+                    children: [
+                        { text: 'Input', link: '/en/components/input/' },
+                        { text: 'Radio', link: '/en/components/radio/' },
+                        { text: 'Checkbox', link: '/en/components/checkbox/' },
+                        { text: 'Switch', link: '/en/components/switch/' },
+                        { text: 'Select', link: '/en/components/select/' },
+                        { text: 'Table', link: '/en/components/table/' },
+                        { text: 'Pagination', link: '/en/components/pagination/' },
                         { text: 'Slider', link: '/en/components/slider/' },
                         { text: 'InputNumber', link: '/en/components/inputNumber/' },
-                        { text: 'Space', link: '/en/components/space/' },
+                    ],
+                }, {
+                    text: 'Feedback',
+                    children: [
+                        { text: 'Message', link: '/en/components/message/' },
+                        { text: 'Dialog', link: '/en/components/dialog/' },
                         { text: 'Tooltip', link: '/en/components/tooltip/' },
-                        //Flag2
-                    ]
+                    ],
+                }, {
+                    text: 'Layout',
+                    children: [
+                        { text: 'Space', link: '/en/components/space/' },
+                    ],
                 }],
             },
         },

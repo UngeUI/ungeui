@@ -25,7 +25,7 @@ import { USwitch } from 'ungeui'
 
 <demo src="./demo/size.vue"
     language="vue"
-    title=""
+    title="基本用法"
     desc="不同大小">
 </demo>
 
@@ -44,5 +44,5 @@ import { USwitch } from 'ungeui'
 | checked  | 是否选中 | `boolean` | `false` |
 | size  | 开关大小 | `'small' | 'medium' | 'large'` | `'medium'` | 
 | checkedValue | 选中的值 |  `boolean | string | number` | `true` |
-| uncheckedValue | 选中的值 |  `boolean | string | number` | `false` |
+| uncheckedValue | 未选中的值 |  `boolean | string | number` | `false` |
 | on-Change | 切换按钮触发的事件 |  `(e:MouseEvent) => void` | `undefined` |

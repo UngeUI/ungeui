@@ -5,7 +5,7 @@ map:
 
 # Slider
 
-this is Slider component
+Here is the slider component
 
 ```js
 import { USlider } from 'ungeui';
@@ -13,15 +13,27 @@ import { USlider } from 'ungeui';
 
 ## Code demonstration
 
-### Basic useage
+### Basic usage
 
-<demo src="./demo/demo.vue"
+<demo src="./demo/base.vue"
  language="vue"
- title="Basic useage"
- desc="Basic useage">
+ title="basic usage"
+ desc="define boundary by Max and Min">
+</demo>
+
+### Range value
+
+<demo src="./demo/double.vue"
+ language="vue"
+ title="basic usage"
+ desc="when value is an array and range is true, the range value can be obtained">
 </demo>
 
 ## Props
 
-| Property | Description |   Type |   Default |
-| :--------: | :----------: | :-----: | :--------: |
+| Parameter | description | type | default value|
+| :---: | :------: | :-------: | :---------: |
+| value | value of slider | `number | array ` | `0` |
+| range | is the range | `boolean` | `false` |
+| max | range Max | `number` | `100` |
+| min | range MIn | `number` | `0` |

@@ -1,31 +1,55 @@
 ---
 map:
-    path: /components/tag
+    path: /components/divider
 ---
 
-# Button
+# Divider
 
-This is a button.
+Split lines are used to split clips
 
-## Example
+```js
+import { UDivider } from 'ungeui';
+```
 
-### Basic Usage
+## Code demonstration
 
-<demo src="./demo/demo.vue"
+### Split line type
+
+<demo src="./demo/type.vue"
   language="vue"
-  title="Basic useage"
-  desc="This is a button.">
+  title="basic usage"
+  desc="basic solid line, dotted line, dotted line">
 </demo>
 
-## API
+### Bold
 
-```ts
-import { UTag } from 'ungeui';
-```
+<demo src="./demo/bold.vue"
+  language="vue"
+  title="basic usage"
+  desc="bold">
+</demo>
+
+### Custom height
+
+<demo src="./demo/height.vue"
+  language="vue"
+  title="basic usage"
+  desc="custom line height">
+</demo>
+
+### Custom color
+
+<demo src="./demo/color.vue"
+  language="vue"
+  title="basic usage"
+  desc="support HEX and RGBA">
+</demo>
 
 ## Props
 
-| Property | Description |   Type |   Default |
-| -------- | ----------: | -----: | --------: |
-| size     |        size | string |    '64px' |
-| color    |       color | string | '#fff000' |
+|  Parameter | description | type | default value|
+| :----: | :----------: | :-------: | :---------: | 
+|  type  |  split line type | `'solid'  |  'dashed'   | 'dotted'` | `'solid'` |
+| height |  custom height  | `number`  |  `1`     |
+|  bold  |     bold      | `boolean` |   `false`   |
+| color  |  custom color  | `string`  | `'#cccccc'` |

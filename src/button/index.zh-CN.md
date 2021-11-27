@@ -1,6 +1,5 @@
 ---
 map:
-    # 映射到docs的路径
     path: /components/button
 ---
 
@@ -88,7 +87,7 @@ import { UButton } from 'ungeui';
 
 ## Props
 
-|   参数   |   说明   |    类型    |    值    |
+|   参数   |   说明   |    类型    |    默认值    |
 | :------: | :------: | :--------: | :------: | --------- | ------- | ---------- | ----------- |
 |   type   | 按钮主题 | `'success' | 'danger' | 'warning' | 'info'  | 'default'` | `'default'` |
 |   deep   | 深色按钮 | `boolean`  | `false`  |

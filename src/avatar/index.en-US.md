@@ -1,6 +1,6 @@
 ---
 map:
-    path: /components/tag
+    path: /components/avatar
 ---
 
 # Avatar
@@ -15,40 +15,40 @@ import { UAvatar } from 'ungeui';
 
 ### Different sizes
 
-<demo src="./demo/demo.vue"
+<demo src="./demo/size.vue"
   language="vue"
-  title="Basic useage"
-  desc="Size controls the size of the avatar. The default background is gray">
+  title="basic usage"
+  desc="size controls the size of the avatar. The default background is gray">
 </demo>
 
-### Font size adaptive
+### Font size adaptive function
 
 <demo src="./demo/fit.vue"
   language="vue"
-  title="Basic useage"
-  desc="Ensure that the text does not overflow the avatar frame">
+  title="basic usage"
+  desc="ensure that the text does not overflow the avatar frame">
 </demo>
 
-### picture
+### Picture
 
 <demo src="./demo/img.vue"
   language="vue"
-  title="Basic useage"
-  desc="Pictures can be inserted to support network resources and local resources">
+  title="basic usage"
+  desc="pictures can be inserted to support network resources and local">
 </demo>
 
-### circular
+### Round
 
 <demo src="./demo/round.vue"
   language="vue"
-  title="Basic useage"
-  desc="circular">
+  title="basic usage"
+  desc="round head">
 </demo>
 
 ## Props
 
-| Property | Description |   Type |   Default |
-| :--------: | :----------: | :-----: | :--------: |
-| size  | Picture size | `'small'  |  'medium'   | 'large' | 'huge'` | `'medium'` |
-|  src  | Picture linking | `string`  | `undefined` |
-| round |  Picture fillet   | `boolean` |   `false`   |
+| Parameter | description | type | default value |
+| :---: | :------: | :-------: | :---------: | ------- | ------- | ---------- |
+| size  | picture size | `'small'  |  'medium'   | 'large' | 'huge'` | `'medium'` |
+|  src  | picture link | `string`  | `undefined` |
+| round |   round   | `boolean` |   `false`   |
