@@ -26,7 +26,7 @@ import { USpace } from 'ungeui';
 <demo src="./demo/grap.vue"
  language="vue"
  title="基本用法"
- desc="使子元素垂直显示">
+ desc="控制间隙">
 </demo>
 
 

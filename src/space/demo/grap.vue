@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-import { USpace,UButton,UInputNumber,UDivider } from 'ungeui'
+import { USpace, UButton, UInputNumber, UDivider } from 'ungeui'
 import { ref } from 'vue'
 
 let value = ref(22)
