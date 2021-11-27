@@ -29,49 +29,43 @@ const space = defineComponent({
         const spaceGap = computed(() => {
             return props.grap + 'px'
         })
-        const spaceRef = ref(null)
-        onMounted(()=> {
-            const len = spaceRef.value.children.length
-            if(props.vertical) {
-                for(let el of spaceRef.value.children) {      
-                    el.style.marginTop = '0'
-                    el.style.marginBottom = spaceGap.value
-                }
-            } else {
-                for(let el of spaceRef.value.children) {      
-                    el.style.marginLeft = '0'
-                    el.style.marginRight = spaceGap.value
-                }
-            }
-            
-            if(len) {
-                spaceRef.value.children[len - 1].style.marginRight = '0'
-                spaceRef.value.children[len - 1].style.marginBottom = '0'
+
+        const children = slots.default?.()
+        const horizontalClass = computed(() => {
+            return {
+                'margin-top': 0,
+                'margin-bottom': 0,
+                'margin-right': spaceGap.value
             }
         })
-        watch(spaceGap,() => {
-            const len = spaceRef.value.children.length
-            if(props.vertical) {
-                for(let el of spaceRef.value.children) {      
-                    el.style.marginTop = '0'
-                    el.style.marginBottom = spaceGap.value
-                }
-            } else {
-                for(let el of spaceRef.value.children) {      
-                    el.style.marginLeft = '0'
-                    el.style.marginRight = spaceGap.value
-                }
-            }
-            
-            if(len) {
-                spaceRef.value.children[len - 1].style.marginRight = '0'
-                spaceRef.value.children[len - 1].style.marginBottom = '0'
+        const verticalClass = computed(() => {
+            return {
+                'margin-left': 0,
+                'margin-right': 0,
+                'margin-bottom': spaceGap.value
             }
         })
+        const LastElementStyle = computed(() => {
+            return props.vertical ? 
+                { 'margin-bottom': 0 } : 
+                { 'margin-right': 0 }
+        })
+            
         return () =>  (
-            <div ref={spaceRef} class='u-space' style={spaceStyle.value}>
+            <div class='u-space' style={spaceStyle.value}>
                 {
-                    slots.default?.()
+                    children.map((child,index) => (
+                        <div
+                            style={[
+                                props.vertical ? 
+                                verticalClass.value :
+                                horizontalClass.value,
+                                index == children.length - 1 && LastElementStyle.value
+                            ]}
+                        >
+                            {child}
+                        </div>
+                    ))
                 }
             </div>
         )
