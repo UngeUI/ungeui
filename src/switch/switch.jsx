@@ -1,7 +1,7 @@
 import { defineComponent, computed } from 'vue'
 
 const Switch = defineComponent({
-    name: 'switch',
+    name: 'u-switch',
     props:{
         size: {
             type: String,
@@ -32,6 +32,7 @@ const Switch = defineComponent({
             return props.checked == props.checkedValue ? 'u-switch-checked' : ''
         })
         const onClick = (e) => {
+            console.log('value:',props.checked,props.uncheckedValue , props.checkedValue)
             emit('update:checked', props.checked == props.checkedValue ? props.uncheckedValue : props.checkedValue)
             emit('change', e)
         }

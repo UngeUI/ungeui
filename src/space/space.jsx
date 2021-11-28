@@ -30,7 +30,7 @@ const space = defineComponent({
             return props.grap + 'px'
         })
 
-        const children = slots.default?.()
+        // const children = slots.default?.() || []  useless
         const horizontalClass = computed(() => {
             return {
                 'margin-top': 0,
@@ -51,16 +51,32 @@ const space = defineComponent({
                 { 'margin-right': 0 }
         })
             
-        return () =>  (
-            <div class='u-space' style={spaceStyle.value}>
+        return {
+            spaceStyle,
+            verticalClass,
+            horizontalClass,
+            LastElementStyle
+        }
+    },
+    render() {
+        const {
+            spaceStyle,
+            verticalClass,
+            horizontalClass,
+            LastElementStyle,
+            vertical
+        } = this
+        const children = this.$slots.default()
+        return (
+            <div class='u-space' style={spaceStyle}>
                 {
                     children.map((child,index) => (
                         <div
                             style={[
-                                props.vertical ? 
-                                verticalClass.value :
-                                horizontalClass.value,
-                                index == children.length - 1 && LastElementStyle.value
+                                vertical ? 
+                                verticalClass :
+                                horizontalClass,
+                                index == children.length - 1 && LastElementStyle
                             ]}
                         >
                             {child}

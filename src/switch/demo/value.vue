@@ -1,7 +1,11 @@
 <template>
     <div>
         <u-space>
-            <u-switch checkedValue="yes" uncheckedValue="no" v-model:checked="value"></u-switch>
+            <u-switch 
+                v-model:checked="value"
+                checkedValue="yes" 
+                uncheckedValue="no"
+            ></u-switch>
             <u-tag>{{value}}</u-tag>
         </u-space>
     </div>
