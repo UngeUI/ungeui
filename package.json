@@ -28,6 +28,7 @@
         "docs-build-serve": "cross-env NODE_ENV=true yarn docs-build && yarn docs-serve",
         "docs-deploy": "gh-pages -d docs/dist -t true",
         "docs-build-deploy": "yarn docs-build && yarn docs-deploy",
+        "postdocs-build": "node ./bin/favicon.js",
         "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
         "lint": "eslint  src/**/*.{vue,js,ts,tsx}",
         "lint-fix": "yarn lint -- --fix",
