@@ -84,6 +84,17 @@
         "vue3",
         "components"
     ],
+    "gitHooks": {
+        "pre-commit": "lint-staged"
+    },
+    "lint-staged": {
+        "*.js": [
+            "prettier --write"
+        ],
+        "*.ts": [
+            "prettier --parser=typescript --write"
+        ]
+    },
     "publishConfig": {
         "access": "public",
         "registry": "https://registry.npmjs.org"

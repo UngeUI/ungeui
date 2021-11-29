@@ -2,7 +2,7 @@
 
 const fs = require('fs')
 
-fs.readFile('./docs/dist/index.html', 'utf8', (err, res) => {
+fs.readFile("./docs/dist/index.html", 'utf8', (err, res) => {
     const str = '<link rel="icon" href="./favicon.ico">'
     const { index } = res.match(/<\/head>/)
     res.split('').splice(index, 0, str).join('')
