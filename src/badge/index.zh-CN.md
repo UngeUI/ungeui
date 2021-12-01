@@ -65,3 +65,9 @@ import { UBadge } from 'ungeui';
 
 | 参数  |   说明   |   类型    |   默认值    |
 | :---: | :------: | :-------: | :---------: |
+| value | 显示的值 ｜ `number | string` | `undefined` |
+| color | 背景颜色 ｜ `string` | `#FF4D4F` |
+| max | 上限值 ｜ `number` | `undefined` |
+| min | 下限值 ｜ `number` | `0` |
+| hideLowerLimit | 到达下限值时候是否隐藏 ｜ `boolean` | `false` |
+| dot | 是否以圆点显示 ｜ `boolean` | `false` |
