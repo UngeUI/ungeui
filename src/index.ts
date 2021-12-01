@@ -19,6 +19,7 @@ import USlider from './slider/index.js'
 import UInputNumber from './inputNumber/index.js'
 import USpace from './space/index.js'
 import UTooltip from './tooltip/index.js'
+import UBadge from './badge/index.js'
 //ImportFlag
 
 const components = [
@@ -43,6 +44,7 @@ const components = [
 	UInputNumber,
 	USpace,
 	UTooltip,
+	UBadge,
 	//ArrayFlag
 ];
 
@@ -77,5 +79,6 @@ export {
 	UInputNumber,
 	USpace,
 	UTooltip,
+	UBadge,
 	//ExportFlag
 };

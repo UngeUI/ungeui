@@ -43,7 +43,8 @@ module.exports = {
                         { text: 'Divider', link: '/components/divider/' },
                         { text: 'Icon', link: '/components/icon/' },
                         { text: 'Button', link: '/components/button/' },
-                        //Flag
+                        { text: 'Badge', link: '/components/badge/'},
+						//Flag
                     ],
                 }, {
                     text: '数据组件',
@@ -92,7 +93,8 @@ module.exports = {
                         { text: 'Divider', link: '/en/components/divider/' },
                         { text: 'Icon', link: '/en/components/icon/' },
                         { text: 'Button', link: '/en/components/button/' },
-                        //Flag2
+                        { text: 'Badge', link: '/en/components/badge/'},
+						//Flag2
                     ],
                 }, {
                     text: 'Data',
