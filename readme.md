@@ -30,6 +30,23 @@
 -   🥉 A component library based on Vue3
 -   🚀 Writen in `.jsx` | `.vue` && `stylus`
 
+## Usage
+
+**Install**
+
+```shell
+yarn add ungeui
+```
+**Import**
+```
+import { createApp } from 'vue';
+import UngeUI from 'ungeui';
+import 'ungeui/dist/style.css';
+
+const app = createApp(App);
+app.use(UngeUI);
+```
+
 ## Document
 
 [https://peterroe.github.io/ungeui/](https://peterroe.github.io/ungeui/)
