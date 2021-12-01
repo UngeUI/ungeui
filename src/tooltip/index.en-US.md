@@ -31,7 +31,7 @@ import { UTooltip } from 'ungeui';
 
 ## Props
 
-| Parameter description type default value|
+| Parameter | description | type | default value|
 | :---: | :------: | :-------: | :---------: |
 | placement | where the tooltip appears | `top | right | bottom |left` | `top`
 | color | tooltip background color | `same as bgcolor of css` | `rgba(0,0,0,.8)`
