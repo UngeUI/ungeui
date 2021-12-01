@@ -3,62 +3,62 @@ map:
     path: /components/tag
 ---
 
-# Tag
+# Tag🏷
 
-This is a simple label
+It is usually used to show some attributes, and occasionally used as some alternative attributes
+
+## Code demonstration
 
 ```js
 import { UTag } from 'ungeui';
 ```
 
-## Code demonstration
-
-### Different themes
+### Different themes🚀
 
 <demo src="./demo/theme.vue"
   language="vue"
-  title="basic usage"
-  desc="different types determine different topic types">
+  title="🚀basic usage"
+  desc="different types determine different topic types, Five themes are provided by default: default、success、warning、danger、info">
 </demo>
 
-### Different sizes
+### Different sizes🔥
 
 <demo src="./demo/size.vue"
   language="vue"
-  title="basic usage"
-  desc="add different size values">
+  title="🔥basic usage"
+  desc="Adding different size values can change the size of the label">
 </demo>
 
-### Can be closed
+### Closed❌
 
 <demo src="./demo/close.vue"
   language="vue"
-  title="basic usage"
+  title="❌basic usage"
   desc="closed attribute controls whether to display closed">
 </demo>
 
-### Capsule label
+### Capsule label💊
 
 <demo src="./demo/round.vue"
   language="vue"
-  title="basic usage"
-  desc="capsule fillet">
+  title="💊basic usage"
+  desc="It looks like a capsule, maybe...">
 </demo>
 
-### Disable
+### Disable🚫
 
 <demo src="./demo/disabled.vue"
   language="vue"
-  title="basic usage"
-  desc="event cannot be triggered after disabling">
+  title="🚫basic usage"
+  desc="When disabled, events cannot be triggered and text cannot be selected">
 </demo>
 
-### Custom label color
+### Custom label color🌈
 
 <demo src="./demo/color.vue"
   language="vue"
-  title="basic usage"
-  desc="custom colors support hex and RGB">
+  title="🌈basic usage"
+  desc="custom colors support hex and RGB, you can use the color you like!">
 </demo>
 
 ## Props
