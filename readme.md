@@ -35,10 +35,10 @@
 **Install**
 
 ```shell
-yarn add ungeui
+$ yarn add ungeui
 ```
 **Import**
-```
+```js
 import { createApp } from 'vue';
 import UngeUI from 'ungeui';
 import 'ungeui/dist/style.css';
