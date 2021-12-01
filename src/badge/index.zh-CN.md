@@ -21,6 +21,14 @@ import { UBadge } from 'ungeui';
  desc="和头像很搭">
 </demo>
 
+### 不同背景颜色
+
+<demo src="./demo/color.vue"
+ language="vue"
+ title="基本用法"
+ desc="不同背景颜色">
+</demo>
+
 ### 上下限
 
 <demo src="./demo/over.vue"
@@ -35,6 +43,22 @@ import { UBadge } from 'ungeui';
  language="vue"
  title="基本用法"
  desc="到达最小值时，是否显示下限值">
+</demo>
+
+### 点
+
+<demo src="./demo/dot.vue"
+ language="vue"
+ title="基本用法"
+ desc="点">
+</demo>
+
+### 其他组合
+
+<demo src="./demo/other.vue"
+ language="vue"
+ title="基本用法"
+ desc="其他组合">
 </demo>
 
 ## Props

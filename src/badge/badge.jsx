@@ -20,6 +20,10 @@ const badge = defineComponent({
         hideLowerLimit: {
             type: Boolean,
             default: false
+        },
+        dot: {
+            type: Boolean,
+            default: false
         }
     },
     setup(props, { slots }) {
@@ -38,14 +42,17 @@ const badge = defineComponent({
                 return props.value
             }
         })
+        const supClass = computed(() => {
+            return props.dot ? 'u-badge-dot' : 'u-badge-round'
+        })
         return () =>  (
-            <div class="u-badge" >
+            <div class={["u-badge"]} >
                 {
                     slots.default?.()
                 }
-                <sup class="u-badge-sup" style={supStyle.value}>
+                <sup class={['u-badge-sup',supClass.value]} style={supStyle.value}>
                     {
-                        filterValue.value
+                        props.dot || filterValue.value
                     }
                 </sup>
             </div>

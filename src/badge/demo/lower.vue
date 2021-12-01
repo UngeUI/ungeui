@@ -7,6 +7,12 @@
             <u-badge :value="value" :min="0" hideLowerLimit>
                 <u-avatar size="large"></u-avatar>
             </u-badge>
+            <u-badge :value="value" :min="0" dot>
+                <u-avatar size="large"></u-avatar>
+            </u-badge>
+            <u-badge :value="value" :min="0" dot  hideLowerLimit>
+                <u-avatar size="large"></u-avatar>
+            </u-badge>
             <u-input-number 
                 v-model:value="value"
                 style="width: 140px"
