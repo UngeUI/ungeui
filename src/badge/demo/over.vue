@@ -6,7 +6,6 @@
             </u-badge>
             <u-input-number 
                 v-model:value="value"
-                style="width: 140px"
             ></u-input-number>
         </u-space>
    </div>

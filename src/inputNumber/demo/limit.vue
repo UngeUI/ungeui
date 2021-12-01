@@ -4,7 +4,7 @@
                v-model:value="value"
                :max="10"
                :min="5"
-               style="width: 140px"
+               style="width: 200px"
           ></u-input-number>
    </div>
 </template>

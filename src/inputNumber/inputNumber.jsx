@@ -18,7 +18,8 @@ const inputNumber = defineComponent({
             type: Number
         },
         min: {
-            type: Number
+            type: Number,
+            default: 0
         },
         step: {
             type: Number,
@@ -31,7 +32,7 @@ const inputNumber = defineComponent({
             return 'u-input-number-size-' + props.size
         })
         const filterValue = (value) => {
-            if(props.min && value < props.min) {
+            if(props.min != undefined && value < props.min) {
                 value = props.min
             }
             if(props.max && value > props.max) {

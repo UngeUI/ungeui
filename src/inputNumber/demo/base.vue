@@ -2,7 +2,6 @@
    <div>
           <u-input-number 
                v-model:value="value"
-               style="width: 140px"
                @change="onChange"
                @increase="onIncrease"
                @decrease="onDecrease"

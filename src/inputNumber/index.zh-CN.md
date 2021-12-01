@@ -51,6 +51,8 @@ import { UInputNumber } from 'ungeui';
 | :---: | :------: | :-------: | :---------: |
 | value(v-model) | 数字值 | `number` | `0` |
 | step | 变化步幅 | `number` | `1` |
+| max | 最大值 | `number` | `undefined` |
+| min | 最小值 | `number` | `0` |
 | on-change | 用户输入 | `(value) => void ` | `0` |
 | on-increase | 用户点击增加 | `(value) => void ` | `undefined` |
 | on-decrease | 用户点击减少 | `(value) => void ` | `undefined` |
