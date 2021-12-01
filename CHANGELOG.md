@@ -1,22 +1,53 @@
-## 0.0.1 (2021-04-15)
+## [0.0.13](https://github.com/peterroe/Unge-UI/compare/v0.0.12...v0.0.13) (2021-11-26)
+
 
 ### Bug Fixes
 
--   add package.json in docs ([3c7b8d4](https://github.com/dewfall123/vue-lib-template/commit/3c7b8d4017b567f6715fb18399bf0f267cbcc72b))
--   alias 添加引号 ([4c05637](https://github.com/dewfall123/vue-lib-template/commit/4c05637138f86d12bbe5f933a0a6d6d6196d26f4))
--   docs dir error + alias error ([c6b32df](https://github.com/dewfall123/vue-lib-template/commit/c6b32dfcabab4713982c3b4c1ebbfd4dd8fab100))
+* bing ([79611e4](https://github.com/peterroe/Unge-UI/commit/79611e4afdbee2c53dbbd5fd47108aa031a21eb9))
 
-### Features
 
--   使用 vite 打包 ([f22d0b7](https://github.com/dewfall123/vue-lib-template/commit/f22d0b7ebe2a9e74209e6dd9946dc2dd0e888db1))
--   新的 vitepress 模板 ([117aafc](https://github.com/dewfall123/vue-lib-template/commit/117aafc1966024dc08bc1cced83c29f3f186d611))
--   bump vitepress-for-component ([ea4a22e](https://github.com/dewfall123/vue-lib-template/commit/ea4a22e041759b9d7ee6b551617e272f91b10d53))
--   support gh-pages ([35e620f](https://github.com/dewfall123/vue-lib-template/commit/35e620fd270971de448713347424bf721db362f9))
--   support locale lint build and more ([f0190fa](https://github.com/dewfall123/vue-lib-template/commit/f0190fa12792858c4d937a040c8a47dd1111be1f))
--   use vvitepress-for-component ([1dbe51a](https://github.com/dewfall123/vue-lib-template/commit/1dbe51aec173842dd0913212370d1285ceddb383))
 
-## 0.0.1 (2020-11-19)
+## [0.0.12](https://github.com/peterroe/Unge-UI/compare/v0.0.11...v0.0.12) (2021-11-20)
 
-### Features
 
--   新的 vitepress 模板 ([117aafc](https://github.com/dewfall123/vue-lib-template/commit/117aafc1966024dc08bc1cced83c29f3f186d611))
+
+## [0.0.11](https://github.com/peterroe/Unge-UI/compare/v0.0.10...v0.0.11) (2021-11-20)
+
+
+
+## [0.0.10](https://github.com/peterroe/Unge-UI/compare/v0.0.9...v0.0.10) (2021-11-19)
+
+
+
+## [0.0.9](https://github.com/peterroe/Unge-UI/compare/v0.0.8...v0.0.9) (2021-11-16)
+
+
+
+## [0.0.8](https://github.com/peterroe/Unge-UI/compare/v0.0.7...v0.0.8) (2021-11-09)
+
+
+
+## [0.0.7](https://github.com/peterroe/Unge-UI/compare/v0.0.6...v0.0.7) (2021-11-07)
+
+
+
+## [0.0.6](https://github.com/peterroe/Unge-UI/compare/v0.0.5...v0.0.6) (2021-11-06)
+
+
+
+## [0.0.5](https://github.com/peterroe/Unge-UI/compare/v0.0.4...v0.0.5) (2021-11-06)
+
+
+
+## [0.0.4](https://github.com/peterroe/Unge-UI/compare/v0.0.3...v0.0.4) (2021-11-06)
+
+
+
+## [0.0.3](https://github.com/peterroe/Unge-UI/compare/v0.0.2...v0.0.3) (2021-11-06)
+
+
+
+## 0.0.2 (2021-11-06)
+
+
+
