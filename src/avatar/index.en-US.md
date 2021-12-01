@@ -3,46 +3,46 @@ map:
     path: /components/avatar
 ---
 
-# Avatar
+# Avatar🤡
 
-The avatar can be an online logo of a person or object
+Use avatar to represent your identity on the network, and support avatar and text
+
+## Code demonstration
 
 ```js
 import { UAvatar } from 'ungeui';
 ```
 
-## Code demonstration
-
-### Different sizes
+### Different sizes🔥
 
 <demo src="./demo/size.vue"
   language="vue"
-  title="basic usage"
-  desc="size controls the size of the avatar. The default background is gray">
+  title="🔥basic usage"
+  desc="Size controls the size of the avatar. When there is no avatar filling, the default background is gray">
 </demo>
 
-### Font size adaptive function
+### Font size adaptation🙏
 
 <demo src="./demo/fit.vue"
   language="vue"
-  title="basic usage"
-  desc="ensure that the text does not overflow the avatar frame">
+  title="🙏basic usage"
+  desc="The filled content can be text. If the text is too long, it will be reduced appropriately to ensure that the text does not overflow the avatar frame">
 </demo>
 
-### Picture
+### Picture🧩
 
 <demo src="./demo/img.vue"
   language="vue"
-  title="basic usage"
+  title="🧩basic usage"
   desc="pictures can be inserted to support network resources and local">
 </demo>
 
-### Round
+### Round⭕
 
 <demo src="./demo/round.vue"
   language="vue"
-  title="basic usage"
-  desc="round head">
+  title="⭕basic usage"
+  desc="Round head sometimes looks more suitable for your application. It looks cute, doesn't it?">
 </demo>
 
 ## Props
