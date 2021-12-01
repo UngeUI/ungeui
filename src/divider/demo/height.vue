@@ -1,9 +1,12 @@
 <template>
     <div>
-        <u-divider type="solid" :height="10"></u-divider>
+        <u-input-number v-model:value="height" :step="2"></u-input-number>
+        <u-divider type="solid" :height="height"></u-divider>
     </div>
 </template>
 
 <script setup>
-import { UDivider } from 'ungeui';
+import { UDivider,UInputNumber } from 'ungeui';
+import { ref } from 'vue'
+let height = ref(5)
 </script>

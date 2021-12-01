@@ -3,37 +3,37 @@ map:
     path: /components/divider
 ---
 
-# Divider
+# Divider✂
 
 Split lines are used to split clips
+
+## Code demonstration
 
 ```js
 import { UDivider } from 'ungeui';
 ```
 
-## Code demonstration
-
-### Split line type
+### Split line type🚀
 
 <demo src="./demo/type.vue"
   language="vue"
-  title="basic usage"
-  desc="basic solid line, dotted line, dotted line">
+  title="🚀basic usage"
+  desc="It includes basic solid lines, dotted lines, dotted lines, and all types supported by border-style">
 </demo>
 
-### Bold
+### Bold➕
 
 <demo src="./demo/bold.vue"
   language="vue"
-  title="basic usage"
-  desc="bold">
+  title="➕basic usage"
+  desc="Use the bold attribute to bold the split line. The height becomes 2px">
 </demo>
 
-### Custom height
+### Custom height🌋
 
 <demo src="./demo/height.vue"
   language="vue"
-  title="basic usage"
+  title="🌋basic usage"
   desc="custom line height">
 </demo>
 
@@ -42,7 +42,7 @@ import { UDivider } from 'ungeui';
 <demo src="./demo/color.vue"
   language="vue"
   title="basic usage"
-  desc="support HEX and RGBA">
+  desc="support HEX and RGB, Now the colors are rich">
 </demo>
 
 ## Props
