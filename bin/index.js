@@ -12,6 +12,12 @@ const componentName = process.argv[2] || 'component'
 const UpperComponentName = componentName.slice(0, 1).toUpperCase() + componentName.slice(1)
 const componentPath = `./src/${componentName}`
 
+if (componentName == 'component') {
+    console.log(chalk.hex('#cb3837').bold('Error: You did not enter the component name, You should run:'))
+    console.log(chalk.hex('#13c2c2').bold('yarn create-component [component-name]'))
+    return
+}
+
 inquirer.prompt([{
     type: 'confirm',
     name: 'isSure',
