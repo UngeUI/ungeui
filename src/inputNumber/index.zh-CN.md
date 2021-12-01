@@ -21,6 +21,14 @@ import { UInputNumber } from 'ungeui';
  desc="基本用法">
 </demo>
 
+### 限制范围
+
+<demo src="./demo/limit.vue"
+ language="vue"
+ title="基本用法"
+ desc="限制在5-10">
+</demo>
+
 ### 不同步幅
 
 <demo src="./demo/step.vue"

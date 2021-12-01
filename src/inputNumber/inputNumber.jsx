@@ -14,6 +14,12 @@ const inputNumber = defineComponent({
             type: Number,
             default: 0
         },
+        max: {
+            type: Number
+        },
+        min: {
+            type: Number
+        },
         step: {
             type: Number,
             default: 1
@@ -24,18 +30,30 @@ const inputNumber = defineComponent({
         const inputNumberSize = computed(() => {
             return 'u-input-number-size-' + props.size
         })
+        const filterValue = (value) => {
+            if(props.min && value < props.min) {
+                value = props.min
+            }
+            if(props.max && value > props.max) {
+                value = props.max
+            }
+            return value
+        }
         const onValueChange = (value) => {
-            const numberValue = Number.parseInt(value) || 0
+            let numberValue = Number.parseInt(value) || 0
+            numberValue = filterValue(numberValue)
             emit('change', numberValue)
             emit('update:value', numberValue)
         }
         const decreaseValue = () => {
-            const numberValue = Number.parseInt(props.value) - props.step
+            let numberValue = Number.parseInt(props.value) - props.step
+            numberValue = filterValue(numberValue)
             emit('decrease', numberValue)
             emit('update:value', numberValue)
         }
         const increaseValue = () => {
-            const numberValue = Number.parseInt(props.value) + props.step
+            let numberValue = Number.parseInt(props.value) + props.step
+            numberValue = filterValue(numberValue)
             emit('increase', numberValue)
             emit('update:value', numberValue)
         }
