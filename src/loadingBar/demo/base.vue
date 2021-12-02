@@ -1,7 +1,7 @@
 <template>
    <div>
         <u-button @click="onClick">
-             this is loadingBar
+             样例
         </u-button>
    </div>
 </template>
@@ -9,9 +9,6 @@
 <script setup>
 import { loadingBar,UButton } from 'ungeui'
 const onClick = () => {
-     console.log(234)
-     loadingBar.start()
-     loadingBar.start()
      loadingBar.start()
      setTimeout(() => {
           loadingBar.end()

@@ -21,7 +21,21 @@ import { ULoadingBar } from 'ungeui';
  desc="基本用法">
 </demo>
 
-## Props
+### 自定义关闭时间
 
-| 参数  |   说明   |   类型    |   默认值    |
-| :---: | :------: | :-------: | :---------: |
+
+我们推荐一个应用只能有一个`loadingBar`实例，所以你导出的是一个对象，通过调用`start()`和`end()`开启和关闭。
+
+同时这也意味着，你可以跨文件，跨页面对这个实例进行开启关闭操作
+
+
+<demo src="./demo/end.vue"
+ language="vue"
+ title="基本用法"
+ desc="自定义关闭时间">
+</demo>
+
+## APIs
+
+* `start()`
+* `end()`

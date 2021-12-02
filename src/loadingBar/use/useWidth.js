@@ -39,9 +39,9 @@ const useWidth = (el) => {
         reqRef = window.requestAnimationFrame(end)
     }
 
-    //想要在0.5秒内跑完剩下的路程，也就是跑 500ms / 16.6ms = 30次，每次跑gap%
+    //想要在0.5秒内跑完剩下的路程，也就是跑 300ms / 16.6ms = 18次，每次跑gap%
     const endWidth = () => {
-        gap = (100 - Number.parseFloat(width.value)) / 30
+        gap = (100 - Number.parseFloat(width.value)) / (300 / 16.6)
         cancelAnimationFrame(reqRef)
         window.requestAnimationFrame(end)
     }
