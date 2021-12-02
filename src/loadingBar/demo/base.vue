@@ -11,6 +11,8 @@ import { ULoadingBar,UButton } from 'ungeui'
 const onClick = () => {
      console.log(234)
      ULoadingBar.start()
+     ULoadingBar.start()
+     ULoadingBar.start()
      setTimeout(() => {
           ULoadingBar.end()
      },1000)

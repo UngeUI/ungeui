@@ -1,12 +1,15 @@
 import LoadingBar from './loadingBar.jsx';
 import { render, createVNode, ref, computed } from 'vue'
 
-let isEnd
+let seed = 0
+
 let vm
-let props = {}
 const start = () => {
     console.log('start')
-
+    if (seed == 1) {
+        return
+    }
+    seed = 1
     vm = createVNode(
         LoadingBar,
         null,
@@ -17,6 +20,7 @@ const start = () => {
     document.body.appendChild(container.firstElementChild)
 }
 const end = () => {
+    seed = 0
     vm.component.exposed.endWidth() // not good realization
 }
 const api = {
