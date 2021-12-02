@@ -4,7 +4,7 @@ import { render, createVNode, ref, computed } from 'vue'
 let seed = 0
 
 let vm
-const start = () => {
+const start = (props) => {
     console.log('start')
     if (seed == 1) {
         return
@@ -12,7 +12,7 @@ const start = () => {
     seed = 1
     vm = createVNode(
         LoadingBar,
-        null,
+        props,
         null
     )
     const container = document.createElement('div')

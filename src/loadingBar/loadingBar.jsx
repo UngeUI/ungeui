@@ -1,12 +1,22 @@
-import { defineComponent, watch, ref, Transition } from 'vue';
+import { defineComponent, computed, ref, Transition } from 'vue';
 import useWidth from './use/useWidth.js'
 const loadingBar = defineComponent({
     name: 'loadingBar',
     props: {
-
+        color: {
+            type: String,
+            default: ''
+        }
     },
     setup(props, { slots, expose }) {
         const { width, isShow, endWidth } = useWidth()
+
+        const innerStyle = computed(() => {
+            return {
+                width:width.value,
+                'background-color': props.color
+            }
+        })
         expose({
             endWidth
         })
@@ -18,9 +28,10 @@ const loadingBar = defineComponent({
                 {
                     isShow.value && (
                         <div class="u-loading-bar">
-                            <div class="u-loading-bar-inner" style={{width:width.value}}>
-
-                            </div>
+                            <div
+                                class="u-loading-bar-inner" 
+                                style={innerStyle.value}
+                            ></div>
                         </div>
                     )
                 }
