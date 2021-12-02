@@ -23,7 +23,7 @@ import { USpace } from 'ungeui';
 
 ### 控制间隙
 
-<demo src="./demo/grap.vue"
+<demo src="./demo/gap.vue"
  language="vue"
  title="基本用法"
  desc="控制间隙">

@@ -2,7 +2,7 @@
    <div>
         <u-input-number :step="20" v-model:value="value"></u-input-number>
         <u-divider></u-divider>
-        <u-space :grap="value">
+        <u-space :gap="value">
             <u-button>按钮</u-button>
             <u-button>按钮</u-button>
             <u-button>按钮</u-button>

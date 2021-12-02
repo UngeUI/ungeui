@@ -1,6 +1,6 @@
 <template>
    <div>
-        <u-space :grap="20">
+        <u-space :gap="20">
             <u-badge :value="value">
                 <u-avatar size="large"></u-avatar>
             </u-badge>

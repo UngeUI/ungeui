@@ -13,9 +13,9 @@ const space = defineComponent({
         vertical: {
             type: Boolean
         },
-        grap: {
+        gap: {
             type: Number,
-            default: 12
+            default: 20
         }
     },
     setup(props, { slots }) {
@@ -27,7 +27,7 @@ const space = defineComponent({
             }
         })
         const spaceGap = computed(() => {
-            return props.grap + 'px'
+            return props.gap + 'px'
         })
 
         // const children = slots.default?.() || []  useless

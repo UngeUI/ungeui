@@ -23,7 +23,7 @@ import { USpace } from 'ungeui';
 
 ### Control gap
 
-<demo src="./demo/grap.vue"
+<demo src="./demo/gap.vue"
  language="vue"
  title="basic usage"
  desc="control gap">
