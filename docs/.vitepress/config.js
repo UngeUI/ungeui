@@ -43,8 +43,8 @@ module.exports = {
                         { text: 'Divider', link: '/components/divider/' },
                         { text: 'Icon', link: '/components/icon/' },
                         { text: 'Button', link: '/components/button/' },
-                        { text: 'Badge', link: '/components/badge/'},
-						//Flag
+                        { text: 'Badge', link: '/components/badge/' },
+                        //Flag
                     ],
                 }, {
                     text: '数据组件',
@@ -65,6 +65,7 @@ module.exports = {
                         { text: 'Message', link: '/components/message/' },
                         { text: 'Dialog', link: '/components/dialog/' },
                         { text: 'Tooltip', link: '/components/tooltip/' },
+                        { text: 'LoadingBar', link: '/components/loadingBar/' },
                     ],
                 }, {
                     text: '布局组件',
@@ -93,8 +94,8 @@ module.exports = {
                         { text: 'Divider', link: '/en/components/divider/' },
                         { text: 'Icon', link: '/en/components/icon/' },
                         { text: 'Button', link: '/en/components/button/' },
-                        { text: 'Badge', link: '/en/components/badge/'},
-						//Flag2
+                        { text: 'Badge', link: '/en/components/badge/' },
+                        //Flag2
                     ],
                 }, {
                     text: 'Data',
@@ -115,6 +116,7 @@ module.exports = {
                         { text: 'Message', link: '/en/components/message/' },
                         { text: 'Dialog', link: '/en/components/dialog/' },
                         { text: 'Tooltip', link: '/en/components/tooltip/' },
+                        { text: 'LoadingBar', link: '/en/components/loadingBar/' },
                     ],
                 }, {
                     text: 'Layout',
