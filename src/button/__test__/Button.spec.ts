@@ -23,7 +23,7 @@ describe('u-button', () => {
 
     it('disabled', async () => {
         const onClick = jest.fn()
-        const wrapper = mount(UButton, {
+        mount(UButton, {
             props: {
                 disabled: true,
                 onClick
