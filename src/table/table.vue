@@ -1,6 +1,6 @@
 <template>
     <div class="u-table" ref="tableRef">
-        <table>
+        <table style="width: 100%">
             <colgroup>
                 <col 
                     v-for="it in column" 

@@ -34,8 +34,10 @@
                     </div>
                     <div :class="['u-dialog-core-footer']">
                         <slot name="footer">
-                            <u-button @click="$emit('cancel',$event), closeMask($event)">取消</u-button>
-                            <u-button deep @click="$emit('confirm',$event),closeMask($event)">确定</u-button>
+                            <u-space>
+                                <u-button @click="$emit('cancel',$event), closeMask($event)">取消</u-button>
+                                <u-button deep @click="$emit('confirm',$event),closeMask($event)">确定</u-button>
+                            </u-space>
                         </slot>
                     </div>
                 </div>
@@ -47,11 +49,13 @@
 <script>
 import { defineComponent, ref,computed, onMounted } from 'vue'
 import UButton from '../button/index.js'
+import USpace from '../space/index.js'
 import IconClose from './util/iconClose.vue'
 const dialog = defineComponent({
     name: 'dialog',
     components:{
         UButton,
+        USpace,
         IconClose
     },
     props:{

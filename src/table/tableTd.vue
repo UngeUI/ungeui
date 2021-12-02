@@ -37,6 +37,7 @@ const tableTd = defineComponent({
     setup(props,{slots}) {
         console.log(props.align,'flexed')
         const fixDirection = computed(() => {
+            console.log(props.arrivedState.right,props.arrivedState.left,123)
             if(props.fixed == 'left') {
                 return props.arrivedState.left ? '' : 'u-table-td-fixed-left'
             } else if(props.fixed == 'right') {
