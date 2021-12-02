@@ -7,14 +7,14 @@
 </template>
 
 <script setup>
-import { ULoadingBar,UButton } from 'ungeui'
+import { loadingBar,UButton } from 'ungeui'
 const onClick = () => {
      console.log(234)
-     ULoadingBar.start()
-     ULoadingBar.start()
-     ULoadingBar.start()
+     loadingBar.start()
+     loadingBar.start()
+     loadingBar.start()
      setTimeout(() => {
-          ULoadingBar.end()
+          loadingBar.end()
      },1000)
 }
 </script>

@@ -20,7 +20,7 @@ import UInputNumber from './inputNumber/index.js'
 import USpace from './space/index.js'
 import UTooltip from './tooltip/index.js'
 import UBadge from './badge/index.js'
-import ULoadingBar from './loadingBar/index.js'
+import loadingBar from './loadingBar/index.js'
 //ImportFlag
 
 const components = [
@@ -46,7 +46,6 @@ const components = [
 	USpace,
 	UTooltip,
 	UBadge,
-	ULoadingBar,
 	//ArrayFlag
 ];
 
@@ -82,6 +81,6 @@ export {
 	USpace,
 	UTooltip,
 	UBadge,
-	ULoadingBar,
+	loadingBar,
 	//ExportFlag
 };
