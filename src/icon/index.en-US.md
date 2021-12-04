@@ -7,9 +7,13 @@ map:
 
 Icon expresses its meaning in graphic form
 
+## Code demonstration
+
 ```js
 import { UIcon } from 'ungeui';
 ```
+
+## Icon resources
 
 :::tip
 For **icon resources**, we have adopted the form of separation from the component library，[you can here](https://www.xicons.org/#/)select the icon you want and introduce it into your project
@@ -27,25 +31,23 @@ Import icon example：
 import { IconClock } from @ungeui/icons
 ```
 
-## Code demonstration
-
-### Icon size
+### Icon size🔥
 
 <demo src="./demo/size.vue"
   language="vue"
-  title="basic usage"
+  title="🔥basic usage"
   desc="different icon sizes">
 </demo>
 
-### Icon color
+### Icon color🌈
 
 <demo src="./demo/color.vue"
   language="vue"
-  title="basic usage"
+  title="🌈basic usage"
   desc="方便切换不同颜色">
 </demo>
 
-### Icon
+### Icon example of @ungeui/icons👑
 
 <demo src="./demo/iconDemo.vue"
   language="vue"
