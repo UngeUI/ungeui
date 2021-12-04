@@ -3,86 +3,94 @@ map:
     path: /components/button
 ---
 
-# Button
+# Button🔘
 
-这是一个简单的按钮
+按钮有更强烈的交互感觉
+
+## 代码演示
 
 ```js
 import { UButton } from 'ungeui';
 ```
 
-## 代码演示
-
-### 基本用法
+### 点击触发🖱️
 
 <demo src="./demo/default.vue"
   language="vue"
-  title="基本用法"
-  desc="点击切换">
+  title="🖱️基本用法"
+  desc="点击按钮数量+1">
 </demo>
 
-### 深色
+### 不同主题🚀
+
+<demo src="./demo/theme.vue"
+  language="vue"
+  title="🚀基本用法"
+  desc="不同的type决定不同的主题类型，默认提供了五种主题：default、success、warning、danger、info">
+</demo>
+
+### 深色🌊
 
 <demo src="./demo/deep.vue"
   language="vue"
-  title="基本用法"
+  title="🌊基本用法"
   desc="深色具有更强烈的视觉冲击">
 </demo>
 
-### 虚线
+### 虚线🧵
 
 <demo src="./demo/dashed.vue"
   language="vue"
-  title="基本用法"
+  title="🧵基本用法"
   desc="支持虚线">
 </demo>
 
-### 大小
+### 大小🔥
 
 <demo src="./demo/size.vue"
   language="vue"
-  title="基本用法"
+  title="🔥基本用法"
   desc="不同按钮的大小">
 </demo>
 
-### 文本
+### 文本📑
 
 <demo src="./demo/text.vue"
   language="vue"
-  title="基本用法"
-  desc="文本按钮">
+  title="📑基本用法"
+  desc="文本按钮没有波纹动画，它很朴素">
 </demo>
 
-### 禁用
+### 禁用🚫
 
 <demo src="./demo/disabled.vue"
   language="vue"
   title="基本用法"
-  desc="禁用按钮">
+  desc="🚫禁用按钮">
 </demo>
 
-### 图标按钮
+### 图标按钮🐳
 
 <demo src="./demo/icon.vue"
   language="vue"
-  title="基本用法"
-  desc="图片按钮表达按钮意义">
+  title="🐳基本用法"
+  desc="图标按钮表达按钮意义">
 </demo>
 
-### 圆形
+### 圆形⭕
 
 <demo src="./demo/round.vue"
   language="vue"
-  title="基本用法"
-  desc="圆形更加丝滑">
+  title="⭕基本用法"
+  desc="圆形看起来更加丝滑">
 </demo>
 
-### 前后缀
+### 前后缀🙌
 
 <demo src="./demo/fix.vue"
   language="vue"
-  title="基本用法"
-  desc="文字加图标意思明朗">
+  title="🙌基本用法"
+  desc="文字加图标表达的意思更加明确">
 </demo>
 
 ## Props
