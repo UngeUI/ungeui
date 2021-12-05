@@ -1,0 +1,25 @@
+@import './global.styl'
+@import './var.styl'
+
+.u-spin
+	display inline-flex
+	&-size
+		&-small
+			font-size 25px
+		&-medium 
+			font-size 30px
+		&-large
+			font-size 35px
+		&-huge
+			font-size 45px
+	&-rotate
+		animation spinRotate 2s linear infinite
+
+@keyframes spinRotate {
+	from {
+		transform rotate(0)
+	}
+	to {
+		transform rotate(360deg)
+	}
+}

@@ -66,6 +66,7 @@ module.exports = {
                         { text: 'Dialog', link: '/components/dialog/' },
                         { text: 'Tooltip', link: '/components/tooltip/' },
                         { text: 'LoadingBar', link: '/components/loadingBar/' },
+                        { text: 'Spin', link: '/components/spin/' },
                     ],
                 }, {
                     text: '布局组件',
@@ -117,6 +118,7 @@ module.exports = {
                         { text: 'Dialog', link: '/en/components/dialog/' },
                         { text: 'Tooltip', link: '/en/components/tooltip/' },
                         { text: 'LoadingBar', link: '/en/components/loadingBar/' },
+                        { text: 'Spin', link: '/en/components/spin/' },
                     ],
                 }, {
                     text: 'Layout',
