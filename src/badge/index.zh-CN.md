@@ -3,62 +3,62 @@ map:
    path: /components/badge
 ---
 
-# Badge
+# Badge📢
 
-这里是Badge组件
+用于描述组件状态，看见它，你会很焦虑并且想消除它
+
+## 代码演示
 
 ```js
 import { UBadge } from 'ungeui';
 ```
 
-## 代码演示
-
-### 基本用法
+### 基本用法❗
 
 <demo src="./demo/base.vue"
  language="vue"
- title="基本用法"
- desc="和头像很搭">
+ title="❗基本用法"
+ desc="它和头像很搭，代表未读的消息">
 </demo>
 
-### 不同背景颜色
+### 不同背景颜色🌈
 
 <demo src="./demo/color.vue"
  language="vue"
- title="基本用法"
- desc="不同背景颜色">
+ title="🌈基本用法"
+ desc="可能你不止想要红色，那么可以切换不同背景颜色">
 </demo>
 
-### 上下限
+### 上下限🚧
 
 <demo src="./demo/over.vue"
  language="vue"
- title="基本用法"
- desc="设置上限">
+ title="🚧基本用法"
+ desc="不想看到爆炸的消息，那么就设一个上限值吧">
 </demo>
 
-### 是否显示下限值
+### 是否显示下限值⛔
 
 <demo src="./demo/lower.vue"
  language="vue"
- title="基本用法"
- desc="到达最小值时，是否显示下限值">
+ title="⛔基本用法"
+ desc="到达最小值时，显示下限值，还是隐藏？">
 </demo>
 
-### 点
+### 点🔵🔴🟠🟢
 
 <demo src="./demo/dot.vue"
  language="vue"
- title="基本用法"
- desc="点">
+ title="🔵基本用法"
+ desc="安静地提示你有新的消息产生">
 </demo>
 
-### 其他组合
+### 其他组合📁
 
 <demo src="./demo/other.vue"
  language="vue"
- title="基本用法"
- desc="其他组合">
+ title="📁基本用法"
+ desc="也可以放在其他地方使用">
 </demo>
 
 ## Props
