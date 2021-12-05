@@ -3,7 +3,7 @@ map:
     path: /components/button
 ---
 
-# Button
+# Button🔘
 
 Button have a stronger sense of interaction
 
@@ -26,7 +26,7 @@ import { UButton } from 'ungeui';
 <demo src="./demo/theme.vue"
   language="vue"
   title="🚀基本用法"
-  desc="不同的type决定不同的主题类型，默认提供了五种主题：default、success、warning、danger、info">
+  desc="Different types determine different topic types. Five topics are provided by default: default, success, warning, danger and info">
 </demo>
 
 ### Dark🌊
@@ -107,7 +107,7 @@ import { UButton } from 'ungeui';
 
 ## slots
 
-|  参数  |   说明   |   类型   |     值      |
+|  parameter | description | type | value|
 | :----: | :------: | :------: | :---------: |
-| prefix | 前缀图标 | `string` | `undefined` |
-| suffix | 后缀图标 | `string` | `undefined` |
+| prefix | prefix Icon | `string` | `undefined` |
+| suffix | suffix Icon | `string` | `undefined` |
