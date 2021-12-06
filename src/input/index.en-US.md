@@ -3,70 +3,70 @@ map:
     path: /components/input
 ---
 
-# Input
+# Input⌨️
 
-Get the user's information through the input box
+Get the information you want to transfer through the input box
+
+## Code demonstration
 
 ```js
 import { UInput } from 'ungeui';
 ```
 
-## Code demonstration
-
-### Bidirectional binding
+### Bidirectional binding🤝
 
 <demo src="./demo/reactive.vue"
   language="vue"
-  title="basic usage"
-  desc="bidirectional binding">
+  title="🤝basic usage"
+  desc="Bind user entered values">
 </demo>
 
-### Different sizes
+### Different sizes🔥
 
 <demo src="./demo/size.vue"
   language="vue"
-  title="basic usage"
+  title="🔥basic usage"
   desc="size control the size of the input box">
 </demo>
 
-### Password box
+### Password box🙈
 
 <demo src="./demo/password.vue"
   language="vue"
-  title="basic usage"
+  title="🙈basic usage"
   desc="the password box is used to hide the entered characters">
 </demo>
 
-### Icon slot
+### Icon slot🙌
 
 <demo src="./demo/icon.vue"
   language="vue"
-  title="basic usage"
-  desc="icon can be inserted to make it more semantic">
+  title="🙌basic usage"
+  desc="You can insert icon to make it more semantic and tell the user the type that should be entered here">
 </demo>
 
-### Textarea
+### Textarea📋️
 
 <demo src="./demo/textarea.vue"
   language="vue"
-  title="basic usage"
-  desc="support text field">
+  title="📋️basic usage"
+  desc="It supports the representation in the form of text field">
 </demo>
 
-### Custom rows/cols
+### Custom rows/cols🥨
 
 <demo src="./demo/rowscols.vue"
   language="vue"
-  title="basic usage"
-  desc="custom lines">
+  title="🥨basic usage"
+  desc="The number of custom rows and columns is the same as the original usage">
 </demo>
 
-### Disable
+### Disable🚫
 
 <demo src="./demo/disabled.vue"
   language="vue"
-  title="basic usage"
-  desc="disable">
+  title="🚫basic usage"
+  desc="When disabled, the user cannot enter anything">
 </demo>
 
 ## Props
