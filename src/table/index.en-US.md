@@ -3,38 +3,38 @@ map:
     path: /components/table
 ---
 
-# Table
+# Table📈
 
-table
+Tables are used to visually compare and display a large amount of data
+
+## Code demonstration
 
 ```js
 import { UTable } from 'ungeui'
 ```
 
-## Code demonstration
-
-### Basic usage
+### Basic usage📑
 
 <demo src="./demo/base.vue"
     language="vue"
-    title="basic usage"
-    desc="simplest usage">
+    title="📑basic usage"
+    desc="Each message occupies one line">
 </demo>
 
-### Custom column content
+### Custom column content🌈
 
 <demo src="./demo/render.vue"
     language="vue"
-    title="basic usage"
+    title="🌈basic usage"
     desc="custom column content">
 </demo>
 
-### Left and right fixation
+### Left and right fixation📌
 
 <demo src="./demo/fixed.vue"
     language="vue"
-    title="basic usage"
-    desc="left and right fixation">
+    title="📌basic usage"
+    desc="Fix a column to ensure that users can always see it">
 </demo>
 
 ## Table Props
