@@ -3,45 +3,45 @@ map:
     path: /components/radio
 ---
 
-# Radio
+# Radio⭕
 
-Radio
+Let users make choices through radio box components
+
+## Code demonstration
 
 ```js
 import { URadio } from 'ungeui';
 ```
 
-## Code demonstration
-
-### Basic usage
+### Basic usage🚀
 
 <demo src="./demo/checked.vue"
   language="vue"
-  title="basic usage"
-  desc="simplest usage">
+  title="🚀basic usage"
+  desc="The checked property determines whether the button is selected">
 </demo>
 
-### Disable
+### Disable🚫
 
 <demo src="./demo/disabled.vue"
   language="vue"
-  title="disabled"
-  desc="radio box invalid">
+  title="🚫basic usage"
+  desc="Disabled disables the radio box and the color turns gray">
 </demo>
 
-### Radio group
+### Radio group🚥
 
 <demo src="./demo/group.vue"
   language="vue"
-  title="disabled"
+  title="🚥basic usage"
   desc="option group is more convenient to use">
 </demo>
 
-### Radio button
+### Radio button⏺
 
 <demo src="./demo/button.vue"
   language="vue"
-  title="radioButton"
+  title="⏺basic usage"
   desc="sometimes it's more elegant to use buttons">
 </demo>
 

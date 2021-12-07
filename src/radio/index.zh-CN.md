@@ -3,45 +3,45 @@ map:
     path: /components/radio
 ---
 
-# Radio
+# Radio⭕
 
-单选框
+通过单选框组件让用户作出选择
+
+## 代码演示
 
 ```js
 import { URadio } from 'ungeui';
 ```
 
-## 代码演示
-
-### 基本用法
+### 基本用法🚀
 
 <demo src="./demo/checked.vue"
   language="vue"
-  title="基本用法"
-  desc="最简单的用法">
+  title="🚀基本用法"
+  desc="checked属性用于确定按钮是否选择">
 </demo>
 
-### 禁用
+### 禁用🚫
 
 <demo src="./demo/disabled.vue"
   language="vue"
-  title="disabled"
-  desc="单选框失效">
+  title="🚫基本用法"
+  desc="disabled使单选框失效，并且颜色会变成灰色">
 </demo>
 
-### 单选组
+### 单选组🚥
 
 <demo src="./demo/group.vue"
   language="vue"
-  title="disabled"
+  title="🚥基本用法"
   desc="选项组用起来更方便">
 </demo>
 
-### 单选按钮
+### 单选按钮⏺
 
 <demo src="./demo/button.vue"
   language="vue"
-  title="radioButton"
+  title="⏺基本用法"
   desc="有的时候用按钮显得更优雅一点">
 </demo>
 
