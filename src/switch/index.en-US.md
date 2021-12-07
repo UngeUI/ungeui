@@ -3,37 +3,37 @@ map:
     path: /components/switch
 ---
 
-# Switch
+# Switch🌗
 
-switch
+The switch is used to switch between two different states
+
+## Code demonstration
 
 ```js
 import { USwitch } from 'ungeui'
 ```
 
-## Code demonstration
-
-### basic usage
+### basic usage🖱️
 
 <demo src="./demo/base.vue"
     language="vue"
-    title="basic usage"
-    desc="simplest usage">
+    title="🖱️basic usage"
+    desc="Click to switch the value. When the background is lit, it represents true, otherwise it is false">
 </demo>
 
-### Different sizes
+### Different sizes🔥
 
 <demo src="./demo/size.vue"
     language="vue"
-    title="basic usage"
-    desc="different sizes">
+    title="🔥basic usage"
+    desc="Switches are also preset with several different sizes to adapt to different scenarios">
 </demo>
 
-### Custom value
+### Custom value🌈
 
 <demo src="./demo/value.vue"
     language="vue"
-    title="basic usage"
+    title="🌈basic usage"
     desc="define selected value and unselected value">
 </demo>
 

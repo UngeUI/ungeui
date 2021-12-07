@@ -3,37 +3,37 @@ map:
     path: /components/switch
 ---
 
-# Switch
+# Switch🌗
 
-开关
+开关用来切换两种不同的状态
+
+## 代码演示
 
 ```js
 import { USwitch } from 'ungeui'
 ```
 
-## 代码演示
-
-### 基本用法
+### 基本用法🖱️
 
 <demo src="./demo/base.vue"
     language="vue"
-    title="基本用法"
-    desc="最简单的用法">
+    title="🖱️基本用法"
+    desc="点击切换值，背景亮起的时候，代表true，否则为false">
 </demo>
 
-### 不同大小
+### 不同大小🔥
 
 <demo src="./demo/size.vue"
     language="vue"
-    title="基本用法"
-    desc="不同大小">
+    title="🔥基本用法"
+    desc="Switch也预置了几种的不同大小，以适应不同场景">
 </demo>
 
-### 自定义值
+### 自定义值🌈
 
 <demo src="./demo/value.vue"
     language="vue"
-    title=""
+    title="🌈基本用法"
     desc="定义选中值与非选中值">
 </demo>
 
