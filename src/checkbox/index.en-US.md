@@ -3,36 +3,38 @@ map:
     path: /components/checkbox
 ---
 
-# Checkbox
+# Checkbox💠
+
+Multiple boxes allow you to select multiple options at the same time
+
+## Code demonstration
 
 ```js
 import { UCheckbox } from 'ungeui
 ```
 
-## Code demonstration
-
-### Basic usage
+### Basic usage🖱️
 
 <demo src="./demo/checked.vue"
   language="vue"
-  title="basic usage"
-  desc="click to switch">
+  title="🖱️basic usage"
+  desc="Click to switch options">
 </demo>
 
-### Multiple selection group
+### Multiple selection group🔱
 
 <demo src="./demo/group.vue"
   language="vue"
-  title="basic usage"
+  title="🔱basic usage"
   desc="more elegant group control">
 </demo>
 
-### Disable
+### Disable🚫
 
 <demo src="./demo/disabled.vue"
   language="vue"
-  title="basic usage"
-  desc="disable options">
+  title="🚫basic usage"
+  desc="Disabled disables the multi selection box and the color turns gray">
 </demo>
 
 ## Props
