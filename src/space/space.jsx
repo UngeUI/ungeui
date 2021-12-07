@@ -1,5 +1,5 @@
 import { defineComponent, watch, computed, ref,onMounted } from 'vue';
-
+import getAllChildren from './utils/getAllChildren.js'
 const space = defineComponent({
     name: 'space',
     props: {
@@ -66,7 +66,9 @@ const space = defineComponent({
             LastElementStyle,
             vertical
         } = this
-        const children = this.$slots.default()
+        
+        const children =  getAllChildren(this.$slots.default())
+        
         return (
             <div class='u-space' style={spaceStyle}>
                 {

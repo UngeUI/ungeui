@@ -5,16 +5,18 @@
                  {{text}} ++
             </template>
             <template #hobby="{text:hobbys}">
-                <u-tag type="success" v-for="it in hobbys" :key="it">
-                    {{it}}
-                </u-tag>
+                <u-space>
+                    <u-tag type="success" v-for="it in hobbys" :key="it">
+                        {{it}}
+                    </u-tag>
+                </u-space>
             </template>
         </u-table>
     </div>
 </template>
 
 <script setup>
-import { UTable,UTag } from 'ungeui'
+import { UTable, UTag, USpace } from 'ungeui'
 
 let data = [{
     name: 'peter',
