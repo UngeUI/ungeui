@@ -13,5 +13,5 @@
 import { USelect,USelectOption } from 'ungeui'
 import { ref } from 'vue'
 
-let value = ref('Apple')
+let value = ref('Sad')
 </script>

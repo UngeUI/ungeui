@@ -3,38 +3,38 @@ map:
     path: /components/select
 ---
 
-# Select
+# Select🔽
 
-下拉框
+选项过多的时候可以用它，保持页面整洁
+
+## 代码演示
 
 ```js
 import { USelect } from 'ungeui'
 ```
 
-## 代码演示
-
-### 基本用法
+### 基本用法🌠
 
 <demo src="./demo/base.vue"
     language="vue"
-    title="基本用法"
-    desc="最简单的用法">
+    title="🌠基本用法"
+    desc="表面展示给用户label值，实际内部传递value值">
 </demo>
 
-### 不同大小
+### 不同大小🔥
 
 <demo src="./demo/size.vue"
     language="vue"
-    title="不同大小"
-    desc="默认为medium">
+    title="🔥基本用法"
+    desc="提供了三种大小的下拉框，默认为medium">
 </demo>
 
-### option中同时显示Value值
+### 显示Value值😃😭😩
 
 <demo src="./demo/displayValue.vue"
     language="vue"
-    title=""
-    desc="同时显示Value值">
+    title="😃😭😩基本用法"
+    desc="同时展示给用户Value值">
 </demo>
 
 ## Props

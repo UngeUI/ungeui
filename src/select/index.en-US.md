@@ -3,38 +3,38 @@ map:
     path: /components/select
 ---
 
-# Select
+# Select🔽
 
-Drop down box
+You can use it when there are too many options to keep the page clean and tidy
+
+## Code demonstration
 
 ```js
 import { USelect } from 'ungeui'
 ```
 
-## Code demonstration
-
-### Basic usage
+### Basic usage🌠
 
 <demo src="./demo/base.vue"
     language="vue"
-    title="basic usage"
-    desc="simplest usage">
+    title="🌠basic usage"
+    desc="The surface displays the label value to the user, and the actual internal transfer value">
 </demo>
 
-### Different sizes
+### Different sizes🔥
 
 <demo src="./demo/size.vue"
     language="vue"
-    title="different sizes"
-    desc="default to medium">
+    title="🔥different sizes"
+    desc="Three sizes of drop-down boxes are provided, and the default is medium">
 </demo>
 
-### The value value is also displayed in option
+### Display value😃😭😩
 
 <demo src="./demo/displayValue.vue"
     language="vue"
-    title="basic usage"
-    desc="display value at the same time">
+    title="😃😭😩basic usage"
+    desc="The value value is also displayed to the user">
 </demo>
 
 ## Props
