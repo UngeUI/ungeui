@@ -3,29 +3,32 @@ map:
     path: /components/pagination
 ---
 
+## 分页1️⃣2️⃣3️⃣4️⃣
 
-## 分页
+分页用来配合其他组件
+
+## 代码演示
 
 ```js
 import { UPagination } from 'ungeui'
 ```
 
-### 基本用法
+### 基本用法🚀
 
 <demo 
     src="./demo/base.vue"
     language="vue"
-    title="基本用法"
+    title="🚀基本用法"
     desc="最简单的用法">
 </demo>
 
-### 限制数量
+### 限制数量🚧
 
 <demo 
     src="./demo/limit.vue"
     language="vue"
-    title="基本用法"
-    desc="限制数量">
+    title="🚧基本用法"
+    desc="限制长度">
 </demo>
 
 
