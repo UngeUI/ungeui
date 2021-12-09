@@ -3,26 +3,25 @@ map:
    path: /components/loadingBar
 ---
 
-# LoadingBar
+# LoadingBar🥖
 
 这里是LoadingBar组件
+
+## 代码演示
 
 ```js
 import { ULoadingBar } from 'ungeui';
 ```
 
-## 代码演示
-
-### 基本用法
+### 基本用法🚀
 
 <demo src="./demo/base.vue"
  language="vue"
- title="基本用法"
- desc="基本用法">
+ title="🚀基本用法"
+ desc="例如：在1000ms后手动关闭它">
 </demo>
 
-### 自定义关闭时间
-
+### 自定义关闭时间⏱
 
 我们推荐一个应用只能有一个`loadingBar`实例，所以你导出的是一个对象，通过调用`start()`和`end()`开启和关闭。
 
@@ -30,18 +29,18 @@ import { ULoadingBar } from 'ungeui';
 
 <demo src="./demo/end.vue"
  language="vue"
- title="基本用法"
- desc="自定义关闭时间">
+ title="⏱基本用法"
+ desc="不管loadingBar离末尾的距离，消逝时间都是一样的">
 </demo>
 
-### 自定义颜色
+### 自定义颜色🌈
 
 你可能对颜色会有需求...
 
 <demo src="./demo/color.vue"
  language="vue"
- title="基本用法"
- desc="基本用法">
+ title="🌈基本用法"
+ desc="不同的颜色有不同的用途">
 </demo>
 
 ## APIs

@@ -2,10 +2,10 @@
    <div>
        <u-space>
             <u-button type="success" @click="open">
-                开启
+                Open
             </u-button>
             <u-button type="danger" @click="close">
-                关闭
+                Close
             </u-button>
         </u-space>
    </div>
