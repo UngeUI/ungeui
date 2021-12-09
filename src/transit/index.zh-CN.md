@@ -21,6 +21,14 @@ import { UTransit } from 'ungeui';
  desc="包裹的数字值变化时，数字大小会自动过渡">
 </demo>
 
+### 自定义过渡时间
+
+<demo src="./demo/delay.vue"
+ language="vue"
+ title="基本用法"
+ desc="设置过渡时间为2秒，默认为0.5s">
+</demo>
+
 ## Props
 
 | 参数  |   说明   |   类型    |   默认值    |

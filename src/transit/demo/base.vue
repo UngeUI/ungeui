@@ -9,8 +9,8 @@
 <script setup>
 import { UTransit } from 'ungeui'
 import { ref } from 'vue'
-let number = ref(100)
+let number = ref(300)
 setInterval(() => {
-	number.value = Math.floor(Math.random() * 1000)
+	number.value = number.value + 66
 },1000)
 </script>
