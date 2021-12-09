@@ -31,6 +31,14 @@ import { UPagination } from 'ungeui'
     desc="限制长度">
 </demo>
 
+### 配合表格📈
+
+<demo 
+    src="./demo/table.vue"
+    language="vue"
+    title="📈基本用法"
+    desc="配合表格使用是最常见的场景">
+</demo>
 
 ## Props
 

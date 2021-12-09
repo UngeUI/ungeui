@@ -32,6 +32,14 @@ import { UPagination } from 'ungeui'
     desc="limit quantity">
 </demo>
 
+### Fit form📈
+
+<demo 
+    src="./demo/table.vue"
+    language="vue"
+    title="📈basic usage"
+    desc="Using with tables is the most common scenario">
+</demo>
 
 ## Props
 
