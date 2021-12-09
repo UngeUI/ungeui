@@ -22,6 +22,7 @@ import UTooltip from './tooltip/index.js'
 import UBadge from './badge/index.js'
 import loadingBar from './loadingBar/index.js'
 import USpin from './spin/index.js'
+import UTransit from './transit/index.js'
 //ImportFlag
 
 const components = [
@@ -48,6 +49,7 @@ const components = [
 	UTooltip,
 	UBadge,
 	USpin,
+	UTransit,
 	//ArrayFlag
 ];
 
@@ -85,5 +87,6 @@ export {
 	UBadge,
 	loadingBar,
 	USpin,
+	UTransit,
 	//ExportFlag
 };

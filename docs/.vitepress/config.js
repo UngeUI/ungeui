@@ -44,7 +44,8 @@ module.exports = {
                         { text: 'Icon', link: '/components/icon/' },
                         { text: 'Button', link: '/components/button/' },
                         { text: 'Badge', link: '/components/badge/' },
-                        //Flag
+                        { text: 'Transit', link: '/components/transit/'},
+						//Flag
                     ],
                 }, {
                     text: '数据组件',
@@ -96,7 +97,8 @@ module.exports = {
                         { text: 'Icon', link: '/en/components/icon/' },
                         { text: 'Button', link: '/en/components/button/' },
                         { text: 'Badge', link: '/en/components/badge/' },
-                        //Flag2
+                        { text: 'Transit', link: '/en/components/transit/'},
+						//Flag2
                     ],
                 }, {
                     text: 'Data',
