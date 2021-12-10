@@ -35,4 +35,4 @@ import { UTransit } from 'ungeui';
 
 | 参数  |   说明   |   类型    |   默认值    |
 | :---: | :------: | :-------: | :---------: |
-| duration | 过渡持续时间，单位秒 ｜ `number` |  `0.5`|
+| duration | 过渡持续时间，单位ms ｜ `number` |  `500`|

@@ -2300,6 +2300,11 @@
   resolved "https://registry.yarnpkg.com/@ungeui/icons/-/icons-1.1.0.tgz#a2d6d3fca2b3b5b8d43287c8a13353515c451938"
   integrity sha512-TK1PVIJVy08WJnbSWkLHidCE0l7k68fDFSI5ukQ1Ip8V5k/hARpc/wXG6nk5a/P+Ev3eDndNr1bEXuBIhZ8rAQ==
 
+"@ungeui/transit@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@ungeui/transit/-/transit-1.1.1.tgz#ebecf62e5344c84d34ed478b6067ec0efcdee351"
+  integrity sha512-ia3JQLuMcpEcucB5kKlPaKM6pKhpZyWGPOiFFM6Gtd9psev7X6iHYxx0jrSuifYmVFPVWVg27FhjPDnzQc7hTg==
+
 "@vitejs/plugin-vue-jsx@^1.1.7":
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue-jsx/-/plugin-vue-jsx-1.1.7.tgz#3e0236a01d6b5f8010bd6bc5ffccdbe1f0fa50d5"

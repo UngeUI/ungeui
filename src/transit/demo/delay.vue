@@ -3,7 +3,7 @@
 		<u-space>
 			<u-input v-model:value="number" style="width:200px"></u-input>
 			<u-tag>
-				<u-transit :duration="2">
+				<u-transit :duration="1000">
 					{{number}}
 				</u-transit>
 			</u-tag>

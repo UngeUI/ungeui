@@ -35,4 +35,4 @@ Note that `Number()` will be used inside the component to convert child elements
 
 | Property | Description |   Type |   Default |
 | :--------: | :----------: | :-----: | :--------: |
-| duration | Duration of transition, the unit is seconds | `number` | `0.5`
+| duration | Duration of transition, the unit is ms | `number` | `500`

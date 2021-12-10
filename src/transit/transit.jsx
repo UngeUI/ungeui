@@ -1,11 +1,11 @@
 import { defineComponent, watch, reactive } from 'vue';
-import gsap from 'gsap'
+import sit from '@ungeui/transit'
 const transit = defineComponent({
     name: 'transit',
     props: {
         duration: {
             type: Number,
-            default: 0.5
+            default: 500
         }
     },
     setup(props, { slots }) {
@@ -16,8 +16,9 @@ const transit = defineComponent({
  
         watch(() => slots.default?.()?.[0]?.children,(newValue,oldValue) => {
             console.log(newValue,oldValue)
-            gsap.to(o, {
+            sit(o, {
                 duration : props.duration,
+                key: 'value',
                 value: Number(newValue)
             })
         })
