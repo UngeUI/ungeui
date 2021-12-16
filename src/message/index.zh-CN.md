@@ -3,7 +3,7 @@ map:
     path: /components/message
 ---
 
-# Message💬
+# Message💨
 
 使用Message能更好地提示用户
 

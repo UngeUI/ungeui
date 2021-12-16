@@ -3,7 +3,7 @@ map:
     path: /components/message
 ---
 
-# Message💬
+# Message💨
 
 Using message can better prompt users
 
