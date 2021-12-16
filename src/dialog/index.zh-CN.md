@@ -3,61 +3,57 @@ map:
     path: /components/dialog
 ---
 
-# Dialog
+# Dialog🍥
 
 以弹窗的形式在同一个页面展示数据
+
+## 代码演示
 
 ```js
 import { UDialog } from 'ungeui'
 ```
 
-## 代码演示
-
-### 普通弹窗
+### 普通弹窗🚀
 
 <demo src="./demo/base.vue"
   language="vue"
-  title="基本用法"
+  title="🚀基本用法"
   desc="弹窗基本用法">
 </demo>
 
-### 预置事件交互
+### 预置事件交互🧷
 
 <demo src="./demo/event.vue"
   language="vue"
   title="基本用法"
-  desc="触发某些钩子">
+  desc="🧷可以监听触发的事件">
 </demo>
 
-### 自定义底部内容
+### 自定义底部内容🥘
 
 <demo src="./demo/slot.vue"
   language="vue"
-  title="基本用法"
+  title="🥘基本用法"
   desc="占用底部插槽后，预置的取消和确定的事件将会失效">
 </demo>
 
-### 自定义Icon类型
+### 自定义Icon类型🌈
 
 <demo src="./demo/icon.vue"
   language="vue"
-  title="基本用法"
+  title="🌈基本用法"
   desc="自定义关闭的Icon">
 </demo>
 
-### 过渡动画类别
+### 过渡动画类别⚙️
 
 除此之外，在过渡动画上我们希望给于用户更多的灵活性，这得益于[animate.css](https://www.dowebok.com/demo/2014/98/)，可以传入其中合法的动画类
 
 <demo src="./demo/animate.vue"
   language="vue"
-  title="基本用法"
-  desc="可以传入所有持续的类名作为配置">
+  title="⚙️基本用法"
+  desc="可以传入所有合法的类名作为配置">
 </demo>
-
-
-
-
 
 ## Props
 
