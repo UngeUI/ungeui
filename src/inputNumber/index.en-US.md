@@ -3,38 +3,46 @@ map:
    path: /components/inputNumber
 ---
 
-# InputNumber
+# InputNumber🎛️
 
-Here is the inputnumber component
+This component is used to control the increase and decrease of numbers
+
+## Code demonstration
 
 ```js
 import { UInputNumber } from 'ungeui';
 ```
 
-## Code demonstration
-
-### Basic usage
+### Basic usage🚀
 
 <demo src="./demo/base.vue"
  language="vue"
- title="basic usage"
- desc="basic usage">
+ title="🚀basic usage"
+ desc="Click to increase or decrease the number, or enter it directly from the keyboard">
 </demo>
 
-### Different strides
+### 限制范围🚧
+
+<demo src="./demo/limit.vue"
+ language="vue"
+ title="🚧基本用法"
+ desc="The limit number range is 5-10. If the input exceeds, the boundary value will be taken">
+</demo>
+
+### Different strides🦶
 
 <demo src="./demo/step.vue"
  language="vue"
- title="basic usage"
- desc="different strides">
+ title="🦶basic usage"
+ desc="Set minimum change amplitude">
 </demo>
 
-### Different sizes
+### Different sizes🔥
 
 <demo src="./demo/size.vue"
  language="vue"
- title="basic usage"
- desc="different sizes">
+ title="🔥basic usage"
+ desc="Inputnumber is also preset with several different sizes to adapt to different scenarios">
 </demo>
 
 ## Props
@@ -43,6 +51,8 @@ import { UInputNumber } from 'ungeui';
 | :---: | :------: | :-------: | :---------: |
 | value(v-model) | value  | `number` | `0` |
 | step | change step | `number` | `1` |
+| max | max value | `number` | `undefined` |
+| min | min value | `number` | `0` |
 | on-change | user input | `(value) => void ` | `0` |
 | on-increase | click Add | `(value) => void ` | `undefined` |
 | on-decrease | click Minus | `(value) => void ` | `undefined` |

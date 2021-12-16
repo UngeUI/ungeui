@@ -3,29 +3,29 @@ map:
    path: /components/slider
 ---
 
-# Slider
+# Slider🛹
 
 Here is the slider component
+
+## Code demonstration
 
 ```js
 import { USlider } from 'ungeui';
 ```
 
-## Code demonstration
-
-### Basic usage
+### Basic usage🚀
 
 <demo src="./demo/base.vue"
  language="vue"
- title="basic usage"
+ title="🚀basic usage"
  desc="define boundary by Max and Min">
 </demo>
 
-### Range value
+### Range value🦴
 
 <demo src="./demo/double.vue"
  language="vue"
- title="basic usage"
+ title="🦴basic usage"
  desc="when value is an array and range is true, the range value can be obtained">
 </demo>
 

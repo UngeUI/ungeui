@@ -3,29 +3,29 @@ map:
    path: /components/slider
 ---
 
-# Slider
+# Slider🛹
 
-这里是Slider组件
+通过滑动的方式选择值和范围
+
+## 代码演示
 
 ```js
 import { USlider } from 'ungeui';
 ```
 
-## 代码演示
-
-### 基本用法
+### 基本用法🚀
 
 <demo src="./demo/base.vue"
  language="vue"
- title="基本用法"
+ title="🚀基本用法"
  desc="通过max和min限定边界">
 </demo>
 
-### 范围值
+### 范围值🕹
 
 <demo src="./demo/double.vue"
  language="vue"
- title="基本用法"
+ title="🕹基本用法"
  desc="当value是数组并且range为ture时，可以获得范围值">
 </demo>
 

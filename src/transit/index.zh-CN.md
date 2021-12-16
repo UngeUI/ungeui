@@ -28,7 +28,7 @@ import { UTransit } from 'ungeui';
 <demo src="./demo/delay.vue"
  language="vue"
  title="⏱基本用法"
- desc="设置过渡时间为2秒，默认为0.5s">
+ desc="设置过渡时间为1秒，默认为0.5s">
 </demo>
 
 ## Props

@@ -15,12 +15,12 @@ import { ref } from 'vue'
 
 let value = ref(20)
 const onChange = () => {
-     message.info('用户输入')
+     message.info('Input')
 }
 const onIncrease = () => {
-     message.success('用户增加')
+     message.success('Digital increase')
 }
 const onDecrease = () => {
-     message.warning('用户减少')
+     message.warning('Digital decrease')
 }
 </script>
