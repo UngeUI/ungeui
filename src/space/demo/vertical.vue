@@ -1,9 +1,9 @@
 <template>
    <div>
         <u-space vertical>
-             <u-button>按钮</u-button>
-             <u-button>按钮</u-button>
-             <u-button>按钮</u-button>
+             <u-button>button</u-button>
+             <u-button>button</u-button>
+             <u-button>button</u-button>
         </u-space>
    </div>
 </template>

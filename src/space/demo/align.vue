@@ -1,15 +1,15 @@
 <template>
     <div>
         <u-space>
-            <u-avatar size="small">小</u-avatar>
-            <u-avatar size="huge">巨大</u-avatar>
-            <u-avatar size="small">小</u-avatar>
+            <u-avatar size="small">small</u-avatar>
+            <u-avatar size="huge">huge</u-avatar>
+            <u-avatar size="small">small</u-avatar>
         </u-space>  
         <u-divider></u-divider>
         <u-space align="end">
-            <u-avatar size="small">小</u-avatar>
-            <u-avatar size="huge">巨大</u-avatar>
-            <u-avatar size="small">小</u-avatar>
+            <u-avatar size="small">small</u-avatar>
+            <u-avatar size="huge">huge</u-avatar>
+            <u-avatar size="small">small</u-avatar>
         </u-space>  
     </div>
 </template>

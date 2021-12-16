@@ -3,57 +3,56 @@ map:
    path: /components/space
 ---
 
-# Space
+# Space🚧
 
-Here is the space component
+The space component is used to generate gaps and split multiple sub components
+
+## Code demonstration
 
 ```js
 import { USpace } from 'ungeui';
 ```
 
-## Code demonstration
-
-### Basic usage
+### Basic usage🚀
 
 <demo src="./demo/base.vue"
  language="vue"
- title="basic usage"
- desc="the margin of the child element will be overwritten">
+ title="🚀basic usage"
+ desc="Using this component overrides the margins of child elements">
 </demo>
 
-### Control gap
+### Custom gap🌌
 
 <demo src="./demo/gap.vue"
  language="vue"
- title="basic usage"
- desc="control gap">
+ title="🌌basic usage"
+ desc="Custom gap size">
 </demo>
 
-
-### Vertical
+### Vertical🖕🏻
 
 <demo src="./demo/vertical.vue"
  language="vue"
- title="basic usage"
+ title="🖕🏻basic usage"
  desc="make child elements display vertically">
 </demo>
 
-### JustifyContent
+### JustifyContent🕹️
 
 <demo src="./demo/justify.vue"
  language="vue"
- title="basic usage"
+ title="🕹️basic usage"
  desc="align child elements">
 </demo>
 
-### AlignContent
+### AlignContent🛌
 
 In the horizontal case, it will automatically center the element in the vertical direction. This may not be the result you want, so you can change it through the align attribute
 
 <demo src="./demo/align.vue"
  language="vue"
- title="basic usage"
- desc="">
+ title="🛌basic usage"
+ desc="Define vertical alignment">
 </demo>
 
 ## Props
