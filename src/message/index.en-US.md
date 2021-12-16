@@ -3,30 +3,32 @@ map:
     path: /components/message
 ---
 
-Better prompt users
+# Message💬
 
-## Message prompt
+Using message can better prompt users
+
+## Code demonstration
 
 ```js
 import { message } from 'ungeui'
 ```
 
-### Basic usage
+### Basic usage🚀
 
 <demo 
     src="./demo/base.vue"
     language="vue"
-    title="basic usage"
-    desc="simplest usage">
+    title="🚀basic usage"
+    desc="Several basic themes are preset, and you can call them at the right time">
 </demo>
 
-### Custom configuration
+### Custom configuration🗽
 
 <demo 
     src="./demo/config.vue"
     language="vue"
-    title="basic usage"
-    desc="simplest usage">
+    title="🗽basic usage"
+    desc="You can also customize some configurations">
 </demo>
 
 ## APIs
