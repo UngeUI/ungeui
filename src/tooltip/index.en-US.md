@@ -3,29 +3,29 @@ map:
    path: /components/tooltip
 ---
 
-# Tooltip
+# Tooltip💬
 
-Here is the tooltip component
+Tooltip is like a bubble, with more information in the appropriate actual prompt
+
+## Code demonstration
 
 ```js
 import { UTooltip } from 'ungeui';
 ```
 
-## Code demonstration
-
-### Basic usage
+### Basic usage🕹️
 
 <demo src="./demo/base.vue"
  language="vue"
- title="basic usage"
- desc="basic usage">
+ title="🕹️basic usage"
+ desc="Four basic orientations are preset">
 </demo>
 
-### Custom color
+### Custom color🌈
 
 <demo src="./demo/color.vue"
  language="vue"
- title="basic usage"
+ title="🌈basic usage"
  desc="custom color">
 </demo>
 
