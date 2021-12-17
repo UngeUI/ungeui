@@ -23,6 +23,7 @@ import UBadge from './badge/index.js'
 import loadingBar from './loadingBar/index.js'
 import USpin from './spin/index.js'
 import UTransit from './transit/index.js'
+import UTree from './tree/index.js'
 //ImportFlag
 
 const components = [
@@ -50,6 +51,7 @@ const components = [
 	UBadge,
 	USpin,
 	UTransit,
+	UTree,
 	//ArrayFlag
 ];
 
@@ -88,5 +90,6 @@ export {
 	loadingBar,
 	USpin,
 	UTransit,
+	UTree,
 	//ExportFlag
 };

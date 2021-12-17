@@ -45,6 +45,7 @@ module.exports = {
                         { text: 'Button', link: '/components/button/' },
                         { text: 'Badge', link: '/components/badge/' },
                         { text: 'Transit', link: '/components/transit/'},
+						{ text: 'Tree', link: '/components/tree/'},
 						//Flag
                     ],
                 }, {
@@ -98,6 +99,7 @@ module.exports = {
                         { text: 'Button', link: '/en/components/button/' },
                         { text: 'Badge', link: '/en/components/badge/' },
                         { text: 'Transit', link: '/en/components/transit/'},
+						{ text: 'Tree', link: '/en/components/tree/'},
 						//Flag2
                     ],
                 }, {
