@@ -40,7 +40,7 @@ inquirer.prompt([{
         importIndex()
 
         spinner.text = 'create stylus...'
-            // creatStyle()
+        creatStyle()
         importStyle()
         importDocsConfig()
 
