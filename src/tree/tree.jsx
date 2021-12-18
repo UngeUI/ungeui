@@ -1,4 +1,5 @@
-import { defineComponent } from 'vue';
+import { defineComponent, h, ref, computed, reactive } from 'vue';
+import TreeContent from './treeContent.jsx'
 
 const Tree = defineComponent({
     name: 'tree',
@@ -9,16 +10,13 @@ const Tree = defineComponent({
     },
     setup(props, { slots }) {
         return () => (
-            <ul>
+            <ul class="u-tree">
                 {
                     props.data.map(item => {
                         return (
-                            <>
-                                <li>{item.title}</li>
-                                {
-                                    item.children && <Tree data={item.children}></Tree>
-                                }
-                            </>
+                            <TreeContent 
+                                data={item}
+                            />
                         )
                     })
                 }

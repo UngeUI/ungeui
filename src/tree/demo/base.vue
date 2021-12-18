@@ -17,12 +17,10 @@ let data = ref([{
 		{
 			title: 'parent 1-0',
 			key: '0-0-0',
-			disabled: true,
 			children: [
 				{ 
 					title: 'leaf', 
-					key: '0-0-0-0', 
-					disableCheckbox: true 
+					key: '0-0-0-0',
 				},
 				{ 
 					title: 'leaf', 
@@ -35,8 +33,8 @@ let data = ref([{
 			key: '0-0-1',
 			children: [
 				{ 
+					title: 'leaf',
 					key: '0-0-1-0', 
-					title: 'title0010'
 				}
 			],
 		},

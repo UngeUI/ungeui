@@ -1,2 +1,16 @@
 @import './global.styl'
 @import './var.styl'
+
+.u-tree
+	& > li 
+		list-style none
+	&-node
+		&-switcher
+			cursor pointer
+			margin-right 5px
+			&-close
+				transform: rotateZ(-90deg)
+		&-text 
+			user-select none
+	&-hidden
+		display none
