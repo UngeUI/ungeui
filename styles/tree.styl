@@ -2,6 +2,9 @@
 @import './var.styl'
 
 .u-tree
+	& > ul
+		margin-top 0
+		margin-bottom 0
 	& > li 
 		list-style none
 	&-node
@@ -9,7 +12,9 @@
 			cursor pointer
 			margin-right 5px
 			&-close
-				transform: rotateZ(-90deg)
+				transform rotateZ(-90deg)
+			&-hidden
+				visibility hidden
 		&-text 
 			user-select none
 	&-hidden

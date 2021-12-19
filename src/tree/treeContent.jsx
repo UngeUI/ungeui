@@ -24,6 +24,7 @@ const treeContent = defineComponent({
             <>
                 <TreeNode 
                     text={props.data.title}
+                    showArrow={props.data.children && props.data.children.length}
                     onChange={treeNodeChange}
                 />
                 {props.data.children && (

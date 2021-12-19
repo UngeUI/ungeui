@@ -44,9 +44,8 @@ module.exports = {
                         { text: 'Icon', link: '/components/icon/' },
                         { text: 'Button', link: '/components/button/' },
                         { text: 'Badge', link: '/components/badge/' },
-                        { text: 'Transit', link: '/components/transit/'},
-						{ text: 'Tree', link: '/components/tree/'},
-						//Flag
+                        { text: 'Transit', link: '/components/transit/' },
+                        //Flag
                     ],
                 }, {
                     text: '数据组件',
@@ -60,6 +59,7 @@ module.exports = {
                         { text: 'Pagination', link: '/components/pagination/' },
                         { text: 'Slider', link: '/components/slider/' },
                         { text: 'InputNumber', link: '/components/inputNumber/' },
+                        { text: 'Tree', link: '/components/tree/' },
                     ],
                 }, {
                     text: '反馈组件',
@@ -98,9 +98,8 @@ module.exports = {
                         { text: 'Icon', link: '/en/components/icon/' },
                         { text: 'Button', link: '/en/components/button/' },
                         { text: 'Badge', link: '/en/components/badge/' },
-                        { text: 'Transit', link: '/en/components/transit/'},
-						{ text: 'Tree', link: '/en/components/tree/'},
-						//Flag2
+                        { text: 'Transit', link: '/en/components/transit/' },
+                        //Flag2
                     ],
                 }, {
                     text: 'Data',
@@ -114,6 +113,7 @@ module.exports = {
                         { text: 'Pagination', link: '/en/components/pagination/' },
                         { text: 'Slider', link: '/en/components/slider/' },
                         { text: 'InputNumber', link: '/en/components/inputNumber/' },
+                        { text: 'Tree', link: '/en/components/tree/' },
                     ],
                 }, {
                     text: 'Feedback',
