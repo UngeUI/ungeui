@@ -1,4 +1,4 @@
-import { defineComponent, computed, ref } from 'vue'
+import { defineComponent, computed, ref, inject } from 'vue'
 import Arrow from './util/arrow.vue'
 import { UCheckbox } from '../checkbox/index'
 
@@ -7,37 +7,39 @@ const treeNode = defineComponent({
     props: {
         text: { type: String },
         showArrow: { type: Boolean },
-        checkable: { type: Boolean, default: false }
+        checkable: { type: Boolean, default: false },
+		onArrowChange:{ type: Function },
+		onCheckedChange:{ type: Function }
     },
-    emits:['change'],
-    setup(props, { emit }) {
+    setup(props, { emit, expose }) {
 
-        // the direction state of arrow
-        const state = ref(false)
-        const switcherState = computed(() => {
-            return state.value ? 'u-tree-node-switcher-close' : ''
+        // 箭头向下（false）/向右（true）的状态
+        const arrowState = ref(false)
+        const isArrowClose = computed(() => {
+            return arrowState.value ? 'u-tree-node-switcher-close' : ''
         })
         const switcherStateChange = () => {
-            emit('change', state.value)
-            state.value = !state.value
+			props.onArrowChange(arrowState.value)
+            arrowState.value = !arrowState.value
         }
-
-        //if it has no children, we should hidden the arrow
-        const switcherVisibleState = computed(() => {
+        //如果没有孩子，应该隐藏箭头
+        const isArrowHidden = computed(() => {
             return props.showArrow ? '' : 'u-tree-node-switcher-hidden'
         })
 
+		//多选框选中/非选中的状态
         const checkValue = ref(false)
         const onUpdateChecked = (value) => {
             checkValue.value = value
+			props.onCheckedChange(checkValue.value)
         }
         return () => (
             <li class="u-tree-node">
                 <Arrow
                     class={[
                         "u-tree-node-switcher",
-                        switcherState.value,
-                        switcherVisibleState.value
+                        isArrowClose.value,
+                        isArrowHidden.value
                     ]}
                     onClick={switcherStateChange}
                 />

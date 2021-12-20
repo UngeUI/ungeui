@@ -1,6 +1,6 @@
 <template>
    <div>
-        <u-tree :data="data">
+        <u-tree :data="data" checkble>
              this is tree
         </u-tree>
    </div>
