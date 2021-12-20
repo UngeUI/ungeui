@@ -21,6 +21,13 @@ import { UTree } from 'ungeui';
  desc="基本用法">
 </demo>
 
+### 多选
+
+<demo src="./demo/checkable.vue"
+ language="vue"
+ title="基本用法"
+ desc="基本用法">
+</demo>
 ## Props
 
 | 参数  |   说明   |   类型    |   默认值    |

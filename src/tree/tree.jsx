@@ -4,9 +4,8 @@ import TreeContent from './treeContent.jsx'
 const Tree = defineComponent({
     name: 'tree',
     props: {
-        data: {
-            type: Array
-        }
+        data: { type: Array },
+        checkable: { type: Boolean, default: false }
     },
     setup(props, { slots }) {
         return () => (
@@ -14,8 +13,9 @@ const Tree = defineComponent({
                 {
                     props.data.map(item => {
                         return (
-                            <TreeContent 
+                            <TreeContent
                                 data={item}
+                                checkable={props.checkable}
                             />
                         )
                     })

@@ -7,6 +7,9 @@ const treeContent = defineComponent({
     props: {
         data: {
             type: Object
+        },
+        checkable: {
+            type: Boolean
         }
     },
     emits:['change'],
@@ -24,11 +27,13 @@ const treeContent = defineComponent({
             <>
                 <TreeNode 
                     text={props.data.title}
-                    showArrow={props.data.children && props.data.children.length}
+                    showArrow={props.data.children && props.data.children.length != 0}
+                    checkable={props.checkable}
                     onChange={treeNodeChange}
                 />
                 {props.data.children && (
-                    <Tree 
+                    <Tree
+                        checkable={props.checkable}
                         data={props.data.children}
                         class={[
                             treeNodeState.value
@@ -37,7 +42,6 @@ const treeContent = defineComponent({
                 )}
             </>
         )
-        
     }
 })
 
