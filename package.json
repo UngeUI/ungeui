@@ -1,6 +1,6 @@
 {
     "name": "ungeui",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "description": "A Vue 3 Component Library.",
     "main": "./dist/ungeui.umd.js",
     "module": "./dist/ungeui.es.js",
