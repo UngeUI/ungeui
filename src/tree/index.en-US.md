@@ -3,9 +3,9 @@ map:
    path: /components/tree
 ---
 
-# Tree
+# Tree🎄
 
-this is Tree component
+Suitable for displaying data in tree structure
 
 ## Code demonstration
 
@@ -13,15 +13,26 @@ this is Tree component
 import { UTree } from 'ungeui';
 ```
 
-### Basic useage
+### Basic useage🚀
 
 <demo src="./demo/base.vue"
  language="vue"
- title="Basic useage"
+ title="🚀Basic useage"
  desc="Basic useage">
+</demo>
+
+### Multiple choice💠
+
+<demo src="./demo/checkable.vue"
+ language="vue"
+ title="💠Basic useage"
+ desc="any node can be selected">
 </demo>
 
 ## Props
 
 | Property | Description |   Type |   Default |
 | :--------: | :----------: | :-----: | :--------: |
+| data | data displayed | `array` | `[]` |
+| checkable | whether multiple | ` boolean` | ` false` |
+| checkedkeys | key value of the selected | ` array` | `[]`|
