@@ -1,4 +1,4 @@
-import { defineComponent, h, ref, computed, reactive } from 'vue';
+import { defineComponent, h, ref, computed, reactive, provide } from 'vue';
 import TreeContent from './treeContent.jsx'
 
 const Tree = defineComponent({
@@ -7,8 +7,9 @@ const Tree = defineComponent({
 		data: { type: Array },
 		checkable: { type: Boolean, default: false }
 	},
+	emits: ['checkedChange'],
 	setup(props, { slots }) {
-		
+
 		return () => (
 			<ul class="u-tree">
 				{

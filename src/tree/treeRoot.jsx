@@ -6,15 +6,24 @@ const TreeRoot = defineComponent({
     name: 'TreeRoot',
 	props: {
         data: { type: Array },
+        checkedKeys: { type: Array },
 		checkable: { type: Boolean, default: false }
 	},
-	setup(props, { slots }) {
-        const onChangeState = (value) => {
-            console.log(value)
-        }
-        provide('rootDate', {
-            onChangeState
-        })
+    emits: ['update:checked-keys', 'update:checkedKeys'],
+	setup(props, { slots, emit }) {
+        const checkedValueArr = new Array()
+		const onCheckedChange = (value) => {
+			const index = checkedValueArr.findIndex(item => value == item)
+			if(index != -1) {
+				checkedValueArr.splice(index, 1)
+			} else {
+				checkedValueArr.push(value)
+			}
+			emit('update:checkedKeys', [...checkedValueArr])
+		}
+		provide('rootData', {
+			onCheckedChange
+		})
 		return () => (
 			<Tree
                 {...props}

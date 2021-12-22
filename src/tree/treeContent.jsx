@@ -28,7 +28,8 @@ const treeContent = defineComponent({
         return () => (
             <>
                 <TreeNode 
-                    text={props.data.title}
+                    label={props.data.title}
+                    value={props.data.key}
                     showArrow={props.data.children && props.data.children.length != 0}
                     checkable={props.checkable}
                     onArrowChange={onArrowChange}

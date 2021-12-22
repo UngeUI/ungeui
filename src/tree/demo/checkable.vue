@@ -1,14 +1,33 @@
 <template>
    <div>
-        <u-tree :data="data" checkable>
+        <u-tree 
+			:data="data" 
+			checkable 
+			v-model:checkedKeys="showData"
+		>
              this is tree
         </u-tree>
+		<u-space>
+			<u-tag 
+				v-for="(item,index) in showData" 
+				:key="index"
+				type="info"
+			>
+				{{item}}
+			</u-tag>
+		</u-space>
    </div>
 </template>
 
 <script setup>
-import { UTree } from 'ungeui'
+import { UTree, UTag, USpace } from 'ungeui'
 import { ref } from 'vue'
+
+const showData = ref([])
+
+// setInterval(() => {
+// 	showData.value = Math.random()
+// },200)
 
 let data = ref([{
     title: 'parent 1',

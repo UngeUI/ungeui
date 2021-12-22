@@ -5,7 +5,8 @@ import { UCheckbox } from '../checkbox/index'
 const treeNode = defineComponent({
     name: 'treeNode',
     props: {
-        text: { type: String },
+        label: { type: String },
+        value: { },
         showArrow: { type: Boolean },
         checkable: { type: Boolean, default: false },
 		onArrowChange:{ type: Function },
@@ -27,11 +28,12 @@ const treeNode = defineComponent({
             return props.showArrow ? '' : 'u-tree-node-switcher-hidden'
         })
 
+        const rootData = inject('rootData', null)
 		//多选框选中/非选中的状态
         const checkValue = ref(false)
         const onUpdateChecked = (value) => {
             checkValue.value = value
-			props.onCheckedChange(checkValue.value)
+			rootData.onCheckedChange(props.value)
         }
         return () => (
             <li class="u-tree-node">
@@ -49,7 +51,7 @@ const treeNode = defineComponent({
                         onUpdate:checked={onUpdateChecked}
                     />
                 )}
-                <span class="u-tree-node-text">{props.text}</span>
+                <span class="u-tree-node-text">{props.label}</span>
             </li>
         )
 
