@@ -1,9 +1,16 @@
+<!--
+ * @Descripttion: 
+ * @Author: peterroe
+ * @Date: 2021-11-06 14:43:23
+ * @LastEditors: peterroe
+ * @LastEditTime: 2022-01-06 21:33:53
+-->
 <template>
     <div>
         <u-space>
-            <u-tag round size="small">小胶囊</u-tag>
-            <u-tag round type="danger">胶囊标签</u-tag>
-            <u-tag round size="large" type="success">大胶囊</u-tag>
+            <u-tag round size="small">small capsule</u-tag>
+            <u-tag round type="danger">normal capsule</u-tag>
+            <u-tag round size="large" type="success">large capsule</u-tag>
         </u-space>   
     </div>
 </template>
