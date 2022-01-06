@@ -1,7 +1,14 @@
+<!--
+ * @Descripttion: 
+ * @Author: peterroe
+ * @Date: 2021-11-07 15:11:14
+ * @LastEditors: peterroe
+ * @LastEditTime: 2022-01-06 21:44:33
+-->
 <template>
     <div>
-        <u-radio v-model:checked="checked">单选框</u-radio>
-        <u-button @click="toggle">切换</u-button>
+        <u-radio v-model:checked="checked">Radio</u-radio>
+        <u-button @click="toggle">Toggle</u-button>
     </div>
 </template>
 
