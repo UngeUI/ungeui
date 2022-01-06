@@ -44,7 +44,7 @@ import { IconClock } from @ungeui/icons
 <demo src="./demo/color.vue"
   language="vue"
   title="🌈basic usage"
-  desc="方便切换不同颜色">
+  desc="Easy to switch between different colors">
 </demo>
 
 ### Icon example of @ungeui/icons👑
