@@ -1,6 +1,13 @@
+<!--
+ * @Descripttion: 
+ * @Author: peterroe
+ * @Date: 2021-11-06 17:19:26
+ * @LastEditors: peterroe
+ * @LastEditTime: 2022-01-06 21:42:39
+-->
 <template>
     <div>
-        <u-input placeholder="内容" size="large">
+        <u-input placeholder="content" size="large">
             <template #prefix>
                 <u-icon :size="20">
                     <IconSearch />
