@@ -15,7 +15,7 @@ import { UCheckbox } from 'ungeui
 
 ### Basic usage🖱️
 
-<demo src="./demo/checked.vue"
+<demo src="./demo/en/checked.vue"
   language="vue"
   title="🖱️basic usage"
   desc="Click to switch options">
@@ -23,7 +23,7 @@ import { UCheckbox } from 'ungeui
 
 ### Multiple selection group🔱
 
-<demo src="./demo/group.vue"
+<demo src="./demo/en/group.vue"
   language="vue"
   title="🔱basic usage"
   desc="more elegant group control">
@@ -31,7 +31,7 @@ import { UCheckbox } from 'ungeui
 
 ### Disable🚫
 
-<demo src="./demo/disabled.vue"
+<demo src="./demo/en/disabled.vue"
   language="vue"
   title="🚫basic usage"
   desc="Disabled disables the multi selection box and the color turns gray">

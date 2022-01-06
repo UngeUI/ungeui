@@ -15,7 +15,7 @@ import { USelect } from 'ungeui'
 
 ### Basic usage🌠
 
-<demo src="./demo/base.vue"
+<demo src="./demo/en/base.vue"
     language="vue"
     title="🌠basic usage"
     desc="The surface displays the label value to the user, and the actual internal transfer value">
@@ -23,7 +23,7 @@ import { USelect } from 'ungeui'
 
 ### Different sizes🔥
 
-<demo src="./demo/size.vue"
+<demo src="./demo/en/size.vue"
     language="vue"
     title="🔥different sizes"
     desc="Three sizes of drop-down boxes are provided, and the default is medium">
@@ -31,7 +31,7 @@ import { USelect } from 'ungeui'
 
 ### Display value😃😭😩
 
-<demo src="./demo/displayValue.vue"
+<demo src="./demo/en/displayValue.vue"
     language="vue"
     title="😃😭😩basic usage"
     desc="The value value is also displayed to the user">

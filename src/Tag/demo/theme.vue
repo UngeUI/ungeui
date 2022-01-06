@@ -1,11 +1,11 @@
 <template>
     <div>
         <u-space>
-            <u-tag>default</u-tag>
-            <u-tag type="success">success</u-tag>
-            <u-tag type="warning">warning</u-tag>
-            <u-tag type="danger">danger</u-tag>
-            <u-tag type="info">info</u-tag>
+            <u-tag>默认</u-tag>
+            <u-tag type="success">成功</u-tag>
+            <u-tag type="warning">警告</u-tag>
+            <u-tag type="danger">危险</u-tag>
+            <u-tag type="info">提示</u-tag>
         </u-space>  
     </div>
 </template>

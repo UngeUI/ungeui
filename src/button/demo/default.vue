@@ -3,15 +3,15 @@
  * @Author: peterroe
  * @Date: 2021-11-04 23:33:18
  * @LastEditors: peterroe
- * @LastEditTime: 2022-01-06 21:39:43
+ * @LastEditTime: 2022-01-06 21:58:10
 -->
 <template>
     <div>
         <p>
-            <span>Number: </span>
+            <span>计数: </span>
             <span>{{ count }}</span>
         </p>
-        <u-button @click="onClick">button</u-button>
+        <u-button @click="onClick">点击+1</u-button>
     </div>
 </template>
 

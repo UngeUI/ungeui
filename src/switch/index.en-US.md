@@ -15,7 +15,7 @@ import { USwitch } from 'ungeui'
 
 ### basic usage🖱️
 
-<demo src="./demo/base.vue"
+<demo src="./demo/en/base.vue"
     language="vue"
     title="🖱️basic usage"
     desc="Click to switch the value. When the background is lit, it represents true, otherwise it is false">
@@ -23,7 +23,7 @@ import { USwitch } from 'ungeui'
 
 ### Different sizes🔥
 
-<demo src="./demo/size.vue"
+<demo src="./demo/en/size.vue"
     language="vue"
     title="🔥basic usage"
     desc="Switches are also preset with several different sizes to adapt to different scenarios">
@@ -31,7 +31,7 @@ import { USwitch } from 'ungeui'
 
 ### Custom value🌈
 
-<demo src="./demo/value.vue"
+<demo src="./demo/en/value.vue"
     language="vue"
     title="🌈basic usage"
     desc="define selected value and unselected value">

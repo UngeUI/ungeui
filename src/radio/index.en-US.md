@@ -15,7 +15,7 @@ import { URadio } from 'ungeui';
 
 ### Basic usage🚀
 
-<demo src="./demo/checked.vue"
+<demo src="./demo/en/checked.vue"
   language="vue"
   title="🚀basic usage"
   desc="The checked property determines whether the button is selected">
@@ -23,7 +23,7 @@ import { URadio } from 'ungeui';
 
 ### Disable🚫
 
-<demo src="./demo/disabled.vue"
+<demo src="./demo/en/disabled.vue"
   language="vue"
   title="🚫basic usage"
   desc="Disabled disables the radio box and the color turns gray">
@@ -31,7 +31,7 @@ import { URadio } from 'ungeui';
 
 ### Radio group🚥
 
-<demo src="./demo/group.vue"
+<demo src="./demo/en/group.vue"
   language="vue"
   title="🚥basic usage"
   desc="option group is more convenient to use">
@@ -39,7 +39,7 @@ import { URadio } from 'ungeui';
 
 ### Radio button⏺
 
-<demo src="./demo/button.vue"
+<demo src="./demo/en/button.vue"
   language="vue"
   title="⏺basic usage"
   desc="sometimes it's more elegant to use buttons">

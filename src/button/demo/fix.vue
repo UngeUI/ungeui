@@ -1,10 +1,3 @@
-<!--
- * @Descripttion: 
- * @Author: peterroe
- * @Date: 2021-11-06 16:10:12
- * @LastEditors: peterroe
- * @LastEditTime: 2022-01-06 21:40:16
--->
 <template>
     <div>
         <u-space>
@@ -14,10 +7,10 @@
                         <IconZoomIn />
                     </u-icon>
                 </template>
-                Prefix
+                前缀
             </u-button>
             <u-button round size="large" type="info">
-                Suffix
+                后缀
                 <template #suffix>
                     <u-icon :size="20">
                         <IconZoomIn />

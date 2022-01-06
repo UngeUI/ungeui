@@ -15,7 +15,7 @@ import { UDialog } from 'ungeui'
 
 ### Ordinary dialog🚀
 
-<demo src="./demo/base.vue"
+<demo src="./demo/en/base.vue"
   language="vue"
   title="🚀basic usage"
   desc="dialog basic usage">
@@ -23,7 +23,7 @@ import { UDialog } from 'ungeui'
 
 ### Preset event interaction🧷
 
-<demo src="./demo/event.vue"
+<demo src="./demo/en/event.vue"
   language="vue"
   title="basic usage"
   desc="you can listen for triggered events">
@@ -31,7 +31,7 @@ import { UDialog } from 'ungeui'
 
 ### Customize bottom content🥘
 
-<demo src="./demo/slot.vue"
+<demo src="./demo/en/slot.vue"
   language="vue"
   title="🥘basic usage"
   desc="after occupying the bottom slot, the preset cancellation and confirmation events will be invalid">
@@ -39,7 +39,7 @@ import { UDialog } from 'ungeui'
 
 ### Custom icon type🌈
 
-<demo src="./demo/icon.vue"
+<demo src="./demo/en/icon.vue"
   language="vue"
   title="🌈basic usage"
   desc="custom closed icon">
@@ -49,7 +49,7 @@ import { UDialog } from 'ungeui'
 
 In addition, we hope to give users more flexibility in transition animation, thanks to[animate.css](https://www.dowebok.com/demo/2014/98/), you can pass in the legal animation class
 
-<demo src="./demo/animate.vue"
+<demo src="./demo/en/animate.vue"
   language="vue"
   title="basic usage"
   desc="⚙️All legal class names can be passed in as configuration">

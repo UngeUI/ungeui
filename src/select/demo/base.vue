@@ -1,3 +1,10 @@
+<!--
+ * @Descripttion: 
+ * @Author: peterroe
+ * @Date: 2021-11-19 10:36:03
+ * @LastEditors: peterroe
+ * @LastEditTime: 2022-01-06 22:33:24
+-->
 <template>
     <div>
         <u-select v-model:value="value" placeholder="选择字母" :style="{width:'300px'}">
@@ -14,5 +21,5 @@
 import { USelect,USelectOption } from 'ungeui'
 import { ref } from 'vue'
 
-let value = ref('Apple')
+let value = ref('苹果')
 </script>

@@ -15,7 +15,7 @@ import { UButton } from 'ungeui';
 
 ### Click trigger🖱️
 
-<demo src="./demo/default.vue"
+<demo src="./demo/en/default.vue"
   language="vue"
   title="🖱️basic usage"
   desc="Number of buttons clicked + 1">
@@ -23,7 +23,7 @@ import { UButton } from 'ungeui';
 
 ### Different themes🚀
 
-<demo src="./demo/theme.vue"
+<demo src="./demo/en/theme.vue"
   language="vue"
   title="🚀basic usage"
   desc="Different types determine different topic types. Five topics are provided by default: default, success, warning, danger and info">
@@ -31,7 +31,7 @@ import { UButton } from 'ungeui';
 
 ### Dark🌊
 
-<demo src="./demo/deep.vue"
+<demo src="./demo/en/deep.vue"
   language="vue"
   title="🌊basic usage"
   desc="dark color has stronger visual impact">
@@ -39,7 +39,7 @@ import { UButton } from 'ungeui';
 
 ### Dashed line🧵
 
-<demo src="./demo/dashed.vue"
+<demo src="./demo/en/dashed.vue"
   language="vue"
   title="🧵basic usage"
   desc="support dotted line">
@@ -47,7 +47,7 @@ import { UButton } from 'ungeui';
 
 ### Size🔥
 
-<demo src="./demo/size.vue"
+<demo src="./demo/en/size.vue"
   language="vue"
   title="🔥basic usage"
   desc="size of different buttons">
@@ -55,7 +55,7 @@ import { UButton } from 'ungeui';
 
 ### Text📑
 
-<demo src="./demo/text.vue"
+<demo src="./demo/en/text.vue"
   language="vue"
   title="📑basic usage"
   desc="text button">
@@ -63,7 +63,7 @@ import { UButton } from 'ungeui';
 
 ### Disable🚫
 
-<demo src="./demo/disabled.vue"
+<demo src="./demo/en/disabled.vue"
   language="vue"
   title="🚫basic usage"
   desc="disable button">
@@ -71,7 +71,7 @@ import { UButton } from 'ungeui';
 
 ### Icon button🐳
 
-<demo src="./demo/icon.vue"
+<demo src="./demo/en/icon.vue"
   language="vue"
   title="🐳basic usage"
   desc="The icon button expresses the meaning of the button">
@@ -79,7 +79,7 @@ import { UButton } from 'ungeui';
 
 ### Round⭕
 
-<demo src="./demo/round.vue"
+<demo src="./demo/en/round.vue"
   language="vue"
   title="⭕basic usage"
   desc="The circle looks more silky">
@@ -87,7 +87,7 @@ import { UButton } from 'ungeui';
 
 ### Pre suffix🙌
 
-<demo src="./demo/fix.vue"
+<demo src="./demo/en/fix.vue"
   language="vue"
   title="🙌basic usage"
   desc="The meaning of words and icons is more clear">

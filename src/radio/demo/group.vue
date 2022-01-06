@@ -1,17 +1,10 @@
-<!--
- * @Descripttion: 
- * @Author: peterroe
- * @Date: 2021-11-07 20:12:19
- * @LastEditors: peterroe
- * @LastEditTime: 2022-01-06 21:45:47
--->
 <template>
     <div>
         <u-radio-group v-model:value="fruit">
-            <u-radio value="watermelon">Watermelon</u-radio>
-            <u-radio value="banana">Banana</u-radio>
-            <u-radio value="apple">Apple</u-radio>
-            <u-radio value="grape">Grape</u-radio>
+            <u-radio value="watermelon">西瓜</u-radio>
+            <u-radio value="banana">香蕉</u-radio>
+            <u-radio value="apple">苹果</u-radio>
+            <u-radio value="grape">葡萄</u-radio>
         </u-radio-group>
     </div>
 </template>

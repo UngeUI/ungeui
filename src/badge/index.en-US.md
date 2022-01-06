@@ -15,7 +15,7 @@ import { UBadge } from 'ungeui';
 
 ### Basic useage❗
 
-<demo src="./demo/base.vue"
+<demo src="./demo/en/base.vue"
  language="vue"
  title="Basic useage"
  desc="It matches the avatar and represents unread news">
@@ -23,7 +23,7 @@ import { UBadge } from 'ungeui';
 
 ### Different background colors🌈
 
-<demo src="./demo/color.vue"
+<demo src="./demo/en/color.vue"
  language="vue"
  title="🌈Basic useage"
  desc="maybe you want more than red, you can switch between different background colors">
@@ -31,7 +31,7 @@ import { UBadge } from 'ungeui';
 
 ### Upper and lower limits🚧
 
-<demo src="./demo/over.vue"
+<demo src="./demo/en/over.vue"
  language="vue"
  title="🚧Basic useage"
  desc="if you don't want to see the explosion message, set an upper limit">
@@ -39,7 +39,7 @@ import { UBadge } from 'ungeui';
 
 ### Display lower limit value⛔
 
-<demo src="./demo/lower.vue"
+<demo src="./demo/en/lower.vue"
  language="vue"
  title="⛔Basic useage"
  desc="is the lower limit displayed or hidden when the minimum value is reached?">
@@ -47,7 +47,7 @@ import { UBadge } from 'ungeui';
 
 ### Dot🔵🔴🟠🟢
 
-<demo src="./demo/dot.vue"
+<demo src="./demo/en/dot.vue"
  language="vue"
  title="🔵Basic useage"
  desc="quietly remind you of new messages">
@@ -55,7 +55,7 @@ import { UBadge } from 'ungeui';
 
 ### Other combinations📁
 
-<demo src="./demo/other.vue"
+<demo src="./demo/en/other.vue"
  language="vue"
  title="📁Basic useage"
  desc="it can also be used in other places">

@@ -15,7 +15,7 @@ import { UTag } from 'ungeui';
 
 ### Different themes🚀
 
-<demo src="./demo/theme.vue"
+<demo src="./demo/en/theme.vue"
   language="vue"
   title="🚀basic usage"
   desc="different types determine different topic types, Five themes are provided by default: default、success、warning、danger、info">
@@ -23,7 +23,7 @@ import { UTag } from 'ungeui';
 
 ### Different sizes🔥
 
-<demo src="./demo/size.vue"
+<demo src="./demo/en/size.vue"
   language="vue"
   title="🔥basic usage"
   desc="Adding different size values can change the size of the label">
@@ -31,7 +31,7 @@ import { UTag } from 'ungeui';
 
 ### Closed❌
 
-<demo src="./demo/close.vue"
+<demo src="./demo/en/close.vue"
   language="vue"
   title="❌basic usage"
   desc="closed attribute controls whether to display closed">
@@ -39,7 +39,7 @@ import { UTag } from 'ungeui';
 
 ### Capsule label💊
 
-<demo src="./demo/round.vue"
+<demo src="./demo/en/round.vue"
   language="vue"
   title="💊basic usage"
   desc="It looks like a capsule, maybe...">
@@ -47,7 +47,7 @@ import { UTag } from 'ungeui';
 
 ### Disable🚫
 
-<demo src="./demo/disabled.vue"
+<demo src="./demo/en/disabled.vue"
   language="vue"
   title="🚫basic usage"
   desc="When disabled, events cannot be triggered and text cannot be selected">
@@ -55,7 +55,7 @@ import { UTag } from 'ungeui';
 
 ### Custom label color🌈
 
-<demo src="./demo/color.vue"
+<demo src="./demo/en/color.vue"
   language="vue"
   title="🌈basic usage"
   desc="custom colors support hex and RGB, you can use the color you like!">

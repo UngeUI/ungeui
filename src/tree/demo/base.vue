@@ -1,8 +1,13 @@
+<!--
+ * @Descripttion: 
+ * @Author: peterroe
+ * @Date: 2021-12-17 20:12:37
+ * @LastEditors: peterroe
+ * @LastEditTime: 2022-01-06 22:28:46
+-->
 <template>
    <div>
-        <u-tree :data="data" checkble>
-             this is tree
-        </u-tree>
+        <u-tree :data="data" checkble></u-tree>
    </div>
 </template>
 

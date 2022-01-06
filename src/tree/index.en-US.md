@@ -15,7 +15,7 @@ import { UTree } from 'ungeui';
 
 ### Basic useage🚀
 
-<demo src="./demo/base.vue"
+<demo src="./demo/en/base.vue"
  language="vue"
  title="🚀Basic useage"
  desc="Basic useage">
@@ -23,7 +23,7 @@ import { UTree } from 'ungeui';
 
 ### Multiple choice💠
 
-<demo src="./demo/checkable.vue"
+<demo src="./demo/en/checkable.vue"
  language="vue"
  title="💠Basic useage"
  desc="any node can be selected">

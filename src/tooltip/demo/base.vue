@@ -1,29 +1,36 @@
+<!--
+ * @Descripttion: 
+ * @Author: peterroe
+ * @Date: 2021-11-26 16:23:13
+ * @LastEditors: peterroe
+ * @LastEditTime: 2022-01-06 22:26:25
+-->
 <template>
    <div>
      <u-space>
           <u-tooltip placement="left">
                <template #title>
-                    Hello
+                    万物
                </template>
-               <u-button>Left</u-button>
+               <u-button>左边</u-button>
           </u-tooltip>
           <u-tooltip placement="top">
                <template #title>
-                    Hello
+                    皆有裂痕
                </template>
-               <u-button>Top</u-button>
+               <u-button>上面</u-button>
           </u-tooltip>
           <u-tooltip placement="bottom">
                <template #title>
-                    Hello
+                    那是
                </template>
-               <u-button>Bottom</u-button>
+               <u-button>底部</u-button>
           </u-tooltip>
           <u-tooltip placement="right">
                <template #title>
-                    Hello
+                    光进来的地方
                </template>
-               <u-button>Right</u-button>
+               <u-button>右边</u-button>
           </u-tooltip>
      </u-space>
    </div>

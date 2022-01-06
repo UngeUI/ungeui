@@ -16,7 +16,7 @@ import { message } from 'ungeui'
 ### Basic usage🚀
 
 <demo 
-    src="./demo/base.vue"
+    src="./demo/en/base.vue"
     language="vue"
     title="🚀basic usage"
     desc="Several basic themes are preset, and you can call them at the right time">
@@ -25,7 +25,7 @@ import { message } from 'ungeui'
 ### Custom configuration🗽
 
 <demo 
-    src="./demo/config.vue"
+    src="./demo/en/config.vue"
     language="vue"
     title="🗽basic usage"
     desc="You can also customize some configurations">

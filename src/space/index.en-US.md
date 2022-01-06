@@ -15,7 +15,7 @@ import { USpace } from 'ungeui';
 
 ### Basic usage🚀
 
-<demo src="./demo/base.vue"
+<demo src="./demo/en/base.vue"
  language="vue"
  title="🚀basic usage"
  desc="Using this component overrides the margins of child elements">
@@ -23,7 +23,7 @@ import { USpace } from 'ungeui';
 
 ### Custom gap🌌
 
-<demo src="./demo/gap.vue"
+<demo src="./demo/en/gap.vue"
  language="vue"
  title="🌌basic usage"
  desc="Custom gap size">
@@ -31,7 +31,7 @@ import { USpace } from 'ungeui';
 
 ### Vertical🖕🏻
 
-<demo src="./demo/vertical.vue"
+<demo src="./demo/en/vertical.vue"
  language="vue"
  title="🖕🏻basic usage"
  desc="make child elements display vertically">
@@ -39,7 +39,7 @@ import { USpace } from 'ungeui';
 
 ### JustifyContent🕹️
 
-<demo src="./demo/justify.vue"
+<demo src="./demo/en/justify.vue"
  language="vue"
  title="🕹️basic usage"
  desc="align child elements">
@@ -49,7 +49,7 @@ import { USpace } from 'ungeui';
 
 In the horizontal case, it will automatically center the element in the vertical direction. This may not be the result you want, so you can change it through the align attribute
 
-<demo src="./demo/align.vue"
+<demo src="./demo/en/align.vue"
  language="vue"
  title="🛌basic usage"
  desc="Define vertical alignment">

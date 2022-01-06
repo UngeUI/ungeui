@@ -15,7 +15,7 @@ import { UAvatar } from 'ungeui';
 
 ### Different sizes🔥
 
-<demo src="./demo/size.vue"
+<demo src="./demo/en/size.vue"
   language="vue"
   title="🔥basic usage"
   desc="Size controls the size of the avatar. When there is no avatar filling, the default background is gray">
@@ -23,7 +23,7 @@ import { UAvatar } from 'ungeui';
 
 ### Font size adaptation🙏
 
-<demo src="./demo/fit.vue"
+<demo src="./demo/en/fit.vue"
   language="vue"
   title="🙏basic usage"
   desc="The filled content can be text. If the text is too long, it will be reduced appropriately to ensure that the text does not overflow the avatar frame">
@@ -31,7 +31,7 @@ import { UAvatar } from 'ungeui';
 
 ### Picture🧩
 
-<demo src="./demo/img.vue"
+<demo src="./demo/en/img.vue"
   language="vue"
   title="🧩basic usage"
   desc="pictures can be inserted to support network resources and local">
@@ -39,7 +39,7 @@ import { UAvatar } from 'ungeui';
 
 ### Round⭕
 
-<demo src="./demo/round.vue"
+<demo src="./demo/en/round.vue"
   language="vue"
   title="⭕basic usage"
   desc="Round head sometimes looks more suitable for your application. It looks cute, doesn't it?">

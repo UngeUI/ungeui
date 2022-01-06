@@ -15,7 +15,7 @@ import { UInput } from 'ungeui';
 
 ### Bidirectional binding🤝
 
-<demo src="./demo/reactive.vue"
+<demo src="./demo/en/reactive.vue"
   language="vue"
   title="🤝basic usage"
   desc="Bind user entered values">
@@ -23,7 +23,7 @@ import { UInput } from 'ungeui';
 
 ### Different sizes🔥
 
-<demo src="./demo/size.vue"
+<demo src="./demo/en/size.vue"
   language="vue"
   title="🔥basic usage"
   desc="size control the size of the input box">
@@ -31,7 +31,7 @@ import { UInput } from 'ungeui';
 
 ### Password box🙈
 
-<demo src="./demo/password.vue"
+<demo src="./demo/en/password.vue"
   language="vue"
   title="🙈basic usage"
   desc="the password box is used to hide the entered characters">
@@ -39,7 +39,7 @@ import { UInput } from 'ungeui';
 
 ### Icon slot🙌
 
-<demo src="./demo/icon.vue"
+<demo src="./demo/en/icon.vue"
   language="vue"
   title="🙌basic usage"
   desc="You can insert icon to make it more semantic and tell the user the type that should be entered here">
@@ -47,7 +47,7 @@ import { UInput } from 'ungeui';
 
 ### Textarea📋️
 
-<demo src="./demo/textarea.vue"
+<demo src="./demo/en/textarea.vue"
   language="vue"
   title="📋️basic usage"
   desc="It supports the representation in the form of text field">
@@ -55,7 +55,7 @@ import { UInput } from 'ungeui';
 
 ### Custom rows/cols🥨
 
-<demo src="./demo/rowscols.vue"
+<demo src="./demo/en/rowscols.vue"
   language="vue"
   title="🥨basic usage"
   desc="The number of custom rows and columns is the same as the original usage">
@@ -63,7 +63,7 @@ import { UInput } from 'ungeui';
 
 ### Disable🚫
 
-<demo src="./demo/disabled.vue"
+<demo src="./demo/en/disabled.vue"
   language="vue"
   title="🚫basic usage"
   desc="When disabled, the user cannot enter anything">
