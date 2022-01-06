@@ -25,7 +25,7 @@ import { UButton } from 'ungeui';
 
 <demo src="./demo/theme.vue"
   language="vue"
-  title="🚀基本用法"
+  title="🚀basic usage"
   desc="Different types determine different topic types. Five topics are provided by default: default, success, warning, danger and info">
 </demo>
 

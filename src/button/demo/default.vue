@@ -1,10 +1,17 @@
+<!--
+ * @Descripttion: 
+ * @Author: peterroe
+ * @Date: 2021-11-04 23:33:18
+ * @LastEditors: peterroe
+ * @LastEditTime: 2022-01-06 21:39:43
+-->
 <template>
     <div>
         <p>
-            <span>点击次数:</span>
+            <span>Number: </span>
             <span>{{ count }}</span>
         </p>
-        <u-button @click="onClick">按钮</u-button>
+        <u-button @click="onClick">button</u-button>
     </div>
 </template>
 
