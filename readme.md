@@ -1,3 +1,10 @@
+<!--
+ * @Descripttion: 
+ * @Author: peterroe
+ * @Date: 2021-11-04 23:23:10
+ * @LastEditors: peterroe
+ * @LastEditTime: 2022-01-06 22:49:26
+-->
 <div align=center>
     <a href="https://peterroe.github.io/ungeui/">
         <img  src="https://img-blog.csdnimg.cn/4843e19340f1432d9f24de61e16b9bce.png">
@@ -9,7 +16,7 @@
       <img src="https://img.shields.io/npm/v/ungeui.svg">
   </a>
   <a href="https://npmcharts.com/compare/ungeui?minimal=true">
-    <img src="http://img.shields.io/npm/dm/ungeui.svg">
+    <img src="http://img.shields.io/npm/dt/ungeui.svg">
   </a>
   <a href="http://img.badgesize.io/https://unpkg.com/ungeui/dist/ungeui.es.js?compression=gzip&label=gzip%20size:%20JS">
     <img src="http://img.badgesize.io/https://unpkg.com/ungeui/dist/ungeui.es.js?compression=gzip&label=gzip%20size:%20JS">
@@ -23,7 +30,7 @@
   <br>
 </p>
 
-<p align="center">Unge UI - Means young in Danish</p>
+<p align="center">Unge - Means young in Danish</p>
 
 ## Introduce
 
@@ -49,7 +56,7 @@ app.use(UngeUI);
 
 ## Document
 
-[https://peterroe.github.io/ungeui/](https://peterroe.github.io/ungeui/)
+[document here!](https://peterroe.github.io/ungeui/)
 
 ## Local development
 
@@ -77,6 +84,4 @@ $ yarn dev
 yarn create-component [component-name]
 ```
 
-## Next
-
-😀Welcome pull request
+**😀Welcome pull request**
