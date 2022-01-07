@@ -101,7 +101,7 @@
     },
     "publishConfig": {
         "access": "public",
-        "registry": "https://registry.npmjs.org"
+        "registry": "git://github.com/UngeUI/ungeui.git"
     },
     "husky": {
         "hooks": {
