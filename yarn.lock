@@ -2295,10 +2295,10 @@
     "@typescript-eslint/types" "4.17.0"
     eslint-visitor-keys "^2.0.0"
 
-"@ungeui/icons@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@ungeui/icons/-/icons-1.1.0.tgz#a2d6d3fca2b3b5b8d43287c8a13353515c451938"
-  integrity sha512-TK1PVIJVy08WJnbSWkLHidCE0l7k68fDFSI5ukQ1Ip8V5k/hARpc/wXG6nk5a/P+Ev3eDndNr1bEXuBIhZ8rAQ==
+"@ungeui/icons@^1.1.5":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@ungeui/icons/-/icons-1.1.5.tgz#3c0321e6f9cb5d5136b64a827d06cadbdb621c1d"
+  integrity sha512-5tg6F74/2gIsewMqqYKmxabPJ5UaPilhBJfPlO1h3JVz9FCHt1pL686gIyfoZFzItp8ZOBzeprLzH6yazLp1UQ==
 
 "@ungeui/transit@^1.1.1":
   version "1.1.1"
