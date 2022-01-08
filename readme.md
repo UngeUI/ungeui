@@ -1,9 +1,9 @@
 <!--
- * @Descripttion: 
+ * @Descripttion:
  * @Author: peterroe
  * @Date: 2021-11-04 23:23:10
  * @LastEditors: peterroe
- * @LastEditTime: 2022-01-07 15:57:54
+ * @LastEditTime: 2022-01-08 14:57:45
 -->
 <div align=center>
     <a href="https://peterroe.github.io/ungeui/">
@@ -44,7 +44,9 @@
 ```shell
 $ yarn add ungeui
 ```
+
 **Import**
+
 ```js
 import { createApp } from 'vue';
 import UngeUI from 'ungeui';
@@ -56,14 +58,14 @@ app.use(UngeUI);
 
 ## Document
 
-[document here!](https://peterroe.github.io/ungeui/)
+[document here!](https://ungeui.github.io/ungeui/)
 
 ## Local development
 
 ⚡Start project in local enviroment
 
 ```
-$ git clone https://github.com/peterroe/ungeui.git
+$ git clone https://github.com/UngeUI/ungeui.git
 $ yarn
 $ yarn dev
 ```
