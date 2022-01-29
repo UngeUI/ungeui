@@ -15,7 +15,7 @@ npm-debug.log
 .vscode
 docs
 scripts
-src
+./src
 styles
 .eslintrc.js
 .ls-lint.yml
