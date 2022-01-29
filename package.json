@@ -1,114 +1,114 @@
 {
-    "name": "ungeui",
-    "version": "0.1.6",
-    "description": "A Vue 3 Component Library.",
-    "main": "./dist/ungeui.umd.js",
-    "module": "./dist/ungeui.es.js",
-    "exports": {
-        ".": {
-            "import": "./dist/ungeui.es.js",
-            "require": "./dist/ungeui.umd.js"
-        },
-        "./dist/style.css": "./dist/style.css"
+  "name": "ungeui",
+  "version": "0.1.7-alpha.0",
+  "description": "A Vue 3 Component Library.",
+  "main": "./dist/ungeui.umd.js",
+  "module": "./dist/ungeui.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/ungeui.es.js",
+      "require": "./dist/ungeui.umd.js"
     },
-    "bin": {
-        "create-component": "./bin/index.js"
-    },
-    "types": "dist/src/index.d.ts",
-    "author": "peterroe",
-    "license": "MIT",
-    "scripts": {
-        "dev": "vitepress-fc dev --root=docs --host",
-        "build": "vite build && yarn type",
-        "type": "tsc -d",
-        "test": "jest",
-        "create-component": "create-component",
-        "docs-build": "rimraf docs/dist && cross-env NODE_ENV=production vitepress-fc build --root=docs",
-        "docs-serve": "cross-env NODE_ENV=production vitepress-fc serve --root=docs",
-        "docs-build-serve": "cross-env NODE_ENV=true yarn docs-build && yarn docs-serve",
-        "docs-deploy": "gh-pages -d docs/dist -t true",
-        "docs-build-deploy": "yarn docs-build && yarn docs-deploy",
-        "postdocs-build": "node ./bin/favicon.js",
-        "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-        "lint": "eslint  src/**/*.{vue,js,ts,tsx}",
-        "lint-fix": "yarn lint -- --fix",
-        "ls-lint": "ls-lint",
-        "release": "np"
-    },
-    "devDependencies": {
-        "@babel/core": "^7.16.0",
-        "@babel/preset-env": "^7.16.4",
-        "@babel/preset-typescript": "^7.16.0",
-        "@ls-lint/ls-lint": "^1.9.2",
-        "@rollup/plugin-node-resolve": "^10.0.0",
-        "@testing-library/jest-dom": "^5.15.1",
-        "@types/jest": "^27.0.3",
-        "@typescript-eslint/eslint-plugin": "^4.8.1",
-        "@typescript-eslint/parser": "^4.8.1",
-        "@ungeui/icons": "^1.1.5",
-        "@ungeui/transit": "^1.1.1",
-        "@vitejs/plugin-vue": "^1.1.4",
-        "@vitejs/plugin-vue-jsx": "^1.1.7",
-        "@vue/babel-plugin-jsx": "^1.1.1",
-        "@vue/eslint-config-prettier": "^6.0.0",
-        "@vue/eslint-config-typescript": "^7.0.0",
-        "@vue/test-utils": "^2.0.0-rc.17",
-        "@vuedx/typescript-plugin-vue": "^0.6.3",
-        "babel-jest": "^27.3.1",
-        "clipboard": "^2.0.8",
-        "conventional-changelog-cli": "^2.1.1",
-        "cross-env": "^7.0.2",
-        "eslint": "^7.13.0",
-        "eslint-plugin-prettier": "^3.1.4",
-        "eslint-plugin-vue": "^7.1.0",
-        "gh-pages": "^3.1.0",
-        "gsap": "^3.8.0",
-        "husky": "^4.3.0",
-        "jest": "^27.3.1",
-        "np": "^7.5.0",
-        "prettier": "^2.1.2",
-        "pretty-quick": "^3.1.0",
-        "pug": "^3.0.2",
-        "resize-observer-polyfill": "^1.5.1",
-        "rimraf": "^3.0.2",
-        "rollup-plugin-alias": "^2.2.0",
-        "rollup-plugin-commonjs": "^10.1.0",
-        "rollup-plugin-css-only": "^2.1.0",
-        "rollup-plugin-typescript2": "^0.30.0",
-        "rollup-plugin-vue": "^6.0.0-beta.11",
-        "ts-jest": "^27.0.7",
-        "typescript": "^4.2.2",
-        "ungeicons": "^1.1.0",
-        "vite": "^2.4.1",
-        "vitepress-for-component": "^0.16.2",
-        "vue-jest": "^5.0.0-alpha.10"
-    },
-    "keywords": [
-        "vue",
-        "vue3",
-        "components"
+    "./dist/style.css": "./dist/style.css"
+  },
+  "bin": {
+    "create-component": "./bin/index.js"
+  },
+  "types": "dist/src/index.d.ts",
+  "author": "peterroe",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vitepress-fc dev --root=docs --host",
+    "build": "vite build && yarn type",
+    "type": "tsc -d",
+    "test": "jest",
+    "create-component": "create-component",
+    "docs-build": "rimraf docs/dist && cross-env NODE_ENV=production vitepress-fc build --root=docs",
+    "docs-serve": "cross-env NODE_ENV=production vitepress-fc serve --root=docs",
+    "docs-build-serve": "cross-env NODE_ENV=true yarn docs-build && yarn docs-serve",
+    "docs-deploy": "gh-pages -d docs/dist -t true",
+    "docs-build-deploy": "yarn docs-build && yarn docs-deploy",
+    "postdocs-build": "node ./bin/favicon.js",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "lint": "eslint  src/**/*.{vue,js,ts,tsx}",
+    "lint-fix": "yarn lint -- --fix",
+    "ls-lint": "ls-lint",
+    "release": "np"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-typescript": "^7.16.0",
+    "@ls-lint/ls-lint": "^1.9.2",
+    "@rollup/plugin-node-resolve": "^10.0.0",
+    "@testing-library/jest-dom": "^5.15.1",
+    "@types/jest": "^27.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.8.1",
+    "@typescript-eslint/parser": "^4.8.1",
+    "@ungeui/icons": "^1.1.5",
+    "@ungeui/transit": "^1.1.1",
+    "@vitejs/plugin-vue": "^1.1.4",
+    "@vitejs/plugin-vue-jsx": "^1.1.7",
+    "@vue/babel-plugin-jsx": "^1.1.1",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "@vue/test-utils": "^2.0.0-rc.17",
+    "@vuedx/typescript-plugin-vue": "^0.6.3",
+    "babel-jest": "^27.3.1",
+    "clipboard": "^2.0.8",
+    "conventional-changelog-cli": "^2.1.1",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.13.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-vue": "^7.1.0",
+    "gh-pages": "^3.1.0",
+    "gsap": "^3.8.0",
+    "husky": "^4.3.0",
+    "jest": "^27.3.1",
+    "np": "^7.5.0",
+    "prettier": "^2.1.2",
+    "pretty-quick": "^3.1.0",
+    "pug": "^3.0.2",
+    "resize-observer-polyfill": "^1.5.1",
+    "rimraf": "^3.0.2",
+    "rollup-plugin-alias": "^2.2.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-css-only": "^2.1.0",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "rollup-plugin-vue": "^6.0.0-beta.11",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.2.2",
+    "ungeicons": "^1.1.0",
+    "vite": "^2.4.1",
+    "vitepress-for-component": "^0.16.2",
+    "vue-jest": "^5.0.0-alpha.10"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "components"
+  ],
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write"
     ],
-    "gitHooks": {
-        "pre-commit": "lint-staged"
-    },
-    "lint-staged": {
-        "*.js": [
-            "prettier --write"
-        ],
-        "*.ts": [
-            "prettier --parser=typescript --write"
-        ]
-    },
-    "publishConfig": {
-        "access": "public",
-        "registry": "https://registry.npmjs.org/"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "pretty-quick --staged"
-        }
-    },
-    "dependencies": {
-        "@vueuse/core": "^6.9.1"
+    "*.ts": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
     }
+  },
+  "dependencies": {
+    "@vueuse/core": "^6.9.1"
+  }
 }
