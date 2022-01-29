@@ -15,9 +15,6 @@
   <a href="https://www.npmjs.org/package/ungeui">
       <img src="https://img.shields.io/npm/v/ungeui.svg">
   </a>
-  <a href="https://npmcharts.com/compare/ungeui?minimal=true">
-    <img src="http://img.shields.io/npm/dt/ungeui.svg">
-  </a>
   <a href="http://img.badgesize.io/https://unpkg.com/ungeui/dist/ungeui.es.js?compression=gzip&label=gzip%20size:%20JS">
     <img src="http://img.badgesize.io/https://unpkg.com/ungeui/dist/ungeui.es.js?compression=gzip&label=gzip%20size:%20JS">
   </a>
