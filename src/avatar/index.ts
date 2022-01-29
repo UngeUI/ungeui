@@ -1,9 +1,9 @@
-import Avatar from './avatar.jsx';
-import { App } from 'vue';
-Avatar.name = 'UAvatar';
+import Avatar from './avatar.tsx'
+import { App } from 'vue'
+Avatar.name = 'UAvatar'
 
 Avatar.install = (app: App) => {
-  app.component(Avatar.name, Avatar);
-};
+  app.component(Avatar.name, Avatar)
+}
 
-export default Avatar;
+export default Avatar
