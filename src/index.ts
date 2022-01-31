@@ -10,20 +10,20 @@ import UInput from './input/index'
 import { URadio, URadioGroup, URadioButton } from './radio/index'
 import { UCheckbox, UCheckboxGroup } from './checkbox/index'
 import USwitch from './switch/index'
-import UDialog from './dialog/index.js'
-import message from './message/main.js'
+import UDialog from './dialog/index'
+import message from './message/main'
 import { USelect, USelectOption } from './select/index'
-import UTable from './table/index.js'
+import UTable from './table/index'
 import UPagination from './pagination/index'
-import USlider from './slider/index.js'
-import UInputNumber from './inputNumber/index.js'
-import USpace from './space/index.js'
-import UTooltip from './tooltip/index.js'
-import UBadge from './badge/index.js'
-import loadingBar from './loadingBar/index.js'
-import USpin from './spin/index.js'
-import UTransit from './transit/index.js'
-import UTree from './tree/index.js'
+import USlider from './slider/index'
+import UInputNumber from './inputNumber/index'
+import USpace from './space/index'
+import UTooltip from './tooltip/index'
+import UBadge from './badge/index'
+import loadingBar from './loadingBar/index'
+import USpin from './spin/index'
+import UTransit from './transit/index'
+import UTree from './tree/index'
 //ImportFlag
 
 const components = [
@@ -93,5 +93,3 @@ export {
   UTree,
   //ExportFlag
 }
-
-export type { avatarProps } from './avatar/avatar'
