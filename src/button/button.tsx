@@ -1,6 +1,6 @@
 import { defineComponent, ref, onMounted, nextTick, computed } from 'vue'
-import UIcon from '../icon/icon.jsx'
-import buttonProps from './validator.ts'
+import UIcon from '../icon/icon'
+import buttonProps from './validator'
 
 const button = defineComponent({
   name: 'Button',
