@@ -7,3 +7,4 @@ Avatar.install = (app: App) => {
 }
 
 export default Avatar
+export type { avatarProps } from './avatar.jsx'
