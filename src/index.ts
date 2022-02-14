@@ -93,3 +93,5 @@ export {
   UTree,
   //ExportFlag
 }
+
+export * from './avatar/index'
