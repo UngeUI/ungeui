@@ -1,9 +1,9 @@
 <!--
- * @Descripttion: 
+ * @Descripttion:
  * @Author: peterroe
  * @Date: 2021-11-04 23:23:10
  * @LastEditors: peterroe
- * @LastEditTime: 2022-01-07 15:57:54
+ * @LastEditTime: 2022-01-08 14:57:45
 -->
 <div align=center>
     <a href="https://peterroe.github.io/ungeui/">
@@ -14,9 +14,6 @@
 <p align="center">
   <a href="https://www.npmjs.org/package/ungeui">
       <img src="https://img.shields.io/npm/v/ungeui.svg">
-  </a>
-  <a href="https://npmcharts.com/compare/ungeui?minimal=true">
-    <img src="http://img.shields.io/npm/dt/ungeui.svg">
   </a>
   <a href="http://img.badgesize.io/https://unpkg.com/ungeui/dist/ungeui.es.js?compression=gzip&label=gzip%20size:%20JS">
     <img src="http://img.badgesize.io/https://unpkg.com/ungeui/dist/ungeui.es.js?compression=gzip&label=gzip%20size:%20JS">
@@ -44,7 +41,9 @@
 ```shell
 $ yarn add ungeui
 ```
+
 **Import**
+
 ```js
 import { createApp } from 'vue';
 import UngeUI from 'ungeui';
@@ -56,14 +55,14 @@ app.use(UngeUI);
 
 ## Document
 
-[document here!](https://peterroe.github.io/ungeui/)
+[document here!](https://ungeui.github.io/ungeui/)
 
 ## Local development
 
 ⚡Start project in local enviroment
 
 ```
-$ git clone https://github.com/peterroe/ungeui.git
+$ git clone https://github.com/UngeUI/ungeui.git
 $ yarn
 $ yarn dev
 ```

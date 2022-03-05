@@ -17,7 +17,7 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import  UIcon from '../icon/index.js'
+import  UIcon from '../icon/index'
 import { useTimeoutFn } from '@vueuse/core'
 import Success from './util/success.vue'
 import Danger from './util/danger.vue'
