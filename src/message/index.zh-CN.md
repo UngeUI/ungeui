@@ -1,11 +1,11 @@
 ---
 map:
-    path: /components/message
+  path: /components/message
 ---
 
 # Message💨
 
-使用Message能更好地提示用户
+使用 Message 能更好地提示用户
 
 ## 代码演示
 
@@ -13,7 +13,7 @@ map:
 import { message } from 'ungeui'
 ```
 
-### 不同主题🚀
+### 不同主题 🚀
 
 <demo 
     src="./demo/base.vue"
@@ -22,7 +22,7 @@ import { message } from 'ungeui'
     desc="预置了几种基本的主题，您可以在合适的时机调用它们">
 </demo>
 
-### 自定义配置🗽
+### 自定义配置 🗽
 
 <demo 
     src="./demo/config.vue"
@@ -34,21 +34,25 @@ import { message } from 'ungeui'
 ## APIs
 
 快捷调用接口
-* `message.success(text)`
-* `message.danger(text)`
-* `message.info(text)`
-* `message.warning(text)`
 
-config对象配置详细字段
-* `message(config)`
-* `message(config)`
-* `message(config)`
-* `message(config)`
+- `message.success(text)`
+- `message.danger(text)`
+- `message.info(text)`
+- `message.warning(text)`
+
+config 对象配置详细字段
+
+- `message(config)`
+- `message(config)`
+- `message(config)`
+- `message(config)`
 
 #### config
 
-|   类型     | 含义  | 默认值  |
-| :-------:  | :-----: | :-----: |
-| `duration` | 信息弹窗持续的时间 | `3000ms` |
-| `icon`     | 自定义图标 | `<info>` |
-| `maxCount` | 最大数量 | `Infinity` |
+|     类型     |        含义        |   默认值   |
+| :----------: | :----------------: | :--------: |
+|  `duration`  | 信息弹窗持续的时间 |  `3000ms`  |
+|    `icon`    |     自定义图标     |  `<info>`  |
+|  `maxCount`  |      最大数量      | `Infinity` |
+|   `zIndex`   |      z 轴高度      |   `300`    |
+| `initOffset` | 弹出基础 Y 轴偏移  |    `0`     |

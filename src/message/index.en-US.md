@@ -1,6 +1,6 @@
 ---
 map:
-    path: /components/message
+  path: /components/message
 ---
 
 # Message💨
@@ -34,21 +34,25 @@ import { message } from 'ungeui'
 ## APIs
 
 Quick call interface
-* `message.success(text)`
-* `message.danger(text)`
-* `message.info(text)`
-* `message.warning(text)`
+
+- `message.success(text)`
+- `message.danger(text)`
+- `message.info(text)`
+- `message.warning(text)`
 
 Config object configuration detail fields
-* `message(config)`
-* `message(config)`
-* `message(config)`
-* `message(config)`
+
+- `message(config)`
+- `message(config)`
+- `message(config)`
+- `message(config)`
 
 #### config
 
-|   Type     | meaning   |  default value|
-| :-------:  | :-----: | :-----: |
-| `duration` | duration of information pop-up | `3000ms` |
-| `icon`     | custom icon | `<info>` |
-| `maxCount` | maximum quantity | `Infinity` |
+|     Type     |            meaning             | default value |
+| :----------: | :----------------------------: | :-----------: |
+|  `duration`  | duration of information pop-up |   `3000ms`    |
+|    `icon`    |          custom icon           |   `<info>`    |
+|  `maxCount`  |        maximum quantity        |  `Infinity`   |
+|   `zIndex`   |         z-axis height          |     `300`     |
+| `initOffset` |   pop-up base Y-axis offset    |      `0`      |
