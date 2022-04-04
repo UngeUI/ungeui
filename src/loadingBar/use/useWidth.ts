@@ -1,8 +1,8 @@
 import { ref, onMounted } from 'vue'
 
 const useWidth = (el) => {
-  const width = ref('0%')
-  const isShow = ref(true)
+  const width: string = ref('0%')
+  const isShow: boolean = ref(true)
   let reqRef
   let startTime = 0
   const upWidth = (temp) => {
@@ -40,6 +40,7 @@ const useWidth = (el) => {
 
   //想要在0.3秒内跑完剩下的路程，也就是跑 300ms / 16.6ms = 18次，每次跑gap%
   const endWidth = () => {
+    // 100 - Number.parseFloat(70%)
     gap = (100 - Number.parseFloat(width.value)) / (300 / 16.6)
     cancelAnimationFrame(reqRef)
     window.requestAnimationFrame(end)

@@ -1,30 +1,26 @@
-import LoadingBar from './loadingBar.tsx';
+import LoadingBar from './loadingBar.tsx'
 import { render, createVNode, ref, computed } from 'vue'
 
 let seed = 0
 
-let vm
+let vm = null
 const start = (props) => {
-    console.log('start')
-    if (seed == 1) {
-        return
-    }
-    seed = 1
-    vm = createVNode(
-        LoadingBar,
-        props,
-        null
-    )
-    const container = document.createElement('div')
-    render(vm, container)
-    document.body.appendChild(container.firstElementChild)
+  console.log('start')
+  if (seed == 1) {
+    return
+  }
+  seed = 1
+  vm = createVNode(LoadingBar, props, null)
+  const container = document.createElement('div')
+  render(vm, container)
+  document.body.appendChild(container.firstElementChild)
 }
 const end = () => {
-    seed = 0
-    vm.component.exposed.endWidth() // not good realization
+  seed = 0
+  vm.component.exposed.endWidth() // not good realization
 }
 const api = {
-    start,
-    end
+  start,
+  end,
 }
-export default api;
+export default api
