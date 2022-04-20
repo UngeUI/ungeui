@@ -1,0 +1,1 @@
+import{o as e}from"./index.cc3ffdcb.js";import{b as t,I as n}from"./app.2769be64.js";let o=0,d=null;const s={start:s=>{if(1==o)return;o=1,d=t(e,s,null);const r=document.createElement("div");n(d,r),document.body.appendChild(r.firstElementChild)},end:()=>{o=0,d.component.exposed.endWidth()}};export{s as a};
