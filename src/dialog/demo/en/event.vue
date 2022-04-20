@@ -1,24 +1,17 @@
-<!--
- * @Descripttion: 
- * @Author: peterroe
- * @Date: 2022-01-06 22:04:21
- * @LastEditors: peterroe
- * @LastEditTime: 2022-01-06 22:07:06
--->
 <template>
-    <div>
-        <u-button @click="open">Trigger OK and close events</u-button>
-        <u-dialog 
-            v-model:visible="visible"
-            @confirm="onConfirm"
-            @cancel="onCancel"
-            @close="onClose"
-        >
-            Let life be beautiful like summer flowers <br>
-            And Death like autumn leaves <br><br>
-            使生如夏花之绚烂，死如秋叶之静美
-        </u-dialog>
-    </div>
+  <div>
+    <u-button @click="open">Trigger OK and close events</u-button>
+    <u-dialog
+      v-model:visible="visible"
+      @confirm="onConfirm"
+      @cancel="onCancel"
+      @close="onClose"
+    >
+      Let life be beautiful like summer flowers <br />
+      And Death like autumn leaves <br /><br />
+      使生如夏花之绚烂，死如秋叶之静美
+    </u-dialog>
+  </div>
 </template>
 
 <script setup>
@@ -27,15 +20,15 @@ import { ref } from 'vue'
 
 let visible = ref(false)
 const open = () => {
-    visible.value = true
+  visible.value = true
 }
 const onConfirm = () => {
-    message.success('confirm')
+  message.success('confirm')
 }
 const onCancel = () => {
-    message.info('cancel')
+  message.info('cancel')
 }
 const onClose = () => {
-    message.warning('close')
+  message.warning('close')
 }
 </script>

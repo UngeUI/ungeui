@@ -5,7 +5,7 @@ let seed = 0
 
 let vm = null
 const start = (props) => {
-  console.log('start')
+  // only one instance
   if (seed == 1) {
     return
   }

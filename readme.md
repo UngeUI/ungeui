@@ -1,10 +1,3 @@
-<!--
- * @Descripttion:
- * @Author: peterroe
- * @Date: 2021-11-04 23:23:10
- * @LastEditors: peterroe
- * @LastEditTime: 2022-01-08 14:57:45
--->
 <div align=center>
     <a href="https://peterroe.github.io/ungeui/">
         <img  src="https://img-blog.csdnimg.cn/4843e19340f1432d9f24de61e16b9bce.png">
@@ -31,8 +24,8 @@
 
 ## Introduce
 
--   🥉 A component library based on Vue3
--   🚀 Writen in `.jsx` | `.vue` && `stylus`
+- 🥉 A component library based on Vue3
+- 🚀 Writen in `.jsx` | `.vue` && `stylus`
 
 ## Usage
 
@@ -45,12 +38,12 @@ $ yarn add ungeui
 **Import**
 
 ```js
-import { createApp } from 'vue';
-import UngeUI from 'ungeui';
-import 'ungeui/dist/style.css';
+import { createApp } from 'vue'
+import UngeUI from 'ungeui'
+import 'ungeui/dist/style.css'
 
-const app = createApp(App);
-app.use(UngeUI);
+const app = createApp(App)
+app.use(UngeUI)
 ```
 
 ## Document

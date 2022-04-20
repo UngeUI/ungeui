@@ -1,20 +1,13 @@
-<!--
- * @Descripttion: 
- * @Author: peterroe
- * @Date: 2021-11-26 12:07:59
- * @LastEditors: peterroe
- * @LastEditTime: 2022-01-06 22:21:12
--->
 <template>
-   <div>
-        <u-input-number :step="20" v-model:value="value"></u-input-number>
-        <u-divider></u-divider>
-        <u-space :gap="value">
-            <u-button>按钮</u-button>
-            <u-button>按钮</u-button>
-            <u-button>按钮</u-button>
-        </u-space>
-   </div>
+  <div>
+    <u-input-number :step="20" v-model:value="value"></u-input-number>
+    <u-divider></u-divider>
+    <u-space :gap="value">
+      <u-button>按钮</u-button>
+      <u-button>按钮</u-button>
+      <u-button>按钮</u-button>
+    </u-space>
+  </div>
 </template>
 
 <script setup>

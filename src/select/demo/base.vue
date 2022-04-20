@@ -1,24 +1,21 @@
-<!--
- * @Descripttion: 
- * @Author: peterroe
- * @Date: 2021-11-19 10:36:03
- * @LastEditors: peterroe
- * @LastEditTime: 2022-01-06 22:33:24
--->
 <template>
-    <div>
-        <u-select v-model:value="value" placeholder="选择字母" :style="{width:'300px'}">
-            <u-select-option label="苹果" value="Apple" />
-            <u-select-option label="香蕉" value="Banana" />
-            <u-select-option label="梨" value="Pear" />
-            <u-select-option label="西瓜" value="Watermelon" />
-        </u-select>
-        {{value}}
-    </div>
+  <div>
+    <u-select
+      v-model:value="value"
+      placeholder="选择字母"
+      :style="{ width: '300px' }"
+    >
+      <u-select-option label="苹果" value="Apple" />
+      <u-select-option label="香蕉" value="Banana" />
+      <u-select-option label="梨" value="Pear" />
+      <u-select-option label="西瓜" value="Watermelon" />
+    </u-select>
+    {{ value }}
+  </div>
 </template>
 
 <script setup>
-import { USelect,USelectOption } from 'ungeui'
+import { USelect, USelectOption } from 'ungeui'
 import { ref } from 'vue'
 
 let value = ref('苹果')
