@@ -38,7 +38,7 @@ const input = defineComponent({
       return 'u-input-size-' + props.size
     })
 
-    let isFocus = ref(false)
+    const isFocus = ref(false)
     const onFocus = () => {
       isFocus.value = true
     }

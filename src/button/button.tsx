@@ -6,7 +6,7 @@ const button = defineComponent({
   name: 'Button',
   props: buttonProps,
   setup(props, { slots }) {
-    let waveState = ref(false)
+    const waveState = ref(false)
 
     const timeout = ref(null)
     const onClick = async () => {

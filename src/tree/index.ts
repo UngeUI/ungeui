@@ -1,10 +1,10 @@
-import Tree from './treeRoot.tsx';
-import { App } from 'vue';
+import Tree from './treeRoot.tsx'
+import { App } from 'vue'
 
-Tree.name = 'UTree';
+Tree.name = 'UTree'
 
 Tree.install = (app: App) => {
-    app.component(Tree.name, Tree);
-};
+  app.component(Tree.name, Tree)
+}
 
-export default Tree;
+export default Tree

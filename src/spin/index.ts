@@ -1,9 +1,9 @@
-import Spin from './spin.vue';
+import Spin from './spin.vue'
 
-Spin.name = 'USpin';
+Spin.name = 'USpin'
 
 Spin.install = (app: App) => {
-    app.component(Spin.name, Spin);
-};
+  app.component(Spin.name, Spin)
+}
 
-export default Spin;
+export default Spin

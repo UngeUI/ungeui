@@ -6,13 +6,10 @@ USelect.name = 'USelect'
 USelectOption.name = 'USelectOption'
 
 USelect.install = (app: App) => {
-    app.component(USelect.name, USelect)
+  app.component(USelect.name, USelect)
 }
 USelectOption.install = (app: App) => {
-    app.component(USelectOption.name, USelectOption)
+  app.component(USelectOption.name, USelectOption)
 }
 
-export {
-    USelect,
-    USelectOption
-}
+export { USelect, USelectOption }

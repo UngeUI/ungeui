@@ -10,7 +10,7 @@ const icon = defineComponent({
     },
   },
   setup(props, { slots }) {
-    let style = computed(() => {
+    const style = computed(() => {
       return {
         display: 'inline-flex',
         'align-items': 'center',

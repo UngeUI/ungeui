@@ -64,7 +64,7 @@ const message = ({
   }
   document.body.appendChild(container.firstElementChild)
 }
-let api = []
+const api = []
 messageTypes.forEach((type) => {
   message[type] = (options) => {
     if (typeof options == 'string') {

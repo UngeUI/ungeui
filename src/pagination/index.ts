@@ -1,10 +1,10 @@
-import UPagination from './pagination.tsx';
-import { App } from 'vue';
+import UPagination from './pagination.tsx'
+import { App } from 'vue'
 
-UPagination.name = 'UPagination';
+UPagination.name = 'UPagination'
 
 UPagination.install = (app: App) => {
-    app.component(UPagination.name, UPagination);
-};
+  app.component(UPagination.name, UPagination)
+}
 
-export default UPagination;
+export default UPagination

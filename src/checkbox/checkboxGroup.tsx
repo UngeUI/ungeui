@@ -11,7 +11,7 @@ const checkboxGroup = defineComponent({
   emits: ['update:value'],
   setup(props, { slots, emit }) {
     const onCheckboxChange = (childrenValue) => {
-      let newArr = Array.from(props.value)
+      const newArr = Array.from(props.value)
       const childrenIndex = newArr.findIndex((item) => item == childrenValue)
       if (childrenIndex == -1) {
         newArr.push(childrenValue)
