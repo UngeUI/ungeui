@@ -12,7 +12,7 @@ const treeNode = defineComponent({
 		onArrowChange:{ type: Function },
 		onCheckedChange:{ type: Function }
     },
-    setup(props, { emit, expose }) {
+    setup(props) {
 
         // 箭头向下（false）/向右（true）的状态
         const arrowState = ref(false)

@@ -1,5 +1,4 @@
-import { defineComponent, h, ref, computed, reactive, provide } from 'vue'
-import TreeContent from './treeContent.tsx'
+import { defineComponent, provide } from 'vue'
 import Tree from './tree.tsx'
 
 const TreeRoot = defineComponent({
@@ -10,7 +9,7 @@ const TreeRoot = defineComponent({
     checkable: { type: Boolean, default: false },
   },
   emits: ['update:checked-keys', 'update:checkedKeys'],
-  setup(props, { slots, emit }) {
+  setup(props, { emit }) {
     const checkedValueArr = []
     const onCheckedChange = (value) => {
       const index = checkedValueArr.findIndex((item) => value == item)

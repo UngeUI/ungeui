@@ -1,12 +1,4 @@
-import {
-  defineComponent,
-  Teleport,
-  Transition,
-  onMounted,
-  watch,
-  ref,
-  computed,
-} from 'vue'
+import { defineComponent, Teleport, Transition, ref, computed } from 'vue'
 import { useTargetHover, usePosition } from './use'
 import { useElementSize } from '@vueuse/core'
 const tooltip = defineComponent({
@@ -83,6 +75,8 @@ const tooltip = defineComponent({
         return 'animate__animated animate__fadeInUp'
       } else if (props.placement == 'left') {
         return 'animate__animated animate__fadeInLeft'
+      } else {
+        return ''
       }
     })
     const getElementNode = (children) => {

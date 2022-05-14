@@ -9,7 +9,7 @@ const treeContent = defineComponent({
     checkable: { type: Boolean },
   },
   emits: ['change'],
-  setup(props, { emit }) {
+  setup(props) {
     //箭头向右则隐藏子节点
     const arrowState = ref(false)
     const isTreeHidden = computed(() => {
