@@ -36,6 +36,7 @@
     "release": "np"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^0.25.2",
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
     "@babel/preset-typescript": "^7.16.0",
@@ -58,7 +59,7 @@
     "clipboard": "^2.0.8",
     "conventional-changelog-cli": "^2.1.1",
     "cross-env": "^7.0.2",
-    "eslint": "^7.13.0",
+    "eslint": "8.16.0",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-vue": "^7.1.0",
     "gh-pages": "^3.1.0",

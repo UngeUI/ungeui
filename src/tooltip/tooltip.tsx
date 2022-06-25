@@ -28,9 +28,8 @@ const tooltip = defineComponent({
     const { isHovered: targetIsHoverd } = useTargetHover(setfRef)
 
     const tooltipRef = ref()
-    const { width: tooltipWidth, height: tooltipHeight } = useElementSize(
-      tooltipRef,
-    )
+    const { width: tooltipWidth, height: tooltipHeight } =
+      useElementSize(tooltipRef)
 
     const arrayPosition = computed(() => {
       return 'u-tooltip-arrow-' + props.placement

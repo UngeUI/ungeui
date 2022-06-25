@@ -22,9 +22,8 @@ const slider = defineComponent({
   emits: ['update:value'],
   setup(props, { slots, emit }) {
     const sliderRef = ref(null)
-    const { elementWidth: sliderWidth, elementX: sliderX } = useMouseInElement(
-      sliderRef,
-    )
+    const { elementWidth: sliderWidth, elementX: sliderX } =
+      useMouseInElement(sliderRef)
 
     const pointOneRef = ref(null)
     const { pressed: one } = useMousePressed({ target: pointOneRef })
