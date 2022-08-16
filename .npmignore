@@ -27,4 +27,3 @@ jest.config.js
 tsconfig.json
 vite.config.js
 templates
-bin
